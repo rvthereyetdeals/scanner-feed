@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-06-04T18:13:39.163158+00:00",
+  "last_scan": "2026-06-04T18:14:09.500271+00:00",
   "setups": [
     {
       "ticker": "SMCI",
@@ -3345,7 +3345,7 @@
       "fundamentals": {
         "w52_high": 284.58,
         "w52_low": 18.42,
-        "pe_ratio": 59.0,
+        "pe_ratio": 58.9,
         "dividend_yield": 3.0,
         "sharpe_ratio": 3.11
       },
@@ -3953,9 +3953,9 @@
       "golden_spring": false,
       "golden_spring_tfs": [],
       "verdict": "AVOID",
-      "verdict_score": 2,
-      "verdict_max": 7,
-      "verdict_pct": 29,
+      "verdict_score": 3,
+      "verdict_max": 8,
+      "verdict_pct": 38,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
@@ -3966,16 +3966,50 @@
         "balance_sheet_ok": false,
         "analyst_buy": null,
         "analyst_target_upside": null,
-        "seasonality_positive": null
+        "seasonality_positive": true
       },
-      "verdict_notes": "M:BOS M:FVG H3:LiqGrab \u00b7 RSI 73.64",
+      "verdict_notes": "M:BOS M:FVG H3:LiqGrab \u00b7 RSI 73.44 \u00b7 Seasonal +12.3%",
       "entry_note": "",
       "options_flow": {},
-      "best_option": {},
-      "value_option": {},
+      "best_option": {
+        "strike": 340.0,
+        "expiry": "2026-08-21",
+        "dte": 78,
+        "ask": 55.6,
+        "bid": 52.7,
+        "cost": 5560.0,
+        "open_interest": 615,
+        "volume": 53,
+        "iv": 149.5,
+        "breakeven": 395.6,
+        "delta": 0.533,
+        "gamma": 0.0021,
+        "theta": -0.507,
+        "vega": 0.516
+      },
+      "value_option": {
+        "strike": 180.0,
+        "expiry": "2028-01-21",
+        "dte": 596,
+        "ask": 181.75,
+        "bid": 177.05,
+        "cost": 18175.0,
+        "open_interest": 1126,
+        "volume": 52,
+        "iv": 123.0,
+        "breakeven": 361.75,
+        "delta": 0.865,
+        "gamma": 0.0005,
+        "theta": -0.086,
+        "vega": 0.758
+      },
       "pivots": {},
       "analyst": {},
-      "seasonality": {},
+      "seasonality": {
+        "month": 6,
+        "hist_avg_return_pct": 12.26,
+        "historically_positive": true
+      },
       "signals_by_tf": {
         "BOS \u2191": [
           "M"
@@ -4575,8 +4609,8 @@
       "golden_spring": false,
       "golden_spring_tfs": [],
       "verdict": "HOLD",
-      "verdict_score": 4,
-      "verdict_max": 8,
+      "verdict_score": 5,
+      "verdict_max": 10,
       "verdict_pct": 50,
       "verdict_checklist": {
         "tech_setup": true,
@@ -4586,20 +4620,84 @@
         "price_below_maxpain": false,
         "above_pivot": false,
         "balance_sheet_ok": true,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "analyst_buy": true,
+        "analyst_target_upside": false,
         "seasonality_positive": true
       },
-      "verdict_notes": "M:BOS M:FVG W:HH/HL W:BOS \u00b7 Seasonal +1.9%",
+      "verdict_notes": "M:BOS M:FVG W:HH/HL W:BOS \u00b7 RSI 72.85 \u00b7 P/C 2.85 \u00b7 MaxPain $970.00 \u00b7 Call wall $1200 (2026-06-05) \u00b7 Target $739.48 (-32%) \u00b7 Seasonal +1.9%",
       "entry_note": "",
-      "options_flow": {},
-      "best_option": {},
-      "value_option": {},
+      "options_flow": {
+        "total_call_oi": 168381,
+        "total_put_oi": 479758,
+        "pc_ratio": 2.85,
+        "max_pain": 970.0,
+        "top_call_wall": 1200.0,
+        "top_call_oi": 14379,
+        "top_put_wall": 45.0,
+        "top_put_oi": 38347,
+        "expiry": "2026-06-05",
+        "call_walls_by_expiry": {
+          "2026-06-05": {
+            "strike": 1200.0,
+            "oi": 14379
+          },
+          "2026-06-12": {
+            "strike": 1000.0,
+            "oi": 2443
+          },
+          "2026-06-18": {
+            "strike": 400.0,
+            "oi": 31916
+          },
+          "2026-06-26": {
+            "strike": 1050.0,
+            "oi": 2920
+          }
+        }
+      },
+      "best_option": {
+        "strike": 1100.0,
+        "expiry": "2026-08-21",
+        "dte": 78,
+        "ask": 155.1,
+        "bid": 152.95,
+        "cost": 15510.0,
+        "open_interest": 1678,
+        "volume": 282,
+        "iv": 93.8,
+        "breakeven": 1255.1,
+        "delta": 0.541,
+        "gamma": 0.0009,
+        "theta": -1.198,
+        "vega": 1.9
+      },
+      "value_option": {
+        "strike": 700.0,
+        "expiry": "2028-01-21",
+        "dte": 596,
+        "ask": 571.6,
+        "bid": 554.0,
+        "cost": 57160.0,
+        "open_interest": 1336,
+        "volume": 19,
+        "iv": 89.5,
+        "breakeven": 1271.6,
+        "delta": 0.838,
+        "gamma": 0.0002,
+        "theta": -0.283,
+        "vega": 3.248
+      },
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 739.48,
+        "target_high": 1750.0,
+        "target_low": 249.0,
+        "n_analysts": 40,
+        "rating_key": "strong_buy"
+      },
       "seasonality": {
         "month": 6,
-        "hist_avg_return_pct": 1.95,
+        "hist_avg_return_pct": 1.94,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -5298,7 +5396,7 @@
       "fundamentals": {
         "w52_high": 259.92,
         "w52_low": 121.99,
-        "market_cap": "$257.0B",
+        "market_cap": "$256.8B",
         "sector": "Technology",
         "pe_ratio": 26.2,
         "peg_ratio": 1.05,
@@ -5311,13 +5409,13 @@
         "roa": 12.69,
         "debt_to_equity": 0.56,
         "current_ratio": 2.37,
-        "price_to_book": 9.47,
-        "price_to_sales": 5.78,
+        "price_to_book": 9.46,
+        "price_to_sales": 5.77,
         "fcf": "$9.6B",
         "dividend_yield": 1.47,
         "beta": 1.49,
         "sharpe_ratio": 1.26,
-        "alpha": 25.6,
+        "alpha": 25.5,
         "earnings_yield": 4.83,
         "roc": 12.69,
         "magic_formula_grade": "D",
@@ -5336,8 +5434,8 @@
       },
       "intrinsic_value": {
         "iv": 203.81,
-        "price_to_iv": 1.197,
-        "upside_pct": -16.4,
+        "price_to_iv": 1.195,
+        "upside_pct": -16.3,
         "discount_pct": 0,
         "methods_used": 3,
         "undervalued": false,
@@ -5878,9 +5976,37 @@
         "analyst_target_upside": false,
         "seasonality_positive": false
       },
-      "verdict_notes": "3M:HH/HL 3M:BOS 3M:LiqGrab H1:HH/HL \u00b7 RSI 64.87 \u00b7 Target $177.10 (-27%) \u00b7 Seasonal -0.1%",
+      "verdict_notes": "3M:HH/HL 3M:BOS 3M:LiqGrab H1:HH/HL \u00b7 RSI 64.79 \u00b7 P/C 0.90 \u00b7 MaxPain $235.00 \u00b7 Call wall $370 (2026-06-05) \u00b7 Target $177.10 (-27%) \u00b7 Seasonal -0.1%",
       "entry_note": "",
-      "options_flow": {},
+      "options_flow": {
+        "total_call_oi": 57680,
+        "total_put_oi": 51711,
+        "pc_ratio": 0.9,
+        "max_pain": 235.0,
+        "top_call_wall": 370.0,
+        "top_call_oi": 5536,
+        "top_put_wall": 135.0,
+        "top_put_oi": 4536,
+        "expiry": "2026-06-05",
+        "call_walls_by_expiry": {
+          "2026-06-05": {
+            "strike": 370.0,
+            "oi": 5536
+          },
+          "2026-06-12": {
+            "strike": 300.0,
+            "oi": 5415
+          },
+          "2026-06-18": {
+            "strike": 300.0,
+            "oi": 15095
+          },
+          "2026-06-26": {
+            "strike": 295.0,
+            "oi": 3999
+          }
+        }
+      },
       "best_option": {
         "strike": 250.0,
         "expiry": "2026-07-17",
@@ -5890,11 +6016,11 @@
         "cost": 2340.0,
         "open_interest": 6780,
         "volume": 937,
-        "iv": 75.9,
+        "iv": 76.0,
         "breakeven": 273.4,
-        "delta": 0.521,
+        "delta": 0.522,
         "gamma": 0.0063,
-        "theta": -0.308,
+        "theta": -0.309,
         "vega": 0.333
       },
       "value_option": {
@@ -5923,7 +6049,7 @@
       },
       "seasonality": {
         "month": 6,
-        "hist_avg_return_pct": -0.05,
+        "hist_avg_return_pct": -0.06,
         "historically_positive": false
       },
       "signals_by_tf": {
