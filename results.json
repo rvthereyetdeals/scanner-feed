@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-06-05T16:30:35.556774+00:00",
+  "last_scan": "2026-06-05T16:31:49.805802+00:00",
   "setups": [
     {
       "ticker": "GE",
@@ -1479,7 +1479,7 @@
       "fundamentals": {
         "w52_high": 214.71,
         "w52_low": 136.7,
-        "market_cap": "$372.1B",
+        "market_cap": "$372.0B",
         "sector": "Energy",
         "pe_ratio": 32.5,
         "peg_ratio": 0.83,
@@ -1498,7 +1498,7 @@
         "dividend_yield": 3.78,
         "beta": 0.47,
         "sharpe_ratio": 1.52,
-        "alpha": 23.87,
+        "alpha": 23.86,
         "earnings_yield": 9.06,
         "roc": 3.46,
         "magic_formula_grade": "D",
@@ -1517,7 +1517,7 @@
       },
       "intrinsic_value": {
         "iv": 76.86,
-        "price_to_iv": 2.431,
+        "price_to_iv": 2.43,
         "upside_pct": -58.9,
         "discount_pct": 0,
         "methods_used": 3,
@@ -2173,29 +2173,93 @@
       "golden_entry": true,
       "golden_spring": false,
       "golden_spring_tfs": [],
-      "verdict": "HOLD",
-      "verdict_score": 4,
-      "verdict_max": 8,
-      "verdict_pct": 50,
+      "verdict": "BUY",
+      "verdict_score": 8,
+      "verdict_max": 10,
+      "verdict_pct": 80,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": true,
-        "options_bullish": false,
-        "price_below_maxpain": false,
+        "options_bullish": true,
+        "price_below_maxpain": true,
         "above_pivot": false,
         "balance_sheet_ok": true,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "analyst_buy": true,
+        "analyst_target_upside": true,
         "seasonality_positive": false
       },
-      "verdict_notes": "3M:HH/HL 3M:BOS \u00b7 RSI 46.34 \u00b7 Seasonal -0.8%",
+      "verdict_notes": "3M:HH/HL 3M:BOS \u00b7 RSI 46.3 \u00b7 P/C 0.40 \u00b7 MaxPain $187.50 \u00b7 Call wall $200 (2026-06-05) \u00b7 Target $216.04 (+16%) \u00b7 Seasonal -0.8%",
       "entry_note": "",
-      "options_flow": {},
-      "best_option": {},
-      "value_option": {},
+      "options_flow": {
+        "total_call_oi": 23963,
+        "total_put_oi": 9701,
+        "pc_ratio": 0.4,
+        "max_pain": 187.5,
+        "top_call_wall": 200.0,
+        "top_call_oi": 8590,
+        "top_put_wall": 187.5,
+        "top_put_oi": 1335,
+        "expiry": "2026-06-05",
+        "call_walls_by_expiry": {
+          "2026-06-05": {
+            "strike": 200.0,
+            "oi": 8590
+          },
+          "2026-06-12": {
+            "strike": 195.0,
+            "oi": 2822
+          },
+          "2026-06-18": {
+            "strike": 200.0,
+            "oi": 14014
+          },
+          "2026-06-26": {
+            "strike": 200.0,
+            "oi": 1112
+          }
+        }
+      },
+      "best_option": {
+        "strike": 190.0,
+        "expiry": "2026-07-17",
+        "dte": 42,
+        "ask": 6.45,
+        "bid": 6.05,
+        "cost": 645.0,
+        "open_interest": 1352,
+        "volume": 43,
+        "iv": 30.9,
+        "breakeven": 196.45,
+        "delta": 0.478,
+        "gamma": 0.0204,
+        "theta": -0.104,
+        "vega": 0.252
+      },
+      "value_option": {
+        "strike": 145.0,
+        "expiry": "2028-01-21",
+        "dte": 595,
+        "ask": 52.9,
+        "bid": 49.6,
+        "cost": 5290.0,
+        "open_interest": 308,
+        "volume": 10,
+        "iv": 32.3,
+        "breakeven": 197.9,
+        "delta": 0.845,
+        "gamma": 0.0031,
+        "theta": -0.029,
+        "vega": 0.567
+      },
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 216.04,
+        "target_high": 236.0,
+        "target_low": 170.0,
+        "n_analysts": 23,
+        "rating_key": "buy"
+      },
       "seasonality": {
         "month": 6,
         "hist_avg_return_pct": -0.85,
