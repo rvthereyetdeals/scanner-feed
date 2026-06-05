@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-06-05T02:46:37.412936+00:00",
+  "last_scan": "2026-06-05T02:46:54.974912+00:00",
   "setups": [
     {
       "ticker": "SMCI",
@@ -1516,9 +1516,9 @@
       "golden_spring": false,
       "golden_spring_tfs": [],
       "verdict": "HOLD",
-      "verdict_score": 4,
-      "verdict_max": 8,
-      "verdict_pct": 50,
+      "verdict_score": 6,
+      "verdict_max": 10,
+      "verdict_pct": 60,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
@@ -1527,17 +1527,81 @@
         "price_below_maxpain": false,
         "above_pivot": false,
         "balance_sheet_ok": true,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "analyst_buy": true,
+        "analyst_target_upside": true,
         "seasonality_positive": true
       },
-      "verdict_notes": "3M:HH/HL 3M:LiqGrab M:Demand W:BOS \u00b7 RSI 75.4 \u00b7 Seasonal +3.8%",
+      "verdict_notes": "3M:HH/HL 3M:LiqGrab M:Demand W:BOS \u00b7 RSI 75.4 \u00b7 P/C 0.68 \u00b7 MaxPain $225.00 \u00b7 Call wall $200 (2026-06-05) \u00b7 Target $287.49 (+18%) \u00b7 Seasonal +3.8%",
       "entry_note": "",
-      "options_flow": {},
-      "best_option": {},
-      "value_option": {},
+      "options_flow": {
+        "total_call_oi": 41058,
+        "total_put_oi": 28053,
+        "pc_ratio": 0.68,
+        "max_pain": 225.0,
+        "top_call_wall": 200.0,
+        "top_call_oi": 2713,
+        "top_put_wall": 235.0,
+        "top_put_oi": 1828,
+        "expiry": "2026-06-05",
+        "call_walls_by_expiry": {
+          "2026-06-05": {
+            "strike": 200.0,
+            "oi": 2713
+          },
+          "2026-06-12": {
+            "strike": 255.0,
+            "oi": 4595
+          },
+          "2026-06-18": {
+            "strike": 300.0,
+            "oi": 6629
+          },
+          "2026-06-26": {
+            "strike": 210.0,
+            "oi": 599
+          }
+        }
+      },
+      "best_option": {
+        "strike": 250.0,
+        "expiry": "2026-08-21",
+        "dte": 78,
+        "ask": 26.45,
+        "bid": 25.35,
+        "cost": 2645.0,
+        "open_interest": 2259,
+        "volume": 76,
+        "iv": 63.2,
+        "breakeven": 276.45,
+        "delta": 0.541,
+        "gamma": 0.0056,
+        "theta": -0.196,
+        "vega": 0.448
+      },
+      "value_option": {
+        "strike": 150.0,
+        "expiry": "2028-01-21",
+        "dte": 596,
+        "ask": 130.15,
+        "bid": 123.85,
+        "cost": 13015.0,
+        "open_interest": 1004,
+        "volume": 5,
+        "iv": 73.7,
+        "breakeven": 280.15,
+        "delta": 0.859,
+        "gamma": 0.001,
+        "theta": -0.054,
+        "vega": 0.699
+      },
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 287.49,
+        "target_high": 500.0,
+        "target_low": 110.0,
+        "n_analysts": 48,
+        "rating_key": "strong_buy"
+      },
       "seasonality": {
         "month": 6,
         "hist_avg_return_pct": 3.78,
