@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-06-07T19:19:25.186104+00:00",
+  "last_scan": "2026-06-07T19:19:47.701250+00:00",
   "setups": [
     {
       "ticker": "SNOW",
@@ -524,10 +524,10 @@
       "golden_entry": false,
       "golden_spring": false,
       "golden_spring_tfs": [],
-      "verdict": "HOLD",
-      "verdict_score": 5,
-      "verdict_max": 8,
-      "verdict_pct": 62,
+      "verdict": "BUY",
+      "verdict_score": 7,
+      "verdict_max": 10,
+      "verdict_pct": 70,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
@@ -536,14 +536,14 @@
         "price_below_maxpain": false,
         "above_pivot": false,
         "balance_sheet_ok": true,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "analyst_buy": true,
+        "analyst_target_upside": true,
         "seasonality_positive": true
       },
-      "bear_verdict": "CAUTION",
+      "bear_verdict": "CLEAR",
       "bear_score": 4,
-      "bear_score_max": 7,
-      "bear_score_pct": 57,
+      "bear_score_max": 9,
+      "bear_score_pct": 44,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": true,
@@ -551,11 +551,11 @@
         "options_bearish": false,
         "price_above_maxpain": true,
         "below_pivot": false,
-        "analyst_sell": null,
-        "analyst_target_downside": null,
+        "analyst_sell": false,
+        "analyst_target_downside": false,
         "seasonality_negative": false
       },
-      "verdict_notes": "3M:HH/HL 3M:LiqGrab M:Demand W:BOS \u00b7 RSI 72.06 \u00b7 P/C 0.47 \u00b7 MaxPain $230.00 \u00b7 Call wall $255 (2026-06-12) \u00b7 Seasonal +3.3%",
+      "verdict_notes": "3M:HH/HL 3M:LiqGrab M:Demand W:BOS \u00b7 RSI 72.06 \u00b7 P/C 0.47 \u00b7 MaxPain $230.00 \u00b7 Call wall $255 (2026-06-12) \u00b7 Target $288.43 (+21%) \u00b7 Seasonal +3.3%",
       "entry_note": "",
       "options_flow": {
         "total_call_oi": 19920,
@@ -603,9 +603,31 @@
         "theta": -0.196,
         "vega": 0.431
       },
-      "value_option": {},
+      "value_option": {
+        "type": "call",
+        "strike": 150.0,
+        "expiry": "2028-01-21",
+        "dte": 593,
+        "ask": 125.0,
+        "bid": 117.0,
+        "cost": 12500.0,
+        "open_interest": 1002,
+        "volume": 5,
+        "iv": 72.5,
+        "breakeven": 275.0,
+        "delta": 0.853,
+        "gamma": 0.001,
+        "theta": -0.053,
+        "vega": 0.698
+      },
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 288.43,
+        "target_high": 500.0,
+        "target_low": 110.0,
+        "n_analysts": 48,
+        "rating_key": "strong_buy"
+      },
       "seasonality": {
         "month": 6,
         "hist_avg_return_pct": 3.32,
@@ -1524,6 +1546,10 @@
         "top_put_oi": 915,
         "expiry": "2026-06-12",
         "call_walls_by_expiry": {
+          "2026-06-12": {
+            "strike": 195.0,
+            "oi": 2822
+          },
           "2026-06-18": {
             "strike": 200.0,
             "oi": 14014
@@ -2325,9 +2351,17 @@
         "top_put_oi": 4708,
         "expiry": "2026-06-08",
         "call_walls_by_expiry": {
+          "2026-06-08": {
+            "strike": 450.0,
+            "oi": 5161
+          },
           "2026-06-10": {
             "strike": 500.0,
             "oi": 2033
+          },
+          "2026-06-12": {
+            "strike": 450.0,
+            "oi": 19903
           },
           "2026-06-15": {
             "strike": 450.0,
@@ -3178,6 +3212,10 @@
             "strike": 345.0,
             "oi": 1772
           },
+          "2026-06-18": {
+            "strike": 320.0,
+            "oi": 7546
+          },
           "2026-06-26": {
             "strike": 295.0,
             "oi": 270
@@ -3881,14 +3919,14 @@
       "golden_spring": false,
       "golden_spring_tfs": [],
       "verdict": "HOLD",
-      "verdict_score": 6,
+      "verdict_score": 5,
       "verdict_max": 10,
-      "verdict_pct": 60,
+      "verdict_pct": 50,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": true,
-        "options_bullish": true,
+        "options_bullish": false,
         "price_below_maxpain": false,
         "above_pivot": false,
         "balance_sheet_ok": true,
@@ -3897,51 +3935,23 @@
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 2,
+      "bear_score": 1,
       "bear_score_max": 9,
-      "bear_score_pct": 22,
+      "bear_score_pct": 11,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
         "rsi_overbought": false,
         "options_bearish": false,
-        "price_above_maxpain": true,
+        "price_above_maxpain": false,
         "below_pivot": false,
         "analyst_sell": false,
         "analyst_target_downside": false,
         "seasonality_negative": false
       },
-      "verdict_notes": "M:HH/HL M:BOS \u00b7 RSI 60.25 \u00b7 P/C 0.37 \u00b7 MaxPain $14.50 \u00b7 Call wall $15 (2026-06-12) \u00b7 Target $14.40 (-3%) \u00b7 Seasonal +0.9%",
+      "verdict_notes": "M:HH/HL M:BOS \u00b7 RSI 60.25 \u00b7 Target $14.40 (-3%) \u00b7 Seasonal +0.9%",
       "entry_note": "",
-      "options_flow": {
-        "total_call_oi": 125095,
-        "total_put_oi": 46195,
-        "pc_ratio": 0.37,
-        "max_pain": 14.5,
-        "top_call_wall": 15.0,
-        "top_call_oi": 52165,
-        "top_put_wall": 12.5,
-        "top_put_oi": 25318,
-        "expiry": "2026-06-12",
-        "call_walls_by_expiry": {
-          "2026-06-12": {
-            "strike": 15.0,
-            "oi": 52165
-          },
-          "2026-06-18": {
-            "strike": 15.0,
-            "oi": 49155
-          },
-          "2026-06-26": {
-            "strike": 16.5,
-            "oi": 13174
-          },
-          "2026-07-02": {
-            "strike": 20.0,
-            "oi": 1167
-          }
-        }
-      },
+      "options_flow": {},
       "best_option": {
         "type": "call",
         "strike": 15.0,
@@ -3962,19 +3972,19 @@
       "value_option": {
         "type": "call",
         "strike": 10.0,
-        "expiry": "2028-01-21",
-        "dte": 593,
-        "ask": 5.9,
-        "bid": 5.5,
-        "cost": 590.0,
-        "open_interest": 2828,
-        "volume": 8,
-        "iv": 45.3,
-        "breakeven": 15.9,
-        "delta": 0.869,
-        "gamma": 0.0248,
+        "expiry": "2027-12-17",
+        "dte": 558,
+        "ask": 5.8,
+        "bid": 5.45,
+        "cost": 580.0,
+        "open_interest": 3753,
+        "volume": 4,
+        "iv": 44.4,
+        "breakeven": 15.8,
+        "delta": 0.873,
+        "gamma": 0.0255,
         "theta": -0.002,
-        "vega": 0.04
+        "vega": 0.038
       },
       "pivots": {},
       "analyst": {
@@ -5346,9 +5356,9 @@
             "strike": 320.0,
             "oi": 4951
           },
-          "2026-06-26": {
-            "strike": 200.0,
-            "oi": 6128
+          "2026-06-18": {
+            "strike": 180.0,
+            "oi": 25702
           },
           "2026-07-02": {
             "strike": 145.0,
@@ -7701,6 +7711,10 @@
           "2026-06-26": {
             "strike": 178.0,
             "oi": 136
+          },
+          "2026-07-02": {
+            "strike": 174.0,
+            "oi": 55
           }
         }
       },
@@ -8704,16 +8718,16 @@
       "golden_entry": true,
       "golden_spring": false,
       "golden_spring_tfs": [],
-      "verdict": "BUY",
-      "verdict_score": 7,
+      "verdict": "HOLD",
+      "verdict_score": 6,
       "verdict_max": 10,
-      "verdict_pct": 70,
+      "verdict_pct": 60,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": false,
         "rsi_ok": true,
         "options_bullish": false,
-        "price_below_maxpain": true,
+        "price_below_maxpain": false,
         "above_pivot": false,
         "balance_sheet_ok": true,
         "analyst_buy": true,
@@ -8735,37 +8749,9 @@
         "analyst_target_downside": false,
         "seasonality_negative": false
       },
-      "verdict_notes": "5m:Demand 3m:Demand \u00b7 RSI 37.42 \u00b7 P/C 1.29 \u00b7 MaxPain $150.00 \u00b7 Call wall $155 (2026-06-12) \u00b7 Target $169.91 (+13%) \u00b7 Seasonal +1.0%",
+      "verdict_notes": "5m:Demand 3m:Demand \u00b7 RSI 37.42 \u00b7 Target $169.91 (+13%) \u00b7 Seasonal +1.0%",
       "entry_note": "",
-      "options_flow": {
-        "total_call_oi": 8354,
-        "total_put_oi": 10801,
-        "pc_ratio": 1.29,
-        "max_pain": 150.0,
-        "top_call_wall": 155.0,
-        "top_call_oi": 1477,
-        "top_put_wall": 130.0,
-        "top_put_oi": 2178,
-        "expiry": "2026-06-12",
-        "call_walls_by_expiry": {
-          "2026-06-12": {
-            "strike": 155.0,
-            "oi": 1477
-          },
-          "2026-06-18": {
-            "strike": 180.0,
-            "oi": 24789
-          },
-          "2026-06-26": {
-            "strike": 175.0,
-            "oi": 1547
-          },
-          "2026-07-02": {
-            "strike": 160.0,
-            "oi": 1185
-          }
-        }
-      },
+      "options_flow": {},
       "best_option": {},
       "value_option": {
         "type": "call",
@@ -9082,7 +9068,7 @@
         "Bearish Engulf",
         "Bear Displacement"
       ],
-      "tech_summary": "3M: HH/HL uptrend, BOS confirmed \u00b7 D: HH/HL uptrend, breaker block support \u00b7 H4: HH/HL uptrend, breaker block support",
+      "tech_summary": "Y: HH/HL uptrend, BOS confirmed \u00b7 6M: HH/HL uptrend, BOS confirmed \u00b7 3M: HH/HL uptrend, BOS confirmed",
       "fundamentals": {
         "w52_high": 517.75,
         "w52_low": 419.62,
@@ -9093,8 +9079,8 @@
       },
       "intrinsic_value": {},
       "tv_ticker": "DIA",
-      "session": "MIDDAY",
-      "timestamp": "2026-06-07T12:09:42.466903",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-06-07T15:19:40.268534",
       "ict": {
         "by_tf": {
           "1m": {
@@ -9501,10 +9487,10 @@
           "1wk": {
             "tf": "1wk",
             "session": {
-              "high": 441.5061,
-              "low": 360.3412,
-              "midpoint": 400.9236,
-              "range_pts": 81.1649
+              "high": 441.5062,
+              "low": 360.3411,
+              "midpoint": 400.9237,
+              "range_pts": 81.1651
             },
             "sweep": null,
             "bos": null,
@@ -9517,8 +9503,8 @@
           "1mo": {
             "tf": "1mo",
             "session": {
-              "high": 321.3723,
-              "low": 162.8984,
+              "high": 321.3724,
+              "low": 162.8985,
               "midpoint": 242.1354,
               "range_pts": 158.4739
             },
@@ -9533,10 +9519,10 @@
           "3mo": {
             "tf": "3mo",
             "session": {
-              "high": 148.4003,
+              "high": 148.4002,
               "low": 76.4782,
               "midpoint": 112.4392,
-              "range_pts": 71.9221
+              "range_pts": 71.9219
             },
             "sweep": null,
             "bos": null,
@@ -9549,10 +9535,10 @@
           "6mo": {
             "tf": "6mo",
             "session": {
-              "high": 93.7192,
+              "high": 93.7193,
               "low": 44.6109,
-              "midpoint": 69.165,
-              "range_pts": 49.1083
+              "midpoint": 69.1651,
+              "range_pts": 49.1084
             },
             "sweep": null,
             "bos": null,
@@ -9668,15 +9654,15 @@
       "golden_spring": false,
       "golden_spring_tfs": [],
       "verdict": "HOLD",
-      "verdict_score": 4,
+      "verdict_score": 5,
       "verdict_max": 8,
-      "verdict_pct": 50,
+      "verdict_pct": 62,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": true,
         "options_bullish": false,
-        "price_below_maxpain": false,
+        "price_below_maxpain": true,
         "above_pivot": false,
         "balance_sheet_ok": false,
         "analyst_buy": null,
@@ -9698,9 +9684,37 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "3M:HH/HL 3M:BOS D:HH/HL H4:HH/HL \u00b7 RSI 65.02 \u00b7 Seasonal +0.7%",
+      "verdict_notes": "3M:HH/HL 3M:BOS D:HH/HL H4:HH/HL \u00b7 RSI 65.02 \u00b7 P/C 0.77 \u00b7 MaxPain $510.00 \u00b7 Call wall $525 (2026-06-12) \u00b7 Seasonal +0.7%",
       "entry_note": "",
-      "options_flow": {},
+      "options_flow": {
+        "total_call_oi": 19193,
+        "total_put_oi": 14694,
+        "pc_ratio": 0.77,
+        "max_pain": 510.0,
+        "top_call_wall": 525.0,
+        "top_call_oi": 4045,
+        "top_put_wall": 485.0,
+        "top_put_oi": 1759,
+        "expiry": "2026-06-12",
+        "call_walls_by_expiry": {
+          "2026-06-12": {
+            "strike": 525.0,
+            "oi": 4045
+          },
+          "2026-06-18": {
+            "strike": 535.0,
+            "oi": 3311
+          },
+          "2026-06-26": {
+            "strike": 540.0,
+            "oi": 1552
+          },
+          "2026-06-30": {
+            "strike": 590.0,
+            "oi": 2223
+          }
+        }
+      },
       "best_option": {},
       "value_option": {},
       "pivots": {},
@@ -9712,14 +9726,40 @@
       },
       "signals_by_tf": {
         "HH/HL": [
+          "Y",
+          "6M",
           "3M",
+          "M",
           "D",
           "H4",
           "H3",
           "H2"
         ],
         "BOS \u2191": [
-          "3M"
+          "Y",
+          "6M",
+          "3M",
+          "M",
+          "W"
+        ],
+        "Inv. H&S": [
+          "Y",
+          "M",
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "FVG": [
+          "W"
         ],
         "Breaker": [
           "D",
@@ -9749,19 +9789,6 @@
           "D",
           "H4"
         ],
-        "Inv. H&S": [
-          "D",
-          "H4",
-          "H3",
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
         "Demand Zone": [
           "H4",
           "45m",
@@ -9776,13 +9803,151 @@
           "30m"
         ]
       },
+      "bear_signals_by_tf": {
+        "Supply Grab": [
+          "3M"
+        ],
+        "Supply Zone": [
+          "D",
+          "H3",
+          "H2",
+          "H1",
+          "30m",
+          "15m"
+        ],
+        "BOS \u2193": [
+          "H4",
+          "45m"
+        ],
+        "Bear FVG": [
+          "H4",
+          "H3",
+          "H2",
+          "45m",
+          "5m",
+          "3m"
+        ],
+        "Bear Breaker": [
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m"
+        ],
+        "Desc. Trendline": [
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "H&S": [
+          "H4",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "Bear Order Block": [
+          "H3",
+          "H2",
+          "45m"
+        ],
+        "LH/LL": [
+          "H1",
+          "45m"
+        ],
+        "Bearish Engulf": [
+          "5m",
+          "3m"
+        ],
+        "Bear Displacement": [
+          "1m"
+        ]
+      },
       "short_volume": {},
       "gex": {},
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "E",
       "wyckoff_conviction": 6,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase E (markup/markdown underway) \u00b7 conviction 6/10"
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase E (markup/markdown underway) \u00b7 conviction 6/10",
+      "wyckoff_by_tf": {
+        "Reaccumulation": [
+          "Y",
+          "6M",
+          "3M",
+          "M",
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "30m"
+        ],
+        "Distribution": [
+          "H1"
+        ]
+      },
+      "wyckoff_laws": {
+        "supply_demand": {
+          "active": true,
+          "tfs": [
+            "Y",
+            "6M",
+            "3M",
+            "M",
+            "W",
+            "D",
+            "H4",
+            "H3",
+            "H2",
+            "45m",
+            "5m",
+            "3m",
+            "1m"
+          ],
+          "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
+        },
+        "cause_effect": {
+          "active": true,
+          "tfs": [
+            "Y",
+            "6M",
+            "3M",
+            "M",
+            "W",
+            "D",
+            "H4",
+            "H3",
+            "H2",
+            "H1",
+            "45m",
+            "30m",
+            "15m",
+            "5m",
+            "3m",
+            "1m"
+          ],
+          "note": "Accumulation cause built in the range \u2192 projecting a markup target higher"
+        },
+        "effort_result": {
+          "active": false,
+          "tfs": [],
+          "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
+        }
+      }
     },
     {
       "ticker": "SMCI",
@@ -12289,9 +12454,17 @@
       ],
       "bear_signals": [
         "Desc. Trendline",
-        "H&S"
+        "H&S",
+        "Supply Grab",
+        "Bear Breaker",
+        "Bear Order Block",
+        "Upthrust / UTAD",
+        "Supply Zone",
+        "Bear FVG",
+        "LH/LL",
+        "Bear Railway"
       ],
-      "tech_summary": "3M: HH/HL uptrend, BOS confirmed \u00b7 5m: HH/HL uptrend, BOS confirmed \u00b7 3m: HH/HL uptrend, BOS confirmed",
+      "tech_summary": "6M: HH/HL uptrend, BOS confirmed \u00b7 3M: HH/HL uptrend, BOS confirmed \u00b7 M: HH/HL uptrend, inv. H&S",
       "fundamentals": {
         "w52_high": 154.08,
         "w52_low": 65.99,
@@ -12301,8 +12474,8 @@
       },
       "intrinsic_value": {},
       "tv_ticker": "USO",
-      "session": "MIDDAY",
-      "timestamp": "2026-06-07T12:10:22.409217",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-06-07T15:19:42.236402",
       "ict": {
         "by_tf": {
           "1m": {
@@ -12724,14 +12897,14 @@
       "golden_spring": false,
       "golden_spring_tfs": [],
       "verdict": "HOLD",
-      "verdict_score": 4,
+      "verdict_score": 5,
       "verdict_max": 8,
-      "verdict_pct": 50,
+      "verdict_pct": 62,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": true,
-        "options_bullish": false,
+        "options_bullish": true,
         "price_below_maxpain": false,
         "above_pivot": false,
         "balance_sheet_ok": false,
@@ -12740,40 +12913,54 @@
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 1,
+      "bear_score": 2,
       "bear_score_max": 7,
-      "bear_score_pct": 14,
+      "bear_score_pct": 29,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
         "rsi_overbought": false,
         "options_bearish": false,
-        "price_above_maxpain": false,
+        "price_above_maxpain": true,
         "below_pivot": false,
         "analyst_sell": null,
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "3M:HH/HL 3M:BOS 5m:HH/HL 5m:BOS \u00b7 RSI 34.23 \u00b7 Seasonal +3.4%",
+      "verdict_notes": "3M:HH/HL 3M:BOS 5m:HH/HL 5m:BOS \u00b7 RSI 34.23 \u00b7 P/C 0.45 \u00b7 MaxPain $131.00 \u00b7 Call wall $155 (2026-06-10) \u00b7 Seasonal +3.4%",
       "entry_note": "",
-      "options_flow": {},
-      "best_option": {
-        "strike": 137.0,
-        "expiry": "2026-07-10",
-        "dte": 33,
-        "ask": 8.1,
-        "bid": 7.1,
-        "cost": 810.0,
-        "open_interest": 94,
-        "volume": 114,
-        "iv": 57.6,
-        "breakeven": 145.1,
-        "delta": 0.477,
-        "gamma": 0.0173,
-        "theta": -0.147,
-        "vega": 0.159
+      "options_flow": {
+        "total_call_oi": 17684,
+        "total_put_oi": 7953,
+        "pc_ratio": 0.45,
+        "max_pain": 131.0,
+        "top_call_wall": 155.0,
+        "top_call_oi": 6570,
+        "top_put_wall": 130.0,
+        "top_put_oi": 1826,
+        "expiry": "2026-06-10",
+        "call_walls_by_expiry": {
+          "2026-06-10": {
+            "strike": 155.0,
+            "oi": 6570
+          },
+          "2026-06-12": {
+            "strike": 200.0,
+            "oi": 4499
+          },
+          "2026-06-17": {
+            "strike": 137.0,
+            "oi": 1039
+          },
+          "2026-06-18": {
+            "strike": 157.0,
+            "oi": 16621
+          }
+        }
       },
+      "best_option": {},
       "value_option": {
+        "type": "call",
         "strike": 95.0,
         "expiry": "2028-03-17",
         "dte": 649,
@@ -12798,33 +12985,85 @@
       },
       "signals_by_tf": {
         "HH/HL": [
+          "6M",
           "3M",
+          "M",
+          "W",
+          "15m",
           "5m",
-          "3m"
+          "3m",
+          "1m"
         ],
         "BOS \u2191": [
+          "6M",
           "3M",
           "5m",
-          "3m"
+          "3m",
+          "1m"
         ],
         "Displacement": [
+          "6M",
           "3M"
         ],
         "Inv. H&S": [
           "3M",
+          "M",
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
           "5m",
-          "3m"
+          "3m",
+          "1m"
         ],
         "Engulfing": [
-          "3M"
+          "3M",
+          "H2"
+        ],
+        "Breaker": [
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m"
         ],
         "Demand Zone": [
+          "W",
+          "H4",
+          "45m",
           "5m",
-          "3m"
+          "3m",
+          "1m"
         ],
         "Trendline": [
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
           "5m",
-          "3m"
+          "3m",
+          "1m"
+        ],
+        "Liq. Grab": [
+          "H4"
+        ],
+        "Wyckoff Spring": [
+          "H3",
+          "1m"
         ],
         "Morning Star": [
           "5m",
@@ -12835,13 +13074,156 @@
           "3m"
         ]
       },
+      "bear_signals_by_tf": {
+        "Desc. Trendline": [
+          "Y",
+          "6M",
+          "3M",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "H&S": [
+          "3M",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "Supply Grab": [
+          "M",
+          "H1"
+        ],
+        "Bear Breaker": [
+          "W",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m"
+        ],
+        "Bear Order Block": [
+          "W",
+          "H4",
+          "H3",
+          "H2"
+        ],
+        "Upthrust / UTAD": [
+          "W"
+        ],
+        "Supply Zone": [
+          "D",
+          "H2",
+          "H1",
+          "30m",
+          "15m"
+        ],
+        "Bear FVG": [
+          "H4"
+        ],
+        "LH/LL": [
+          "H3",
+          "H2",
+          "H1",
+          "45m"
+        ],
+        "Bear Railway": [
+          "H1"
+        ]
+      },
       "short_volume": {},
       "gex": {},
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "E",
       "wyckoff_conviction": 8,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase E (markup/markdown underway) \u00b7 conviction 8/10"
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase E (markup/markdown underway) \u00b7 conviction 8/10",
+      "wyckoff_by_tf": {
+        "Reaccumulation": [
+          "6M",
+          "3M",
+          "M",
+          "W",
+          "H4",
+          "H3",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "Distribution": [
+          "H1"
+        ]
+      },
+      "wyckoff_laws": {
+        "supply_demand": {
+          "active": true,
+          "tfs": [
+            "6M",
+            "3M",
+            "M",
+            "W",
+            "H4",
+            "45m",
+            "30m",
+            "15m",
+            "5m",
+            "3m",
+            "1m"
+          ],
+          "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
+        },
+        "cause_effect": {
+          "active": true,
+          "tfs": [
+            "6M",
+            "3M",
+            "M",
+            "W",
+            "D",
+            "H4",
+            "H3",
+            "H2",
+            "H1",
+            "45m",
+            "30m",
+            "15m",
+            "5m",
+            "3m",
+            "1m"
+          ],
+          "note": "Accumulation cause built in the range \u2192 projecting a markup target higher"
+        },
+        "effort_result": {
+          "active": true,
+          "tfs": [
+            "6M",
+            "3M",
+            "H4",
+            "H2",
+            "5m",
+            "3m"
+          ],
+          "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
+        }
+      }
     },
     {
       "ticker": "TLT",
@@ -13662,11 +14044,56 @@
         "Upthrust / UTAD"
       ],
       "tech_summary": "Y: HH/HL uptrend, BOS confirmed \u00b7 6M: HH/HL uptrend, BOS confirmed \u00b7 3M: HH/HL uptrend, FVG present",
-      "fundamentals": {},
-      "intrinsic_value": {},
+      "fundamentals": {
+        "w52_high": 98.75,
+        "w52_low": 67.2,
+        "market_cap": "$179.0B",
+        "sector": "Utilities",
+        "pe_ratio": 21.8,
+        "peg_ratio": 1.89,
+        "eps": 3.94,
+        "gross_margin": 61.4,
+        "operating_margin": 30.18,
+        "profit_margin": 29.37,
+        "ebitda_margin": 50.81,
+        "roe": 10.32,
+        "roa": 2.41,
+        "debt_to_equity": 1.57,
+        "current_ratio": 0.54,
+        "price_to_book": 3.24,
+        "price_to_sales": 6.42,
+        "fcf": "-$18.5B",
+        "dividend_yield": 2.9,
+        "beta": 0.67,
+        "sharpe_ratio": 0.8,
+        "alpha": 6.47,
+        "earnings_yield": 4.84,
+        "roc": 2.41,
+        "magic_formula_grade": "F",
+        "owner_earnings": "-$18.5B",
+        "fcf_margin": -66.22,
+        "roic": 3.95,
+        "owner_earnings_yield": -10.31,
+        "share_count_change": 0.0,
+        "revenue_growth": 7.3,
+        "earnings_growth": 160.0,
+        "fcf_yield": -10.31,
+        "analyst_rating": "Buy",
+        "earnings_date": "Apr 23"
+      },
+      "intrinsic_value": {
+        "iv": 47.5,
+        "price_to_iv": 1.807,
+        "upside_pct": -44.7,
+        "discount_pct": 0,
+        "methods_used": 2,
+        "undervalued": false,
+        "ev_ebitda_iv": 23.74,
+        "pe_iv": 71.26
+      },
       "tv_ticker": "NEE",
       "session": "PRIME AFTERNOON",
-      "timestamp": "2026-06-07T14:38:52.633813",
+      "timestamp": "2026-06-07T15:19:32.056494",
       "ict": {
         "by_tf": {
           "1m": {
@@ -13922,7 +14349,7 @@
               "high": 75.9015,
               "low": 59.5016,
               "midpoint": 67.7016,
-              "range_pts": 16.3998
+              "range_pts": 16.3999
             },
             "sweep": null,
             "bos": null,
@@ -14077,26 +14504,26 @@
       "golden_entry": false,
       "golden_spring": false,
       "golden_spring_tfs": [],
-      "verdict": "AVOID",
-      "verdict_score": 3,
-      "verdict_max": 8,
-      "verdict_pct": 38,
+      "verdict": "BUY",
+      "verdict_score": 8,
+      "verdict_max": 10,
+      "verdict_pct": 80,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": true,
-        "options_bullish": false,
-        "price_below_maxpain": false,
+        "options_bullish": true,
+        "price_below_maxpain": true,
         "above_pivot": false,
-        "balance_sheet_ok": false,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "balance_sheet_ok": true,
+        "analyst_buy": true,
+        "analyst_target_upside": true,
         "seasonality_positive": false
       },
       "bear_verdict": "CLEAR",
       "bear_score": 2,
-      "bear_score_max": 7,
-      "bear_score_pct": 29,
+      "bear_score_max": 9,
+      "bear_score_pct": 22,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
@@ -14104,17 +14531,67 @@
         "options_bearish": false,
         "price_above_maxpain": false,
         "below_pivot": false,
-        "analyst_sell": null,
-        "analyst_target_downside": null,
+        "analyst_sell": false,
+        "analyst_target_downside": false,
         "seasonality_negative": true
       },
-      "verdict_notes": "H1:HH/HL \u00b7 RSI 32.41 \u00b7 Seasonal -1.9%",
+      "verdict_notes": "H1:HH/HL \u00b7 RSI 32.41 \u00b7 P/C 0.28 \u00b7 MaxPain $87.00 \u00b7 Call wall $93 (2026-06-12) \u00b7 Target $98.55 (+15%) \u00b7 Seasonal -1.9%",
       "entry_note": "",
-      "options_flow": {},
+      "options_flow": {
+        "total_call_oi": 7206,
+        "total_put_oi": 2052,
+        "pc_ratio": 0.28,
+        "max_pain": 87.0,
+        "top_call_wall": 93.0,
+        "top_call_oi": 2180,
+        "top_put_wall": 87.0,
+        "top_put_oi": 468,
+        "expiry": "2026-06-12",
+        "call_walls_by_expiry": {
+          "2026-06-12": {
+            "strike": 93.0,
+            "oi": 2180
+          },
+          "2026-06-18": {
+            "strike": 120.0,
+            "oi": 21619
+          },
+          "2026-06-26": {
+            "strike": 95.0,
+            "oi": 323
+          },
+          "2026-07-02": {
+            "strike": 91.0,
+            "oi": 298
+          }
+        }
+      },
       "best_option": {},
-      "value_option": {},
+      "value_option": {
+        "type": "call",
+        "strike": 65.0,
+        "expiry": "2028-01-21",
+        "dte": 593,
+        "ask": 26.45,
+        "bid": 24.15,
+        "cost": 2645.0,
+        "open_interest": 79,
+        "volume": 1,
+        "iv": 35.8,
+        "breakeven": 91.45,
+        "delta": 0.845,
+        "gamma": 0.0061,
+        "theta": -0.014,
+        "vega": 0.261
+      },
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 98.55,
+        "target_high": 112.0,
+        "target_low": 55.0,
+        "n_analysts": 19,
+        "rating_key": "buy"
+      },
       "seasonality": {
         "month": 6,
         "hist_avg_return_pct": -1.86,
@@ -15604,10 +16081,6 @@
         "top_put_oi": 2271,
         "expiry": "2026-06-12",
         "call_walls_by_expiry": {
-          "2026-06-12": {
-            "strike": 400.0,
-            "oi": 1207
-          },
           "2026-06-18": {
             "strike": 180.0,
             "oi": 5764
@@ -16478,6 +16951,10 @@
           "2026-06-26": {
             "strike": 290.0,
             "oi": 104
+          },
+          "2026-07-02": {
+            "strike": 350.0,
+            "oi": 201
           }
         }
       },
@@ -17338,10 +17815,6 @@
             "strike": 100.0,
             "oi": 17550
           },
-          "2026-06-26": {
-            "strike": 115.0,
-            "oi": 1818
-          },
           "2026-07-02": {
             "strike": 170.0,
             "oi": 487
@@ -18141,10 +18614,6 @@
           "2026-06-26": {
             "strike": 82.0,
             "oi": 1233
-          },
-          "2026-07-02": {
-            "strike": 84.0,
-            "oi": 505
           }
         }
       },
@@ -21591,7 +22060,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": true
       },
-      "verdict_notes": "RSI 10.59 \u00b7 Seasonal -14.4%",
+      "verdict_notes": "RSI 10.61 \u00b7 Seasonal -14.4%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -23781,11 +24250,55 @@
         "Bear Railway"
       ],
       "tech_summary": "3M: bearish engulfing \u00b7 M: breaker block resistance, at supply zone \u00b7 W: LH/LL downtrend, BOS \u2193 confirmed",
-      "fundamentals": {},
-      "intrinsic_value": {},
+      "fundamentals": {
+        "w52_high": 412.7,
+        "w52_low": 243.3,
+        "market_cap": "$91.0B",
+        "sector": "Utilities",
+        "pe_ratio": 22.1,
+        "peg_ratio": 3.74,
+        "eps": 11.52,
+        "gross_margin": 23.26,
+        "operating_margin": 21.86,
+        "profit_margin": 12.69,
+        "ebitda_margin": 26.64,
+        "roe": 16.1,
+        "roa": 4.2,
+        "debt_to_equity": 0.66,
+        "current_ratio": 1.36,
+        "price_to_book": 2.76,
+        "price_to_sales": 3.05,
+        "fcf": "-$4.5B",
+        "dividend_yield": 67.0,
+        "beta": 1.09,
+        "sharpe_ratio": -0.19,
+        "alpha": -29.13,
+        "earnings_yield": 6.98,
+        "roc": 4.2,
+        "magic_formula_grade": "F",
+        "owner_earnings": "-$4.5B",
+        "fcf_margin": -15.0,
+        "roic": 5.54,
+        "owner_earnings_yield": -4.92,
+        "share_count_change": 0.0,
+        "revenue_growth": 63.8,
+        "fcf_yield": -4.92,
+        "analyst_rating": "Strong Buy",
+        "earnings_date": "May 11"
+      },
+      "intrinsic_value": {
+        "iv": 218.77,
+        "price_to_iv": 1.165,
+        "upside_pct": -14.2,
+        "discount_pct": 0,
+        "methods_used": 2,
+        "undervalued": false,
+        "ev_ebitda_iv": 229.18,
+        "pe_iv": 208.36
+      },
       "tv_ticker": "CEG",
       "session": "PRIME AFTERNOON",
-      "timestamp": "2026-06-07T14:38:42.719809",
+      "timestamp": "2026-06-07T15:19:29.061932",
       "ict": {
         "by_tf": {
           "1m": {
@@ -24016,17 +24529,17 @@
               "high": 349.0282,
               "low": 160.2872,
               "midpoint": 254.6577,
-              "range_pts": 188.7409
+              "range_pts": 188.741
             },
             "sweep": {
               "direction": "bearish",
               "swept_level": 349.0282,
-              "depth_pts": 28.3789,
+              "depth_pts": 28.3788,
               "timestamp": "2026-01-05T00:00:00"
             },
             "bos": {
               "direction": "bearish",
-              "structure_level": 333.2151,
+              "structure_level": 333.215,
               "bos_close": 306.8215,
               "timestamp": "2026-01-12T00:00:00"
             },
@@ -24035,7 +24548,7 @@
               "top": 299.5426,
               "bottom": 292.3833,
               "midpoint": 295.9629,
-              "height": 7.1593,
+              "height": 7.1592,
               "formed_at": "2026-01-26T00:00:00"
             },
             "retrace": {
@@ -24107,17 +24620,17 @@
           "high": 349.0282,
           "low": 160.2872,
           "midpoint": 254.6577,
-          "range_pts": 188.7409
+          "range_pts": 188.741
         },
         "sweep": {
           "direction": "bearish",
           "swept_level": 349.0282,
-          "depth_pts": 28.3789,
+          "depth_pts": 28.3788,
           "timestamp": "2026-01-05T00:00:00"
         },
         "bos": {
           "direction": "bearish",
-          "structure_level": 333.2151,
+          "structure_level": 333.215,
           "bos_close": 306.8215,
           "timestamp": "2026-01-12T00:00:00"
         },
@@ -24126,7 +24639,7 @@
           "top": 299.5426,
           "bottom": 292.3833,
           "midpoint": 295.9629,
-          "height": 7.1593,
+          "height": 7.1592,
           "formed_at": "2026-01-26T00:00:00"
         },
         "retrace": {
@@ -24161,26 +24674,26 @@
       "golden_entry": false,
       "golden_spring": false,
       "golden_spring_tfs": [],
-      "verdict": "AVOID",
-      "verdict_score": 3,
-      "verdict_max": 8,
-      "verdict_pct": 38,
+      "verdict": "BUY",
+      "verdict_score": 7,
+      "verdict_max": 10,
+      "verdict_pct": 70,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": true,
         "options_bullish": false,
-        "price_below_maxpain": false,
+        "price_below_maxpain": true,
         "above_pivot": false,
-        "balance_sheet_ok": false,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "balance_sheet_ok": true,
+        "analyst_buy": true,
+        "analyst_target_upside": true,
         "seasonality_positive": false
       },
       "bear_verdict": "CLEAR",
       "bear_score": 3,
-      "bear_score_max": 7,
-      "bear_score_pct": 43,
+      "bear_score_max": 9,
+      "bear_score_pct": 33,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": true,
@@ -24188,17 +24701,67 @@
         "options_bearish": false,
         "price_above_maxpain": false,
         "below_pivot": false,
-        "analyst_sell": null,
-        "analyst_target_downside": null,
+        "analyst_sell": false,
+        "analyst_target_downside": false,
         "seasonality_negative": true
       },
-      "verdict_notes": "M:HH/HL H3:LiqGrab H2:LiqGrab 30m:Demand \u00b7 RSI 44.43 \u00b7 Seasonal -2.3%",
+      "verdict_notes": "M:HH/HL H3:LiqGrab H2:LiqGrab 30m:Demand \u00b7 RSI 44.43 \u00b7 P/C 0.67 \u00b7 MaxPain $270.00 \u00b7 Call wall $280 (2026-06-12) \u00b7 Target $367.12 (+44%) \u00b7 Seasonal -2.3%",
       "entry_note": "",
-      "options_flow": {},
-      "best_option": {},
+      "options_flow": {
+        "total_call_oi": 3400,
+        "total_put_oi": 2285,
+        "pc_ratio": 0.67,
+        "max_pain": 270.0,
+        "top_call_wall": 280.0,
+        "top_call_oi": 446,
+        "top_put_wall": 245.0,
+        "top_put_oi": 333,
+        "expiry": "2026-06-12",
+        "call_walls_by_expiry": {
+          "2026-06-12": {
+            "strike": 280.0,
+            "oi": 446
+          },
+          "2026-06-18": {
+            "strike": 350.0,
+            "oi": 3195
+          },
+          "2026-06-26": {
+            "strike": 310.0,
+            "oi": 781
+          },
+          "2026-07-02": {
+            "strike": 305.0,
+            "oi": 298
+          }
+        }
+      },
+      "best_option": {
+        "type": "put",
+        "strike": 270.0,
+        "expiry": "2026-08-21",
+        "dte": 75,
+        "ask": 33.1,
+        "bid": 31.4,
+        "cost": 3310.0,
+        "open_interest": 759,
+        "volume": 11,
+        "iv": 50.2,
+        "breakeven": 236.9,
+        "delta": -0.538,
+        "gamma": 0.0069,
+        "theta": -0.13,
+        "vega": 0.459
+      },
       "value_option": {},
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 367.12,
+        "target_high": 441.0,
+        "target_low": 310.0,
+        "n_analysts": 20,
+        "rating_key": "strong_buy"
+      },
       "seasonality": {
         "month": 6,
         "hist_avg_return_pct": -2.32,
