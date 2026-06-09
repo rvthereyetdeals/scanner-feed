@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09T05:01:34+00:00",
+  "updated_at": "2026-06-09T05:19:16+00:00",
   "trackers": {
     "gold": {
       "label": "Gold",
@@ -7,8 +7,8 @@
       "kind": "chart",
       "symbol": "GC=F",
       "tv": "OANDA:XAUUSD",
-      "price": 4353.8,
-      "change_pct": 0.41,
+      "price": 4360.1,
+      "change_pct": 0.56,
       "bias": "bearish",
       "cycle": "Distribution",
       "phase": "D",
@@ -38,15 +38,16 @@
         "low_20y": 319.3
       },
       "ict": {
-        "stage": "BOS_CONFIRMED",
+        "stage": "IFVG_FORMED",
         "alert": false,
         "direction": "bullish",
-        "primary_tf": "45m",
+        "primary_tf": "15m",
         "signals": [
           "Liq. Sweep (BULL)",
-          "BOS \u00b7 CISD"
+          "BOS \u00b7 CISD",
+          "IFVG"
         ],
-        "read": "BOS_CONFIRMED \u2014 Liq. Sweep (BULL) \u00b7 BOS \u00b7 CISD"
+        "read": "IFVG_FORMED \u2014 Liq. Sweep (BULL) \u00b7 BOS \u00b7 CISD \u00b7 IFVG"
       },
       "confluence": {
         "Y": {
@@ -159,8 +160,8 @@
         },
         "15m": {
           "pattern_bull": true,
-          "engulf_bull": false,
-          "golden_bull": false,
+          "engulf_bull": true,
+          "golden_bull": true,
           "pattern_bear": true,
           "engulf_bear": false,
           "golden_bear": false,
@@ -195,7 +196,8 @@
         }
       },
       "golden_tfs": [
-        "H2"
+        "H2",
+        "15m"
       ],
       "week_candles": [
         {
@@ -236,18 +238,10 @@
           "o": 4354.7,
           "h": 4366.5,
           "l": 4336.0,
-          "c": 4353.8
+          "c": 4360.1
         }
       ],
       "candles_15m": [
-        {
-          "date": "2026-06-08 18:30",
-          "label": "18:30",
-          "o": 4349.3,
-          "h": 4350.7,
-          "l": 4348.3,
-          "c": 4350.7
-        },
         {
           "date": "2026-06-08 18:45",
           "label": "18:45",
@@ -380,9 +374,17 @@
           "date": "2026-06-09 00:45",
           "label": "00:45",
           "o": 4352.3,
-          "h": 4356.0,
-          "l": 4351.6,
-          "c": 4355.0
+          "h": 4357.3,
+          "l": 4350.9,
+          "c": 4356.5
+        },
+        {
+          "date": "2026-06-09 01:00",
+          "label": "01:00",
+          "o": 4356.9,
+          "h": 4361.6,
+          "l": 4356.7,
+          "c": 4359.5
         }
       ],
       "day_moves": [
@@ -471,7 +473,7 @@
           "session": "2026-06-08"
         }
       ],
-      "read": "Distribution \u00b7 Phase D \u2014 ribbon bearish (price below the cloud). Closed \u25b20.41% at 4353.80. Watching 4336 support / 4560 resistance. Weekly bias bullish.",
+      "read": "Distribution \u00b7 Phase D \u2014 ribbon bearish (price below the cloud). Closed \u25b20.56% at 4360.10. Watching 4336 support / 4560 resistance. Weekly bias bullish.",
       "journal": [
         {
           "date": "2026-06-08",
@@ -484,12 +486,12 @@
         },
         {
           "date": "2026-06-09",
-          "close": 4353.8,
-          "change_pct": 0.41,
+          "close": 4360.1,
+          "change_pct": 0.56,
           "bias": "bearish",
           "cycle": "Distribution",
           "phase": "D",
-          "note": "Distribution \u00b7 Phase D \u2014 ribbon bearish (price below the cloud). Closed \u25b20.41% at 4353.80. Watching 4336 support / 4560 resistance. Weekly bias bullish."
+          "note": "Distribution \u00b7 Phase D \u2014 ribbon bearish (price below the cloud). Closed \u25b20.56% at 4360.10. Watching 4336 support / 4560 resistance. Weekly bias bullish."
         }
       ]
     },
@@ -499,8 +501,8 @@
       "kind": "chart",
       "symbol": "ES=F",
       "tv": "SP:SPX",
-      "price": 7435.75,
-      "change_pct": 0.27,
+      "price": 7435.25,
+      "change_pct": 0.26,
       "bias": "bullish",
       "cycle": "Reaccumulation",
       "phase": "E",
@@ -512,7 +514,7 @@
         "resistance": 7525.5
       },
       "liquidity": {
-        "hod": 7437.25,
+        "hod": 7437.5,
         "lod": 7390.25,
         "how": 7476.75,
         "low": 7355.5,
@@ -530,16 +532,14 @@
         "low_20y": 729.5
       },
       "ict": {
-        "stage": "IFVG_FORMED",
+        "stage": "SWEPT",
         "alert": false,
         "direction": "bearish",
-        "primary_tf": "15m",
+        "primary_tf": "4h",
         "signals": [
-          "Liq. Sweep (BEAR)",
-          "BOS \u00b7 CISD",
-          "IFVG"
+          "Liq. Sweep (BEAR)"
         ],
-        "read": "IFVG_FORMED \u2014 Liq. Sweep (BEAR) \u00b7 BOS \u00b7 CISD \u00b7 IFVG"
+        "read": "SWEPT \u2014 Liq. Sweep (BEAR)"
       },
       "confluence": {
         "Y": {
@@ -728,20 +728,12 @@
           "date": "2026-06-09 00:00",
           "label": "06-09",
           "o": 7412.75,
-          "h": 7437.25,
+          "h": 7437.5,
           "l": 7390.25,
-          "c": 7435.75
+          "c": 7435.25
         }
       ],
       "candles_15m": [
-        {
-          "date": "2026-06-08 18:30",
-          "label": "18:30",
-          "o": 7396.25,
-          "h": 7404.75,
-          "l": 7396.25,
-          "c": 7403.5
-        },
         {
           "date": "2026-06-08 18:45",
           "label": "18:45",
@@ -875,8 +867,16 @@
           "label": "00:45",
           "o": 7435.25,
           "h": 7436.75,
-          "l": 7434.5,
-          "c": 7435.75
+          "l": 7433.25,
+          "c": 7434.0
+        },
+        {
+          "date": "2026-06-09 01:00",
+          "label": "01:00",
+          "o": 7434.25,
+          "h": 7437.5,
+          "l": 7433.0,
+          "c": 7434.5
         }
       ],
       "day_moves": [
@@ -965,7 +965,7 @@
           "session": "2026-06-08"
         }
       ],
-      "read": "Reaccumulation \u00b7 Phase E \u2014 ribbon just flipped bearish (teal\u2192red). Closed \u25b20.27% at 7435.75. Watching 7400 support / 7526 resistance. Weekly bias bullish.",
+      "read": "Reaccumulation \u00b7 Phase E \u2014 ribbon just flipped bearish (teal\u2192red). Closed \u25b20.26% at 7435.25. Watching 7400 support / 7526 resistance. Weekly bias bullish.",
       "journal": [
         {
           "date": "2026-06-08",
@@ -978,12 +978,12 @@
         },
         {
           "date": "2026-06-09",
-          "close": 7435.75,
-          "change_pct": 0.27,
+          "close": 7435.25,
+          "change_pct": 0.26,
           "bias": "bullish",
           "cycle": "Reaccumulation",
           "phase": "E",
-          "note": "Reaccumulation \u00b7 Phase E \u2014 ribbon just flipped bearish (teal\u2192red). Closed \u25b20.27% at 7435.75. Watching 7400 support / 7526 resistance. Weekly bias bullish."
+          "note": "Reaccumulation \u00b7 Phase E \u2014 ribbon just flipped bearish (teal\u2192red). Closed \u25b20.26% at 7435.25. Watching 7400 support / 7526 resistance. Weekly bias bullish."
         }
       ]
     },
@@ -993,8 +993,8 @@
       "kind": "chart",
       "symbol": "NQ=F",
       "tv": "NASDAQ:NDX",
-      "price": 29615.25,
-      "change_pct": 0.54,
+      "price": 29605.5,
+      "change_pct": 0.51,
       "bias": "bullish",
       "cycle": "Reaccumulation",
       "phase": "E",
@@ -1219,18 +1219,10 @@
           "o": 29435.0,
           "h": 29631.25,
           "l": 29303.5,
-          "c": 29615.25
+          "c": 29605.5
         }
       ],
       "candles_15m": [
-        {
-          "date": "2026-06-08 18:30",
-          "label": "18:30",
-          "o": 29332.25,
-          "h": 29376.75,
-          "l": 29332.25,
-          "c": 29370.0
-        },
         {
           "date": "2026-06-08 18:45",
           "label": "18:45",
@@ -1364,8 +1356,16 @@
           "label": "00:45",
           "o": 29617.5,
           "h": 29624.5,
-          "l": 29608.75,
-          "c": 29614.5
+          "l": 29600.75,
+          "c": 29603.25
+        },
+        {
+          "date": "2026-06-09 01:00",
+          "label": "01:00",
+          "o": 29604.5,
+          "h": 29626.0,
+          "l": 29592.5,
+          "c": 29606.0
         }
       ],
       "day_moves": [
@@ -1454,7 +1454,7 @@
           "session": "2026-06-08"
         }
       ],
-      "read": "Reaccumulation \u00b7 Phase E \u2014 ribbon just flipped bearish (teal\u2192red). Closed \u25b20.54% at 29615.25. Watching 29026 support / 29688 resistance. Weekly bias bullish.",
+      "read": "Reaccumulation \u00b7 Phase E \u2014 ribbon just flipped bearish (teal\u2192red). Closed \u25b20.51% at 29605.50. Watching 29026 support / 29688 resistance. Weekly bias bullish.",
       "journal": [
         {
           "date": "2026-06-08",
@@ -1467,12 +1467,12 @@
         },
         {
           "date": "2026-06-09",
-          "close": 29615.25,
-          "change_pct": 0.54,
+          "close": 29605.5,
+          "change_pct": 0.51,
           "bias": "bullish",
           "cycle": "Reaccumulation",
           "phase": "E",
-          "note": "Reaccumulation \u00b7 Phase E \u2014 ribbon just flipped bearish (teal\u2192red). Closed \u25b20.54% at 29615.25. Watching 29026 support / 29688 resistance. Weekly bias bullish."
+          "note": "Reaccumulation \u00b7 Phase E \u2014 ribbon just flipped bearish (teal\u2192red). Closed \u25b20.51% at 29605.50. Watching 29026 support / 29688 resistance. Weekly bias bullish."
         }
       ]
     },
