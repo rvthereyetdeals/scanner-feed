@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09T03:50:20+00:00",
+  "updated_at": "2026-06-09T04:07:38+00:00",
   "trackers": {
     "gold": {
       "label": "Gold",
@@ -7,8 +7,8 @@
       "kind": "chart",
       "symbol": "GC=F",
       "tv": "OANDA:XAUUSD",
-      "price": 4359.7,
-      "change_pct": 0.52,
+      "price": 4335.9,
+      "change_pct": -0.03,
       "bias": "bearish",
       "cycle": "Distribution",
       "phase": "D",
@@ -16,12 +16,12 @@
       "direction": "short",
       "weekly_bias": "bullish",
       "levels": {
-        "support": 4337.1,
+        "support": 4335.9,
         "resistance": 4560.5
       },
       "liquidity": {
-        "hod": 4366.5,
-        "lod": 4336.0,
+        "hod": 4340.9,
+        "lod": 4284.6,
         "how": 4340.9,
         "low": 4284.6,
         "hom": 4541.4,
@@ -38,16 +38,17 @@
         "low_20y": 319.3
       },
       "ict": {
-        "stage": "IFVG_FORMED",
-        "alert": false,
-        "direction": "bearish",
-        "primary_tf": "1m",
+        "stage": "ENTRY_ZONE",
+        "alert": true,
+        "direction": "bullish",
+        "primary_tf": "15m",
         "signals": [
-          "Liq. Sweep (BEAR)",
+          "Liq. Sweep (BULL)",
           "BOS \u00b7 CISD",
-          "IFVG"
+          "IFVG",
+          "IFVG Entry Zone \ud83c\udfaf"
         ],
-        "read": "IFVG_FORMED \u2014 Liq. Sweep (BEAR) \u00b7 BOS \u00b7 CISD \u00b7 IFVG"
+        "read": "ENTRY_ZONE \u2014 Liq. Sweep (BULL) \u00b7 BOS \u00b7 CISD \u00b7 IFVG \u00b7 IFVG Entry Zone \ud83c\udfaf"
       },
       "confluence": {
         "Y": {
@@ -103,9 +104,66 @@
           "engulf_bear": false,
           "golden_bear": false,
           "pattern": "Head & shoulders"
+        },
+        "H2": {
+          "pattern_bull": true,
+          "engulf_bull": true,
+          "golden_bull": true,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "H1": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "30m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "15m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": true,
+          "golden_bear": true,
+          "pattern": "Inverse H&S"
+        },
+        "5m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "1m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
         }
       },
-      "golden_tfs": [],
+      "golden_tfs": [
+        "H2",
+        "15m"
+      ],
       "week_candles": [
         {
           "date": "2026-06-02",
@@ -137,13 +195,13 @@
         },
         {
           "date": "2026-06-08",
-          "o": 4354.7,
-          "h": 4366.5,
-          "l": 4336.0,
-          "c": 4359.7
+          "o": 4324.2,
+          "h": 4340.9,
+          "l": 4284.6,
+          "c": 4335.9
         }
       ],
-      "read": "Distribution \u00b7 Phase D \u2014 ribbon bearish (price below the cloud). Closed \u25b20.52% at 4359.70. Watching 4337 support / 4560 resistance. Weekly bias bullish.",
+      "read": "Distribution \u00b7 Phase D \u2014 ribbon bearish (price below the cloud). Closed \u25bc0.03% at 4335.90. Watching 4336 support / 4560 resistance. Weekly bias bullish.",
       "journal": [
         {
           "date": "2026-06-08",
@@ -153,6 +211,15 @@
           "cycle": "Distribution",
           "phase": "D",
           "note": "Distribution \u00b7 Phase D \u2014 ribbon bearish (price below the cloud). Closed \u25b20.52% at 4359.70. Watching 4337 support / 4560 resistance. Weekly bias bullish."
+        },
+        {
+          "date": "2026-06-09",
+          "close": 4335.9,
+          "change_pct": -0.03,
+          "bias": "bearish",
+          "cycle": "Distribution",
+          "phase": "D",
+          "note": "Distribution \u00b7 Phase D \u2014 ribbon bearish (price below the cloud). Closed \u25bc0.03% at 4335.90. Watching 4336 support / 4560 resistance. Weekly bias bullish."
         }
       ]
     },
@@ -162,8 +229,8 @@
       "kind": "chart",
       "symbol": "ES=F",
       "tv": "SP:SPX",
-      "price": 7429.75,
-      "change_pct": 0.4,
+      "price": 7416.0,
+      "change_pct": 0.21,
       "bias": "bullish",
       "cycle": "Reaccumulation",
       "phase": "E",
@@ -175,8 +242,8 @@
         "resistance": 7525.5
       },
       "liquidity": {
-        "hod": 7430.25,
-        "lod": 7390.25,
+        "hod": 7476.75,
+        "lod": 7355.5,
         "how": 7476.75,
         "low": 7355.5,
         "hom": 7632.25,
@@ -195,15 +262,15 @@
       "ict": {
         "stage": "ENTRY_ZONE",
         "alert": true,
-        "direction": "bearish",
-        "primary_tf": "3h",
+        "direction": "bullish",
+        "primary_tf": "15m",
         "signals": [
-          "Liq. Sweep (BEAR)",
+          "Liq. Sweep (BULL)",
           "BOS \u00b7 CISD",
           "IFVG",
           "IFVG Entry Zone \ud83c\udfaf"
         ],
-        "read": "ENTRY_ZONE \u2014 Liq. Sweep (BEAR) \u00b7 BOS \u00b7 CISD \u00b7 IFVG \u00b7 IFVG Entry Zone \ud83c\udfaf"
+        "read": "ENTRY_ZONE \u2014 Liq. Sweep (BULL) \u00b7 BOS \u00b7 CISD \u00b7 IFVG \u00b7 IFVG Entry Zone \ud83c\udfaf"
       },
       "confluence": {
         "Y": {
@@ -259,9 +326,65 @@
           "engulf_bear": false,
           "golden_bear": false,
           "pattern": "Inverse H&S"
+        },
+        "H2": {
+          "pattern_bull": true,
+          "engulf_bull": true,
+          "golden_bull": true,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "H1": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "30m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "15m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "5m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "1m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
         }
       },
-      "golden_tfs": [],
+      "golden_tfs": [
+        "H2"
+      ],
       "week_candles": [
         {
           "date": "2026-06-02",
@@ -293,13 +416,13 @@
         },
         {
           "date": "2026-06-08",
-          "o": 7412.75,
-          "h": 7430.25,
-          "l": 7390.25,
-          "c": 7429.75
+          "o": 7368.0,
+          "h": 7476.75,
+          "l": 7355.5,
+          "c": 7416.0
         }
       ],
-      "read": "Reaccumulation \u00b7 Phase E \u2014 ribbon bearish (price below the cloud). Closed \u25b20.40% at 7429.75. Watching 7400 support / 7526 resistance. Weekly bias bullish.",
+      "read": "Reaccumulation \u00b7 Phase E \u2014 ribbon bearish (price below the cloud). Closed \u25b20.21% at 7416.00. Watching 7400 support / 7526 resistance. Weekly bias bullish.",
       "journal": [
         {
           "date": "2026-06-08",
@@ -309,6 +432,15 @@
           "cycle": "Reaccumulation",
           "phase": "E",
           "note": "Reaccumulation \u00b7 Phase E \u2014 ribbon bearish (price below the cloud). Closed \u25b20.40% at 7429.75. Watching 7400 support / 7526 resistance. Weekly bias bullish."
+        },
+        {
+          "date": "2026-06-09",
+          "close": 7416.0,
+          "change_pct": 0.21,
+          "bias": "bullish",
+          "cycle": "Reaccumulation",
+          "phase": "E",
+          "note": "Reaccumulation \u00b7 Phase E \u2014 ribbon bearish (price below the cloud). Closed \u25b20.21% at 7416.00. Watching 7400 support / 7526 resistance. Weekly bias bullish."
         }
       ]
     },
@@ -318,8 +450,8 @@
       "kind": "chart",
       "symbol": "NQ=F",
       "tv": "NASDAQ:NDX",
-      "price": 29581.75,
-      "change_pct": 1.91,
+      "price": 29454.75,
+      "change_pct": 1.48,
       "bias": "bullish",
       "cycle": "Reaccumulation",
       "phase": "E",
@@ -331,8 +463,8 @@
         "resistance": 29687.75
       },
       "liquidity": {
-        "hod": 29582.5,
-        "lod": 29303.5,
+        "hod": 29743.0,
+        "lod": 28822.25,
         "how": 29743.0,
         "low": 28822.25,
         "hom": 30807.75,
@@ -349,14 +481,17 @@
         "low_20y": 945.0
       },
       "ict": {
-        "stage": "SWEPT",
-        "alert": false,
+        "stage": "ENTRY_ZONE",
+        "alert": true,
         "direction": "bullish",
-        "primary_tf": "4h",
+        "primary_tf": "15m",
         "signals": [
-          "Liq. Sweep (BULL)"
+          "Liq. Sweep (BULL)",
+          "BOS \u00b7 CISD",
+          "IFVG",
+          "IFVG Entry Zone \ud83c\udfaf"
         ],
-        "read": "SWEPT \u2014 Liq. Sweep (BULL)"
+        "read": "ENTRY_ZONE \u2014 Liq. Sweep (BULL) \u00b7 BOS \u00b7 CISD \u00b7 IFVG \u00b7 IFVG Entry Zone \ud83c\udfaf"
       },
       "confluence": {
         "Y": {
@@ -412,6 +547,60 @@
           "engulf_bear": false,
           "golden_bear": false,
           "pattern": "Inverse H&S"
+        },
+        "H2": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "H1": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "30m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "15m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "5m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "1m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
         }
       },
       "golden_tfs": [],
@@ -446,13 +635,13 @@
         },
         {
           "date": "2026-06-08",
-          "o": 29435.0,
-          "h": 29582.5,
-          "l": 29303.5,
-          "c": 29581.75
+          "o": 28844.5,
+          "h": 29743.0,
+          "l": 28822.25,
+          "c": 29454.75
         }
       ],
-      "read": "Reaccumulation \u00b7 Phase E \u2014 ribbon bearish (price below the cloud). Closed \u25b21.91% at 29581.75. Watching 29026 support / 29688 resistance. Weekly bias bullish.",
+      "read": "Reaccumulation \u00b7 Phase E \u2014 ribbon bearish (price below the cloud). Closed \u25b21.48% at 29454.75. Watching 29026 support / 29688 resistance. Weekly bias bullish.",
       "journal": [
         {
           "date": "2026-06-08",
@@ -462,6 +651,15 @@
           "cycle": "Reaccumulation",
           "phase": "E",
           "note": "Reaccumulation \u00b7 Phase E \u2014 ribbon bearish (price below the cloud). Closed \u25b21.91% at 29581.75. Watching 29026 support / 29688 resistance. Weekly bias bullish."
+        },
+        {
+          "date": "2026-06-09",
+          "close": 29454.75,
+          "change_pct": 1.48,
+          "bias": "bullish",
+          "cycle": "Reaccumulation",
+          "phase": "E",
+          "note": "Reaccumulation \u00b7 Phase E \u2014 ribbon bearish (price below the cloud). Closed \u25b21.48% at 29454.75. Watching 29026 support / 29688 resistance. Weekly bias bullish."
         }
       ]
     },
@@ -485,9 +683,9 @@
       },
       "liquidity": {
         "hod": 249.42,
-        "lod": 243.4,
+        "lod": 243.36,
         "how": 249.42,
-        "low": 243.4,
+        "low": 243.36,
         "hom": 266.63,
         "lom": 243.36,
         "high_10y": 278.56,
@@ -502,17 +700,16 @@
         "low_20y": 1.29
       },
       "ict": {
-        "stage": "APPROACHING",
+        "stage": "IFVG_FORMED",
         "alert": false,
         "direction": "bearish",
-        "primary_tf": "3h",
+        "primary_tf": "1wk",
         "signals": [
           "Liq. Sweep (BEAR)",
           "BOS \u00b7 CISD",
-          "IFVG",
-          "Approaching IFVG"
+          "IFVG"
         ],
-        "read": "APPROACHING \u2014 Liq. Sweep (BEAR) \u00b7 BOS \u00b7 CISD \u00b7 IFVG \u00b7 Approaching IFVG"
+        "read": "IFVG_FORMED \u2014 Liq. Sweep (BEAR) \u00b7 BOS \u00b7 CISD \u00b7 IFVG"
       },
       "confluence": {
         "Y": {
@@ -568,6 +765,60 @@
           "engulf_bear": false,
           "golden_bear": false,
           "pattern": "Inverse H&S"
+        },
+        "H2": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "H1": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "30m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "15m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "5m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
+        },
+        "1m": {
+          "pattern_bull": true,
+          "engulf_bull": false,
+          "golden_bull": false,
+          "pattern_bear": true,
+          "engulf_bear": false,
+          "golden_bear": false,
+          "pattern": "Inverse H&S"
         }
       },
       "golden_tfs": [
@@ -604,9 +855,9 @@
         },
         {
           "date": "2026-06-08",
-          "o": 246.61,
+          "o": 246.68,
           "h": 249.42,
-          "l": 243.4,
+          "l": 243.36,
           "c": 245.22
         }
       ],
@@ -614,6 +865,15 @@
       "journal": [
         {
           "date": "2026-06-08",
+          "close": 245.22,
+          "change_pct": -0.33,
+          "bias": "bullish",
+          "cycle": "Reaccumulation",
+          "phase": "E",
+          "note": "Reaccumulation \u00b7 Phase E \u2014 ribbon just flipped bearish (teal\u2192red). Closed \u25bc0.33% at 245.22. Watching 208 support / 264 resistance. Weekly bias bullish."
+        },
+        {
+          "date": "2026-06-09",
           "close": 245.22,
           "change_pct": -0.33,
           "bias": "bullish",
@@ -638,6 +898,15 @@
       "journal": [
         {
           "date": "2026-06-08",
+          "close": null,
+          "change_pct": null,
+          "bias": "watch",
+          "cycle": null,
+          "phase": null,
+          "note": "World's most valuable private company. No public chart \u2014 we track valuation marks, Starlink-spinoff IPO chatter, and launch cadence. A Starlink listing would be the most anticipated IPO of the decade."
+        },
+        {
+          "date": "2026-06-09",
           "close": null,
           "change_pct": null,
           "bias": "watch",
