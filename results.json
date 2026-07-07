@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-07-07T01:36:55.234267+00:00",
+  "last_scan": "2026-07-07T01:39:01.298169+00:00",
   "setups": [
     {
       "ticker": "HE=F",
@@ -8181,7 +8181,7 @@
     },
     {
       "ticker": "ES=F",
-      "price": 7589.0,
+      "price": 7581.75,
       "primary_tfs": [
         "3M",
         "M",
@@ -8203,9 +8203,7 @@
       "signals": [
         "Trendline Bounce",
         "Inverted H&S",
-        "Order Block",
-        "Morning Star",
-        "Railway Tracks"
+        "Order Block"
       ],
       "smc_signals": [
         "HH/HL",
@@ -8216,8 +8214,6 @@
         "Order Block",
         "Demand Zone",
         "Liq. Grab",
-        "Morning Star",
-        "Railway",
         "Liq. Sweep (BEAR)"
       ],
       "bear_signals": [
@@ -8229,9 +8225,10 @@
         "H&S",
         "Bearish Engulf",
         "Evening Star",
+        "Bear Railway",
         "Upthrust / UTAD",
-        "BOS \u2193",
         "LH/LL",
+        "BOS \u2193",
         "Bear FVG"
       ],
       "tech_summary": "Y: BOS confirmed \u00b7 6M: HH/HL uptrend, BOS confirmed \u00b7 3M: HH/HL uptrend, FVG present",
@@ -8244,14 +8241,9 @@
         "t2": 7919.625,
         "basis": "D Order Block",
         "direction": "long",
-        "neckline": 7590.75
+        "neckline": 7579.25
       },
-      "fundamentals": {
-        "company_name": "E-Mini S&P 500 Sep 26",
-        "w52_high": 7632.25,
-        "w52_low": 6239.5,
-        "sharpe_ratio": 1.26
-      },
+      "fundamentals": {},
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -8263,7 +8255,7 @@
       },
       "tv_ticker": "CME_MINI:ES1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-07-06T20:16:00.021892",
+      "timestamp": "2026-07-06T21:36:52.547299",
       "ict": {
         "by_tf": {
           "1m": {
@@ -8446,8 +8438,8 @@
             "sweep": {
               "direction": "bearish",
               "swept_level": 7589.0,
-              "depth_pts": 12.25,
-              "timestamp": "2026-07-06T16:00:00-04:00"
+              "depth_pts": 6.0,
+              "timestamp": "2026-07-06T20:00:00-04:00"
             },
             "bos": null,
             "ifvg": null,
@@ -8577,8 +8569,8 @@
         "sweep": {
           "direction": "bearish",
           "swept_level": 7589.0,
-          "depth_pts": 12.25,
-          "timestamp": "2026-07-06T16:00:00-04:00"
+          "depth_pts": 6.0,
+          "timestamp": "2026-07-06T20:00:00-04:00"
         },
         "bos": null,
         "ifvg": null,
@@ -8601,13 +8593,13 @@
       "golden_reversal_short_tfs": {
         "htf": [],
         "ltf": [
-          "15m"
+          "30m"
         ]
       },
-      "tech_conviction": 4,
+      "tech_conviction": 2,
       "tech_pillars": {
         "line_pattern": true,
-        "candle": true,
+        "candle": false,
         "volume": false,
         "correlation": false,
         "time_of_day": false
@@ -8682,7 +8674,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "3M:HH/HL 3M:FVG M:HH/HL H4:HH/HL \u00b7 RSI 60.55 \u00b7 Seasonal +4.2%",
+      "verdict_notes": "3M:HH/HL 3M:FVG M:HH/HL H4:HH/HL \u00b7 RSI 60.01 \u00b7 Seasonal +4.2%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -8692,7 +8684,7 @@
       "analyst": {},
       "seasonality": {
         "month": 7,
-        "hist_avg_return_pct": 4.18,
+        "hist_avg_return_pct": 4.15,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -8705,6 +8697,7 @@
           "3M",
           "M",
           "H4",
+          "H3",
           "H2",
           "H1",
           "45m"
@@ -8754,30 +8747,17 @@
           "H4",
           "H1",
           "45m",
-          "30m",
-          "15m",
-          "1m"
+          "30m"
         ],
         "Liq. Grab": [
-          "5m",
-          "3m"
-        ],
-        "Morning Star": [
-          "5m",
-          "3m"
-        ],
-        "Railway": [
-          "5m",
-          "3m"
+          "H1"
         ]
       },
       "bear_signals_by_tf": {
         "Supply Grab": [
           "3M",
           "M",
-          "D",
-          "H3",
-          "1m"
+          "D"
         ],
         "Bear Breaker": [
           "W",
@@ -8791,8 +8771,10 @@
           "D",
           "H3",
           "H2",
+          "15m",
           "5m",
-          "3m"
+          "3m",
+          "1m"
         ],
         "Desc. Trendline": [
           "W",
@@ -8825,25 +8807,31 @@
         ],
         "Bearish Engulf": [
           "H4",
-          "H2"
+          "H2",
+          "30m"
         ],
         "Evening Star": [
+          "H3",
           "H2"
         ],
-        "Upthrust / UTAD": [
-          "45m"
+        "Bear Railway": [
+          "H3",
+          "1m"
         ],
-        "BOS \u2193": [
-          "30m",
-          "15m"
+        "Upthrust / UTAD": [
+          "H1"
         ],
         "LH/LL": [
           "15m",
           "5m",
           "3m"
         ],
+        "BOS \u2193": [
+          "5m",
+          "3m"
+        ],
         "Bear FVG": [
-          "15m"
+          "1m"
         ]
       },
       "short_volume": {},
@@ -8862,12 +8850,15 @@
           "W",
           "D",
           "H4",
+          "H3",
           "H1",
-          "45m",
-          "1m"
+          "45m"
         ],
         "Distribution": [
-          "15m"
+          "15m",
+          "5m",
+          "3m",
+          "1m"
         ]
       },
       "wyckoff_laws": {
@@ -8885,11 +8876,7 @@
             "H2",
             "H1",
             "45m",
-            "30m",
-            "15m",
-            "5m",
-            "3m",
-            "1m"
+            "30m"
           ],
           "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
         },
@@ -8916,8 +8903,7 @@
         "effort_result": {
           "active": true,
           "tfs": [
-            "5m",
-            "3m"
+            "H1"
           ],
           "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
         }
@@ -10357,7 +10343,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "6M:HH/HL 6M:BOS 6M:FVG 3M:HH/HL \u00b7 RSI 50.61 \u00b7 Seasonal +4.1%",
+      "verdict_notes": "6M:HH/HL 6M:BOS 6M:FVG 3M:HH/HL \u00b7 RSI 50.71 \u00b7 Seasonal +4.1%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -10367,7 +10353,7 @@
       "analyst": {},
       "seasonality": {
         "month": 7,
-        "hist_avg_return_pct": 4.1,
+        "hist_avg_return_pct": 4.11,
         "historically_positive": true
       },
       "signals_by_tf": {
