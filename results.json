@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-07-13T17:41:12.804957+00:00",
+  "last_scan": "2026-07-13T18:04:07.550802+00:00",
   "setups": [
     {
       "ticker": "HO=F",
@@ -13484,7 +13484,7 @@
     },
     {
       "ticker": "NQ=F",
-      "price": 29515.75,
+      "price": 29472.0,
       "primary_tfs": [
         "6M",
         "3M",
@@ -13503,12 +13503,12 @@
         "1m"
       ],
       "entry_tfs": [],
-      "mtf_score": 0.3,
+      "mtf_score": 1.0,
       "signals": [
         "Trendline Bounce",
         "Inverted H&S",
         "Order Block",
-        "Wyckoff Spring"
+        "Railway Tracks"
       ],
       "smc_signals": [
         "HH/HL",
@@ -13520,8 +13520,10 @@
         "Inv. H&S",
         "Order Block",
         "Liq. Grab",
-        "Wyckoff Spring",
-        "Liq. Sweep (BULL)"
+        "Railway",
+        "Liq. Sweep (BEAR)",
+        "BOS \u00b7 CISD",
+        "IFVG"
       ],
       "bear_signals": [
         "Desc. Trendline",
@@ -13533,7 +13535,6 @@
         "LH/LL",
         "Supply Zone",
         "Bear Railway",
-        "BOS \u2193",
         "Bear FVG"
       ],
       "tech_summary": "Y: HH/HL uptrend, BOS confirmed \u00b7 6M: HH/HL uptrend, BOS confirmed \u00b7 3M: HH/HL uptrend, FVG present",
@@ -13546,7 +13547,7 @@
         "t2": 33187.875,
         "basis": "D Order Block",
         "direction": "long",
-        "neckline": 29609.875
+        "neckline": 29534.5
       },
       "fundamentals": {
         "company_name": "Nasdaq 100 Sep 26",
@@ -13565,7 +13566,7 @@
       },
       "tv_ticker": "CME_MINI:NQ1!",
       "session": "MIDDAY",
-      "timestamp": "2026-07-13T13:37:25.190362",
+      "timestamp": "2026-07-13T14:03:51.909637",
       "ict": {
         "by_tf": {
           "1m": {
@@ -13576,17 +13577,12 @@
               "midpoint": 29671.25,
               "range_pts": 257.0
             },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 29542.75,
-              "depth_pts": 13.75,
-              "timestamp": "2026-07-13T13:18:00-04:00"
-            },
+            "sweep": null,
             "bos": null,
             "ifvg": null,
             "retrace": null,
             "targets": [],
-            "stage": "SWEPT",
+            "stage": "ACCUMULATION",
             "alert": false
           },
           "3m": {
@@ -13766,16 +13762,52 @@
               "range_pts": 311.25
             },
             "sweep": {
-              "direction": "bullish",
-              "swept_level": 29488.5,
-              "depth_pts": 27.75,
-              "timestamp": "2026-07-13T12:00:00-04:00"
+              "direction": "bearish",
+              "swept_level": 29799.75,
+              "depth_pts": 241.25,
+              "timestamp": "2026-07-12T20:00:00-04:00"
             },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
+            "bos": {
+              "direction": "bearish",
+              "structure_level": 29675.0,
+              "bos_close": 29652.75,
+              "timestamp": "2026-07-13T00:00:00-04:00"
+            },
+            "ifvg": {
+              "direction": "bearish",
+              "top": 29647.5,
+              "bottom": 29638.5,
+              "midpoint": 29643.0,
+              "height": 9.0,
+              "formed_at": "2026-07-13T12:00:00-04:00"
+            },
+            "retrace": {
+              "status": "BELOW_ZONE",
+              "current_price": 29470.75,
+              "zone_top": 29647.5,
+              "zone_bottom": 29638.5,
+              "zone_mid": 29643.0,
+              "pct_from_mid": -0.581,
+              "alert": false
+            },
+            "targets": [
+              {
+                "label": "Equal Lows (SSL)",
+                "price": 29461.625,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Lows (SSL)",
+                "price": 29291.8214,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Lows (SSL)",
+                "price": 29184.0,
+                "type": "liquidity"
+              }
+            ],
+            "stage": "IFVG_FORMED",
             "alert": false
           },
           "1d": {
@@ -13877,7 +13909,6 @@
         },
         "found_on": {
           "sweep": [
-            "1m",
             "3m",
             "5m",
             "15m",
@@ -13888,8 +13919,12 @@
             "3h",
             "4h"
           ],
-          "bos": [],
-          "ifvg": [],
+          "bos": [
+            "4h"
+          ],
+          "ifvg": [
+            "4h"
+          ],
           "entry_zone": [],
           "approaching": []
         },
@@ -13901,16 +13936,52 @@
           "range_pts": 311.25
         },
         "sweep": {
-          "direction": "bullish",
-          "swept_level": 29488.5,
-          "depth_pts": 27.75,
-          "timestamp": "2026-07-13T12:00:00-04:00"
+          "direction": "bearish",
+          "swept_level": 29799.75,
+          "depth_pts": 241.25,
+          "timestamp": "2026-07-12T20:00:00-04:00"
         },
-        "bos": null,
-        "ifvg": null,
-        "retrace": null,
-        "targets": [],
-        "stage": "SWEPT",
+        "bos": {
+          "direction": "bearish",
+          "structure_level": 29675.0,
+          "bos_close": 29652.75,
+          "timestamp": "2026-07-13T00:00:00-04:00"
+        },
+        "ifvg": {
+          "direction": "bearish",
+          "top": 29647.5,
+          "bottom": 29638.5,
+          "midpoint": 29643.0,
+          "height": 9.0,
+          "formed_at": "2026-07-13T12:00:00-04:00"
+        },
+        "retrace": {
+          "status": "BELOW_ZONE",
+          "current_price": 29470.75,
+          "zone_top": 29647.5,
+          "zone_bottom": 29638.5,
+          "zone_mid": 29643.0,
+          "pct_from_mid": -0.581,
+          "alert": false
+        },
+        "targets": [
+          {
+            "label": "Equal Lows (SSL)",
+            "price": 29461.625,
+            "type": "liquidity"
+          },
+          {
+            "label": "Equal Lows (SSL)",
+            "price": 29291.8214,
+            "type": "liquidity"
+          },
+          {
+            "label": "Equal Lows (SSL)",
+            "price": 29184.0,
+            "type": "liquidity"
+          }
+        ],
+        "stage": "IFVG_FORMED",
         "alert": false
       },
       "golden_entry": false,
@@ -13932,10 +14003,10 @@
         ],
         "ltf": []
       },
-      "tech_conviction": 2,
+      "tech_conviction": 5,
       "tech_pillars": {
         "line_pattern": true,
-        "candle": false,
+        "candle": true,
         "volume": true,
         "correlation": false,
         "time_of_day": false
@@ -13955,11 +14026,11 @@
         "1m"
       ],
       "golden_technical": false,
-      "ict_conviction": 4,
+      "ict_conviction": 8,
       "ict_pillars": {
         "sweep": true,
-        "bos": false,
-        "fvg": false,
+        "bos": true,
+        "fvg": true,
         "order_block": true,
         "entry_zone": false,
         "trigger": false
@@ -13969,11 +14040,11 @@
       "golden_setup": false,
       "tech_elite": false,
       "tech_entry_live": false,
-      "ict_elite": false,
+      "ict_elite": true,
       "ict_entry_live": false,
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
-      "rvol": 1.79,
+      "rvol": 2.13,
       "in_killzone": false,
       "session_weight": 0.0,
       "session_label": "",
@@ -14009,7 +14080,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "6M:HH/HL 6M:BOS 6M:FVG 3M:HH/HL \u00b7 RSI 40.37 \u00b7 Seasonal +4.0%",
+      "verdict_notes": "6M:HH/HL 6M:BOS 6M:FVG 3M:HH/HL \u00b7 RSI 40.16 \u00b7 Seasonal +3.9%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -14019,7 +14090,7 @@
       "analyst": {},
       "seasonality": {
         "month": 7,
-        "hist_avg_return_pct": 3.95,
+        "hist_avg_return_pct": 3.93,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -14053,10 +14124,8 @@
           "D",
           "H4",
           "H3",
-          "30m",
-          "5m",
-          "3m",
-          "1m"
+          "H2",
+          "30m"
         ],
         "Trendline": [
           "W",
@@ -14094,13 +14163,10 @@
           "H3",
           "H2",
           "H1",
-          "45m",
-          "5m",
-          "3m"
+          "1m"
         ],
-        "Wyckoff Spring": [
-          "5m",
-          "3m"
+        "Railway": [
+          "1m"
         ]
       },
       "bear_signals_by_tf": {
@@ -14157,31 +14223,32 @@
           "45m",
           "30m",
           "15m",
+          "5m",
+          "3m",
           "1m"
         ],
         "Supply Zone": [
-          "H2",
           "H1",
           "45m",
-          "15m"
+          "15m",
+          "5m",
+          "3m",
+          "1m"
         ],
         "Bear Railway": [
           "H1"
         ],
-        "BOS \u2193": [
-          "30m"
-        ],
         "Bear FVG": [
-          "30m"
+          "45m"
         ]
       },
       "short_volume": {},
       "gex": {},
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
-      "wyckoff_phase": "D",
-      "wyckoff_conviction": 5,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase D (trend leaving the range) \u00b7 conviction 5/10",
+      "wyckoff_phase": "E",
+      "wyckoff_conviction": 3,
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase E (markup/markdown underway) \u00b7 conviction 3/10",
       "wyckoff_by_tf": {
         "Reaccumulation": [
           "Y",
@@ -14192,13 +14259,14 @@
           "D",
           "H4",
           "H3",
-          "5m",
-          "3m"
+          "H2"
         ],
         "Distribution": [
           "45m",
-          "30m",
-          "15m"
+          "15m",
+          "5m",
+          "3m",
+          "1m"
         ]
       },
       "wyckoff_laws": {
@@ -14215,10 +14283,7 @@
             "H3",
             "H2",
             "H1",
-            "45m",
             "30m",
-            "5m",
-            "3m",
             "1m"
           ],
           "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
@@ -14250,9 +14315,7 @@
             "H3",
             "H2",
             "H1",
-            "45m",
-            "5m",
-            "3m"
+            "1m"
           ],
           "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
         }
