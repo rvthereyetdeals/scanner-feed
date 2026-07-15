@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-07-15T21:53:45.601124+00:00",
+  "last_scan": "2026-07-15T21:56:20.748801+00:00",
   "setups": [
     {
       "ticker": "RB=F",
@@ -1806,30 +1806,28 @@
     },
     {
       "ticker": "ES=F",
-      "price": 7616.75,
+      "price": 7616.0,
       "primary_tfs": [
         "H4",
-        "H1",
-        "30m"
+        "H1"
       ],
       "entry_tfs": [
         "H1"
       ],
-      "mtf_score": 2.9,
+      "mtf_score": 2.6,
       "signals": [
         "Trendline Bounce",
         "Inverted H&S",
-        "Bullish Engulf",
-        "Morning Star"
+        "Bullish Engulf"
       ],
       "smc_signals": [
+        "HH/HL",
         "Liq. Grab",
         "Breaker",
         "Trendline",
         "Inv. H&S",
         "Engulfing",
         "Demand Zone",
-        "Morning Star",
         "Liq. Sweep (BULL)"
       ],
       "bear_signals": [
@@ -1839,19 +1837,21 @@
         "Bear Order Block",
         "Desc. Trendline",
         "H&S",
-        "Upthrust / UTAD"
+        "Upthrust / UTAD",
+        "Evening Star",
+        "Bear Railway"
       ],
       "tech_summary": "Y: BOS confirmed \u00b7 6M: HH/HL uptrend, BOS confirmed \u00b7 3M: HH/HL uptrend, FVG present",
       "entry_levels": {
-        "entry_low": 7614.5,
-        "entry_high": 7615.25,
-        "mean_threshold": 7614.875,
-        "stop": 7595.4581,
-        "t1": 7767.585,
-        "t2": 7843.7525,
-        "basis": "1m FVG",
+        "entry_low": 6008.0,
+        "entry_high": 6720.25,
+        "mean_threshold": 6364.125,
+        "stop": 5651.875,
+        "t1": 8857.0,
+        "t2": 9925.375,
+        "basis": "3M FVG",
         "direction": "long",
-        "neckline": 7616.875
+        "neckline": 7617.25
       },
       "fundamentals": {
         "company_name": "E-Mini S&P 500 Sep 26",
@@ -1870,7 +1870,7 @@
       },
       "tv_ticker": "CME_MINI:ES1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-07-15T16:31:09.530645",
+      "timestamp": "2026-07-15T17:53:49.538730",
       "ict": {
         "by_tf": {
           "1m": {
@@ -1881,17 +1881,12 @@
               "midpoint": 7603.625,
               "range_pts": 22.25
             },
-            "sweep": {
-              "direction": "bearish",
-              "swept_level": 7614.75,
-              "depth_pts": 0.75,
-              "timestamp": "2026-07-15T16:13:00-04:00"
-            },
+            "sweep": null,
             "bos": null,
             "ifvg": null,
             "retrace": null,
             "targets": [],
-            "stage": "SWEPT",
+            "stage": "ACCUMULATION",
             "alert": false
           },
           "3m": {
@@ -2182,7 +2177,6 @@
         },
         "found_on": {
           "sweep": [
-            "1m",
             "3m",
             "5m",
             "15m",
@@ -2277,18 +2271,18 @@
       "ict_entry_live": false,
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
-      "rvol": 2.33,
+      "rvol": 1.63,
       "in_killzone": true,
       "session_weight": 1.0,
       "session_label": "Prime PM",
       "pinned": true,
-      "verdict": "AVOID",
-      "verdict_score": 3,
+      "verdict": "HOLD",
+      "verdict_score": 4,
       "verdict_max": 8,
-      "verdict_pct": 38,
+      "verdict_pct": 50,
       "verdict_checklist": {
         "tech_setup": true,
-        "market_structure": false,
+        "market_structure": true,
         "rsi_ok": true,
         "options_bullish": false,
         "price_below_maxpain": false,
@@ -2313,7 +2307,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "H4:LiqGrab H1:Demand 30m:Demand \u00b7 RSI 68.0 \u00b7 Seasonal +4.2%",
+      "verdict_notes": "H4:HH/HL H4:LiqGrab H1:Demand \u00b7 RSI 68.03 \u00b7 Seasonal +4.2%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -2329,20 +2323,21 @@
       "signals_by_tf": {
         "BOS \u2191": [
           "Y",
-          "6M",
-          "1m"
+          "6M"
         ],
         "HH/HL": [
           "6M",
           "3M",
           "M",
           "W",
-          "H3"
+          "H4",
+          "H3",
+          "H2",
+          "15m"
         ],
         "FVG": [
           "6M",
-          "3M",
-          "1m"
+          "3M"
         ],
         "Inv. H&S": [
           "W",
@@ -2390,17 +2385,18 @@
           "H1",
           "45m",
           "30m",
+          "5m",
+          "3m",
           "1m"
         ],
-        "Morning Star": [
-          "30m"
+        "Wyckoff Spring": [
+          "1m"
         ]
       },
       "bear_signals_by_tf": {
         "Supply Grab": [
           "3M",
-          "M",
-          "15m"
+          "M"
         ],
         "Bear Breaker": [
           "W",
@@ -2417,9 +2413,7 @@
           "D",
           "H4",
           "H3",
-          "15m",
-          "5m",
-          "3m"
+          "15m"
         ],
         "Bear Order Block": [
           "W"
@@ -2450,16 +2444,23 @@
           "1m"
         ],
         "Upthrust / UTAD": [
-          "15m"
+          "30m"
+        ],
+        "Evening Star": [
+          "5m",
+          "3m"
+        ],
+        "Bear Railway": [
+          "1m"
         ]
       },
       "short_volume": {},
       "gex": {},
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
-      "wyckoff_phase": "E",
-      "wyckoff_conviction": 4,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase E (markup/markdown underway) \u00b7 conviction 4/10",
+      "wyckoff_phase": "D",
+      "wyckoff_conviction": 6,
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase D (trend leaving the range) \u00b7 conviction 6/10",
       "wyckoff_by_tf": {
         "Reaccumulation": [
           "Y",
@@ -2474,10 +2475,10 @@
           "H1",
           "45m",
           "30m",
+          "15m",
+          "5m",
+          "3m",
           "1m"
-        ],
-        "Distribution": [
-          "15m"
         ]
       },
       "wyckoff_laws": {
@@ -2528,8 +2529,7 @@
           "tfs": [
             "H4",
             "H3",
-            "H1",
-            "30m"
+            "H1"
           ],
           "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
         }
