@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-07-24T18:17:41.726482+00:00",
+  "last_scan": "2026-07-24T18:41:36.936962+00:00",
   "setups": [
     {
       "ticker": "ZS=F",
@@ -20990,7 +20990,7 @@
     },
     {
       "ticker": "NQ=F",
-      "price": 28458.25,
+      "price": 28322.5,
       "primary_tfs": [
         "6M",
         "3M",
@@ -21009,7 +21009,7 @@
         "1m"
       ],
       "entry_tfs": [],
-      "mtf_score": 0.3,
+      "mtf_score": 0.7,
       "signals": [
         "Trendline Bounce",
         "Inverted H&S"
@@ -21019,11 +21019,12 @@
         "BOS \u2191",
         "FVG",
         "Trendline",
-        "Breaker",
         "Demand Zone",
         "Inv. H&S",
+        "Breaker",
         "Liq. Grab",
-        "Liq. Sweep (BEAR)"
+        "Liq. Sweep (BEAR)",
+        "BOS \u00b7 CISD"
       ],
       "bear_signals": [
         "Desc. Trendline",
@@ -21037,16 +21038,17 @@
         "Supply Zone",
         "Bear Railway",
         "Bear Order Block",
-        "Bearish Engulf"
+        "Bearish Engulf",
+        "Bear FVG"
       ],
       "tech_summary": "6M: desc. trendline capping \u00b7 3M: desc. trendline capping \u00b7 M: liq. swept above swing high",
       "entry_levels": {
         "entry_low": 28601.5,
         "entry_high": 28700.0,
         "mean_threshold": 28650.75,
-        "stop": 28771.1456,
-        "t1": 28032.335,
-        "t2": 27747.7525,
+        "stop": 28770.8063,
+        "t1": 28035.05,
+        "t2": 27751.825,
         "basis": "45m Bear Order Block",
         "direction": "short",
         "neckline": 28492.125
@@ -21055,7 +21057,7 @@
         "company_name": "Nasdaq 100 Sep 26",
         "w52_high": 30968.0,
         "w52_low": 22775.0,
-        "sharpe_ratio": 0.9
+        "sharpe_ratio": 0.89
       },
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
@@ -21067,8 +21069,8 @@
         "street": null
       },
       "tv_ticker": "CME_MINI:NQ1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-07-24T14:12:16.695846",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-07-24T14:41:24.406650",
       "ict": {
         "by_tf": {
           "1m": {
@@ -21079,17 +21081,12 @@
               "midpoint": 28593.625,
               "range_pts": 225.25
             },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 28481.0,
-              "depth_pts": 8.75,
-              "timestamp": "2026-07-24T13:54:00-04:00"
-            },
+            "sweep": null,
             "bos": null,
             "ifvg": null,
             "retrace": null,
             "targets": [],
-            "stage": "SWEPT",
+            "stage": "ACCUMULATION",
             "alert": false
           },
           "3m": {
@@ -21274,11 +21271,16 @@
               "depth_pts": 17.75,
               "timestamp": "2026-07-23T20:00:00-04:00"
             },
-            "bos": null,
+            "bos": {
+              "direction": "bearish",
+              "structure_level": 28432.5,
+              "bos_close": 28319.75,
+              "timestamp": "2026-07-24T12:00:00-04:00"
+            },
             "ifvg": null,
             "retrace": null,
             "targets": [],
-            "stage": "SWEPT",
+            "stage": "BOS_CONFIRMED",
             "alert": false
           },
           "1d": {
@@ -21380,7 +21382,6 @@
         },
         "found_on": {
           "sweep": [
-            "1m",
             "3m",
             "5m",
             "15m",
@@ -21391,7 +21392,9 @@
             "3h",
             "4h"
           ],
-          "bos": [],
+          "bos": [
+            "4h"
+          ],
           "ifvg": [],
           "entry_zone": [],
           "approaching": []
@@ -21409,11 +21412,16 @@
           "depth_pts": 17.75,
           "timestamp": "2026-07-23T20:00:00-04:00"
         },
-        "bos": null,
+        "bos": {
+          "direction": "bearish",
+          "structure_level": 28432.5,
+          "bos_close": 28319.75,
+          "timestamp": "2026-07-24T12:00:00-04:00"
+        },
         "ifvg": null,
         "retrace": null,
         "targets": [],
-        "stage": "SWEPT",
+        "stage": "BOS_CONFIRMED",
         "alert": false
       },
       "golden_entry": false,
@@ -21429,17 +21437,16 @@
         "htf": [],
         "ltf": [
           "45m",
-          "30m",
           "15m"
         ]
       },
-      "tech_conviction": 8,
+      "tech_conviction": 9,
       "tech_pillars": {
         "line_pattern": true,
         "candle": true,
         "volume": false,
-        "correlation": true,
-        "time_of_day": false
+        "correlation": false,
+        "time_of_day": true
       },
       "tech_tfs": [
         "W",
@@ -21456,10 +21463,10 @@
         "1m"
       ],
       "golden_technical": false,
-      "ict_conviction": 4,
+      "ict_conviction": 6,
       "ict_pillars": {
         "sweep": true,
-        "bos": false,
+        "bos": true,
         "fvg": false,
         "order_block": true,
         "entry_zone": false,
@@ -21475,9 +21482,9 @@
       "wyckoff_elite": true,
       "wyckoff_entry_live": false,
       "rvol": 0.0,
-      "in_killzone": false,
-      "session_weight": 0.0,
-      "session_label": "",
+      "in_killzone": true,
+      "session_weight": 1.0,
+      "session_label": "Prime PM",
       "pinned": true,
       "verdict": "HOLD",
       "verdict_score": 4,
@@ -21510,7 +21517,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "6M:HH/HL 6M:BOS 6M:FVG 3M:HH/HL \u00b7 RSI 32.82 \u00b7 Seasonal +3.2%",
+      "verdict_notes": "6M:HH/HL 6M:BOS 6M:FVG 3M:HH/HL \u00b7 RSI 32.41 \u00b7 Seasonal +3.2%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -21520,7 +21527,7 @@
       "analyst": {},
       "seasonality": {
         "month": 7,
-        "hist_avg_return_pct": 3.2,
+        "hist_avg_return_pct": 3.17,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -21554,8 +21561,21 @@
           "3m",
           "1m"
         ],
-        "Breaker": [
+        "Demand Zone": [
           "W",
+          "5m",
+          "3m"
+        ],
+        "Inv. H&S": [
+          "W",
+          "D",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "Breaker": [
           "D",
           "H4",
           "H3",
@@ -21564,25 +21584,11 @@
           "45m",
           "15m"
         ],
-        "Demand Zone": [
-          "W",
-          "H3"
-        ],
-        "Inv. H&S": [
-          "W",
-          "D",
-          "H3",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
         "Liq. Grab": [
           "H4",
-          "H3"
+          "H3",
+          "45m",
+          "1m"
         ]
       },
       "bear_signals_by_tf": {
@@ -21605,7 +21611,10 @@
         ],
         "BOS \u2193": [
           "W",
-          "1m"
+          "30m",
+          "15m",
+          "5m",
+          "3m"
         ],
         "Bear Breaker": [
           "W",
@@ -21621,15 +21630,15 @@
         ],
         "Evening Star": [
           "W",
-          "D",
-          "5m",
-          "3m"
+          "D"
         ],
         "LH/LL": [
           "D",
           "H4",
           "H3",
           "H2",
+          "45m",
+          "15m",
           "5m",
           "3m",
           "1m"
@@ -21649,26 +21658,27 @@
         ],
         "Supply Zone": [
           "H4",
+          "H3",
           "H2",
           "H1",
           "45m",
           "30m",
           "15m",
-          "5m",
-          "3m",
           "1m"
         ],
         "Bear Railway": [
-          "H4",
-          "5m",
-          "3m"
+          "H4"
         ],
         "Bear Order Block": [
           "45m"
         ],
         "Bearish Engulf": [
-          "30m",
-          "1m"
+          "45m"
+        ],
+        "Bear FVG": [
+          "15m",
+          "5m",
+          "3m"
         ]
       },
       "short_volume": {},
@@ -21683,15 +21693,17 @@
           "Y",
           "6M",
           "3M",
-          "M",
-          "W",
-          "H3"
+          "M"
         ],
         "Distribution": [
           "D",
           "H4",
+          "H3",
           "H2",
+          "H1",
+          "45m",
           "30m",
+          "15m",
           "5m",
           "3m",
           "1m"
@@ -21740,10 +21752,7 @@
             "M",
             "W",
             "D",
-            "30m",
-            "5m",
-            "3m",
-            "1m"
+            "45m"
           ],
           "note": "Effort (volume) confirming the downside result \u2014 bearish displacement"
         }
