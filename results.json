@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-08-07T18:12:16.494772+00:00",
+  "last_scan": "2026-08-07T18:34:38.660588+00:00",
   "setups": [
     {
       "ticker": "PL=F",
@@ -10901,9 +10901,10 @@
     },
     {
       "ticker": "ES=F",
-      "price": 7771.0,
+      "price": 7762.75,
       "primary_tfs": [
         "3M",
+        "W",
         "D",
         "H4",
         "H3",
@@ -10917,7 +10918,7 @@
         "1m"
       ],
       "entry_tfs": [],
-      "mtf_score": 2.5,
+      "mtf_score": 2.4,
       "signals": [
         "Inverted H&S",
         "Trendline Bounce"
@@ -10925,6 +10926,7 @@
       "smc_signals": [
         "HH/HL",
         "FVG",
+        "Liq. Grab",
         "Inv. H&S",
         "BOS \u2191",
         "Breaker",
@@ -10932,16 +10934,19 @@
         "Trendline",
         "Liq. Sweep (BEAR)",
         "BOS \u00b7 CISD",
-        "IFVG"
+        "IFVG",
+        "Approaching IFVG"
       ],
       "bear_signals": [
         "Supply Grab",
+        "Bear Order Block",
         "Bear Breaker",
         "Desc. Trendline",
         "Upthrust / UTAD",
         "Supply Zone",
+        "Bear Railway",
         "H&S",
-        "Bearish Engulf",
+        "LH/LL",
         "Evening Star"
       ],
       "tech_summary": "Y: BOS confirmed \u00b7 6M: HH/HL uptrend, BOS confirmed \u00b7 3M: HH/HL uptrend, FVG present",
@@ -10954,7 +10959,7 @@
         "t2": 8297.5,
         "basis": "D Order Block",
         "direction": "long",
-        "neckline": 7769.625
+        "neckline": 7759.0
       },
       "fundamentals": {
         "company_name": "E-Mini S&P 500 Sep 26",
@@ -10972,8 +10977,8 @@
         "street": null
       },
       "tv_ticker": "CME_MINI:ES1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-08-07T14:08:35.287529",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-08-07T14:34:25.260677",
       "ict": {
         "by_tf": {
           "1m": {
@@ -11022,17 +11027,17 @@
             },
             "retrace": {
               "status": "BELOW_ZONE",
-              "current_price": 7770.75,
+              "current_price": 7763.0,
               "zone_top": 7771.75,
               "zone_bottom": 7771.25,
               "zone_mid": 7771.5,
-              "pct_from_mid": -0.01,
+              "pct_from_mid": -0.109,
               "alert": false
             },
             "targets": [
               {
                 "label": "Equal Lows (SSL)",
-                "price": 7756.1218,
+                "price": 7751.7908,
                 "type": "liquidity"
               },
               {
@@ -11074,17 +11079,17 @@
             },
             "retrace": {
               "status": "BELOW_ZONE",
-              "current_price": 7770.75,
+              "current_price": 7763.0,
               "zone_top": 7771.75,
               "zone_bottom": 7771.25,
               "zone_mid": 7771.5,
-              "pct_from_mid": -0.01,
+              "pct_from_mid": -0.109,
               "alert": false
             },
             "targets": [
               {
                 "label": "Equal Lows (SSL)",
-                "price": 7756.1218,
+                "price": 7751.7908,
                 "type": "liquidity"
               },
               {
@@ -11116,10 +11121,36 @@
               "bos_close": 7767.0,
               "timestamp": "2026-08-07T12:45:00-04:00"
             },
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "BOS_CONFIRMED",
+            "ifvg": {
+              "direction": "bearish",
+              "top": 7767.0,
+              "bottom": 7765.5,
+              "midpoint": 7766.25,
+              "height": 1.5,
+              "formed_at": "2026-08-07T14:15:00-04:00"
+            },
+            "retrace": {
+              "status": "BELOW_ZONE",
+              "current_price": 7763.0,
+              "zone_top": 7767.0,
+              "zone_bottom": 7765.5,
+              "zone_mid": 7766.25,
+              "pct_from_mid": -0.042,
+              "alert": false
+            },
+            "targets": [
+              {
+                "label": "Swing Low (SSL)",
+                "price": 7757.75,
+                "type": "liquidity"
+              },
+              {
+                "label": "Session Low (SSL)",
+                "price": 7725.5,
+                "type": "liquidity"
+              }
+            ],
+            "stage": "IFVG_FORMED",
             "alert": false
           },
           "30m": {
@@ -11256,12 +11287,12 @@
               "formed_at": "2026-08-06T12:00:00-04:00"
             },
             "retrace": {
-              "status": "BEYOND",
-              "current_price": 7771.0,
+              "status": "APPROACHING",
+              "current_price": 7763.0,
               "zone_top": 7750.0,
               "zone_bottom": 7747.75,
               "zone_mid": 7748.875,
-              "pct_from_mid": 0.286,
+              "pct_from_mid": 0.182,
               "alert": false
             },
             "targets": [
@@ -11281,7 +11312,7 @@
                 "type": "liquidity"
               }
             ],
-            "stage": "IFVG_FORMED",
+            "stage": "APPROACHING",
             "alert": false
           },
           "1d": {
@@ -11408,10 +11439,13 @@
           "ifvg": [
             "3m",
             "5m",
+            "15m",
             "4h"
           ],
           "entry_zone": [],
-          "approaching": []
+          "approaching": [
+            "4h"
+          ]
         },
         "primary_tf": "4h",
         "session": {
@@ -11441,12 +11475,12 @@
           "formed_at": "2026-08-06T12:00:00-04:00"
         },
         "retrace": {
-          "status": "BEYOND",
-          "current_price": 7771.0,
+          "status": "APPROACHING",
+          "current_price": 7763.0,
           "zone_top": 7750.0,
           "zone_bottom": 7747.75,
           "zone_mid": 7748.875,
-          "pct_from_mid": 0.286,
+          "pct_from_mid": 0.182,
           "alert": false
         },
         "targets": [
@@ -11466,7 +11500,7 @@
             "type": "liquidity"
           }
         ],
-        "stage": "IFVG_FORMED",
+        "stage": "APPROACHING",
         "alert": false
       },
       "golden_entry": false,
@@ -11486,7 +11520,6 @@
       "golden_reversal_short_tfs": {
         "htf": [],
         "ltf": [
-          "H1",
           "15m"
         ]
       },
@@ -11494,7 +11527,7 @@
       "tech_pillars": {
         "line_pattern": true,
         "candle": false,
-        "volume": true,
+        "volume": false,
         "correlation": false,
         "time_of_day": false
       },
@@ -11514,7 +11547,7 @@
         "1m"
       ],
       "golden_technical": false,
-      "ict_conviction": 8,
+      "ict_conviction": 9,
       "ict_pillars": {
         "sweep": true,
         "bos": true,
@@ -11532,7 +11565,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
-      "rvol": 1.79,
+      "rvol": 0.0,
       "in_killzone": false,
       "session_weight": 0.0,
       "session_label": "",
@@ -11554,12 +11587,12 @@
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 1,
+      "bear_score": 2,
       "bear_score_max": 7,
-      "bear_score_pct": 14,
+      "bear_score_pct": 29,
       "bear_checklist": {
         "tech_setup_bear": true,
-        "structure_down": false,
+        "structure_down": true,
         "rsi_overbought": false,
         "options_bearish": false,
         "price_above_maxpain": false,
@@ -11568,7 +11601,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "3M:HH/HL 3M:FVG H4:BOS H4:Demand \u00b7 RSI 68.09 \u00b7 Seasonal +0.0%",
+      "verdict_notes": "3M:HH/HL 3M:FVG W:HH/HL W:LiqGrab \u00b7 RSI 68.11 \u00b7 Seasonal +0.0%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -11585,14 +11618,14 @@
         "BOS \u2191": [
           "Y",
           "6M",
-          "H4",
-          "1m"
+          "H4"
         ],
         "HH/HL": [
           "6M",
           "3M",
           "M",
           "W",
+          "H1",
           "45m"
         ],
         "FVG": [
@@ -11626,7 +11659,7 @@
           "H1",
           "45m",
           "30m",
-          "1m"
+          "15m"
         ],
         "Trendline": [
           "H4",
@@ -11644,10 +11677,10 @@
       "bear_signals_by_tf": {
         "Supply Grab": [
           "3M",
-          "H3",
-          "H2",
-          "5m",
-          "3m"
+          "H3"
+        ],
+        "Bear Order Block": [
+          "W"
         ],
         "Bear Breaker": [
           "D",
@@ -11657,6 +11690,7 @@
         ],
         "Desc. Trendline": [
           "D",
+          "H4",
           "H3",
           "H2",
           "H1",
@@ -11671,14 +11705,18 @@
           "H4",
           "H3",
           "H2",
-          "1m"
+          "H1",
+          "45m"
         ],
         "Supply Zone": [
           "H3",
           "H2",
-          "15m",
           "5m",
-          "3m"
+          "3m",
+          "1m"
+        ],
+        "Bear Railway": [
+          "H2"
         ],
         "H&S": [
           "H1",
@@ -11689,11 +11727,12 @@
           "3m",
           "1m"
         ],
-        "Bearish Engulf": [
-          "H1"
+        "LH/LL": [
+          "30m",
+          "15m"
         ],
         "Evening Star": [
-          "H1"
+          "15m"
         ]
       },
       "short_volume": {},
@@ -11714,14 +11753,14 @@
           "H4",
           "H3",
           "H2",
-          "45m",
-          "30m",
-          "1m"
+          "H1",
+          "45m"
         ],
         "Distribution": [
           "15m",
           "5m",
-          "3m"
+          "3m",
+          "1m"
         ]
       },
       "wyckoff_laws": {
@@ -11740,9 +11779,7 @@
             "H1",
             "45m",
             "30m",
-            "5m",
-            "3m",
-            "1m"
+            "15m"
           ],
           "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
         },
@@ -11777,7 +11814,7 @@
     },
     {
       "ticker": "NQ=F",
-      "price": 29756.5,
+      "price": 29713.0,
       "primary_tfs": [
         "6M",
         "3M",
@@ -11820,7 +11857,9 @@
         "Bear Breaker",
         "Supply Zone",
         "H&S",
-        "Upthrust / UTAD"
+        "Upthrust / UTAD",
+        "Bear Railway",
+        "Bear FVG"
       ],
       "tech_summary": "Y: HH/HL uptrend, BOS confirmed \u00b7 6M: HH/HL uptrend, BOS confirmed \u00b7 3M: HH/HL uptrend, FVG present",
       "entry_levels": {
@@ -11832,14 +11871,9 @@
         "t2": 32573.625,
         "basis": "D Order Block",
         "direction": "long",
-        "neckline": 29752.5
+        "neckline": 29737.875
       },
-      "fundamentals": {
-        "company_name": "Nasdaq 100 Sep 26",
-        "w52_high": 30968.0,
-        "w52_low": 22961.5,
-        "sharpe_ratio": 1.09
-      },
+      "fundamentals": {},
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -11850,8 +11884,8 @@
         "street": null
       },
       "tv_ticker": "CME_MINI:NQ1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-08-07T14:08:28.064394",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-08-07T14:34:17.325946",
       "ict": {
         "by_tf": {
           "1m": {
@@ -11966,7 +12000,7 @@
             },
             "bos": {
               "direction": "bullish",
-              "structure_level": 29516.5,
+              "structure_level": 29476.5,
               "bos_close": 29656.75,
               "timestamp": "2026-08-06T10:00:00-04:00"
             },
@@ -11980,17 +12014,17 @@
             },
             "retrace": {
               "status": "ABOVE_ZONE",
-              "current_price": 29755.75,
+              "current_price": 29714.0,
               "zone_top": 29554.25,
               "zone_bottom": 29552.0,
               "zone_mid": 29553.125,
-              "pct_from_mid": 0.686,
+              "pct_from_mid": 0.544,
               "alert": false
             },
             "targets": [
               {
                 "label": "Equal Highs (BSL)",
-                "price": 29778.8125,
+                "price": 29769.0833,
                 "type": "liquidity"
               },
               {
@@ -12023,7 +12057,7 @@
             },
             "bos": {
               "direction": "bullish",
-              "structure_level": 29516.5,
+              "structure_level": 29476.5,
               "bos_close": 29656.75,
               "timestamp": "2026-08-06T10:00:00-04:00"
             },
@@ -12037,17 +12071,17 @@
             },
             "retrace": {
               "status": "ABOVE_ZONE",
-              "current_price": 29755.75,
+              "current_price": 29714.0,
               "zone_top": 29554.25,
               "zone_bottom": 29552.0,
               "zone_mid": 29553.125,
-              "pct_from_mid": 0.686,
+              "pct_from_mid": 0.544,
               "alert": false
             },
             "targets": [
               {
                 "label": "Equal Highs (BSL)",
-                "price": 29778.8125,
+                "price": 29769.0833,
                 "type": "liquidity"
               },
               {
@@ -12080,7 +12114,7 @@
             },
             "bos": {
               "direction": "bullish",
-              "structure_level": 29516.5,
+              "structure_level": 29476.5,
               "bos_close": 29656.75,
               "timestamp": "2026-08-06T10:00:00-04:00"
             },
@@ -12094,17 +12128,17 @@
             },
             "retrace": {
               "status": "ABOVE_ZONE",
-              "current_price": 29755.5,
+              "current_price": 29714.0,
               "zone_top": 29554.25,
               "zone_bottom": 29552.0,
               "zone_mid": 29553.125,
-              "pct_from_mid": 0.685,
+              "pct_from_mid": 0.544,
               "alert": false
             },
             "targets": [
               {
                 "label": "Equal Highs (BSL)",
-                "price": 29778.8125,
+                "price": 29769.0833,
                 "type": "liquidity"
               },
               {
@@ -12172,11 +12206,11 @@
             },
             "retrace": {
               "status": "BEYOND",
-              "current_price": 29755.5,
+              "current_price": 29714.0,
               "zone_top": 28952.0,
               "zone_bottom": 28736.0,
               "zone_mid": 28844.0,
-              "pct_from_mid": 3.16,
+              "pct_from_mid": 3.016,
               "alert": false
             },
             "targets": [
@@ -12332,11 +12366,11 @@
         },
         "retrace": {
           "status": "BEYOND",
-          "current_price": 29755.5,
+          "current_price": 29714.0,
           "zone_top": 28952.0,
           "zone_bottom": 28736.0,
           "zone_mid": 28844.0,
-          "pct_from_mid": 3.16,
+          "pct_from_mid": 3.016,
           "alert": false
         },
         "targets": [
@@ -12374,13 +12408,15 @@
       "golden_reversal_short": false,
       "golden_reversal_short_tfs": {
         "htf": [],
-        "ltf": []
+        "ltf": [
+          "15m"
+        ]
       },
       "tech_conviction": 2,
       "tech_pillars": {
         "line_pattern": true,
         "candle": false,
-        "volume": true,
+        "volume": false,
         "correlation": false,
         "time_of_day": false
       },
@@ -12417,7 +12453,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
-      "rvol": 1.6,
+      "rvol": 0.0,
       "in_killzone": false,
       "session_weight": 0.0,
       "session_label": "",
@@ -12453,7 +12489,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": true
       },
-      "verdict_notes": "6M:HH/HL 6M:BOS 6M:FVG 3M:HH/HL \u00b7 RSI 58.33 \u00b7 Seasonal -0.3%",
+      "verdict_notes": "6M:HH/HL 6M:BOS 6M:FVG 3M:HH/HL \u00b7 RSI 58.27 \u00b7 Seasonal -0.3%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -12463,7 +12499,7 @@
       "analyst": {},
       "seasonality": {
         "month": 8,
-        "hist_avg_return_pct": -0.33,
+        "hist_avg_return_pct": -0.34,
         "historically_positive": false
       },
       "signals_by_tf": {
@@ -12472,13 +12508,12 @@
           "6M",
           "3M",
           "M",
-          "1m"
+          "H1"
         ],
         "BOS \u2191": [
           "Y",
           "6M",
-          "H4",
-          "1m"
+          "H4"
         ],
         "FVG": [
           "6M",
@@ -12519,7 +12554,9 @@
           "H1",
           "45m",
           "30m",
-          "1m"
+          "15m",
+          "5m",
+          "3m"
         ],
         "Inv. H&S": [
           "W",
@@ -12554,7 +12591,12 @@
           "M"
         ],
         "LH/LL": [
-          "W"
+          "W",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
         ],
         "Bear Breaker": [
           "W",
@@ -12568,9 +12610,7 @@
           "D",
           "H3",
           "H2",
-          "15m",
-          "5m",
-          "3m"
+          "1m"
         ],
         "H&S": [
           "H4",
@@ -12585,7 +12625,15 @@
           "1m"
         ],
         "Upthrust / UTAD": [
+          "H2",
+          "45m"
+        ],
+        "Bear Railway": [
           "H2"
+        ],
+        "Bear FVG": [
+          "5m",
+          "3m"
         ]
       },
       "short_volume": {},
@@ -12609,7 +12657,11 @@
           "H1",
           "45m",
           "30m",
-          "15m",
+          "15m"
+        ],
+        "Distribution": [
+          "5m",
+          "3m",
           "1m"
         ]
       },
@@ -12631,8 +12683,7 @@
             "30m",
             "15m",
             "5m",
-            "3m",
-            "1m"
+            "3m"
           ],
           "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
         },
