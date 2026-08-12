@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-08-12T17:46:24.335474+00:00",
+  "last_scan": "2026-08-12T18:07:27.921605+00:00",
   "setups": [
     {
       "ticker": "XLE",
@@ -2846,14 +2846,15 @@
     },
     {
       "ticker": "ES=F",
-      "price": 7772.75,
+      "price": 7772.5,
       "primary_tfs": [
         "H1"
       ],
       "entry_tfs": [
-        "H1"
+        "H1",
+        "1m"
       ],
-      "mtf_score": 5.6,
+      "mtf_score": 5.1,
       "signals": [
         "Trendline Bounce",
         "Inverted H&S",
@@ -2870,12 +2871,12 @@
       ],
       "bear_signals": [
         "Supply Grab",
+        "Bear Breaker",
         "Desc. Trendline",
         "Evening Star",
         "LH/LL",
         "Upthrust / UTAD",
         "H&S",
-        "Bear Breaker",
         "Supply Zone",
         "Bearish Engulf"
       ],
@@ -2884,9 +2885,9 @@
         "entry_low": 7769.5,
         "entry_high": 7770.0,
         "mean_threshold": 7769.75,
-        "stop": 7750.0681,
-        "t1": 7925.455,
-        "t2": 8003.1825,
+        "stop": 7750.0688,
+        "t1": 7925.45,
+        "t2": 8003.175,
         "basis": "45m FVG",
         "direction": "long",
         "neckline": 7771.625
@@ -2908,7 +2909,7 @@
       },
       "tv_ticker": "CME_MINI:ES1!",
       "session": "MIDDAY",
-      "timestamp": "2026-08-12T13:42:28.286334",
+      "timestamp": "2026-08-12T14:07:23.543377",
       "ict": {
         "by_tf": {
           "1m": {
@@ -3136,11 +3137,11 @@
             },
             "retrace": {
               "status": "BEYOND",
-              "current_price": 7773.0,
+              "current_price": 7772.5,
               "zone_top": 7504.0,
               "zone_bottom": 7496.5,
               "zone_mid": 7500.25,
-              "pct_from_mid": 3.637,
+              "pct_from_mid": 3.63,
               "alert": false
             },
             "targets": [
@@ -3293,11 +3294,11 @@
         },
         "retrace": {
           "status": "BEYOND",
-          "current_price": 7773.0,
+          "current_price": 7772.5,
           "zone_top": 7504.0,
           "zone_bottom": 7496.5,
           "zone_mid": 7500.25,
-          "pct_from_mid": 3.637,
+          "pct_from_mid": 3.63,
           "alert": false
         },
         "targets": [
@@ -3334,20 +3335,18 @@
           "15m"
         ]
       },
-      "golden_reversal_short": true,
+      "golden_reversal_short": false,
       "golden_reversal_short_tfs": {
         "htf": [
           "H4"
         ],
-        "ltf": [
-          "15m"
-        ]
+        "ltf": []
       },
       "tech_conviction": 4,
       "tech_pillars": {
         "line_pattern": true,
         "candle": true,
-        "volume": false,
+        "volume": true,
         "correlation": true,
         "time_of_day": false
       },
@@ -3385,7 +3384,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
-      "rvol": 0.0,
+      "rvol": 1.74,
       "in_killzone": false,
       "session_weight": 0.0,
       "session_label": "",
@@ -3421,7 +3420,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "H1:Demand \u00b7 RSI 74.04 \u00b7 Seasonal +0.1%",
+      "verdict_notes": "H1:Demand \u00b7 RSI 74.03 \u00b7 Seasonal +0.1%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -3472,10 +3471,7 @@
           "H1",
           "45m",
           "30m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
+          "15m"
         ],
         "Breaker": [
           "H4",
@@ -3494,7 +3490,11 @@
           "1m"
         ],
         "Engulfing": [
-          "H1"
+          "H1",
+          "1m"
+        ],
+        "Wyckoff Spring": [
+          "1m"
         ]
       },
       "bear_signals_by_tf": {
@@ -3503,6 +3503,12 @@
           "H4",
           "H3",
           "30m"
+        ],
+        "Bear Breaker": [
+          "W",
+          "D",
+          "H3",
+          "H2"
         ],
         "Desc. Trendline": [
           "D",
@@ -3525,14 +3531,14 @@
           "H4",
           "H3",
           "30m",
-          "15m"
+          "5m",
+          "3m",
+          "1m"
         ],
         "Upthrust / UTAD": [
           "H4",
           "H3",
-          "30m",
-          "5m",
-          "3m"
+          "30m"
         ],
         "H&S": [
           "H4",
@@ -3546,25 +3552,23 @@
           "3m",
           "1m"
         ],
-        "Bear Breaker": [
-          "H3",
-          "H2"
-        ],
         "Supply Zone": [
-          "H3"
+          "H3",
+          "5m",
+          "3m",
+          "1m"
         ],
         "Bearish Engulf": [
-          "H3",
-          "15m"
+          "H3"
         ]
       },
       "short_volume": {},
       "gex": {},
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
-      "wyckoff_phase": "E",
-      "wyckoff_conviction": 4,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase E (markup/markdown underway) \u00b7 conviction 4/10",
+      "wyckoff_phase": "D",
+      "wyckoff_conviction": 6,
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase D (trend leaving the range) \u00b7 conviction 6/10",
       "wyckoff_by_tf": {
         "Reaccumulation": [
           "Y",
@@ -3576,12 +3580,12 @@
           "H2",
           "H1",
           "45m",
-          "5m",
-          "3m",
-          "1m"
+          "15m"
         ],
         "Distribution": [
-          "H3"
+          "H3",
+          "5m",
+          "3m"
         ]
       },
       "wyckoff_laws": {
@@ -3600,10 +3604,7 @@
             "H1",
             "45m",
             "30m",
-            "15m",
-            "5m",
-            "3m",
-            "1m"
+            "15m"
           ],
           "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
         },
@@ -3630,7 +3631,8 @@
         "effort_result": {
           "active": true,
           "tfs": [
-            "H1"
+            "H1",
+            "1m"
           ],
           "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
         }
@@ -4623,7 +4625,7 @@
     },
     {
       "ticker": "NQ=F",
-      "price": 29912.25,
+      "price": 29908.5,
       "primary_tfs": [
         "W"
       ],
@@ -4659,19 +4661,14 @@
         "entry_low": 29887.75,
         "entry_high": 29889.25,
         "mean_threshold": 29888.5,
-        "stop": 29812.9694,
-        "t1": 30487.495,
-        "t2": 30786.6175,
+        "stop": 29812.9787,
+        "t1": 30487.42,
+        "t2": 30786.505,
         "basis": "30m FVG",
         "direction": "long",
         "neckline": 29908.875
       },
-      "fundamentals": {
-        "company_name": "Nasdaq 100 Sep 26",
-        "w52_high": 30968.0,
-        "w52_low": 22961.5,
-        "sharpe_ratio": 1.03
-      },
+      "fundamentals": {},
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -4683,7 +4680,7 @@
       },
       "tv_ticker": "CME_MINI:NQ1!",
       "session": "MIDDAY",
-      "timestamp": "2026-08-12T13:42:14.667404",
+      "timestamp": "2026-08-12T14:07:08.863876",
       "ict": {
         "by_tf": {
           "1m": {
@@ -4877,7 +4874,7 @@
             "bos": {
               "direction": "bullish",
               "structure_level": 29886.75,
-              "bos_close": 29913.25,
+              "bos_close": 29907.75,
               "timestamp": "2026-08-12T12:00:00-04:00"
             },
             "ifvg": null,
@@ -5022,7 +5019,7 @@
         "bos": {
           "direction": "bullish",
           "structure_level": 29886.75,
-          "bos_close": 29913.25,
+          "bos_close": 29907.75,
           "timestamp": "2026-08-12T12:00:00-04:00"
         },
         "ifvg": null,
@@ -5055,7 +5052,7 @@
       "tech_pillars": {
         "line_pattern": true,
         "candle": true,
-        "volume": false,
+        "volume": true,
         "correlation": true,
         "time_of_day": false
       },
@@ -5092,7 +5089,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
-      "rvol": 0.0,
+      "rvol": 1.57,
       "in_killzone": false,
       "session_weight": 0.0,
       "session_label": "",
@@ -5128,7 +5125,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": true
       },
-      "verdict_notes": "W:Demand \u00b7 RSI 62.93 \u00b7 Seasonal -0.2%",
+      "verdict_notes": "W:Demand \u00b7 RSI 62.83 \u00b7 Seasonal -0.2%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -5138,7 +5135,7 @@
       "analyst": {},
       "seasonality": {
         "month": 8,
-        "hist_avg_return_pct": -0.19,
+        "hist_avg_return_pct": -0.2,
         "historically_positive": false
       },
       "signals_by_tf": {
@@ -5192,7 +5189,8 @@
           "30m",
           "15m",
           "5m",
-          "3m"
+          "3m",
+          "1m"
         ],
         "Inv. H&S": [
           "W",
@@ -5213,6 +5211,12 @@
         ],
         "Order Block": [
           "D"
+        ],
+        "Wyckoff Spring": [
+          "1m"
+        ],
+        "Railway": [
+          "1m"
         ]
       },
       "bear_signals_by_tf": {
@@ -5235,7 +5239,8 @@
         ],
         "LH/LL": [
           "W",
-          "H4"
+          "H4",
+          "1m"
         ],
         "Bear Breaker": [
           "W",
@@ -5247,13 +5252,14 @@
         ],
         "Supply Zone": [
           "D",
-          "H3",
-          "1m"
+          "H3"
         ],
         "Supply Grab": [
           "H4",
           "H3",
-          "30m"
+          "30m",
+          "5m",
+          "3m"
         ],
         "H&S": [
           "H4",
@@ -5271,16 +5277,18 @@
           "H3"
         ],
         "Upthrust / UTAD": [
-          "30m"
+          "30m",
+          "5m",
+          "3m"
         ]
       },
       "short_volume": {},
       "gex": {},
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
-      "wyckoff_phase": "E",
-      "wyckoff_conviction": 5,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase E (markup/markdown underway) \u00b7 conviction 5/10",
+      "wyckoff_phase": "D",
+      "wyckoff_conviction": 7,
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase D (trend leaving the range) \u00b7 conviction 7/10",
       "wyckoff_by_tf": {
         "Reaccumulation": [
           "Y",
@@ -5297,7 +5305,8 @@
           "30m",
           "15m",
           "5m",
-          "3m"
+          "3m",
+          "1m"
         ]
       },
       "wyckoff_laws": {
