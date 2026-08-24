@@ -1,24 +1,27 @@
 {
-  "last_scan": "2026-08-24T17:37:32.669218+00:00",
+  "last_scan": "2026-08-24T17:40:52.224782+00:00",
   "setups": [
     {
       "ticker": "ZS=F",
-      "price": 1224.0,
+      "price": 1226.0,
       "primary_tfs": [
-        "D"
+        "D",
+        "15m"
       ],
-      "entry_tfs": [
-        "1m"
-      ],
-      "mtf_score": 5.2,
+      "entry_tfs": [],
+      "mtf_score": 5.5,
       "signals": [
         "Inverted H&S",
-        "Bullish Engulf"
+        "Bullish Engulf",
+        "Trendline Bounce",
+        "Morning Star"
       ],
       "smc_signals": [
         "Breaker",
         "Inv. H&S",
         "Engulfing",
+        "Trendline",
+        "Morning Star",
         "Liq. Sweep (BULL)",
         "BOS \u00b7 CISD",
         "IFVG",
@@ -31,7 +34,6 @@
         "LH/LL",
         "Desc. Trendline",
         "Supply Grab",
-        "Upthrust / UTAD",
         "H&S",
         "BOS \u2193",
         "Bear Order Block",
@@ -39,22 +41,17 @@
       ],
       "tech_summary": "Y: HH/HL uptrend \u00b7 6M: at demand zone, bullish engulfing \u00b7 3M: breaker block support, at demand zone",
       "entry_levels": {
-        "entry_low": 1222.25,
-        "entry_high": 1223.5,
-        "mean_threshold": 1222.875,
-        "stop": 1219.19,
+        "entry_low": 1146.25,
+        "entry_high": 1175.5,
+        "mean_threshold": 1160.875,
+        "stop": 1131.625,
         "t1": 1536.75,
         "t2": 1794.75,
-        "basis": "30m FVG",
+        "basis": "W Order Block",
         "direction": "long",
         "neckline": 1223.25
       },
-      "fundamentals": {
-        "company_name": "Soybean Futures,Nov-2026",
-        "w52_high": 1250.5,
-        "w52_low": 993.75,
-        "sharpe_ratio": 0.91
-      },
+      "fundamentals": {},
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -66,7 +63,7 @@
       },
       "tv_ticker": "CBOT:ZS1!",
       "session": "MIDDAY",
-      "timestamp": "2026-08-24T13:15:41.294647",
+      "timestamp": "2026-08-24T13:40:36.669642",
       "ict": {
         "by_tf": {
           "1m": {
@@ -266,18 +263,18 @@
             "ifvg": {
               "direction": "bearish",
               "top": 1231.0,
-              "bottom": 1226.75,
-              "midpoint": 1228.875,
-              "height": 4.25,
+              "bottom": 1227.0,
+              "midpoint": 1229.0,
+              "height": 4.0,
               "formed_at": "2026-08-24T12:00:00-04:00"
             },
             "retrace": {
               "status": "BELOW_ZONE",
-              "current_price": 1224.0,
+              "current_price": 1225.5,
               "zone_top": 1231.0,
-              "zone_bottom": 1226.75,
-              "zone_mid": 1228.875,
-              "pct_from_mid": -0.397,
+              "zone_bottom": 1227.0,
+              "zone_mid": 1229.0,
+              "pct_from_mid": -0.285,
               "alert": false
             },
             "targets": [
@@ -388,11 +385,11 @@
             },
             "retrace": {
               "status": "IN_ZONE",
-              "current_price": 1224.0,
+              "current_price": 1225.5,
               "zone_top": 1337.25,
               "zone_bottom": 910.0,
               "zone_mid": 1123.625,
-              "pct_from_mid": 8.933,
+              "pct_from_mid": 9.067,
               "alert": true
             },
             "targets": [
@@ -456,11 +453,11 @@
             },
             "retrace": {
               "status": "BEYOND",
-              "current_price": 1224.0,
+              "current_price": 1225.5,
               "zone_top": 1126.75,
               "zone_bottom": 1075.0,
               "zone_mid": 1100.875,
-              "pct_from_mid": 11.184,
+              "pct_from_mid": 11.321,
               "alert": false
             },
             "targets": [
@@ -542,11 +539,11 @@
         },
         "retrace": {
           "status": "IN_ZONE",
-          "current_price": 1224.0,
+          "current_price": 1225.5,
           "zone_top": 1337.25,
           "zone_bottom": 910.0,
           "zone_mid": 1123.625,
-          "pct_from_mid": 8.933,
+          "pct_from_mid": 9.067,
           "alert": true
         },
         "targets": [
@@ -581,13 +578,10 @@
           "H3"
         ],
         "ltf": [
-          "H1",
-          "45m",
-          "5m",
-          "3m"
+          "H1"
         ]
       },
-      "tech_conviction": 4,
+      "tech_conviction": 5,
       "tech_pillars": {
         "line_pattern": true,
         "candle": true,
@@ -629,8 +623,8 @@
       "ict_elite": true,
       "ict_entry_live": true,
       "wyckoff_elite": true,
-      "wyckoff_entry_live": true,
-      "rvol": 10.98,
+      "wyckoff_entry_live": false,
+      "rvol": 11.63,
       "in_killzone": false,
       "session_weight": 0.0,
       "session_label": "",
@@ -666,7 +660,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": true
       },
-      "verdict_notes": "RSI 84.38 \u00b7 Seasonal -1.2%",
+      "verdict_notes": "RSI 84.15 \u00b7 Seasonal -1.2%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -676,13 +670,12 @@
       "analyst": {},
       "seasonality": {
         "month": 8,
-        "hist_avg_return_pct": -1.18,
+        "hist_avg_return_pct": -1.21,
         "historically_positive": false
       },
       "signals_by_tf": {
         "HH/HL": [
-          "Y",
-          "15m"
+          "Y"
         ],
         "Demand Zone": [
           "6M",
@@ -691,15 +684,16 @@
           "H4",
           "H1",
           "45m",
-          "30m"
+          "5m",
+          "3m"
         ],
         "Engulfing": [
           "6M",
-          "D",
-          "1m"
+          "D"
         ],
         "Morning Star": [
-          "6M"
+          "6M",
+          "15m"
         ],
         "Breaker": [
           "3M",
@@ -740,13 +734,6 @@
         ],
         "Wyckoff Spring": [
           "H3"
-        ],
-        "FVG": [
-          "30m"
-        ],
-        "Liq. Grab": [
-          "5m",
-          "3m"
         ]
       },
       "bear_signals_by_tf": {
@@ -759,9 +746,8 @@
           "D",
           "H3",
           "H2",
+          "30m",
           "15m",
-          "5m",
-          "3m",
           "1m"
         ],
         "Bear Breaker": [
@@ -802,10 +788,9 @@
           "1m"
         ],
         "Supply Grab": [
-          "M"
-        ],
-        "Upthrust / UTAD": [
-          "M"
+          "M",
+          "45m",
+          "30m"
         ],
         "H&S": [
           "M",
@@ -831,9 +816,7 @@
           "H3"
         ],
         "Bearish Engulf": [
-          "H4",
-          "5m",
-          "3m"
+          "H4"
         ]
       },
       "short_volume": {},
@@ -841,8 +824,8 @@
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "C",
-      "wyckoff_conviction": 9,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase C (the test (Spring/UTAD) \u2014 highest-R entry) \u00b7 conviction 9/10",
+      "wyckoff_conviction": 8,
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase C (the test (Spring/UTAD) \u2014 highest-R entry) \u00b7 conviction 8/10",
       "wyckoff_by_tf": {
         "Reaccumulation": [
           "6M",
@@ -851,14 +834,16 @@
           "W",
           "D",
           "H1",
-          "30m"
+          "15m",
+          "5m",
+          "3m"
         ],
         "Distribution": [
           "H4",
           "H3",
           "H2",
-          "5m",
-          "3m"
+          "45m",
+          "30m"
         ]
       },
       "wyckoff_laws": {
@@ -874,10 +859,10 @@
             "H4",
             "H1",
             "45m",
-            "30m",
             "15m",
             "5m",
-            "3m"
+            "3m",
+            "1m"
           ],
           "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
         },
@@ -906,9 +891,7 @@
           "tfs": [
             "6M",
             "D",
-            "5m",
-            "3m",
-            "1m"
+            "15m"
           ],
           "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
         }
@@ -916,14 +899,16 @@
     },
     {
       "ticker": "RB=F",
-      "price": 2.9605,
+      "price": 2.9575,
       "primary_tfs": [
         "6M",
         "M",
         "D"
       ],
-      "entry_tfs": [],
-      "mtf_score": 7.8,
+      "entry_tfs": [
+        "1m"
+      ],
+      "mtf_score": 7.4,
       "signals": [
         "Bullish Engulf",
         "Trendline Bounce",
@@ -940,10 +925,9 @@
         "Breaker",
         "Inv. H&S",
         "Railway",
-        "Liq. Sweep (BULL)",
+        "Liq. Sweep (BEAR)",
         "BOS \u00b7 CISD",
-        "IFVG",
-        "Approaching IFVG"
+        "IFVG"
       ],
       "bear_signals": [
         "Desc. Trendline",
@@ -955,7 +939,8 @@
         "BOS \u2193",
         "Supply Grab",
         "Bear Railway",
-        "Bearish Engulf"
+        "Bearish Engulf",
+        "Bear FVG"
       ],
       "tech_summary": "Y: HH/HL uptrend \u00b7 6M: liq. swept below swing low, at demand zone \u00b7 3M: FVG present, at demand zone",
       "entry_levels": {
@@ -963,11 +948,11 @@
         "entry_high": 2.8418,
         "mean_threshold": 2.5695,
         "stop": 2.0248,
-        "t1": 2.961,
-        "t2": 2.9672,
+        "t1": 4.4759,
+        "t2": 5.2929,
         "basis": "3M FVG",
         "direction": "long",
-        "neckline": 2.9637
+        "neckline": 2.9607
       },
       "fundamentals": {
         "company_name": "RBOB Gasoline Oct 26",
@@ -986,7 +971,7 @@
       },
       "tv_ticker": "RB1!",
       "session": "MIDDAY",
-      "timestamp": "2026-08-24T13:15:41.998742",
+      "timestamp": "2026-08-24T13:40:40.303826",
       "ict": {
         "by_tf": {
           "1m": {
@@ -997,53 +982,12 @@
               "midpoint": 2.9906,
               "range_pts": 0.0426
             },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 2.9693,
-              "depth_pts": 0.0037,
-              "timestamp": "2026-08-24T12:33:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 2.9677,
-              "bos_close": 2.9693,
-              "timestamp": "2026-08-24T12:34:00-04:00"
-            },
-            "ifvg": {
-              "direction": "bullish",
-              "top": 2.966,
-              "bottom": 2.9641,
-              "midpoint": 2.965,
-              "height": 0.0019,
-              "formed_at": "2026-08-24T12:39:00-04:00"
-            },
-            "retrace": {
-              "status": "APPROACHING",
-              "current_price": 2.9605,
-              "zone_top": 2.966,
-              "zone_bottom": 2.9641,
-              "zone_mid": 2.965,
-              "pct_from_mid": -0.153,
-              "alert": false
-            },
-            "targets": [
-              {
-                "label": "Swing High (BSL)",
-                "price": 2.961,
-                "type": "liquidity"
-              },
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 2.9672,
-                "type": "liquidity"
-              },
-              {
-                "label": "Session High (BSL)",
-                "price": 3.0119,
-                "type": "liquidity"
-              }
-            ],
-            "stage": "APPROACHING",
+            "sweep": null,
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "ACCUMULATION",
             "alert": false
           },
           "3m": {
@@ -1285,11 +1229,11 @@
             },
             "retrace": {
               "status": "BEYOND",
-              "current_price": 2.9602,
+              "current_price": 2.9573,
               "zone_top": 3.263,
               "zone_bottom": 3.188,
               "zone_mid": 3.2255,
-              "pct_from_mid": -8.225,
+              "pct_from_mid": -8.315,
               "alert": false
             },
             "targets": [
@@ -1358,11 +1302,11 @@
             },
             "retrace": {
               "status": "BEYOND",
-              "current_price": 2.9602,
+              "current_price": 2.9573,
               "zone_top": 2.0585,
               "zone_bottom": 2.0506,
               "zone_mid": 2.0546,
-              "pct_from_mid": 44.08,
+              "pct_from_mid": 43.939,
               "alert": false
             },
             "targets": [
@@ -1451,7 +1395,6 @@
         },
         "found_on": {
           "sweep": [
-            "1m",
             "3m",
             "5m",
             "15m",
@@ -1468,7 +1411,6 @@
             "12mo"
           ],
           "bos": [
-            "1m",
             "1h",
             "2h",
             "3h",
@@ -1477,69 +1419,66 @@
             "1mo"
           ],
           "ifvg": [
-            "1m",
             "1d",
             "1mo"
           ],
           "entry_zone": [],
-          "approaching": [
-            "1m"
-          ]
+          "approaching": []
         },
-        "primary_tf": "1m",
+        "primary_tf": "1mo",
         "session": {
-          "high": 3.0119,
-          "low": 2.9693,
-          "midpoint": 2.9906,
-          "range_pts": 0.0426
+          "high": 2.1559,
+          "low": 0.4738,
+          "midpoint": 1.3149,
+          "range_pts": 1.6821
         },
         "sweep": {
-          "direction": "bullish",
-          "swept_level": 2.9693,
-          "depth_pts": 0.0037,
-          "timestamp": "2026-08-24T12:33:00-04:00"
+          "direction": "bearish",
+          "swept_level": 2.1559,
+          "depth_pts": 0.1888,
+          "timestamp": "2025-04-01T00:00:00"
         },
         "bos": {
-          "direction": "bullish",
-          "structure_level": 2.9677,
-          "bos_close": 2.9693,
-          "timestamp": "2026-08-24T12:34:00-04:00"
+          "direction": "bearish",
+          "structure_level": 1.8812,
+          "bos_close": 1.7054,
+          "timestamp": "2025-12-01T00:00:00"
         },
         "ifvg": {
-          "direction": "bullish",
-          "top": 2.966,
-          "bottom": 2.9641,
-          "midpoint": 2.965,
-          "height": 0.0019,
-          "formed_at": "2026-08-24T12:39:00-04:00"
+          "direction": "bearish",
+          "top": 2.0585,
+          "bottom": 2.0506,
+          "midpoint": 2.0546,
+          "height": 0.0079,
+          "formed_at": "2025-09-01T00:00:00"
         },
         "retrace": {
-          "status": "APPROACHING",
-          "current_price": 2.9605,
-          "zone_top": 2.966,
-          "zone_bottom": 2.9641,
-          "zone_mid": 2.965,
-          "pct_from_mid": -0.153,
+          "status": "BEYOND",
+          "current_price": 2.9573,
+          "zone_top": 2.0585,
+          "zone_bottom": 2.0506,
+          "zone_mid": 2.0546,
+          "pct_from_mid": 43.939,
           "alert": false
         },
         "targets": [
           {
-            "label": "Swing High (BSL)",
-            "price": 2.961,
+            "label": "Equal Lows (SSL)",
+            "price": 2.8866,
             "type": "liquidity"
           },
           {
-            "label": "Equal Highs (BSL)",
-            "price": 2.9672,
+            "label": "Equal Lows (SSL)",
+            "price": 2.5108,
             "type": "liquidity"
           },
           {
-            "label": "Session High (BSL)",
-            "price": 3.0119,
+            "label": "Swing Low (SSL)",
+            "price": 2.25,
             "type": "liquidity"
           }
         ],
-        "stage": "APPROACHING",
+        "stage": "IFVG_FORMED",
         "alert": false
       },
       "golden_entry": false,
@@ -1560,9 +1499,7 @@
           "H3"
         ],
         "ltf": [
-          "30m",
-          "5m",
-          "3m"
+          "30m"
         ]
       },
       "tech_conviction": 7,
@@ -1591,7 +1528,7 @@
         "1m"
       ],
       "golden_technical": false,
-      "ict_conviction": 9,
+      "ict_conviction": 8,
       "ict_pillars": {
         "sweep": true,
         "bos": true,
@@ -1645,7 +1582,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": true
       },
-      "verdict_notes": "6M:Demand 6M:LiqGrab M:HH/HL D:BOS \u00b7 RSI 55.05 \u00b7 Seasonal -10.2%",
+      "verdict_notes": "6M:Demand 6M:LiqGrab M:HH/HL D:BOS \u00b7 RSI 55.0 \u00b7 Seasonal -10.2%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -1655,30 +1592,31 @@
       "analyst": {},
       "seasonality": {
         "month": 8,
-        "hist_avg_return_pct": -10.22,
+        "hist_avg_return_pct": -10.24,
         "historically_positive": false
       },
       "signals_by_tf": {
         "HH/HL": [
           "Y",
           "M",
-          "H3",
-          "30m",
-          "5m",
-          "3m"
+          "H3"
         ],
         "Liq. Grab": [
-          "6M"
+          "6M",
+          "5m",
+          "3m"
         ],
         "Demand Zone": [
           "6M",
           "3M",
           "H3",
-          "H2"
+          "H2",
+          "15m"
         ],
         "Engulfing": [
           "6M",
-          "M"
+          "M",
+          "1m"
         ],
         "FVG": [
           "3M",
@@ -1727,13 +1665,17 @@
           "D"
         ],
         "Railway": [
-          "D"
+          "D",
+          "5m",
+          "3m",
+          "1m"
         ],
         "Order Block": [
           "H4"
         ],
         "Wyckoff Spring": [
-          "H3"
+          "5m",
+          "3m"
         ]
       },
       "bear_signals_by_tf": {
@@ -1772,6 +1714,7 @@
           "D",
           "H2",
           "H1",
+          "15m",
           "1m"
         ],
         "Supply Zone": [
@@ -1780,7 +1723,6 @@
           "H1",
           "45m",
           "30m",
-          "15m",
           "5m",
           "3m",
           "1m"
@@ -1801,9 +1743,7 @@
         "BOS \u2193": [
           "H4",
           "H3",
-          "H2",
-          "5m",
-          "3m"
+          "H2"
         ],
         "Supply Grab": [
           "H3"
@@ -1811,13 +1751,13 @@
         "Bear Railway": [
           "H3",
           "H2",
-          "30m",
-          "15m",
-          "1m"
+          "30m"
         ],
         "Bearish Engulf": [
-          "H2",
-          "30m"
+          "H2"
+        ],
+        "Bear FVG": [
+          "1m"
         ]
       },
       "short_volume": {},
@@ -1825,8 +1765,8 @@
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "D",
-      "wyckoff_conviction": 8,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase D (trend leaving the range) \u00b7 conviction 8/10",
+      "wyckoff_conviction": 9,
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase D (trend leaving the range) \u00b7 conviction 9/10",
       "wyckoff_by_tf": {
         "Reaccumulation": [
           "Y",
@@ -1834,13 +1774,14 @@
           "3M",
           "M",
           "W",
-          "H3"
+          "H3",
+          "15m",
+          "5m",
+          "3m"
         ],
         "Distribution": [
           "H2",
           "H1",
-          "5m",
-          "3m",
           "1m"
         ]
       },
@@ -1856,7 +1797,7 @@
             "H4",
             "H3",
             "H2",
-            "30m",
+            "15m",
             "5m",
             "3m"
           ],
@@ -1884,102 +1825,135 @@
           "active": true,
           "tfs": [
             "6M",
-            "M"
+            "M",
+            "5m",
+            "3m",
+            "1m"
           ],
           "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
         }
       }
     },
     {
-      "ticker": "ZC=F",
-      "price": 520.0,
+      "ticker": "MTCH",
+      "price": 41.46,
       "primary_tfs": [
         "6M",
-        "3M",
-        "M",
-        "W",
-        "H2",
-        "H1",
-        "45m",
-        "30m",
-        "15m",
-        "5m",
-        "3m",
-        "1m"
+        "H1"
       ],
-      "entry_tfs": [],
-      "mtf_score": 5.6,
+      "entry_tfs": [
+        "H1"
+      ],
+      "mtf_score": 6.9,
       "signals": [
-        "Inverted H&S",
-        "Trendline Bounce"
+        "Bullish Engulf",
+        "Trendline Bounce",
+        "Inverted H&S"
       ],
       "smc_signals": [
-        "Demand Zone",
-        "HH/HL",
-        "Inv. H&S",
         "BOS \u2191",
-        "FVG",
-        "Liq. Grab",
-        "Breaker",
+        "Demand Zone",
+        "Engulfing",
+        "HH/HL",
         "Trendline",
-        "Liq. Sweep (BEAR)",
+        "Inv. H&S",
+        "Liq. Sweep (BULL)",
         "BOS \u00b7 CISD",
         "IFVG"
       ],
       "bear_signals": [
+        "Bear Breaker",
         "Desc. Trendline",
         "Supply Grab",
         "Supply Zone",
+        "Bear Railway",
         "H&S",
-        "Evening Star",
-        "Bear FVG",
-        "Bear Order Block",
-        "LH/LL",
-        "Bear Breaker",
         "Upthrust / UTAD",
-        "BOS \u2193",
-        "Bearish Engulf",
-        "Bear Railway"
+        "Evening Star",
+        "LH/LL",
+        "Bear FVG"
       ],
-      "tech_summary": "Y: at demand zone \u00b7 6M: at demand zone \u00b7 3M: HH/HL uptrend",
+      "tech_summary": "Y: liq. swept below swing low, at demand zone \u00b7 6M: BOS confirmed, at demand zone \u00b7 3M: HH/HL uptrend, breaker block support",
       "entry_levels": {
-        "entry_low": 519.5,
-        "entry_high": 520.25,
-        "mean_threshold": 519.875,
-        "stop": 518.2,
-        "t1": 530.65,
-        "t2": 535.85,
-        "basis": "30m FVG",
+        "entry_low": 40.93,
+        "entry_high": 41.18,
+        "mean_threshold": 41.055,
+        "stop": 40.805,
+        "t1": 41.4834,
+        "t2": 41.59,
+        "basis": "H2 FVG",
         "direction": "long",
-        "neckline": 519.75
+        "neckline": 41.4515
       },
       "fundamentals": {
-        "company_name": "Corn Futures,Dec-2026",
-        "w52_high": 524.25,
-        "w52_low": 379.75,
-        "sharpe_ratio": 1.25
+        "company_name": "Match Group, Inc.",
+        "w52_high": 41.59,
+        "w52_low": 28.81,
+        "market_cap": "$9.7B",
+        "sector": "Communication Services",
+        "pe_ratio": 14.7,
+        "peg_ratio": 0.37,
+        "eps": 2.82,
+        "gross_margin": 74.87,
+        "operating_margin": 28.77,
+        "profit_margin": 20.17,
+        "ebitda_margin": 33.88,
+        "roa": 17.36,
+        "current_ratio": 1.72,
+        "price_to_sales": 2.75,
+        "fcf": "$931M",
+        "dividend_yield": 1.96,
+        "beta": 1.32,
+        "sharpe_ratio": 0.44,
+        "alpha": -5.98,
+        "earnings_yield": 9.54,
+        "roc": 17.36,
+        "magic_formula_grade": "C",
+        "owner_earnings": "$931M",
+        "fcf_margin": 26.52,
+        "roic": 7.05,
+        "owner_earnings_yield": 9.63,
+        "debt_to_fcf": 3.94,
+        "share_count_change": 0.0,
+        "revenue_growth": -1.2,
+        "earnings_growth": 50.4,
+        "ev_to_fcf": 13.4,
+        "fcf_yield": 9.63,
+        "analyst_rating": "Buy",
+        "earnings_date": "Aug 4"
       },
-      "intrinsic_value": {},
-      "fundamental_conviction": 0.0,
-      "fundamental_grade": "F",
+      "intrinsic_value": {
+        "iv": 49.01,
+        "price_to_iv": 0.845,
+        "upside_pct": 18.3,
+        "discount_pct": 18.3,
+        "methods_used": 3,
+        "low_confidence": false,
+        "undervalued": true,
+        "dcf_iv": 45.63,
+        "ev_ebitda_iv": 47.21,
+        "pe_iv": 54.19
+      },
+      "fundamental_conviction": 6.3,
+      "fundamental_grade": "B+",
       "fundamental_sub_scores": {
-        "cheap": null,
-        "good_business": null,
-        "healthy": null,
-        "street": null
+        "cheap": 7.5,
+        "good_business": 6.7,
+        "healthy": 5.0,
+        "street": 6.4
       },
-      "tv_ticker": "CBOT:ZC1!",
+      "tv_ticker": "MTCH",
       "session": "MIDDAY",
-      "timestamp": "2026-08-24T13:15:45.114267",
+      "timestamp": "2026-08-24T13:40:47.683515",
       "ict": {
         "by_tf": {
           "1m": {
             "tf": "1m",
             "session": {
-              "high": 524.25,
-              "low": 517.5,
-              "midpoint": 520.875,
-              "range_pts": 6.75
+              "high": 41.43,
+              "low": 40.59,
+              "midpoint": 41.01,
+              "range_pts": 0.84
             },
             "sweep": null,
             "bos": null,
@@ -1992,152 +1966,116 @@
           "3m": {
             "tf": "3m",
             "session": {
-              "high": 524.25,
-              "low": 517.5,
-              "midpoint": 520.875,
-              "range_pts": 6.75
+              "high": 41.4834,
+              "low": 40.59,
+              "midpoint": 41.0367,
+              "range_pts": 0.8934
             },
             "sweep": {
-              "direction": "bullish",
-              "swept_level": 517.5,
-              "depth_pts": 0.25,
-              "timestamp": "2026-08-24T11:20:00-04:00"
+              "direction": "bearish",
+              "swept_level": 41.4834,
+              "depth_pts": 0.0466,
+              "timestamp": "2026-08-24T13:35:00-04:00"
             },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 517.5,
-              "bos_close": 518.5,
-              "timestamp": "2026-08-24T11:25:00-04:00"
-            },
-            "ifvg": {
-              "direction": "bullish",
-              "top": 519.25,
-              "bottom": 518.75,
-              "midpoint": 519.0,
-              "height": 0.5,
-              "formed_at": "2026-08-24T12:00:00-04:00"
-            },
-            "retrace": {
-              "status": "ABOVE_ZONE",
-              "current_price": 520.25,
-              "zone_top": 519.25,
-              "zone_bottom": 518.75,
-              "zone_mid": 519.0,
-              "pct_from_mid": 0.241,
-              "alert": false
-            },
-            "targets": [
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 521.9844,
-                "type": "liquidity"
-              },
-              {
-                "label": "Session High (BSL)",
-                "price": 524.25,
-                "type": "liquidity"
-              }
-            ],
-            "stage": "IFVG_FORMED",
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
             "alert": false
           },
           "5m": {
             "tf": "5m",
             "session": {
-              "high": 524.25,
-              "low": 517.5,
-              "midpoint": 520.875,
-              "range_pts": 6.75
+              "high": 41.4834,
+              "low": 40.59,
+              "midpoint": 41.0367,
+              "range_pts": 0.8934
+            },
+            "sweep": {
+              "direction": "bearish",
+              "swept_level": 41.4834,
+              "depth_pts": 0.0466,
+              "timestamp": "2026-08-24T13:35:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "15m": {
+            "tf": "15m",
+            "session": {
+              "high": 41.59,
+              "low": 40.59,
+              "midpoint": 41.09,
+              "range_pts": 1.0
             },
             "sweep": {
               "direction": "bullish",
-              "swept_level": 517.5,
-              "depth_pts": 0.25,
-              "timestamp": "2026-08-24T11:20:00-04:00"
+              "swept_level": 40.59,
+              "depth_pts": 0.12,
+              "timestamp": "2026-08-21T15:30:00-04:00"
             },
             "bos": {
               "direction": "bullish",
-              "structure_level": 517.5,
-              "bos_close": 518.5,
-              "timestamp": "2026-08-24T11:25:00-04:00"
+              "structure_level": 40.54,
+              "bos_close": 40.871,
+              "timestamp": "2026-08-21T15:45:00-04:00"
             },
             "ifvg": {
               "direction": "bullish",
-              "top": 519.25,
-              "bottom": 518.75,
-              "midpoint": 519.0,
-              "height": 0.5,
-              "formed_at": "2026-08-24T12:00:00-04:00"
+              "top": 41.02,
+              "bottom": 40.95,
+              "midpoint": 40.985,
+              "height": 0.07,
+              "formed_at": "2026-08-24T09:45:00-04:00"
             },
             "retrace": {
               "status": "ABOVE_ZONE",
-              "current_price": 520.25,
-              "zone_top": 519.25,
-              "zone_bottom": 518.75,
-              "zone_mid": 519.0,
-              "pct_from_mid": 0.241,
+              "current_price": 41.46,
+              "zone_top": 41.02,
+              "zone_bottom": 40.95,
+              "zone_mid": 40.985,
+              "pct_from_mid": 1.159,
               "alert": false
             },
             "targets": [
               {
-                "label": "Equal Highs (BSL)",
-                "price": 521.9844,
+                "label": "Swing High (BSL)",
+                "price": 41.4834,
                 "type": "liquidity"
               },
               {
                 "label": "Session High (BSL)",
-                "price": 524.25,
+                "price": 41.59,
                 "type": "liquidity"
               }
             ],
             "stage": "IFVG_FORMED",
             "alert": false
           },
-          "15m": {
-            "tf": "15m",
-            "session": {
-              "high": 524.25,
-              "low": 517.5,
-              "midpoint": 520.875,
-              "range_pts": 6.75
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 517.5,
-              "depth_pts": 0.25,
-              "timestamp": "2026-08-24T11:45:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 519.5,
-              "bos_close": 521.75,
-              "timestamp": "2026-08-24T12:00:00-04:00"
-            },
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "BOS_CONFIRMED",
-            "alert": false
-          },
           "30m": {
             "tf": "30m",
             "session": {
-              "high": 524.25,
-              "low": 517.5,
-              "midpoint": 520.875,
-              "range_pts": 6.75
+              "high": 41.59,
+              "low": 40.59,
+              "midpoint": 41.09,
+              "range_pts": 1.0
             },
             "sweep": {
               "direction": "bullish",
-              "swept_level": 517.5,
-              "depth_pts": 0.25,
-              "timestamp": "2026-08-24T11:30:00-04:00"
+              "swept_level": 40.59,
+              "depth_pts": 0.12,
+              "timestamp": "2026-08-21T15:30:00-04:00"
             },
             "bos": {
               "direction": "bullish",
-              "structure_level": 521.5,
-              "bos_close": 522.75,
-              "timestamp": "2026-08-24T12:00:00-04:00"
+              "structure_level": 40.54,
+              "bos_close": 41.24,
+              "timestamp": "2026-08-24T09:30:00-04:00"
             },
             "ifvg": null,
             "retrace": null,
@@ -2148,22 +2086,22 @@
           "45m": {
             "tf": "45m",
             "session": {
-              "high": 524.25,
-              "low": 517.5,
-              "midpoint": 520.875,
-              "range_pts": 6.75
+              "high": 41.59,
+              "low": 40.59,
+              "midpoint": 41.09,
+              "range_pts": 1.0
             },
             "sweep": {
               "direction": "bullish",
-              "swept_level": 517.5,
-              "depth_pts": 0.25,
-              "timestamp": "2026-08-24T11:30:00-04:00"
+              "swept_level": 40.59,
+              "depth_pts": 0.12,
+              "timestamp": "2026-08-21T15:30:00-04:00"
             },
             "bos": {
               "direction": "bullish",
-              "structure_level": 521.5,
-              "bos_close": 522.75,
-              "timestamp": "2026-08-24T12:00:00-04:00"
+              "structure_level": 40.54,
+              "bos_close": 41.24,
+              "timestamp": "2026-08-24T09:30:00-04:00"
             },
             "ifvg": null,
             "retrace": null,
@@ -2174,85 +2112,100 @@
           "1h": {
             "tf": "1h",
             "session": {
-              "high": 524.25,
-              "low": 517.5,
-              "midpoint": 520.875,
-              "range_pts": 6.75
+              "high": 41.59,
+              "low": 40.59,
+              "midpoint": 41.09,
+              "range_pts": 1.0
             },
             "sweep": {
               "direction": "bullish",
-              "swept_level": 517.5,
-              "depth_pts": 3.25,
-              "timestamp": "2026-08-24T11:00:00-04:00"
+              "swept_level": 40.59,
+              "depth_pts": 0.12,
+              "timestamp": "2026-08-21T15:30:00-04:00"
             },
-            "bos": null,
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 40.58,
+              "bos_close": 41.28,
+              "timestamp": "2026-08-24T09:30:00-04:00"
+            },
             "ifvg": null,
             "retrace": null,
             "targets": [],
-            "stage": "SWEPT",
+            "stage": "BOS_CONFIRMED",
             "alert": false
           },
           "2h": {
             "tf": "2h",
             "session": {
-              "high": 524.25,
-              "low": 517.5,
-              "midpoint": 520.875,
-              "range_pts": 6.75
+              "high": 41.59,
+              "low": 40.59,
+              "midpoint": 41.09,
+              "range_pts": 1.0
             },
             "sweep": {
               "direction": "bullish",
-              "swept_level": 517.5,
-              "depth_pts": 3.25,
-              "timestamp": "2026-08-24T11:00:00-04:00"
+              "swept_level": 40.59,
+              "depth_pts": 0.12,
+              "timestamp": "2026-08-21T15:30:00-04:00"
             },
-            "bos": null,
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 40.58,
+              "bos_close": 41.28,
+              "timestamp": "2026-08-24T09:30:00-04:00"
+            },
             "ifvg": null,
             "retrace": null,
             "targets": [],
-            "stage": "SWEPT",
+            "stage": "BOS_CONFIRMED",
             "alert": false
           },
           "3h": {
             "tf": "3h",
             "session": {
-              "high": 524.25,
-              "low": 517.5,
-              "midpoint": 520.875,
-              "range_pts": 6.75
+              "high": 41.59,
+              "low": 40.59,
+              "midpoint": 41.09,
+              "range_pts": 1.0
             },
             "sweep": {
               "direction": "bullish",
-              "swept_level": 517.5,
-              "depth_pts": 3.25,
-              "timestamp": "2026-08-24T11:00:00-04:00"
+              "swept_level": 40.59,
+              "depth_pts": 0.12,
+              "timestamp": "2026-08-21T15:30:00-04:00"
             },
-            "bos": null,
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 40.58,
+              "bos_close": 41.28,
+              "timestamp": "2026-08-24T09:30:00-04:00"
+            },
             "ifvg": null,
             "retrace": null,
             "targets": [],
-            "stage": "SWEPT",
+            "stage": "BOS_CONFIRMED",
             "alert": false
           },
           "4h": {
             "tf": "4h",
             "session": {
-              "high": 524.25,
-              "low": 511.5,
-              "midpoint": 517.875,
-              "range_pts": 12.75
+              "high": 41.59,
+              "low": 40.59,
+              "midpoint": 41.09,
+              "range_pts": 1.0
             },
             "sweep": {
               "direction": "bullish",
-              "swept_level": 511.5,
-              "depth_pts": 1.25,
-              "timestamp": "2026-08-23T20:00:00-04:00"
+              "swept_level": 40.59,
+              "depth_pts": 0.315,
+              "timestamp": "2026-08-21T13:30:00-04:00"
             },
             "bos": {
               "direction": "bullish",
-              "structure_level": 509.0,
-              "bos_close": 518.75,
-              "timestamp": "2026-08-24T00:00:00-04:00"
+              "structure_level": 40.58,
+              "bos_close": 41.51,
+              "timestamp": "2026-08-24T09:30:00-04:00"
             },
             "ifvg": null,
             "retrace": null,
@@ -2263,98 +2216,16 @@
           "1d": {
             "tf": "1d",
             "session": {
-              "high": 481.75,
-              "low": 446.75,
-              "midpoint": 464.25,
-              "range_pts": 35.0
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 446.75,
-              "depth_pts": 10.75,
-              "timestamp": "2026-08-12T00:00:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 444.5,
-              "bos_close": 448.0,
-              "timestamp": "2026-08-13T00:00:00"
-            },
-            "ifvg": {
-              "direction": "bullish",
-              "top": 458.0,
-              "bottom": 457.25,
-              "midpoint": 457.625,
-              "height": 0.75,
-              "formed_at": "2026-08-17T00:00:00"
-            },
-            "retrace": {
-              "status": "ABOVE_ZONE",
-              "current_price": 520.0,
-              "zone_top": 458.0,
-              "zone_bottom": 457.25,
-              "zone_mid": 457.625,
-              "pct_from_mid": 13.63,
-              "alert": false
-            },
-            "targets": [],
-            "stage": "IFVG_FORMED",
-            "alert": false
-          },
-          "1wk": {
-            "tf": "1wk",
-            "session": {
-              "high": 504.5,
-              "low": 408.0,
-              "midpoint": 456.25,
-              "range_pts": 96.5
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 408.0,
-              "depth_pts": 9.5,
-              "timestamp": "2026-06-29T00:00:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 463.0,
-              "bos_close": 464.25,
-              "timestamp": "2026-07-20T00:00:00"
-            },
-            "ifvg": {
-              "direction": "bullish",
-              "top": 445.5,
-              "bottom": 444.5,
-              "midpoint": 445.0,
-              "height": 1.0,
-              "formed_at": "2026-07-20T00:00:00"
-            },
-            "retrace": {
-              "status": "ABOVE_ZONE",
-              "current_price": 520.0,
-              "zone_top": 445.5,
-              "zone_bottom": 444.5,
-              "zone_mid": 445.0,
-              "pct_from_mid": 16.854,
-              "alert": false
-            },
-            "targets": [],
-            "stage": "IFVG_FORMED",
-            "alert": false
-          },
-          "1mo": {
-            "tf": "1mo",
-            "session": {
-              "high": 464.25,
-              "low": 300.25,
-              "midpoint": 382.25,
-              "range_pts": 164.0
+              "high": 38.7283,
+              "low": 34.6491,
+              "midpoint": 36.6887,
+              "range_pts": 4.0792
             },
             "sweep": {
               "direction": "bearish",
-              "swept_level": 464.25,
-              "depth_pts": 17.5,
-              "timestamp": "2026-05-01T00:00:00"
+              "swept_level": 38.7283,
+              "depth_pts": 0.3117,
+              "timestamp": "2026-08-18T00:00:00"
             },
             "bos": null,
             "ifvg": null,
@@ -2363,13 +2234,45 @@
             "stage": "SWEPT",
             "alert": false
           },
+          "1wk": {
+            "tf": "1wk",
+            "session": {
+              "high": 34.1712,
+              "low": 25.641,
+              "midpoint": 29.9061,
+              "range_pts": 8.5302
+            },
+            "sweep": null,
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "ACCUMULATION",
+            "alert": false
+          },
+          "1mo": {
+            "tf": "1mo",
+            "session": {
+              "high": 167.7169,
+              "low": 42.9566,
+              "midpoint": 105.3367,
+              "range_pts": 124.7603
+            },
+            "sweep": null,
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "ACCUMULATION",
+            "alert": false
+          },
           "3mo": {
             "tf": "3mo",
             "session": {
-              "high": 843.75,
-              "low": 301.0,
-              "midpoint": 572.375,
-              "range_pts": 542.75
+              "high": 22.0914,
+              "low": 7.6852,
+              "midpoint": 14.8883,
+              "range_pts": 14.4062
             },
             "sweep": null,
             "bos": null,
@@ -2382,10 +2285,10 @@
           "6mo": {
             "tf": "6mo",
             "session": {
-              "high": 828.75,
-              "low": 222.25,
-              "midpoint": 525.5,
-              "range_pts": 606.5
+              "high": 11.4293,
+              "low": 3.4523,
+              "midpoint": 7.4408,
+              "range_pts": 7.977
             },
             "sweep": null,
             "bos": null,
@@ -2398,58 +2301,17 @@
           "12mo": {
             "tf": "12mo",
             "session": {
-              "high": 765.0,
-              "low": 185.75,
-              "midpoint": 475.375,
-              "range_pts": 579.25
+              "high": 11.4293,
+              "low": 3.4523,
+              "midpoint": 7.4408,
+              "range_pts": 7.977
             },
-            "sweep": {
-              "direction": "bearish",
-              "swept_level": 765.0,
-              "depth_pts": 35.0,
-              "timestamp": "2022-07-01T00:00:00"
-            },
-            "bos": {
-              "direction": "bearish",
-              "structure_level": 487.75,
-              "bos_close": 476.75,
-              "timestamp": "2023-07-01T00:00:00"
-            },
-            "ifvg": {
-              "direction": "bearish",
-              "top": 623.0,
-              "bottom": 614.75,
-              "midpoint": 618.875,
-              "height": 8.25,
-              "formed_at": "2023-07-01T00:00:00"
-            },
-            "retrace": {
-              "status": "BELOW_ZONE",
-              "current_price": 520.0,
-              "zone_top": 623.0,
-              "zone_bottom": 614.75,
-              "zone_mid": 618.875,
-              "pct_from_mid": -15.977,
-              "alert": false
-            },
-            "targets": [
-              {
-                "label": "Equal Lows (SSL)",
-                "price": 455.875,
-                "type": "liquidity"
-              },
-              {
-                "label": "Swing Low (SSL)",
-                "price": 368.75,
-                "type": "liquidity"
-              },
-              {
-                "label": "Equal Lows (SSL)",
-                "price": 352.5,
-                "type": "liquidity"
-              }
-            ],
-            "stage": "IFVG_FORMED",
+            "sweep": null,
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "ACCUMULATION",
             "alert": false
           }
         },
@@ -2464,82 +2326,68 @@
             "2h",
             "3h",
             "4h",
-            "1d",
-            "1wk",
-            "1mo",
-            "12mo"
+            "1d"
           ],
           "bos": [
-            "3m",
-            "5m",
             "15m",
             "30m",
             "45m",
-            "4h",
-            "1d",
-            "1wk",
-            "12mo"
+            "1h",
+            "2h",
+            "3h",
+            "4h"
           ],
           "ifvg": [
-            "3m",
-            "5m",
-            "1d",
-            "1wk",
-            "12mo"
+            "15m"
           ],
           "entry_zone": [],
           "approaching": []
         },
-        "primary_tf": "12mo",
+        "primary_tf": "15m",
         "session": {
-          "high": 765.0,
-          "low": 185.75,
-          "midpoint": 475.375,
-          "range_pts": 579.25
+          "high": 41.59,
+          "low": 40.59,
+          "midpoint": 41.09,
+          "range_pts": 1.0
         },
         "sweep": {
-          "direction": "bearish",
-          "swept_level": 765.0,
-          "depth_pts": 35.0,
-          "timestamp": "2022-07-01T00:00:00"
+          "direction": "bullish",
+          "swept_level": 40.59,
+          "depth_pts": 0.12,
+          "timestamp": "2026-08-21T15:30:00-04:00"
         },
         "bos": {
-          "direction": "bearish",
-          "structure_level": 487.75,
-          "bos_close": 476.75,
-          "timestamp": "2023-07-01T00:00:00"
+          "direction": "bullish",
+          "structure_level": 40.54,
+          "bos_close": 40.871,
+          "timestamp": "2026-08-21T15:45:00-04:00"
         },
         "ifvg": {
-          "direction": "bearish",
-          "top": 623.0,
-          "bottom": 614.75,
-          "midpoint": 618.875,
-          "height": 8.25,
-          "formed_at": "2023-07-01T00:00:00"
+          "direction": "bullish",
+          "top": 41.02,
+          "bottom": 40.95,
+          "midpoint": 40.985,
+          "height": 0.07,
+          "formed_at": "2026-08-24T09:45:00-04:00"
         },
         "retrace": {
-          "status": "BELOW_ZONE",
-          "current_price": 520.0,
-          "zone_top": 623.0,
-          "zone_bottom": 614.75,
-          "zone_mid": 618.875,
-          "pct_from_mid": -15.977,
+          "status": "ABOVE_ZONE",
+          "current_price": 41.46,
+          "zone_top": 41.02,
+          "zone_bottom": 40.95,
+          "zone_mid": 40.985,
+          "pct_from_mid": 1.159,
           "alert": false
         },
         "targets": [
           {
-            "label": "Equal Lows (SSL)",
-            "price": 455.875,
+            "label": "Swing High (BSL)",
+            "price": 41.4834,
             "type": "liquidity"
           },
           {
-            "label": "Swing Low (SSL)",
-            "price": 368.75,
-            "type": "liquidity"
-          },
-          {
-            "label": "Equal Lows (SSL)",
-            "price": 352.5,
+            "label": "Session High (BSL)",
+            "price": 41.59,
             "type": "liquidity"
           }
         ],
@@ -2552,31 +2400,28 @@
       "golden_reversal": true,
       "golden_reversal_tfs": {
         "htf": [
-          "W"
+          "D",
+          "H4"
         ],
         "ltf": [
-          "45m",
-          "30m",
-          "15m"
+          "H1"
         ]
       },
       "golden_reversal_short": false,
       "golden_reversal_short_tfs": {
         "htf": [],
-        "ltf": [
-          "5m",
-          "3m"
-        ]
+        "ltf": []
       },
-      "tech_conviction": 2,
+      "tech_conviction": 4,
       "tech_pillars": {
         "line_pattern": true,
-        "candle": false,
-        "volume": true,
-        "correlation": false,
+        "candle": true,
+        "volume": false,
+        "correlation": true,
         "time_of_day": false
       },
       "tech_tfs": [
+        "6M",
         "3M",
         "M",
         "W",
@@ -2600,7 +2445,7 @@
         "fvg": true,
         "order_block": true,
         "entry_zone": false,
-        "trigger": false
+        "trigger": true
       },
       "golden_ict": false,
       "golden_wyckoff": false,
@@ -2611,43 +2456,43 @@
       "ict_entry_live": false,
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
-      "rvol": 2.59,
+      "rvol": 0.0,
       "in_killzone": false,
       "session_weight": 0.0,
       "session_label": "",
       "pinned": true,
-      "verdict": "AVOID",
-      "verdict_score": 3,
+      "verdict": "HOLD",
+      "verdict_score": 4,
       "verdict_max": 8,
-      "verdict_pct": 38,
+      "verdict_pct": 50,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
-        "rsi_ok": false,
+        "rsi_ok": true,
         "options_bullish": false,
         "price_below_maxpain": false,
         "above_pivot": false,
-        "balance_sheet_ok": false,
+        "balance_sheet_ok": true,
         "analyst_buy": null,
         "analyst_target_upside": null,
-        "seasonality_positive": true
+        "seasonality_positive": false
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 3,
+      "bear_score": 2,
       "bear_score_max": 7,
-      "bear_score_pct": 43,
+      "bear_score_pct": 29,
       "bear_checklist": {
         "tech_setup_bear": true,
-        "structure_down": true,
-        "rsi_overbought": true,
+        "structure_down": false,
+        "rsi_overbought": false,
         "options_bearish": false,
         "price_above_maxpain": false,
         "below_pivot": false,
         "analyst_sell": null,
         "analyst_target_downside": null,
-        "seasonality_negative": false
+        "seasonality_negative": true
       },
-      "verdict_notes": "6M:Demand 3M:HH/HL M:HH/HL W:HH/HL \u00b7 RSI 83.95 \u00b7 Seasonal +3.7%",
+      "verdict_notes": "6M:BOS 6M:Demand H1:HH/HL H1:BOS \u00b7 RSI 50.84 \u00b7 Seasonal -2.1%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -2657,18 +2502,36 @@
       "analyst": {},
       "seasonality": {
         "month": 8,
-        "hist_avg_return_pct": 3.73,
-        "historically_positive": true
+        "hist_avg_return_pct": -2.08,
+        "historically_positive": false
       },
       "signals_by_tf": {
+        "Liq. Grab": [
+          "Y",
+          "5m",
+          "3m",
+          "1m"
+        ],
         "Demand Zone": [
           "Y",
           "6M",
+          "D",
+          "45m",
+          "15m",
+          "1m"
+        ],
+        "BOS \u2191": [
+          "6M",
+          "M",
+          "D",
           "H4",
           "H3",
-          "H2",
           "H1",
-          "30m"
+          "45m"
+        ],
+        "Engulfing": [
+          "6M",
+          "H1"
         ],
         "HH/HL": [
           "3M",
@@ -2676,7 +2539,17 @@
           "W",
           "H4",
           "H3",
-          "H2"
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m"
+        ],
+        "Breaker": [
+          "3M",
+          "30m",
+          "5m",
+          "3m"
         ],
         "Inv. H&S": [
           "M",
@@ -2693,44 +2566,32 @@
           "3m",
           "1m"
         ],
-        "BOS \u2191": [
-          "W",
-          "D"
+        "Trendline": [
+          "D",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
         ],
         "FVG": [
-          "W",
-          "D",
-          "H1",
-          "45m",
-          "30m"
-        ],
-        "Liq. Grab": [
-          "H3",
           "H2"
-        ],
-        "Breaker": [
-          "H3",
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m"
-        ],
-        "Trendline": [
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m"
         ]
       },
       "bear_signals_by_tf": {
+        "Bear Breaker": [
+          "Y",
+          "D",
+          "H1",
+          "30m",
+          "15m"
+        ],
         "Desc. Trendline": [
-          "6M",
+          "Y",
           "3M",
           "M",
           "30m",
@@ -2740,60 +2601,39 @@
           "1m"
         ],
         "Supply Grab": [
-          "3M"
-        ],
-        "Supply Zone": [
           "3M",
-          "45m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
-        "H&S": [
-          "M",
-          "W",
-          "H1",
-          "45m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
-        "Evening Star": [
-          "H3"
-        ],
-        "Bear FVG": [
           "H2"
         ],
-        "Bear Order Block": [
-          "H2",
-          "H1"
-        ],
-        "LH/LL": [
+        "Supply Zone": [
+          "H3",
           "H1",
-          "45m"
-        ],
-        "Bear Breaker": [
-          "H1",
-          "45m",
           "30m",
-          "15m"
-        ],
-        "Upthrust / UTAD": [
-          "H1",
-          "45m",
-          "30m"
-        ],
-        "BOS \u2193": [
-          "5m",
-          "3m"
-        ],
-        "Bearish Engulf": [
           "5m",
           "3m"
         ],
         "Bear Railway": [
+          "30m",
+          "5m",
+          "3m"
+        ],
+        "H&S": [
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "Upthrust / UTAD": [
+          "5m",
+          "3m"
+        ],
+        "Evening Star": [
+          "5m",
+          "3m"
+        ],
+        "LH/LL": [
+          "1m"
+        ],
+        "Bear FVG": [
           "1m"
         ]
       },
@@ -2802,12 +2642,13 @@
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "E",
-      "wyckoff_conviction": 3,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase E (markup/markdown underway) \u00b7 conviction 3/10",
+      "wyckoff_conviction": 6,
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase E (markup/markdown underway) \u00b7 conviction 6/10",
       "wyckoff_by_tf": {
         "Reaccumulation": [
           "Y",
           "6M",
+          "3M",
           "M",
           "W",
           "D",
@@ -2817,13 +2658,9 @@
           "H1",
           "45m",
           "30m",
-          "15m"
-        ],
-        "Distribution": [
-          "3M",
+          "15m",
           "5m",
-          "3m",
-          "1m"
+          "3m"
         ]
       },
       "wyckoff_laws": {
@@ -2842,13 +2679,18 @@
             "H1",
             "45m",
             "30m",
-            "15m"
+            "15m",
+            "5m",
+            "3m",
+            "1m"
           ],
           "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
         },
         "cause_effect": {
           "active": true,
           "tfs": [
+            "6M",
+            "3M",
             "M",
             "W",
             "D",
@@ -2868,8 +2710,1065 @@
         "effort_result": {
           "active": true,
           "tfs": [
+            "Y",
+            "6M",
+            "H1",
+            "5m",
+            "3m",
+            "1m"
+          ],
+          "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
+        }
+      }
+    },
+    {
+      "ticker": "CL=F",
+      "price": 84.83,
+      "primary_tfs": [
+        "5m",
+        "3m"
+      ],
+      "entry_tfs": [],
+      "mtf_score": 5.2,
+      "signals": [
+        "Trendline Bounce",
+        "Inverted H&S",
+        "Railway Tracks"
+      ],
+      "smc_signals": [
+        "HH/HL",
+        "Breaker",
+        "Demand Zone",
+        "Trendline",
+        "Inv. H&S",
+        "Railway",
+        "Liq. Sweep (BULL)",
+        "BOS \u00b7 CISD",
+        "IFVG",
+        "Approaching IFVG"
+      ],
+      "bear_signals": [
+        "Bear Breaker",
+        "Desc. Trendline",
+        "Supply Grab",
+        "Upthrust / UTAD",
+        "Supply Zone",
+        "H&S",
+        "LH/LL",
+        "Bear Order Block",
+        "Bearish Engulf",
+        "Evening Star",
+        "Bear Railway",
+        "Bear FVG"
+      ],
+      "tech_summary": "Y: HH/HL uptrend, at demand zone \u00b7 6M: liq. swept below swing low, breaker block support \u00b7 3M: HH/HL uptrend, BOS confirmed",
+      "entry_levels": {
+        "entry_low": 80.09,
+        "entry_high": 83.3,
+        "mean_threshold": 81.695,
+        "stop": 78.485,
+        "t1": 84.8733,
+        "t2": 85.5313,
+        "basis": "D Order Block",
+        "direction": "long",
+        "neckline": 84.87
+      },
+      "fundamentals": {
+        "company_name": "Crude Oil Oct 26",
+        "w52_high": 119.48,
+        "w52_low": 54.98,
+        "sharpe_ratio": 0.7
+      },
+      "intrinsic_value": {},
+      "fundamental_conviction": 0.0,
+      "fundamental_grade": "F",
+      "fundamental_sub_scores": {
+        "cheap": null,
+        "good_business": null,
+        "healthy": null,
+        "street": null
+      },
+      "tv_ticker": "NYMEX:CL1!",
+      "session": "MIDDAY",
+      "timestamp": "2026-08-24T13:40:44.043006",
+      "ict": {
+        "by_tf": {
+          "1m": {
+            "tf": "1m",
+            "session": {
+              "high": 86.24,
+              "low": 84.69,
+              "midpoint": 85.465,
+              "range_pts": 1.55
+            },
+            "sweep": null,
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "ACCUMULATION",
+            "alert": false
+          },
+          "3m": {
+            "tf": "3m",
+            "session": {
+              "high": 86.24,
+              "low": 84.69,
+              "midpoint": 85.465,
+              "range_pts": 1.55
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 84.69,
+              "depth_pts": 0.06,
+              "timestamp": "2026-08-24T11:55:00-04:00"
+            },
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 84.87,
+              "bos_close": 84.96,
+              "timestamp": "2026-08-24T12:05:00-04:00"
+            },
+            "ifvg": {
+              "direction": "bullish",
+              "top": 84.98,
+              "bottom": 84.97,
+              "midpoint": 84.975,
+              "height": 0.01,
+              "formed_at": "2026-08-24T12:15:00-04:00"
+            },
+            "retrace": {
+              "status": "APPROACHING",
+              "current_price": 84.83,
+              "zone_top": 84.98,
+              "zone_bottom": 84.97,
+              "zone_mid": 84.975,
+              "pct_from_mid": -0.171,
+              "alert": false
+            },
+            "targets": [
+              {
+                "label": "Swing High (BSL)",
+                "price": 84.87,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 85.3022,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 85.9625,
+                "type": "liquidity"
+              }
+            ],
+            "stage": "APPROACHING",
+            "alert": false
+          },
+          "5m": {
+            "tf": "5m",
+            "session": {
+              "high": 86.24,
+              "low": 84.69,
+              "midpoint": 85.465,
+              "range_pts": 1.55
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 84.69,
+              "depth_pts": 0.06,
+              "timestamp": "2026-08-24T11:55:00-04:00"
+            },
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 84.87,
+              "bos_close": 84.96,
+              "timestamp": "2026-08-24T12:05:00-04:00"
+            },
+            "ifvg": {
+              "direction": "bullish",
+              "top": 84.98,
+              "bottom": 84.97,
+              "midpoint": 84.975,
+              "height": 0.01,
+              "formed_at": "2026-08-24T12:15:00-04:00"
+            },
+            "retrace": {
+              "status": "APPROACHING",
+              "current_price": 84.83,
+              "zone_top": 84.98,
+              "zone_bottom": 84.97,
+              "zone_mid": 84.975,
+              "pct_from_mid": -0.171,
+              "alert": false
+            },
+            "targets": [
+              {
+                "label": "Swing High (BSL)",
+                "price": 84.87,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 85.3022,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 85.9625,
+                "type": "liquidity"
+              }
+            ],
+            "stage": "APPROACHING",
+            "alert": false
+          },
+          "15m": {
+            "tf": "15m",
+            "session": {
+              "high": 86.24,
+              "low": 84.69,
+              "midpoint": 85.465,
+              "range_pts": 1.55
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 84.69,
+              "depth_pts": 0.06,
+              "timestamp": "2026-08-24T11:45:00-04:00"
+            },
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 85.24,
+              "bos_close": 85.28,
+              "timestamp": "2026-08-24T12:15:00-04:00"
+            },
+            "ifvg": {
+              "direction": "bullish",
+              "top": 85.08,
+              "bottom": 85.0,
+              "midpoint": 85.04,
+              "height": 0.08,
+              "formed_at": "2026-08-24T12:30:00-04:00"
+            },
+            "retrace": {
+              "status": "APPROACHING",
+              "current_price": 84.83,
+              "zone_top": 85.08,
+              "zone_bottom": 85.0,
+              "zone_mid": 85.04,
+              "pct_from_mid": -0.247,
+              "alert": false
+            },
+            "targets": [
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 84.8733,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 85.5313,
+                "type": "liquidity"
+              },
+              {
+                "label": "Swing High (BSL)",
+                "price": 85.76,
+                "type": "liquidity"
+              }
+            ],
+            "stage": "APPROACHING",
+            "alert": false
+          },
+          "30m": {
+            "tf": "30m",
+            "session": {
+              "high": 86.24,
+              "low": 84.69,
+              "midpoint": 85.465,
+              "range_pts": 1.55
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 84.69,
+              "depth_pts": 0.33,
+              "timestamp": "2026-08-24T11:30:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "45m": {
+            "tf": "45m",
+            "session": {
+              "high": 86.24,
+              "low": 84.69,
+              "midpoint": 85.465,
+              "range_pts": 1.55
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 84.69,
+              "depth_pts": 0.33,
+              "timestamp": "2026-08-24T11:30:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "1h": {
+            "tf": "1h",
+            "session": {
+              "high": 86.24,
+              "low": 84.69,
+              "midpoint": 85.465,
+              "range_pts": 1.55
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 84.69,
+              "depth_pts": 0.33,
+              "timestamp": "2026-08-24T11:00:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "2h": {
+            "tf": "2h",
+            "session": {
+              "high": 86.24,
+              "low": 84.69,
+              "midpoint": 85.465,
+              "range_pts": 1.55
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 84.69,
+              "depth_pts": 0.33,
+              "timestamp": "2026-08-24T11:00:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "3h": {
+            "tf": "3h",
+            "session": {
+              "high": 86.24,
+              "low": 84.69,
+              "midpoint": 85.465,
+              "range_pts": 1.55
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 84.69,
+              "depth_pts": 0.33,
+              "timestamp": "2026-08-24T11:00:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "4h": {
+            "tf": "4h",
+            "session": {
+              "high": 86.24,
+              "low": 84.36,
+              "midpoint": 85.3,
+              "range_pts": 1.88
+            },
+            "sweep": {
+              "direction": "bearish",
+              "swept_level": 86.24,
+              "depth_pts": 0.22,
+              "timestamp": "2026-08-23T16:00:00-04:00"
+            },
+            "bos": {
+              "direction": "bearish",
+              "structure_level": 85.8,
+              "bos_close": 85.63,
+              "timestamp": "2026-08-23T20:00:00-04:00"
+            },
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "BOS_CONFIRMED",
+            "alert": false
+          },
+          "1d": {
+            "tf": "1d",
+            "session": {
+              "high": 110.93,
+              "low": 87.11,
+              "midpoint": 99.02,
+              "range_pts": 23.82
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 87.11,
+              "depth_pts": 1.51,
+              "timestamp": "2026-08-20T00:00:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "1wk": {
+            "tf": "1wk",
+            "session": {
+              "high": 78.4,
+              "low": 55.12,
+              "midpoint": 66.76,
+              "range_pts": 23.28
+            },
+            "sweep": {
+              "direction": "bearish",
+              "swept_level": 78.4,
+              "depth_pts": 3.93,
+              "timestamp": "2026-08-03T00:00:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "1mo": {
+            "tf": "1mo",
+            "session": {
+              "high": 66.6,
+              "low": -40.32,
+              "midpoint": 13.14,
+              "range_pts": 106.92
+            },
+            "sweep": {
+              "direction": "bearish",
+              "swept_level": 66.6,
+              "depth_pts": 5.68,
+              "timestamp": "2025-04-01T00:00:00"
+            },
+            "bos": {
+              "direction": "bearish",
+              "structure_level": 65.22,
+              "bos_close": 60.79,
+              "timestamp": "2025-05-01T00:00:00"
+            },
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "BOS_CONFIRMED",
+            "alert": false
+          },
+          "3mo": {
+            "tf": "3mo",
+            "session": {
+              "high": 112.24,
+              "low": 26.05,
+              "midpoint": 69.145,
+              "range_pts": 86.19
+            },
+            "sweep": {
+              "direction": "bearish",
+              "swept_level": 112.24,
+              "depth_pts": 18.26,
+              "timestamp": "2022-02-01T00:00:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "6mo": {
+            "tf": "6mo",
+            "session": {
+              "high": 147.27,
+              "low": 32.4,
+              "midpoint": 89.835,
+              "range_pts": 114.87
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 32.4,
+              "depth_pts": 14.35,
+              "timestamp": "2020-05-01T00:00:00"
+            },
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 66.6,
+              "bos_close": 73.95,
+              "timestamp": "2021-05-01T00:00:00"
+            },
+            "ifvg": {
+              "direction": "bullish",
+              "top": 61.56,
+              "bottom": 43.78,
+              "midpoint": 52.67,
+              "height": 17.78,
+              "formed_at": "2021-05-01T00:00:00"
+            },
+            "retrace": {
+              "status": "ABOVE_ZONE",
+              "current_price": 84.82,
+              "zone_top": 61.56,
+              "zone_bottom": 43.78,
+              "zone_mid": 52.67,
+              "pct_from_mid": 61.04,
+              "alert": false
+            },
+            "targets": [
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 87.12,
+                "type": "liquidity"
+              },
+              {
+                "label": "Swing High (BSL)",
+                "price": 95.03,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 98.195,
+                "type": "liquidity"
+              }
+            ],
+            "stage": "IFVG_FORMED",
+            "alert": false
+          },
+          "12mo": {
+            "tf": "12mo",
+            "session": {
+              "high": 147.27,
+              "low": 25.23,
+              "midpoint": 86.25,
+              "range_pts": 122.04
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 25.23,
+              "depth_pts": 7.18,
+              "timestamp": "2020-05-01T00:00:00"
+            },
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 66.6,
+              "bos_close": 73.95,
+              "timestamp": "2021-05-01T00:00:00"
+            },
+            "ifvg": {
+              "direction": "bullish",
+              "top": 61.56,
+              "bottom": 43.78,
+              "midpoint": 52.67,
+              "height": 17.78,
+              "formed_at": "2021-05-01T00:00:00"
+            },
+            "retrace": {
+              "status": "ABOVE_ZONE",
+              "current_price": 84.83,
+              "zone_top": 61.56,
+              "zone_bottom": 43.78,
+              "zone_mid": 52.67,
+              "pct_from_mid": 61.059,
+              "alert": false
+            },
+            "targets": [
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 87.12,
+                "type": "liquidity"
+              },
+              {
+                "label": "Swing High (BSL)",
+                "price": 95.03,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 98.195,
+                "type": "liquidity"
+              }
+            ],
+            "stage": "IFVG_FORMED",
+            "alert": false
+          }
+        },
+        "found_on": {
+          "sweep": [
+            "3m",
+            "5m",
+            "15m",
+            "30m",
+            "45m",
+            "1h",
+            "2h",
+            "3h",
+            "4h",
+            "1d",
+            "1wk",
+            "1mo",
+            "3mo",
+            "6mo",
+            "12mo"
+          ],
+          "bos": [
+            "3m",
+            "5m",
+            "15m",
+            "4h",
+            "1mo",
+            "6mo",
+            "12mo"
+          ],
+          "ifvg": [
+            "3m",
+            "5m",
+            "15m",
+            "6mo",
+            "12mo"
+          ],
+          "entry_zone": [],
+          "approaching": [
+            "3m",
+            "5m",
+            "15m"
+          ]
+        },
+        "primary_tf": "15m",
+        "session": {
+          "high": 86.24,
+          "low": 84.69,
+          "midpoint": 85.465,
+          "range_pts": 1.55
+        },
+        "sweep": {
+          "direction": "bullish",
+          "swept_level": 84.69,
+          "depth_pts": 0.06,
+          "timestamp": "2026-08-24T11:45:00-04:00"
+        },
+        "bos": {
+          "direction": "bullish",
+          "structure_level": 85.24,
+          "bos_close": 85.28,
+          "timestamp": "2026-08-24T12:15:00-04:00"
+        },
+        "ifvg": {
+          "direction": "bullish",
+          "top": 85.08,
+          "bottom": 85.0,
+          "midpoint": 85.04,
+          "height": 0.08,
+          "formed_at": "2026-08-24T12:30:00-04:00"
+        },
+        "retrace": {
+          "status": "APPROACHING",
+          "current_price": 84.83,
+          "zone_top": 85.08,
+          "zone_bottom": 85.0,
+          "zone_mid": 85.04,
+          "pct_from_mid": -0.247,
+          "alert": false
+        },
+        "targets": [
+          {
+            "label": "Equal Highs (BSL)",
+            "price": 84.8733,
+            "type": "liquidity"
+          },
+          {
+            "label": "Equal Highs (BSL)",
+            "price": 85.5313,
+            "type": "liquidity"
+          },
+          {
+            "label": "Swing High (BSL)",
+            "price": 85.76,
+            "type": "liquidity"
+          }
+        ],
+        "stage": "APPROACHING",
+        "alert": false
+      },
+      "golden_entry": false,
+      "golden_spring": false,
+      "golden_spring_tfs": [],
+      "golden_reversal": false,
+      "golden_reversal_tfs": {
+        "htf": [
+          "W"
+        ],
+        "ltf": []
+      },
+      "golden_reversal_short": true,
+      "golden_reversal_short_tfs": {
+        "htf": [
+          "H4",
+          "H3"
+        ],
+        "ltf": [
+          "5m",
+          "3m"
+        ]
+      },
+      "tech_conviction": 5,
+      "tech_pillars": {
+        "line_pattern": true,
+        "candle": true,
+        "volume": false,
+        "correlation": true,
+        "time_of_day": false
+      },
+      "tech_tfs": [
+        "3M",
+        "M",
+        "W",
+        "D",
+        "H4",
+        "H3",
+        "H2",
+        "H1",
+        "45m",
+        "30m",
+        "15m",
+        "5m",
+        "3m",
+        "1m"
+      ],
+      "golden_technical": false,
+      "ict_conviction": 9,
+      "ict_pillars": {
+        "sweep": true,
+        "bos": true,
+        "fvg": true,
+        "order_block": true,
+        "entry_zone": false,
+        "trigger": false
+      },
+      "golden_ict": false,
+      "golden_wyckoff": false,
+      "golden_setup": false,
+      "tech_elite": false,
+      "tech_entry_live": false,
+      "ict_elite": true,
+      "ict_entry_live": false,
+      "wyckoff_elite": false,
+      "wyckoff_entry_live": false,
+      "rvol": 0.0,
+      "in_killzone": false,
+      "session_weight": 0.0,
+      "session_label": "",
+      "pinned": true,
+      "verdict": "AVOID",
+      "verdict_score": 2,
+      "verdict_max": 8,
+      "verdict_pct": 25,
+      "verdict_checklist": {
+        "tech_setup": true,
+        "market_structure": true,
+        "rsi_ok": false,
+        "options_bullish": false,
+        "price_below_maxpain": false,
+        "above_pivot": false,
+        "balance_sheet_ok": false,
+        "analyst_buy": null,
+        "analyst_target_upside": null,
+        "seasonality_positive": false
+      },
+      "bear_verdict": "CLEAR",
+      "bear_score": 3,
+      "bear_score_max": 7,
+      "bear_score_pct": 43,
+      "bear_checklist": {
+        "tech_setup_bear": true,
+        "structure_down": false,
+        "rsi_overbought": true,
+        "options_bearish": false,
+        "price_above_maxpain": false,
+        "below_pivot": false,
+        "analyst_sell": null,
+        "analyst_target_downside": null,
+        "seasonality_negative": true
+      },
+      "verdict_notes": "5m:HH/HL 5m:Demand 3m:HH/HL 3m:Demand \u00b7 RSI 73.08 \u00b7 Seasonal -4.0%",
+      "entry_note": "",
+      "options_flow": {},
+      "best_option": {},
+      "value_option": {},
+      "best_contract": {},
+      "pivots": {},
+      "analyst": {},
+      "seasonality": {
+        "month": 8,
+        "hist_avg_return_pct": -3.95,
+        "historically_positive": false
+      },
+      "signals_by_tf": {
+        "HH/HL": [
+          "Y",
+          "3M",
+          "D",
+          "5m",
+          "3m"
+        ],
+        "Demand Zone": [
+          "Y",
+          "6M",
+          "D",
+          "H3",
+          "45m",
+          "15m",
+          "5m",
+          "3m"
+        ],
+        "Liq. Grab": [
+          "6M",
+          "M",
+          "H4",
+          "H3",
+          "H2",
+          "15m"
+        ],
+        "Breaker": [
+          "6M",
+          "3M",
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m"
+        ],
+        "BOS \u2191": [
+          "3M"
+        ],
+        "Inv. H&S": [
+          "M",
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "Trendline": [
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "Order Block": [
+          "D"
+        ],
+        "Railway": [
+          "H1",
+          "5m",
+          "3m"
+        ],
+        "Wyckoff Spring": [
+          "30m"
+        ]
+      },
+      "bear_signals_by_tf": {
+        "Bear Breaker": [
+          "6M",
+          "3M",
+          "M",
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m"
+        ],
+        "Desc. Trendline": [
+          "6M",
+          "M",
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "Supply Grab": [
+          "3M"
+        ],
+        "Upthrust / UTAD": [
+          "3M",
+          "D"
+        ],
+        "Supply Zone": [
+          "W",
+          "H4",
+          "H2",
+          "H1",
+          "30m",
+          "1m"
+        ],
+        "H&S": [
+          "D",
+          "H4",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "LH/LL": [
+          "H4",
+          "H1",
+          "45m"
+        ],
+        "Bear Order Block": [
+          "H3"
+        ],
+        "Bearish Engulf": [
+          "H3"
+        ],
+        "Evening Star": [
+          "H2",
+          "30m"
+        ],
+        "Bear Railway": [
+          "30m",
+          "1m"
+        ],
+        "Bear FVG": [
+          "15m"
+        ]
+      },
+      "short_volume": {},
+      "gex": {},
+      "direction": "long",
+      "wyckoff_cycle": "Reaccumulation",
+      "wyckoff_phase": "D",
+      "wyckoff_conviction": 5,
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase D (trend leaving the range) \u00b7 conviction 5/10",
+      "wyckoff_by_tf": {
+        "Reaccumulation": [
+          "Y",
+          "6M",
+          "3M",
+          "M",
+          "W",
+          "D",
+          "H3",
+          "45m",
+          "15m",
+          "5m",
+          "3m"
+        ],
+        "Distribution": [
+          "H1",
+          "1m"
+        ]
+      },
+      "wyckoff_laws": {
+        "supply_demand": {
+          "active": true,
+          "tfs": [
+            "Y",
+            "6M",
+            "3M",
+            "M",
+            "W",
+            "D",
+            "H4",
             "H3",
-            "H2"
+            "H2",
+            "45m",
+            "15m",
+            "5m",
+            "3m"
+          ],
+          "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
+        },
+        "cause_effect": {
+          "active": true,
+          "tfs": [
+            "6M",
+            "3M",
+            "M",
+            "W",
+            "D",
+            "H4",
+            "H3",
+            "H2",
+            "H1",
+            "45m",
+            "30m",
+            "15m",
+            "5m",
+            "3m",
+            "1m"
+          ],
+          "note": "Accumulation cause built in the range \u2192 projecting a markup target higher"
+        },
+        "effort_result": {
+          "active": true,
+          "tfs": [
+            "6M",
+            "M",
+            "H4",
+            "H3",
+            "H2",
+            "15m"
           ],
           "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
         }
@@ -2946,7 +3845,7 @@
         "company_name": "Nasdaq 100 Sep 26",
         "w52_high": 30968.0,
         "w52_low": 22961.5,
-        "sharpe_ratio": 1.0
+        "sharpe_ratio": 0.99
       },
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
@@ -3512,7 +4411,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": true
       },
-      "verdict_notes": "6M:HH/HL 6M:BOS 6M:FVG 3M:HH/HL \u00b7 RSI 36.9 \u00b7 Seasonal -0.7%",
+      "verdict_notes": "6M:HH/HL 6M:BOS 6M:FVG 3M:HH/HL \u00b7 RSI 36.58 \u00b7 Seasonal -0.7%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -3522,7 +4421,7 @@
       "analyst": {},
       "seasonality": {
         "month": 8,
-        "hist_avg_return_pct": -0.73,
+        "hist_avg_return_pct": -0.74,
         "historically_positive": false
       },
       "signals_by_tf": {
@@ -3760,7 +4659,7 @@
     },
     {
       "ticker": "HO=F",
-      "price": 4.1885,
+      "price": 4.1776,
       "primary_tfs": [
         "M"
       ],
@@ -3785,12 +4684,11 @@
         "Upthrust / UTAD",
         "BOS \u2193",
         "H&S",
-        "Bear Displacement",
         "Bear Railway",
         "LH/LL",
         "Bear FVG",
-        "Bearish Engulf",
-        "Supply Zone"
+        "Supply Zone",
+        "Bearish Engulf"
       ],
       "tech_summary": "Y: HH/HL uptrend, liq. swept below swing low \u00b7 6M: HH/HL uptrend \u00b7 M: HH/HL uptrend, inv. H&S",
       "entry_levels": {
@@ -3802,7 +4700,7 @@
         "t2": 5.025,
         "basis": "W FVG",
         "direction": "long",
-        "neckline": 4.1977
+        "neckline": 4.183
       },
       "fundamentals": {
         "company_name": "Heating Oil Oct 26",
@@ -3821,7 +4719,7 @@
       },
       "tv_ticker": "HO1!",
       "session": "MIDDAY",
-      "timestamp": "2026-08-24T13:15:59.522584",
+      "timestamp": "2026-08-24T13:40:43.992807",
       "ict": {
         "by_tf": {
           "1m": {
@@ -3904,7 +4802,7 @@
             },
             "bos": {
               "direction": "bearish",
-              "structure_level": 4.3156,
+              "structure_level": 4.3187,
               "bos_close": 4.3147,
               "timestamp": "2026-08-24T00:00:00-04:00"
             },
@@ -3918,20 +4816,14 @@
             },
             "retrace": {
               "status": "BELOW_ZONE",
-              "current_price": 4.1893,
+              "current_price": 4.1772,
               "zone_top": 4.3095,
               "zone_bottom": 4.3051,
               "zone_mid": 4.3073,
-              "pct_from_mid": -2.74,
+              "pct_from_mid": -3.02,
               "alert": false
             },
-            "targets": [
-              {
-                "label": "Equal Lows (SSL)",
-                "price": 4.1798,
-                "type": "liquidity"
-              }
-            ],
+            "targets": [],
             "stage": "IFVG_FORMED",
             "alert": false
           },
@@ -3951,7 +4843,7 @@
             },
             "bos": {
               "direction": "bearish",
-              "structure_level": 4.3156,
+              "structure_level": 4.3187,
               "bos_close": 4.3147,
               "timestamp": "2026-08-24T00:00:00-04:00"
             },
@@ -3965,20 +4857,14 @@
             },
             "retrace": {
               "status": "BELOW_ZONE",
-              "current_price": 4.1893,
+              "current_price": 4.1772,
               "zone_top": 4.3095,
               "zone_bottom": 4.3051,
               "zone_mid": 4.3073,
-              "pct_from_mid": -2.74,
+              "pct_from_mid": -3.02,
               "alert": false
             },
-            "targets": [
-              {
-                "label": "Equal Lows (SSL)",
-                "price": 4.1798,
-                "type": "liquidity"
-              }
-            ],
+            "targets": [],
             "stage": "IFVG_FORMED",
             "alert": false
           },
@@ -4012,20 +4898,14 @@
             },
             "retrace": {
               "status": "BELOW_ZONE",
-              "current_price": 4.1891,
+              "current_price": 4.1772,
               "zone_top": 4.3061,
               "zone_bottom": 4.2972,
               "zone_mid": 4.3017,
-              "pct_from_mid": -2.616,
+              "pct_from_mid": -2.893,
               "alert": false
             },
-            "targets": [
-              {
-                "label": "Equal Lows (SSL)",
-                "price": 4.1798,
-                "type": "liquidity"
-              }
-            ],
+            "targets": [],
             "stage": "IFVG_FORMED",
             "alert": false
           },
@@ -4059,20 +4939,14 @@
             },
             "retrace": {
               "status": "BELOW_ZONE",
-              "current_price": 4.1891,
+              "current_price": 4.1772,
               "zone_top": 4.3061,
               "zone_bottom": 4.2972,
               "zone_mid": 4.3017,
-              "pct_from_mid": -2.616,
+              "pct_from_mid": -2.893,
               "alert": false
             },
-            "targets": [
-              {
-                "label": "Equal Lows (SSL)",
-                "price": 4.1798,
-                "type": "liquidity"
-              }
-            ],
+            "targets": [],
             "stage": "IFVG_FORMED",
             "alert": false
           },
@@ -4106,20 +4980,14 @@
             },
             "retrace": {
               "status": "BELOW_ZONE",
-              "current_price": 4.1891,
+              "current_price": 4.1772,
               "zone_top": 4.3061,
               "zone_bottom": 4.2972,
               "zone_mid": 4.3017,
-              "pct_from_mid": -2.616,
+              "pct_from_mid": -2.893,
               "alert": false
             },
-            "targets": [
-              {
-                "label": "Equal Lows (SSL)",
-                "price": 4.1798,
-                "type": "liquidity"
-              }
-            ],
+            "targets": [],
             "stage": "IFVG_FORMED",
             "alert": false
           },
@@ -4153,27 +5021,27 @@
             },
             "retrace": {
               "status": "BELOW_ZONE",
-              "current_price": 4.1891,
+              "current_price": 4.1772,
               "zone_top": 4.2579,
               "zone_bottom": 4.2128,
               "zone_mid": 4.2354,
-              "pct_from_mid": -1.092,
+              "pct_from_mid": -1.373,
               "alert": false
             },
             "targets": [
               {
-                "label": "Session Low (SSL)",
-                "price": 4.1787,
-                "type": "liquidity"
-              },
-              {
                 "label": "Equal Lows (SSL)",
-                "price": 4.1565,
+                "price": 4.1578,
                 "type": "liquidity"
               },
               {
                 "label": "Equal Lows (SSL)",
                 "price": 4.1419,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Lows (SSL)",
+                "price": 4.1311,
                 "type": "liquidity"
               }
             ],
@@ -4268,11 +5136,11 @@
             },
             "retrace": {
               "status": "BEYOND",
-              "current_price": 4.1891,
+              "current_price": 4.178,
               "zone_top": 2.4746,
               "zone_bottom": 2.4668,
               "zone_mid": 2.4707,
-              "pct_from_mid": 69.551,
+              "pct_from_mid": 69.102,
               "alert": false
             },
             "targets": [
@@ -4402,11 +5270,11 @@
         },
         "retrace": {
           "status": "BEYOND",
-          "current_price": 4.1891,
+          "current_price": 4.178,
           "zone_top": 2.4746,
           "zone_bottom": 2.4668,
           "zone_mid": 2.4707,
-          "pct_from_mid": 69.551,
+          "pct_from_mid": 69.102,
           "alert": false
         },
         "targets": [
@@ -4446,7 +5314,6 @@
           "H3"
         ],
         "ltf": [
-          "30m",
           "5m",
           "3m"
         ]
@@ -4455,7 +5322,7 @@
       "tech_pillars": {
         "line_pattern": true,
         "candle": true,
-        "volume": false,
+        "volume": true,
         "correlation": true,
         "time_of_day": false
       },
@@ -4495,7 +5362,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
-      "rvol": 0.0,
+      "rvol": 2.14,
       "in_killzone": false,
       "session_weight": 0.0,
       "session_label": "",
@@ -4531,7 +5398,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": true
       },
-      "verdict_notes": "M:HH/HL \u00b7 RSI 68.1 \u00b7 Seasonal -0.7%",
+      "verdict_notes": "M:HH/HL \u00b7 RSI 68.24 \u00b7 Seasonal -0.6%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -4541,7 +5408,7 @@
       "analyst": {},
       "seasonality": {
         "month": 8,
-        "hist_avg_return_pct": -0.65,
+        "hist_avg_return_pct": -0.63,
         "historically_positive": false
       },
       "signals_by_tf": {
@@ -4553,7 +5420,8 @@
           "D"
         ],
         "Liq. Grab": [
-          "Y"
+          "Y",
+          "15m"
         ],
         "Inv. H&S": [
           "Y",
@@ -4595,23 +5463,14 @@
         ],
         "Breaker": [
           "D",
-          "H1",
-          "45m",
           "30m",
           "15m"
         ],
         "Demand Zone": [
           "D",
-          "H1",
-          "45m",
           "30m",
-          "15m",
-          "1m"
-        ],
-        "Wyckoff Spring": [
           "5m",
-          "3m",
-          "1m"
+          "3m"
         ]
       },
       "bear_signals_by_tf": {
@@ -4636,9 +5495,7 @@
         "Bear Breaker": [
           "W",
           "D",
-          "H1",
-          "45m",
-          "30m",
+          "15m",
           "5m",
           "3m"
         ],
@@ -4649,7 +5506,9 @@
         "BOS \u2193": [
           "H4",
           "H3",
-          "H2"
+          "H2",
+          "45m",
+          "30m"
         ],
         "H&S": [
           "H4",
@@ -4663,13 +5522,9 @@
           "3m",
           "1m"
         ],
-        "Bear Displacement": [
-          "H2"
-        ],
         "Bear Railway": [
           "H2",
-          "30m",
-          "15m"
+          "30m"
         ],
         "LH/LL": [
           "H1",
@@ -4677,2047 +5532,23 @@
           "30m",
           "15m",
           "5m",
-          "3m",
-          "1m"
+          "3m"
         ],
         "Bear FVG": [
           "H1"
         ],
-        "Bearish Engulf": [
-          "30m",
-          "5m",
-          "3m"
-        ],
         "Supply Zone": [
+          "45m",
+          "15m",
+          "1m"
+        ],
+        "Bearish Engulf": [
           "5m",
           "3m"
         ]
       },
       "short_volume": {},
       "gex": {},
-      "direction": "long",
-      "wyckoff_cycle": "Reaccumulation",
-      "wyckoff_phase": "D",
-      "wyckoff_conviction": 7,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase D (trend leaving the range) \u00b7 conviction 7/10",
-      "wyckoff_by_tf": {
-        "Reaccumulation": [
-          "Y",
-          "6M",
-          "3M",
-          "M",
-          "W",
-          "D",
-          "45m",
-          "15m",
-          "1m"
-        ],
-        "Distribution": [
-          "H4",
-          "H3",
-          "H2",
-          "5m",
-          "3m"
-        ]
-      },
-      "wyckoff_laws": {
-        "supply_demand": {
-          "active": true,
-          "tfs": [
-            "Y",
-            "6M",
-            "3M",
-            "M",
-            "W",
-            "D",
-            "H1",
-            "45m",
-            "30m",
-            "15m",
-            "1m"
-          ],
-          "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
-        },
-        "cause_effect": {
-          "active": true,
-          "tfs": [
-            "Y",
-            "M",
-            "W",
-            "D",
-            "H4",
-            "H3",
-            "H2",
-            "H1",
-            "45m",
-            "30m",
-            "15m",
-            "5m",
-            "3m",
-            "1m"
-          ],
-          "note": "Accumulation cause built in the range \u2192 projecting a markup target higher"
-        },
-        "effort_result": {
-          "active": true,
-          "tfs": [
-            "Y",
-            "3M",
-            "M"
-          ],
-          "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
-        }
-      }
-    },
-    {
-      "ticker": "CL=F",
-      "price": 85.18,
-      "primary_tfs": [
-        "6M",
-        "3M",
-        "M",
-        "W",
-        "D",
-        "H4",
-        "H3",
-        "H2",
-        "H1",
-        "45m",
-        "30m",
-        "15m",
-        "5m",
-        "3m",
-        "1m"
-      ],
-      "entry_tfs": [],
-      "mtf_score": 4.5,
-      "signals": [
-        "Inverted H&S",
-        "Trendline Bounce",
-        "Wyckoff Spring",
-        "Railway Tracks"
-      ],
-      "smc_signals": [
-        "Liq. Grab",
-        "Breaker",
-        "Demand Zone",
-        "HH/HL",
-        "BOS \u2191",
-        "Inv. H&S",
-        "Trendline",
-        "Wyckoff Spring",
-        "Railway",
-        "FVG",
-        "Liq. Sweep (BULL)",
-        "BOS \u00b7 CISD",
-        "IFVG"
-      ],
-      "bear_signals": [
-        "Bear Breaker",
-        "Desc. Trendline",
-        "Supply Grab",
-        "Upthrust / UTAD",
-        "Supply Zone",
-        "H&S",
-        "LH/LL",
-        "Bear Order Block",
-        "Bearish Engulf",
-        "Evening Star",
-        "Bear Railway",
-        "Bear FVG"
-      ],
-      "tech_summary": "Y: HH/HL uptrend, at demand zone \u00b7 6M: liq. swept below swing low, breaker block support \u00b7 3M: HH/HL uptrend, BOS confirmed",
-      "entry_levels": {
-        "entry_low": 84.87,
-        "entry_high": 85.08,
-        "mean_threshold": 84.975,
-        "stop": 84.6571,
-        "t1": 87.12,
-        "t2": 95.03,
-        "basis": "30m FVG",
-        "direction": "long",
-        "neckline": 85.115
-      },
-      "fundamentals": {
-        "company_name": "Crude Oil Oct 26",
-        "w52_high": 119.48,
-        "w52_low": 54.98,
-        "sharpe_ratio": 0.7
-      },
-      "intrinsic_value": {},
-      "fundamental_conviction": 0.0,
-      "fundamental_grade": "F",
-      "fundamental_sub_scores": {
-        "cheap": null,
-        "good_business": null,
-        "healthy": null,
-        "street": null
-      },
-      "tv_ticker": "NYMEX:CL1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-08-24T13:15:48.757489",
-      "ict": {
-        "by_tf": {
-          "1m": {
-            "tf": "1m",
-            "session": {
-              "high": 86.24,
-              "low": 84.69,
-              "midpoint": 85.465,
-              "range_pts": 1.55
-            },
-            "sweep": null,
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "ACCUMULATION",
-            "alert": false
-          },
-          "3m": {
-            "tf": "3m",
-            "session": {
-              "high": 86.24,
-              "low": 84.69,
-              "midpoint": 85.465,
-              "range_pts": 1.55
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 84.69,
-              "depth_pts": 0.06,
-              "timestamp": "2026-08-24T11:55:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 84.87,
-              "bos_close": 84.96,
-              "timestamp": "2026-08-24T12:05:00-04:00"
-            },
-            "ifvg": {
-              "direction": "bullish",
-              "top": 84.98,
-              "bottom": 84.97,
-              "midpoint": 84.975,
-              "height": 0.01,
-              "formed_at": "2026-08-24T12:15:00-04:00"
-            },
-            "retrace": {
-              "status": "ABOVE_ZONE",
-              "current_price": 85.15,
-              "zone_top": 84.98,
-              "zone_bottom": 84.97,
-              "zone_mid": 84.975,
-              "pct_from_mid": 0.206,
-              "alert": false
-            },
-            "targets": [
-              {
-                "label": "Swing High (BSL)",
-                "price": 85.24,
-                "type": "liquidity"
-              },
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 85.4185,
-                "type": "liquidity"
-              },
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 85.9625,
-                "type": "liquidity"
-              }
-            ],
-            "stage": "IFVG_FORMED",
-            "alert": false
-          },
-          "5m": {
-            "tf": "5m",
-            "session": {
-              "high": 86.24,
-              "low": 84.69,
-              "midpoint": 85.465,
-              "range_pts": 1.55
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 84.69,
-              "depth_pts": 0.06,
-              "timestamp": "2026-08-24T11:55:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 84.87,
-              "bos_close": 84.96,
-              "timestamp": "2026-08-24T12:05:00-04:00"
-            },
-            "ifvg": {
-              "direction": "bullish",
-              "top": 84.98,
-              "bottom": 84.97,
-              "midpoint": 84.975,
-              "height": 0.01,
-              "formed_at": "2026-08-24T12:15:00-04:00"
-            },
-            "retrace": {
-              "status": "ABOVE_ZONE",
-              "current_price": 85.15,
-              "zone_top": 84.98,
-              "zone_bottom": 84.97,
-              "zone_mid": 84.975,
-              "pct_from_mid": 0.206,
-              "alert": false
-            },
-            "targets": [
-              {
-                "label": "Swing High (BSL)",
-                "price": 85.24,
-                "type": "liquidity"
-              },
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 85.4185,
-                "type": "liquidity"
-              },
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 85.9625,
-                "type": "liquidity"
-              }
-            ],
-            "stage": "IFVG_FORMED",
-            "alert": false
-          },
-          "15m": {
-            "tf": "15m",
-            "session": {
-              "high": 86.24,
-              "low": 84.69,
-              "midpoint": 85.465,
-              "range_pts": 1.55
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 84.69,
-              "depth_pts": 0.06,
-              "timestamp": "2026-08-24T11:45:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 85.24,
-              "bos_close": 85.28,
-              "timestamp": "2026-08-24T12:15:00-04:00"
-            },
-            "ifvg": {
-              "direction": "bullish",
-              "top": 85.08,
-              "bottom": 85.0,
-              "midpoint": 85.04,
-              "height": 0.08,
-              "formed_at": "2026-08-24T12:30:00-04:00"
-            },
-            "retrace": {
-              "status": "ABOVE_ZONE",
-              "current_price": 85.15,
-              "zone_top": 85.08,
-              "zone_bottom": 85.0,
-              "zone_mid": 85.04,
-              "pct_from_mid": 0.129,
-              "alert": false
-            },
-            "targets": [
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 85.5585,
-                "type": "liquidity"
-              },
-              {
-                "label": "Swing High (BSL)",
-                "price": 85.76,
-                "type": "liquidity"
-              },
-              {
-                "label": "Session High (BSL)",
-                "price": 86.24,
-                "type": "liquidity"
-              }
-            ],
-            "stage": "IFVG_FORMED",
-            "alert": false
-          },
-          "30m": {
-            "tf": "30m",
-            "session": {
-              "high": 86.24,
-              "low": 84.69,
-              "midpoint": 85.465,
-              "range_pts": 1.55
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 84.69,
-              "depth_pts": 0.33,
-              "timestamp": "2026-08-24T11:30:00-04:00"
-            },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
-            "alert": false
-          },
-          "45m": {
-            "tf": "45m",
-            "session": {
-              "high": 86.24,
-              "low": 84.69,
-              "midpoint": 85.465,
-              "range_pts": 1.55
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 84.69,
-              "depth_pts": 0.33,
-              "timestamp": "2026-08-24T11:30:00-04:00"
-            },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
-            "alert": false
-          },
-          "1h": {
-            "tf": "1h",
-            "session": {
-              "high": 86.24,
-              "low": 84.69,
-              "midpoint": 85.465,
-              "range_pts": 1.55
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 84.69,
-              "depth_pts": 0.33,
-              "timestamp": "2026-08-24T11:00:00-04:00"
-            },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
-            "alert": false
-          },
-          "2h": {
-            "tf": "2h",
-            "session": {
-              "high": 86.24,
-              "low": 84.69,
-              "midpoint": 85.465,
-              "range_pts": 1.55
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 84.69,
-              "depth_pts": 0.33,
-              "timestamp": "2026-08-24T11:00:00-04:00"
-            },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
-            "alert": false
-          },
-          "3h": {
-            "tf": "3h",
-            "session": {
-              "high": 86.24,
-              "low": 84.69,
-              "midpoint": 85.465,
-              "range_pts": 1.55
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 84.69,
-              "depth_pts": 0.33,
-              "timestamp": "2026-08-24T11:00:00-04:00"
-            },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
-            "alert": false
-          },
-          "4h": {
-            "tf": "4h",
-            "session": {
-              "high": 86.24,
-              "low": 84.36,
-              "midpoint": 85.3,
-              "range_pts": 1.88
-            },
-            "sweep": {
-              "direction": "bearish",
-              "swept_level": 86.24,
-              "depth_pts": 0.22,
-              "timestamp": "2026-08-23T16:00:00-04:00"
-            },
-            "bos": {
-              "direction": "bearish",
-              "structure_level": 85.8,
-              "bos_close": 85.63,
-              "timestamp": "2026-08-23T20:00:00-04:00"
-            },
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "BOS_CONFIRMED",
-            "alert": false
-          },
-          "1d": {
-            "tf": "1d",
-            "session": {
-              "high": 110.93,
-              "low": 87.11,
-              "midpoint": 99.02,
-              "range_pts": 23.82
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 87.11,
-              "depth_pts": 1.51,
-              "timestamp": "2026-08-20T00:00:00"
-            },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
-            "alert": false
-          },
-          "1wk": {
-            "tf": "1wk",
-            "session": {
-              "high": 78.4,
-              "low": 55.12,
-              "midpoint": 66.76,
-              "range_pts": 23.28
-            },
-            "sweep": {
-              "direction": "bearish",
-              "swept_level": 78.4,
-              "depth_pts": 3.93,
-              "timestamp": "2026-08-03T00:00:00"
-            },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
-            "alert": false
-          },
-          "1mo": {
-            "tf": "1mo",
-            "session": {
-              "high": 66.6,
-              "low": -40.32,
-              "midpoint": 13.14,
-              "range_pts": 106.92
-            },
-            "sweep": {
-              "direction": "bearish",
-              "swept_level": 66.6,
-              "depth_pts": 5.68,
-              "timestamp": "2025-04-01T00:00:00"
-            },
-            "bos": {
-              "direction": "bearish",
-              "structure_level": 65.22,
-              "bos_close": 60.79,
-              "timestamp": "2025-05-01T00:00:00"
-            },
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "BOS_CONFIRMED",
-            "alert": false
-          },
-          "3mo": {
-            "tf": "3mo",
-            "session": {
-              "high": 112.24,
-              "low": 26.05,
-              "midpoint": 69.145,
-              "range_pts": 86.19
-            },
-            "sweep": {
-              "direction": "bearish",
-              "swept_level": 112.24,
-              "depth_pts": 18.26,
-              "timestamp": "2022-02-01T00:00:00"
-            },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
-            "alert": false
-          },
-          "6mo": {
-            "tf": "6mo",
-            "session": {
-              "high": 147.27,
-              "low": 32.4,
-              "midpoint": 89.835,
-              "range_pts": 114.87
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 32.4,
-              "depth_pts": 14.35,
-              "timestamp": "2020-05-01T00:00:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 66.6,
-              "bos_close": 73.95,
-              "timestamp": "2021-05-01T00:00:00"
-            },
-            "ifvg": {
-              "direction": "bullish",
-              "top": 61.56,
-              "bottom": 43.78,
-              "midpoint": 52.67,
-              "height": 17.78,
-              "formed_at": "2021-05-01T00:00:00"
-            },
-            "retrace": {
-              "status": "ABOVE_ZONE",
-              "current_price": 85.15,
-              "zone_top": 61.56,
-              "zone_bottom": 43.78,
-              "zone_mid": 52.67,
-              "pct_from_mid": 61.667,
-              "alert": false
-            },
-            "targets": [
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 87.12,
-                "type": "liquidity"
-              },
-              {
-                "label": "Swing High (BSL)",
-                "price": 95.03,
-                "type": "liquidity"
-              },
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 98.195,
-                "type": "liquidity"
-              }
-            ],
-            "stage": "IFVG_FORMED",
-            "alert": false
-          },
-          "12mo": {
-            "tf": "12mo",
-            "session": {
-              "high": 147.27,
-              "low": 25.23,
-              "midpoint": 86.25,
-              "range_pts": 122.04
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 25.23,
-              "depth_pts": 7.18,
-              "timestamp": "2020-05-01T00:00:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 66.6,
-              "bos_close": 73.95,
-              "timestamp": "2021-05-01T00:00:00"
-            },
-            "ifvg": {
-              "direction": "bullish",
-              "top": 61.56,
-              "bottom": 43.78,
-              "midpoint": 52.67,
-              "height": 17.78,
-              "formed_at": "2021-05-01T00:00:00"
-            },
-            "retrace": {
-              "status": "ABOVE_ZONE",
-              "current_price": 85.15,
-              "zone_top": 61.56,
-              "zone_bottom": 43.78,
-              "zone_mid": 52.67,
-              "pct_from_mid": 61.667,
-              "alert": false
-            },
-            "targets": [
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 87.12,
-                "type": "liquidity"
-              },
-              {
-                "label": "Swing High (BSL)",
-                "price": 95.03,
-                "type": "liquidity"
-              },
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 98.195,
-                "type": "liquidity"
-              }
-            ],
-            "stage": "IFVG_FORMED",
-            "alert": false
-          }
-        },
-        "found_on": {
-          "sweep": [
-            "3m",
-            "5m",
-            "15m",
-            "30m",
-            "45m",
-            "1h",
-            "2h",
-            "3h",
-            "4h",
-            "1d",
-            "1wk",
-            "1mo",
-            "3mo",
-            "6mo",
-            "12mo"
-          ],
-          "bos": [
-            "3m",
-            "5m",
-            "15m",
-            "4h",
-            "1mo",
-            "6mo",
-            "12mo"
-          ],
-          "ifvg": [
-            "3m",
-            "5m",
-            "15m",
-            "6mo",
-            "12mo"
-          ],
-          "entry_zone": [],
-          "approaching": []
-        },
-        "primary_tf": "12mo",
-        "session": {
-          "high": 147.27,
-          "low": 25.23,
-          "midpoint": 86.25,
-          "range_pts": 122.04
-        },
-        "sweep": {
-          "direction": "bullish",
-          "swept_level": 25.23,
-          "depth_pts": 7.18,
-          "timestamp": "2020-05-01T00:00:00"
-        },
-        "bos": {
-          "direction": "bullish",
-          "structure_level": 66.6,
-          "bos_close": 73.95,
-          "timestamp": "2021-05-01T00:00:00"
-        },
-        "ifvg": {
-          "direction": "bullish",
-          "top": 61.56,
-          "bottom": 43.78,
-          "midpoint": 52.67,
-          "height": 17.78,
-          "formed_at": "2021-05-01T00:00:00"
-        },
-        "retrace": {
-          "status": "ABOVE_ZONE",
-          "current_price": 85.15,
-          "zone_top": 61.56,
-          "zone_bottom": 43.78,
-          "zone_mid": 52.67,
-          "pct_from_mid": 61.667,
-          "alert": false
-        },
-        "targets": [
-          {
-            "label": "Equal Highs (BSL)",
-            "price": 87.12,
-            "type": "liquidity"
-          },
-          {
-            "label": "Swing High (BSL)",
-            "price": 95.03,
-            "type": "liquidity"
-          },
-          {
-            "label": "Equal Highs (BSL)",
-            "price": 98.195,
-            "type": "liquidity"
-          }
-        ],
-        "stage": "IFVG_FORMED",
-        "alert": false
-      },
-      "golden_entry": false,
-      "golden_spring": false,
-      "golden_spring_tfs": [],
-      "golden_reversal": true,
-      "golden_reversal_tfs": {
-        "htf": [
-          "W"
-        ],
-        "ltf": [
-          "15m"
-        ]
-      },
-      "golden_reversal_short": true,
-      "golden_reversal_short_tfs": {
-        "htf": [
-          "H4",
-          "H3"
-        ],
-        "ltf": [
-          "15m"
-        ]
-      },
-      "tech_conviction": 4,
-      "tech_pillars": {
-        "line_pattern": true,
-        "candle": true,
-        "volume": false,
-        "correlation": true,
-        "time_of_day": false
-      },
-      "tech_tfs": [
-        "3M",
-        "M",
-        "W",
-        "D",
-        "H4",
-        "H3",
-        "H2",
-        "H1",
-        "45m",
-        "30m",
-        "15m",
-        "5m",
-        "3m",
-        "1m"
-      ],
-      "golden_technical": false,
-      "ict_conviction": 8,
-      "ict_pillars": {
-        "sweep": true,
-        "bos": true,
-        "fvg": true,
-        "order_block": true,
-        "entry_zone": false,
-        "trigger": false
-      },
-      "golden_ict": false,
-      "golden_wyckoff": false,
-      "golden_setup": false,
-      "tech_elite": false,
-      "tech_entry_live": false,
-      "ict_elite": true,
-      "ict_entry_live": false,
-      "wyckoff_elite": false,
-      "wyckoff_entry_live": false,
-      "rvol": 0.0,
-      "in_killzone": false,
-      "session_weight": 0.0,
-      "session_label": "",
-      "pinned": true,
-      "verdict": "AVOID",
-      "verdict_score": 2,
-      "verdict_max": 8,
-      "verdict_pct": 25,
-      "verdict_checklist": {
-        "tech_setup": true,
-        "market_structure": true,
-        "rsi_ok": false,
-        "options_bullish": false,
-        "price_below_maxpain": false,
-        "above_pivot": false,
-        "balance_sheet_ok": false,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
-        "seasonality_positive": false
-      },
-      "bear_verdict": "CAUTION",
-      "bear_score": 4,
-      "bear_score_max": 7,
-      "bear_score_pct": 57,
-      "bear_checklist": {
-        "tech_setup_bear": true,
-        "structure_down": true,
-        "rsi_overbought": true,
-        "options_bearish": false,
-        "price_above_maxpain": false,
-        "below_pivot": false,
-        "analyst_sell": null,
-        "analyst_target_downside": null,
-        "seasonality_negative": true
-      },
-      "verdict_notes": "6M:Demand 6M:LiqGrab 3M:HH/HL 3M:BOS \u00b7 RSI 72.82 \u00b7 Seasonal -4.0%",
-      "entry_note": "",
-      "options_flow": {},
-      "best_option": {},
-      "value_option": {},
-      "best_contract": {},
-      "pivots": {},
-      "analyst": {},
-      "seasonality": {
-        "month": 8,
-        "hist_avg_return_pct": -3.96,
-        "historically_positive": false
-      },
-      "signals_by_tf": {
-        "HH/HL": [
-          "Y",
-          "3M",
-          "D",
-          "5m",
-          "3m"
-        ],
-        "Demand Zone": [
-          "Y",
-          "6M",
-          "D",
-          "H3",
-          "H2",
-          "45m",
-          "30m",
-          "15m"
-        ],
-        "Liq. Grab": [
-          "6M",
-          "M",
-          "H4",
-          "H3",
-          "H2"
-        ],
-        "Breaker": [
-          "6M",
-          "3M",
-          "W",
-          "D",
-          "H4",
-          "H3",
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m"
-        ],
-        "BOS \u2191": [
-          "3M"
-        ],
-        "Inv. H&S": [
-          "M",
-          "W",
-          "D",
-          "H4",
-          "H3",
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
-        "Trendline": [
-          "W",
-          "D",
-          "H4",
-          "H3",
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
-        "Wyckoff Spring": [
-          "H1",
-          "45m",
-          "1m"
-        ],
-        "Railway": [
-          "H1"
-        ],
-        "FVG": [
-          "30m"
-        ]
-      },
-      "bear_signals_by_tf": {
-        "Bear Breaker": [
-          "6M",
-          "3M",
-          "M",
-          "W",
-          "D",
-          "H4",
-          "H3",
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m"
-        ],
-        "Desc. Trendline": [
-          "6M",
-          "M",
-          "W",
-          "D",
-          "H4",
-          "H3",
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
-        "Supply Grab": [
-          "3M",
-          "30m"
-        ],
-        "Upthrust / UTAD": [
-          "3M",
-          "D"
-        ],
-        "Supply Zone": [
-          "W",
-          "H4",
-          "H1",
-          "5m",
-          "3m",
-          "1m"
-        ],
-        "H&S": [
-          "D",
-          "H4",
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
-        "LH/LL": [
-          "H4",
-          "H1",
-          "45m",
-          "30m"
-        ],
-        "Bear Order Block": [
-          "H3"
-        ],
-        "Bearish Engulf": [
-          "H3",
-          "15m"
-        ],
-        "Evening Star": [
-          "H2"
-        ],
-        "Bear Railway": [
-          "15m"
-        ],
-        "Bear FVG": [
-          "5m",
-          "3m"
-        ]
-      },
-      "short_volume": {},
-      "gex": {},
-      "direction": "long",
-      "wyckoff_cycle": "Reaccumulation",
-      "wyckoff_phase": "D",
-      "wyckoff_conviction": 5,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase D (trend leaving the range) \u00b7 conviction 5/10",
-      "wyckoff_by_tf": {
-        "Reaccumulation": [
-          "Y",
-          "6M",
-          "3M",
-          "M",
-          "W",
-          "D",
-          "H3",
-          "H2",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m"
-        ]
-      },
-      "wyckoff_laws": {
-        "supply_demand": {
-          "active": true,
-          "tfs": [
-            "Y",
-            "6M",
-            "3M",
-            "M",
-            "W",
-            "D",
-            "H4",
-            "H3",
-            "H2",
-            "45m",
-            "30m",
-            "15m",
-            "5m",
-            "3m"
-          ],
-          "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
-        },
-        "cause_effect": {
-          "active": true,
-          "tfs": [
-            "6M",
-            "3M",
-            "M",
-            "W",
-            "D",
-            "H4",
-            "H3",
-            "H2",
-            "H1",
-            "45m",
-            "30m",
-            "15m",
-            "5m",
-            "3m",
-            "1m"
-          ],
-          "note": "Accumulation cause built in the range \u2192 projecting a markup target higher"
-        },
-        "effort_result": {
-          "active": true,
-          "tfs": [
-            "6M",
-            "M",
-            "H4",
-            "H3",
-            "H2"
-          ],
-          "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
-        }
-      }
-    },
-    {
-      "ticker": "MTCH",
-      "price": 41.43,
-      "primary_tfs": [
-        "6M",
-        "30m"
-      ],
-      "entry_tfs": [],
-      "mtf_score": 4.0,
-      "signals": [
-        "Bullish Engulf",
-        "Trendline Bounce",
-        "Inverted H&S",
-        "Morning Star",
-        "Railway Tracks"
-      ],
-      "smc_signals": [
-        "BOS \u2191",
-        "Demand Zone",
-        "Engulfing",
-        "HH/HL",
-        "Breaker",
-        "Trendline",
-        "Inv. H&S",
-        "Morning Star",
-        "Railway",
-        "Liq. Sweep (BULL)",
-        "BOS \u00b7 CISD",
-        "IFVG"
-      ],
-      "bear_signals": [
-        "Bear Breaker",
-        "Desc. Trendline",
-        "Supply Grab",
-        "Supply Zone",
-        "Bearish Engulf",
-        "Bear Railway",
-        "Upthrust / UTAD",
-        "H&S",
-        "Bear FVG"
-      ],
-      "tech_summary": "Y: liq. swept below swing low, at demand zone \u00b7 6M: BOS confirmed, at demand zone \u00b7 3M: HH/HL uptrend, breaker block support",
-      "entry_levels": {
-        "entry_low": 41.41,
-        "entry_high": 41.43,
-        "mean_threshold": 41.42,
-        "stop": 41.3064,
-        "t1": 41.4662,
-        "t2": 41.59,
-        "basis": "1m FVG",
-        "direction": "long",
-        "neckline": 41.4515
-      },
-      "fundamentals": {
-        "company_name": "Match Group, Inc.",
-        "w52_high": 41.59,
-        "w52_low": 28.81,
-        "market_cap": "$9.7B",
-        "sector": "Communication Services",
-        "pe_ratio": 14.7,
-        "peg_ratio": 0.37,
-        "eps": 2.82,
-        "gross_margin": 74.87,
-        "operating_margin": 28.77,
-        "profit_margin": 20.17,
-        "ebitda_margin": 33.88,
-        "roa": 17.36,
-        "current_ratio": 1.72,
-        "price_to_sales": 2.76,
-        "fcf": "$931M",
-        "dividend_yield": 1.96,
-        "beta": 1.32,
-        "sharpe_ratio": 0.45,
-        "alpha": -5.8,
-        "earnings_yield": 9.54,
-        "roc": 17.36,
-        "magic_formula_grade": "C",
-        "owner_earnings": "$931M",
-        "fcf_margin": 26.52,
-        "roic": 7.04,
-        "owner_earnings_yield": 9.61,
-        "debt_to_fcf": 3.94,
-        "share_count_change": 0.0,
-        "revenue_growth": -1.2,
-        "earnings_growth": 50.4,
-        "ev_to_fcf": 13.4,
-        "fcf_yield": 9.61,
-        "analyst_rating": "Buy",
-        "earnings_date": "Aug 4"
-      },
-      "intrinsic_value": {
-        "iv": 49.01,
-        "price_to_iv": 0.847,
-        "upside_pct": 18.1,
-        "discount_pct": 18.1,
-        "methods_used": 3,
-        "low_confidence": false,
-        "undervalued": true,
-        "dcf_iv": 45.63,
-        "ev_ebitda_iv": 47.21,
-        "pe_iv": 54.19
-      },
-      "fundamental_conviction": 6.3,
-      "fundamental_grade": "B+",
-      "fundamental_sub_scores": {
-        "cheap": 7.5,
-        "good_business": 6.7,
-        "healthy": 5.0,
-        "street": 6.4
-      },
-      "tv_ticker": "MTCH",
-      "session": "MIDDAY",
-      "timestamp": "2026-08-24T13:15:52.897633",
-      "ict": {
-        "by_tf": {
-          "1m": {
-            "tf": "1m",
-            "session": {
-              "high": 41.43,
-              "low": 40.59,
-              "midpoint": 41.01,
-              "range_pts": 0.84
-            },
-            "sweep": null,
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "ACCUMULATION",
-            "alert": false
-          },
-          "3m": {
-            "tf": "3m",
-            "session": {
-              "high": 41.4834,
-              "low": 40.59,
-              "midpoint": 41.0367,
-              "range_pts": 0.8934
-            },
-            "sweep": {
-              "direction": "bearish",
-              "swept_level": 41.4834,
-              "depth_pts": 0.0866,
-              "timestamp": "2026-08-24T13:00:00-04:00"
-            },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
-            "alert": false
-          },
-          "5m": {
-            "tf": "5m",
-            "session": {
-              "high": 41.4834,
-              "low": 40.59,
-              "midpoint": 41.0367,
-              "range_pts": 0.8934
-            },
-            "sweep": {
-              "direction": "bearish",
-              "swept_level": 41.4834,
-              "depth_pts": 0.0866,
-              "timestamp": "2026-08-24T13:00:00-04:00"
-            },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
-            "alert": false
-          },
-          "15m": {
-            "tf": "15m",
-            "session": {
-              "high": 41.59,
-              "low": 40.59,
-              "midpoint": 41.09,
-              "range_pts": 1.0
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 40.59,
-              "depth_pts": 0.12,
-              "timestamp": "2026-08-21T15:30:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 40.54,
-              "bos_close": 40.871,
-              "timestamp": "2026-08-21T15:45:00-04:00"
-            },
-            "ifvg": {
-              "direction": "bullish",
-              "top": 41.02,
-              "bottom": 40.95,
-              "midpoint": 40.985,
-              "height": 0.07,
-              "formed_at": "2026-08-24T09:45:00-04:00"
-            },
-            "retrace": {
-              "status": "ABOVE_ZONE",
-              "current_price": 41.43,
-              "zone_top": 41.02,
-              "zone_bottom": 40.95,
-              "zone_mid": 40.985,
-              "pct_from_mid": 1.086,
-              "alert": false
-            },
-            "targets": [
-              {
-                "label": "Equal Highs (BSL)",
-                "price": 41.4662,
-                "type": "liquidity"
-              },
-              {
-                "label": "Session High (BSL)",
-                "price": 41.59,
-                "type": "liquidity"
-              }
-            ],
-            "stage": "IFVG_FORMED",
-            "alert": false
-          },
-          "30m": {
-            "tf": "30m",
-            "session": {
-              "high": 41.59,
-              "low": 40.59,
-              "midpoint": 41.09,
-              "range_pts": 1.0
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 40.59,
-              "depth_pts": 0.12,
-              "timestamp": "2026-08-21T15:30:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 40.54,
-              "bos_close": 41.24,
-              "timestamp": "2026-08-24T09:30:00-04:00"
-            },
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "BOS_CONFIRMED",
-            "alert": false
-          },
-          "45m": {
-            "tf": "45m",
-            "session": {
-              "high": 41.59,
-              "low": 40.59,
-              "midpoint": 41.09,
-              "range_pts": 1.0
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 40.59,
-              "depth_pts": 0.12,
-              "timestamp": "2026-08-21T15:30:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 40.54,
-              "bos_close": 41.24,
-              "timestamp": "2026-08-24T09:30:00-04:00"
-            },
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "BOS_CONFIRMED",
-            "alert": false
-          },
-          "1h": {
-            "tf": "1h",
-            "session": {
-              "high": 41.59,
-              "low": 40.59,
-              "midpoint": 41.09,
-              "range_pts": 1.0
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 40.59,
-              "depth_pts": 0.12,
-              "timestamp": "2026-08-21T15:30:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 40.58,
-              "bos_close": 41.28,
-              "timestamp": "2026-08-24T09:30:00-04:00"
-            },
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "BOS_CONFIRMED",
-            "alert": false
-          },
-          "2h": {
-            "tf": "2h",
-            "session": {
-              "high": 41.59,
-              "low": 40.59,
-              "midpoint": 41.09,
-              "range_pts": 1.0
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 40.59,
-              "depth_pts": 0.12,
-              "timestamp": "2026-08-21T15:30:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 40.58,
-              "bos_close": 41.28,
-              "timestamp": "2026-08-24T09:30:00-04:00"
-            },
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "BOS_CONFIRMED",
-            "alert": false
-          },
-          "3h": {
-            "tf": "3h",
-            "session": {
-              "high": 41.59,
-              "low": 40.59,
-              "midpoint": 41.09,
-              "range_pts": 1.0
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 40.59,
-              "depth_pts": 0.12,
-              "timestamp": "2026-08-21T15:30:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 40.58,
-              "bos_close": 41.28,
-              "timestamp": "2026-08-24T09:30:00-04:00"
-            },
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "BOS_CONFIRMED",
-            "alert": false
-          },
-          "4h": {
-            "tf": "4h",
-            "session": {
-              "high": 41.59,
-              "low": 40.59,
-              "midpoint": 41.09,
-              "range_pts": 1.0
-            },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 40.59,
-              "depth_pts": 0.315,
-              "timestamp": "2026-08-21T13:30:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 40.58,
-              "bos_close": 41.43,
-              "timestamp": "2026-08-24T09:30:00-04:00"
-            },
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "BOS_CONFIRMED",
-            "alert": false
-          },
-          "1d": {
-            "tf": "1d",
-            "session": {
-              "high": 38.7283,
-              "low": 34.6491,
-              "midpoint": 36.6887,
-              "range_pts": 4.0792
-            },
-            "sweep": {
-              "direction": "bearish",
-              "swept_level": 38.7283,
-              "depth_pts": 0.3117,
-              "timestamp": "2026-08-18T00:00:00"
-            },
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "SWEPT",
-            "alert": false
-          },
-          "1wk": {
-            "tf": "1wk",
-            "session": {
-              "high": 34.1712,
-              "low": 25.641,
-              "midpoint": 29.9061,
-              "range_pts": 8.5302
-            },
-            "sweep": null,
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "ACCUMULATION",
-            "alert": false
-          },
-          "1mo": {
-            "tf": "1mo",
-            "session": {
-              "high": 167.7169,
-              "low": 42.9566,
-              "midpoint": 105.3367,
-              "range_pts": 124.7603
-            },
-            "sweep": null,
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "ACCUMULATION",
-            "alert": false
-          },
-          "3mo": {
-            "tf": "3mo",
-            "session": {
-              "high": 22.0914,
-              "low": 7.6852,
-              "midpoint": 14.8883,
-              "range_pts": 14.4062
-            },
-            "sweep": null,
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "ACCUMULATION",
-            "alert": false
-          },
-          "6mo": {
-            "tf": "6mo",
-            "session": {
-              "high": 11.4293,
-              "low": 3.4523,
-              "midpoint": 7.4408,
-              "range_pts": 7.977
-            },
-            "sweep": null,
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "ACCUMULATION",
-            "alert": false
-          },
-          "12mo": {
-            "tf": "12mo",
-            "session": {
-              "high": 11.4293,
-              "low": 3.4523,
-              "midpoint": 7.4408,
-              "range_pts": 7.977
-            },
-            "sweep": null,
-            "bos": null,
-            "ifvg": null,
-            "retrace": null,
-            "targets": [],
-            "stage": "ACCUMULATION",
-            "alert": false
-          }
-        },
-        "found_on": {
-          "sweep": [
-            "3m",
-            "5m",
-            "15m",
-            "30m",
-            "45m",
-            "1h",
-            "2h",
-            "3h",
-            "4h",
-            "1d"
-          ],
-          "bos": [
-            "15m",
-            "30m",
-            "45m",
-            "1h",
-            "2h",
-            "3h",
-            "4h"
-          ],
-          "ifvg": [
-            "15m"
-          ],
-          "entry_zone": [],
-          "approaching": []
-        },
-        "primary_tf": "15m",
-        "session": {
-          "high": 41.59,
-          "low": 40.59,
-          "midpoint": 41.09,
-          "range_pts": 1.0
-        },
-        "sweep": {
-          "direction": "bullish",
-          "swept_level": 40.59,
-          "depth_pts": 0.12,
-          "timestamp": "2026-08-21T15:30:00-04:00"
-        },
-        "bos": {
-          "direction": "bullish",
-          "structure_level": 40.54,
-          "bos_close": 40.871,
-          "timestamp": "2026-08-21T15:45:00-04:00"
-        },
-        "ifvg": {
-          "direction": "bullish",
-          "top": 41.02,
-          "bottom": 40.95,
-          "midpoint": 40.985,
-          "height": 0.07,
-          "formed_at": "2026-08-24T09:45:00-04:00"
-        },
-        "retrace": {
-          "status": "ABOVE_ZONE",
-          "current_price": 41.43,
-          "zone_top": 41.02,
-          "zone_bottom": 40.95,
-          "zone_mid": 40.985,
-          "pct_from_mid": 1.086,
-          "alert": false
-        },
-        "targets": [
-          {
-            "label": "Equal Highs (BSL)",
-            "price": 41.4662,
-            "type": "liquidity"
-          },
-          {
-            "label": "Session High (BSL)",
-            "price": 41.59,
-            "type": "liquidity"
-          }
-        ],
-        "stage": "IFVG_FORMED",
-        "alert": false
-      },
-      "golden_entry": false,
-      "golden_spring": false,
-      "golden_spring_tfs": [],
-      "golden_reversal": false,
-      "golden_reversal_tfs": {
-        "htf": [
-          "D",
-          "H4"
-        ],
-        "ltf": []
-      },
-      "golden_reversal_short": false,
-      "golden_reversal_short_tfs": {
-        "htf": [],
-        "ltf": [
-          "45m"
-        ]
-      },
-      "tech_conviction": 4,
-      "tech_pillars": {
-        "line_pattern": true,
-        "candle": true,
-        "volume": true,
-        "correlation": true,
-        "time_of_day": false
-      },
-      "tech_tfs": [
-        "6M",
-        "3M",
-        "M",
-        "W",
-        "D",
-        "H4",
-        "H3",
-        "H2",
-        "H1",
-        "45m",
-        "30m",
-        "15m",
-        "5m",
-        "3m",
-        "1m"
-      ],
-      "golden_technical": false,
-      "ict_conviction": 8,
-      "ict_pillars": {
-        "sweep": true,
-        "bos": true,
-        "fvg": true,
-        "order_block": true,
-        "entry_zone": false,
-        "trigger": true
-      },
-      "golden_ict": false,
-      "golden_wyckoff": false,
-      "golden_setup": false,
-      "tech_elite": false,
-      "tech_entry_live": false,
-      "ict_elite": true,
-      "ict_entry_live": false,
-      "wyckoff_elite": false,
-      "wyckoff_entry_live": false,
-      "rvol": 1.58,
-      "in_killzone": false,
-      "session_weight": 0.0,
-      "session_label": "",
-      "pinned": true,
-      "verdict": "HOLD",
-      "verdict_score": 6,
-      "verdict_max": 10,
-      "verdict_pct": 60,
-      "verdict_checklist": {
-        "tech_setup": true,
-        "market_structure": true,
-        "rsi_ok": true,
-        "options_bullish": true,
-        "price_below_maxpain": false,
-        "above_pivot": false,
-        "balance_sheet_ok": true,
-        "analyst_buy": true,
-        "analyst_target_upside": false,
-        "seasonality_positive": false
-      },
-      "bear_verdict": "CLEAR",
-      "bear_score": 3,
-      "bear_score_max": 9,
-      "bear_score_pct": 33,
-      "bear_checklist": {
-        "tech_setup_bear": true,
-        "structure_down": false,
-        "rsi_overbought": false,
-        "options_bearish": false,
-        "price_above_maxpain": true,
-        "below_pivot": false,
-        "analyst_sell": false,
-        "analyst_target_downside": false,
-        "seasonality_negative": true
-      },
-      "verdict_notes": "6M:BOS 6M:Demand 30m:HH/HL 30m:BOS \u00b7 RSI 51.04 \u00b7 P/C 0.43 \u00b7 MaxPain $37.50 \u00b7 Call wall $40 (2026-09-18) \u00b7 Target $41.88 (+1%) \u00b7 Seasonal -2.1%",
-      "entry_note": "",
-      "options_flow": {
-        "total_call_oi": 10863,
-        "total_put_oi": 4721,
-        "pc_ratio": 0.43,
-        "max_pain": 37.5,
-        "top_call_wall": 40.0,
-        "top_call_oi": 6305,
-        "top_put_wall": 27.5,
-        "top_put_oi": 1962,
-        "expiry": "2026-09-18",
-        "call_walls_by_expiry": {
-          "2026-09-18": {
-            "strike": 40.0,
-            "oi": 6305
-          },
-          "2026-10-16": {
-            "strike": 47.5,
-            "oi": 124
-          },
-          "2026-12-18": {
-            "strike": 42.5,
-            "oi": 2624
-          }
-        }
-      },
-      "best_option": {
-        "type": "call",
-        "strike": 42.5,
-        "expiry": "2026-10-16",
-        "dte": 53,
-        "ask": 1.5,
-        "bid": 1.35,
-        "cost": 150.0,
-        "open_interest": 62,
-        "volume": 68,
-        "iv": 30.4,
-        "breakeven": 44.0,
-        "delta": 0.466,
-        "gamma": 0.0826,
-        "theta": -0.02,
-        "vega": 0.063
-      },
-      "value_option": {
-        "type": "call",
-        "strike": 35.0,
-        "expiry": "2028-01-21",
-        "dte": 515,
-        "ask": 11.5,
-        "bid": 10.3,
-        "cost": 1150.0,
-        "open_interest": 633,
-        "volume": 7,
-        "iv": 43.7,
-        "breakeven": 46.5,
-        "delta": 0.765,
-        "gamma": 0.0143,
-        "theta": -0.009,
-        "vega": 0.151
-      },
-      "best_contract": {},
-      "pivots": {},
-      "analyst": {
-        "target_mean": 41.88,
-        "target_high": 51.0,
-        "target_low": 35.0,
-        "n_analysts": 17,
-        "rating_key": "buy"
-      },
-      "seasonality": {
-        "month": 8,
-        "hist_avg_return_pct": -2.06,
-        "historically_positive": false
-      },
-      "signals_by_tf": {
-        "Liq. Grab": [
-          "Y"
-        ],
-        "Demand Zone": [
-          "Y",
-          "6M",
-          "D",
-          "45m",
-          "15m",
-          "1m"
-        ],
-        "BOS \u2191": [
-          "6M",
-          "M",
-          "D",
-          "H4",
-          "H3",
-          "30m",
-          "15m"
-        ],
-        "Engulfing": [
-          "6M"
-        ],
-        "HH/HL": [
-          "3M",
-          "M",
-          "W",
-          "H4",
-          "H3",
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m"
-        ],
-        "Breaker": [
-          "3M",
-          "30m",
-          "5m",
-          "3m"
-        ],
-        "Inv. H&S": [
-          "M",
-          "W",
-          "D",
-          "H4",
-          "H3",
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
-        "Trendline": [
-          "D",
-          "H3",
-          "H2",
-          "H1",
-          "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
-        "FVG": [
-          "H2",
-          "1m"
-        ],
-        "Morning Star": [
-          "30m"
-        ],
-        "Railway": [
-          "30m"
-        ]
-      },
-      "bear_signals_by_tf": {
-        "Bear Breaker": [
-          "Y",
-          "D",
-          "H1",
-          "30m",
-          "15m"
-        ],
-        "Desc. Trendline": [
-          "Y",
-          "3M",
-          "M",
-          "30m",
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
-        "Supply Grab": [
-          "3M",
-          "H2",
-          "H1",
-          "45m"
-        ],
-        "Supply Zone": [
-          "H3",
-          "H1",
-          "30m",
-          "5m",
-          "3m"
-        ],
-        "Bearish Engulf": [
-          "45m"
-        ],
-        "Bear Railway": [
-          "45m",
-          "5m",
-          "3m"
-        ],
-        "Upthrust / UTAD": [
-          "15m",
-          "5m",
-          "3m"
-        ],
-        "H&S": [
-          "15m",
-          "5m",
-          "3m",
-          "1m"
-        ],
-        "Bear FVG": [
-          "5m",
-          "3m"
-        ]
-      },
-      "short_volume": {},
-      "gex": {
-        "net_gex": 3095723,
-        "net_gex_bn": 0.003,
-        "expiry": "2026-09-18",
-        "regime": "Long Gamma",
-        "call_wall": 42.5,
-        "put_wall": 37.5,
-        "zero_gamma": 35.62,
-        "zero_gamma_method": "flip"
-      },
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "E",
@@ -6730,14 +5561,14 @@
           "3M",
           "M",
           "W",
-          "D",
+          "D"
+        ],
+        "Distribution": [
           "H4",
           "H3",
           "H2",
           "H1",
           "45m",
-          "30m",
-          "15m",
           "5m",
           "3m",
           "1m"
@@ -6753,24 +5584,17 @@
             "M",
             "W",
             "D",
-            "H4",
-            "H3",
-            "H2",
-            "H1",
-            "45m",
             "30m",
             "15m",
             "5m",
-            "3m",
-            "1m"
+            "3m"
           ],
           "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
         },
         "cause_effect": {
           "active": true,
           "tfs": [
-            "6M",
-            "3M",
+            "Y",
             "M",
             "W",
             "D",
@@ -6791,8 +5615,9 @@
           "active": true,
           "tfs": [
             "Y",
-            "6M",
-            "30m"
+            "3M",
+            "M",
+            "15m"
           ],
           "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
         }
@@ -9743,6 +8568,984 @@
       }
     },
     {
+      "ticker": "ZC=F",
+      "price": 518.25,
+      "primary_tfs": [
+        "6M",
+        "3M",
+        "M",
+        "W",
+        "H2",
+        "H1",
+        "45m",
+        "30m",
+        "15m",
+        "5m",
+        "3m",
+        "1m"
+      ],
+      "entry_tfs": [],
+      "mtf_score": 3.5,
+      "signals": [
+        "Inverted H&S",
+        "Trendline Bounce",
+        "Wyckoff Spring"
+      ],
+      "smc_signals": [
+        "Demand Zone",
+        "HH/HL",
+        "Inv. H&S",
+        "BOS \u2191",
+        "FVG",
+        "Liq. Grab",
+        "Breaker",
+        "Trendline",
+        "Wyckoff Spring",
+        "Liq. Sweep (BULL)",
+        "BOS \u00b7 CISD",
+        "IFVG",
+        "Approaching IFVG"
+      ],
+      "bear_signals": [
+        "Desc. Trendline",
+        "Supply Grab",
+        "Supply Zone",
+        "H&S",
+        "Evening Star",
+        "Bear FVG",
+        "Bear Order Block",
+        "LH/LL",
+        "Bear Breaker",
+        "Upthrust / UTAD",
+        "Bearish Engulf",
+        "BOS \u2193"
+      ],
+      "tech_summary": "Y: at demand zone \u00b7 6M: at demand zone \u00b7 3M: HH/HL uptrend",
+      "entry_levels": {
+        "entry_low": 515.25,
+        "entry_high": 519.25,
+        "mean_threshold": 517.25,
+        "stop": 513.25,
+        "t1": 519.5,
+        "t2": 521.0329,
+        "basis": "H1 FVG",
+        "direction": "long",
+        "neckline": 518.5
+      },
+      "fundamentals": {
+        "company_name": "Corn Futures,Dec-2026",
+        "w52_high": 524.25,
+        "w52_low": 379.75,
+        "sharpe_ratio": 1.23
+      },
+      "intrinsic_value": {},
+      "fundamental_conviction": 0.0,
+      "fundamental_grade": "F",
+      "fundamental_sub_scores": {
+        "cheap": null,
+        "good_business": null,
+        "healthy": null,
+        "street": null
+      },
+      "tv_ticker": "CBOT:ZC1!",
+      "session": "MIDDAY",
+      "timestamp": "2026-08-24T13:40:42.405352",
+      "ict": {
+        "by_tf": {
+          "1m": {
+            "tf": "1m",
+            "session": {
+              "high": 524.25,
+              "low": 517.5,
+              "midpoint": 520.875,
+              "range_pts": 6.75
+            },
+            "sweep": null,
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "ACCUMULATION",
+            "alert": false
+          },
+          "3m": {
+            "tf": "3m",
+            "session": {
+              "high": 524.25,
+              "low": 517.5,
+              "midpoint": 520.875,
+              "range_pts": 6.75
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 517.5,
+              "depth_pts": 0.25,
+              "timestamp": "2026-08-24T11:20:00-04:00"
+            },
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 517.5,
+              "bos_close": 518.5,
+              "timestamp": "2026-08-24T11:25:00-04:00"
+            },
+            "ifvg": {
+              "direction": "bullish",
+              "top": 519.25,
+              "bottom": 518.75,
+              "midpoint": 519.0,
+              "height": 0.5,
+              "formed_at": "2026-08-24T12:00:00-04:00"
+            },
+            "retrace": {
+              "status": "APPROACHING",
+              "current_price": 518.25,
+              "zone_top": 519.25,
+              "zone_bottom": 518.75,
+              "zone_mid": 519.0,
+              "pct_from_mid": -0.145,
+              "alert": false
+            },
+            "targets": [
+              {
+                "label": "Swing High (BSL)",
+                "price": 519.5,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 521.0329,
+                "type": "liquidity"
+              },
+              {
+                "label": "Session High (BSL)",
+                "price": 524.25,
+                "type": "liquidity"
+              }
+            ],
+            "stage": "APPROACHING",
+            "alert": false
+          },
+          "5m": {
+            "tf": "5m",
+            "session": {
+              "high": 524.25,
+              "low": 517.5,
+              "midpoint": 520.875,
+              "range_pts": 6.75
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 517.5,
+              "depth_pts": 0.25,
+              "timestamp": "2026-08-24T11:20:00-04:00"
+            },
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 517.5,
+              "bos_close": 518.5,
+              "timestamp": "2026-08-24T11:25:00-04:00"
+            },
+            "ifvg": {
+              "direction": "bullish",
+              "top": 519.25,
+              "bottom": 518.75,
+              "midpoint": 519.0,
+              "height": 0.5,
+              "formed_at": "2026-08-24T12:00:00-04:00"
+            },
+            "retrace": {
+              "status": "APPROACHING",
+              "current_price": 518.25,
+              "zone_top": 519.25,
+              "zone_bottom": 518.75,
+              "zone_mid": 519.0,
+              "pct_from_mid": -0.145,
+              "alert": false
+            },
+            "targets": [
+              {
+                "label": "Swing High (BSL)",
+                "price": 519.5,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Highs (BSL)",
+                "price": 521.0329,
+                "type": "liquidity"
+              },
+              {
+                "label": "Session High (BSL)",
+                "price": 524.25,
+                "type": "liquidity"
+              }
+            ],
+            "stage": "APPROACHING",
+            "alert": false
+          },
+          "15m": {
+            "tf": "15m",
+            "session": {
+              "high": 524.25,
+              "low": 517.5,
+              "midpoint": 520.875,
+              "range_pts": 6.75
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 517.5,
+              "depth_pts": 0.25,
+              "timestamp": "2026-08-24T13:15:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "30m": {
+            "tf": "30m",
+            "session": {
+              "high": 524.25,
+              "low": 517.5,
+              "midpoint": 520.875,
+              "range_pts": 6.75
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 517.5,
+              "depth_pts": 0.25,
+              "timestamp": "2026-08-24T13:00:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "45m": {
+            "tf": "45m",
+            "session": {
+              "high": 524.25,
+              "low": 517.5,
+              "midpoint": 520.875,
+              "range_pts": 6.75
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 517.5,
+              "depth_pts": 0.25,
+              "timestamp": "2026-08-24T13:00:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "1h": {
+            "tf": "1h",
+            "session": {
+              "high": 524.25,
+              "low": 517.5,
+              "midpoint": 520.875,
+              "range_pts": 6.75
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 517.5,
+              "depth_pts": 0.25,
+              "timestamp": "2026-08-24T13:00:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "2h": {
+            "tf": "2h",
+            "session": {
+              "high": 524.25,
+              "low": 517.5,
+              "midpoint": 520.875,
+              "range_pts": 6.75
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 517.5,
+              "depth_pts": 0.25,
+              "timestamp": "2026-08-24T13:00:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "3h": {
+            "tf": "3h",
+            "session": {
+              "high": 524.25,
+              "low": 517.5,
+              "midpoint": 520.875,
+              "range_pts": 6.75
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 517.5,
+              "depth_pts": 0.25,
+              "timestamp": "2026-08-24T13:00:00-04:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "4h": {
+            "tf": "4h",
+            "session": {
+              "high": 524.25,
+              "low": 511.5,
+              "midpoint": 517.875,
+              "range_pts": 12.75
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 511.5,
+              "depth_pts": 1.25,
+              "timestamp": "2026-08-23T20:00:00-04:00"
+            },
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 509.0,
+              "bos_close": 518.75,
+              "timestamp": "2026-08-24T00:00:00-04:00"
+            },
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "BOS_CONFIRMED",
+            "alert": false
+          },
+          "1d": {
+            "tf": "1d",
+            "session": {
+              "high": 481.75,
+              "low": 446.75,
+              "midpoint": 464.25,
+              "range_pts": 35.0
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 446.75,
+              "depth_pts": 10.75,
+              "timestamp": "2026-08-12T00:00:00"
+            },
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 444.5,
+              "bos_close": 448.0,
+              "timestamp": "2026-08-13T00:00:00"
+            },
+            "ifvg": {
+              "direction": "bullish",
+              "top": 458.0,
+              "bottom": 457.25,
+              "midpoint": 457.625,
+              "height": 0.75,
+              "formed_at": "2026-08-17T00:00:00"
+            },
+            "retrace": {
+              "status": "ABOVE_ZONE",
+              "current_price": 518.5,
+              "zone_top": 458.0,
+              "zone_bottom": 457.25,
+              "zone_mid": 457.625,
+              "pct_from_mid": 13.302,
+              "alert": false
+            },
+            "targets": [],
+            "stage": "IFVG_FORMED",
+            "alert": false
+          },
+          "1wk": {
+            "tf": "1wk",
+            "session": {
+              "high": 504.5,
+              "low": 408.0,
+              "midpoint": 456.25,
+              "range_pts": 96.5
+            },
+            "sweep": {
+              "direction": "bullish",
+              "swept_level": 408.0,
+              "depth_pts": 9.5,
+              "timestamp": "2026-06-29T00:00:00"
+            },
+            "bos": {
+              "direction": "bullish",
+              "structure_level": 463.0,
+              "bos_close": 464.25,
+              "timestamp": "2026-07-20T00:00:00"
+            },
+            "ifvg": {
+              "direction": "bullish",
+              "top": 445.5,
+              "bottom": 444.5,
+              "midpoint": 445.0,
+              "height": 1.0,
+              "formed_at": "2026-07-20T00:00:00"
+            },
+            "retrace": {
+              "status": "ABOVE_ZONE",
+              "current_price": 518.5,
+              "zone_top": 445.5,
+              "zone_bottom": 444.5,
+              "zone_mid": 445.0,
+              "pct_from_mid": 16.517,
+              "alert": false
+            },
+            "targets": [],
+            "stage": "IFVG_FORMED",
+            "alert": false
+          },
+          "1mo": {
+            "tf": "1mo",
+            "session": {
+              "high": 464.25,
+              "low": 300.25,
+              "midpoint": 382.25,
+              "range_pts": 164.0
+            },
+            "sweep": {
+              "direction": "bearish",
+              "swept_level": 464.25,
+              "depth_pts": 17.5,
+              "timestamp": "2026-05-01T00:00:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false
+          },
+          "3mo": {
+            "tf": "3mo",
+            "session": {
+              "high": 843.75,
+              "low": 301.0,
+              "midpoint": 572.375,
+              "range_pts": 542.75
+            },
+            "sweep": null,
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "ACCUMULATION",
+            "alert": false
+          },
+          "6mo": {
+            "tf": "6mo",
+            "session": {
+              "high": 828.75,
+              "low": 222.25,
+              "midpoint": 525.5,
+              "range_pts": 606.5
+            },
+            "sweep": null,
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "ACCUMULATION",
+            "alert": false
+          },
+          "12mo": {
+            "tf": "12mo",
+            "session": {
+              "high": 765.0,
+              "low": 185.75,
+              "midpoint": 475.375,
+              "range_pts": 579.25
+            },
+            "sweep": {
+              "direction": "bearish",
+              "swept_level": 765.0,
+              "depth_pts": 35.0,
+              "timestamp": "2022-07-01T00:00:00"
+            },
+            "bos": {
+              "direction": "bearish",
+              "structure_level": 487.75,
+              "bos_close": 476.75,
+              "timestamp": "2023-07-01T00:00:00"
+            },
+            "ifvg": {
+              "direction": "bearish",
+              "top": 623.0,
+              "bottom": 614.75,
+              "midpoint": 618.875,
+              "height": 8.25,
+              "formed_at": "2023-07-01T00:00:00"
+            },
+            "retrace": {
+              "status": "BELOW_ZONE",
+              "current_price": 518.5,
+              "zone_top": 623.0,
+              "zone_bottom": 614.75,
+              "zone_mid": 618.875,
+              "pct_from_mid": -16.219,
+              "alert": false
+            },
+            "targets": [
+              {
+                "label": "Equal Lows (SSL)",
+                "price": 455.875,
+                "type": "liquidity"
+              },
+              {
+                "label": "Swing Low (SSL)",
+                "price": 368.75,
+                "type": "liquidity"
+              },
+              {
+                "label": "Equal Lows (SSL)",
+                "price": 352.5,
+                "type": "liquidity"
+              }
+            ],
+            "stage": "IFVG_FORMED",
+            "alert": false
+          }
+        },
+        "found_on": {
+          "sweep": [
+            "3m",
+            "5m",
+            "15m",
+            "30m",
+            "45m",
+            "1h",
+            "2h",
+            "3h",
+            "4h",
+            "1d",
+            "1wk",
+            "1mo",
+            "12mo"
+          ],
+          "bos": [
+            "3m",
+            "5m",
+            "4h",
+            "1d",
+            "1wk",
+            "12mo"
+          ],
+          "ifvg": [
+            "3m",
+            "5m",
+            "1d",
+            "1wk",
+            "12mo"
+          ],
+          "entry_zone": [],
+          "approaching": [
+            "3m",
+            "5m"
+          ]
+        },
+        "primary_tf": "5m",
+        "session": {
+          "high": 524.25,
+          "low": 517.5,
+          "midpoint": 520.875,
+          "range_pts": 6.75
+        },
+        "sweep": {
+          "direction": "bullish",
+          "swept_level": 517.5,
+          "depth_pts": 0.25,
+          "timestamp": "2026-08-24T11:20:00-04:00"
+        },
+        "bos": {
+          "direction": "bullish",
+          "structure_level": 517.5,
+          "bos_close": 518.5,
+          "timestamp": "2026-08-24T11:25:00-04:00"
+        },
+        "ifvg": {
+          "direction": "bullish",
+          "top": 519.25,
+          "bottom": 518.75,
+          "midpoint": 519.0,
+          "height": 0.5,
+          "formed_at": "2026-08-24T12:00:00-04:00"
+        },
+        "retrace": {
+          "status": "APPROACHING",
+          "current_price": 518.25,
+          "zone_top": 519.25,
+          "zone_bottom": 518.75,
+          "zone_mid": 519.0,
+          "pct_from_mid": -0.145,
+          "alert": false
+        },
+        "targets": [
+          {
+            "label": "Swing High (BSL)",
+            "price": 519.5,
+            "type": "liquidity"
+          },
+          {
+            "label": "Equal Highs (BSL)",
+            "price": 521.0329,
+            "type": "liquidity"
+          },
+          {
+            "label": "Session High (BSL)",
+            "price": 524.25,
+            "type": "liquidity"
+          }
+        ],
+        "stage": "APPROACHING",
+        "alert": false
+      },
+      "golden_entry": false,
+      "golden_spring": false,
+      "golden_spring_tfs": [],
+      "golden_reversal": false,
+      "golden_reversal_tfs": {
+        "htf": [
+          "W"
+        ],
+        "ltf": []
+      },
+      "golden_reversal_short": false,
+      "golden_reversal_short_tfs": {
+        "htf": [],
+        "ltf": [
+          "45m",
+          "5m",
+          "3m"
+        ]
+      },
+      "tech_conviction": 2,
+      "tech_pillars": {
+        "line_pattern": true,
+        "candle": false,
+        "volume": true,
+        "correlation": false,
+        "time_of_day": false
+      },
+      "tech_tfs": [
+        "3M",
+        "M",
+        "W",
+        "D",
+        "H4",
+        "H3",
+        "H2",
+        "H1",
+        "45m",
+        "30m",
+        "15m",
+        "5m",
+        "3m",
+        "1m"
+      ],
+      "golden_technical": false,
+      "ict_conviction": 9,
+      "ict_pillars": {
+        "sweep": true,
+        "bos": true,
+        "fvg": true,
+        "order_block": true,
+        "entry_zone": false,
+        "trigger": false
+      },
+      "golden_ict": false,
+      "golden_wyckoff": false,
+      "golden_setup": false,
+      "tech_elite": false,
+      "tech_entry_live": false,
+      "ict_elite": true,
+      "ict_entry_live": false,
+      "wyckoff_elite": false,
+      "wyckoff_entry_live": false,
+      "rvol": 2.74,
+      "in_killzone": false,
+      "session_weight": 0.0,
+      "session_label": "",
+      "pinned": true,
+      "verdict": "AVOID",
+      "verdict_score": 3,
+      "verdict_max": 8,
+      "verdict_pct": 38,
+      "verdict_checklist": {
+        "tech_setup": true,
+        "market_structure": true,
+        "rsi_ok": false,
+        "options_bullish": false,
+        "price_below_maxpain": false,
+        "above_pivot": false,
+        "balance_sheet_ok": false,
+        "analyst_buy": null,
+        "analyst_target_upside": null,
+        "seasonality_positive": true
+      },
+      "bear_verdict": "CLEAR",
+      "bear_score": 3,
+      "bear_score_max": 7,
+      "bear_score_pct": 43,
+      "bear_checklist": {
+        "tech_setup_bear": true,
+        "structure_down": true,
+        "rsi_overbought": true,
+        "options_bearish": false,
+        "price_above_maxpain": false,
+        "below_pivot": false,
+        "analyst_sell": null,
+        "analyst_target_downside": null,
+        "seasonality_negative": false
+      },
+      "verdict_notes": "6M:Demand 3M:HH/HL M:HH/HL W:HH/HL \u00b7 RSI 83.56 \u00b7 Seasonal +3.6%",
+      "entry_note": "",
+      "options_flow": {},
+      "best_option": {},
+      "value_option": {},
+      "best_contract": {},
+      "pivots": {},
+      "analyst": {},
+      "seasonality": {
+        "month": 8,
+        "hist_avg_return_pct": 3.62,
+        "historically_positive": true
+      },
+      "signals_by_tf": {
+        "Demand Zone": [
+          "Y",
+          "6M",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "30m",
+          "5m",
+          "3m"
+        ],
+        "HH/HL": [
+          "3M",
+          "M",
+          "W",
+          "H4",
+          "H3",
+          "H2"
+        ],
+        "Inv. H&S": [
+          "M",
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "BOS \u2191": [
+          "W",
+          "D"
+        ],
+        "FVG": [
+          "W",
+          "D",
+          "H1"
+        ],
+        "Trendline": [
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m"
+        ],
+        "Liq. Grab": [
+          "H3",
+          "H2"
+        ],
+        "Breaker": [
+          "H3",
+          "H2",
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m"
+        ],
+        "Wyckoff Spring": [
+          "30m"
+        ]
+      },
+      "bear_signals_by_tf": {
+        "Desc. Trendline": [
+          "6M",
+          "3M",
+          "M",
+          "30m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "Supply Grab": [
+          "3M"
+        ],
+        "Supply Zone": [
+          "3M",
+          "45m",
+          "15m",
+          "1m"
+        ],
+        "H&S": [
+          "M",
+          "W",
+          "H1",
+          "45m",
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "Evening Star": [
+          "H3"
+        ],
+        "Bear FVG": [
+          "H2"
+        ],
+        "Bear Order Block": [
+          "H2",
+          "H1"
+        ],
+        "LH/LL": [
+          "H1",
+          "5m",
+          "3m"
+        ],
+        "Bear Breaker": [
+          "H1",
+          "45m",
+          "30m",
+          "15m",
+          "5m",
+          "3m"
+        ],
+        "Upthrust / UTAD": [
+          "H1"
+        ],
+        "Bearish Engulf": [
+          "45m"
+        ],
+        "BOS \u2193": [
+          "15m"
+        ]
+      },
+      "short_volume": {},
+      "gex": {},
+      "direction": "long",
+      "wyckoff_cycle": "Reaccumulation",
+      "wyckoff_phase": "D",
+      "wyckoff_conviction": 5,
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase D (trend leaving the range) \u00b7 conviction 5/10",
+      "wyckoff_by_tf": {
+        "Reaccumulation": [
+          "Y",
+          "6M",
+          "M",
+          "W",
+          "D",
+          "H4",
+          "H3",
+          "H2",
+          "H1",
+          "30m",
+          "5m",
+          "3m"
+        ],
+        "Distribution": [
+          "3M",
+          "45m",
+          "15m",
+          "1m"
+        ]
+      },
+      "wyckoff_laws": {
+        "supply_demand": {
+          "active": true,
+          "tfs": [
+            "Y",
+            "6M",
+            "3M",
+            "M",
+            "W",
+            "D",
+            "H4",
+            "H3",
+            "H2",
+            "H1",
+            "30m",
+            "5m",
+            "3m"
+          ],
+          "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
+        },
+        "cause_effect": {
+          "active": true,
+          "tfs": [
+            "M",
+            "W",
+            "D",
+            "H4",
+            "H3",
+            "H2",
+            "H1",
+            "45m",
+            "30m",
+            "15m",
+            "5m",
+            "3m",
+            "1m"
+          ],
+          "note": "Accumulation cause built in the range \u2192 projecting a markup target higher"
+        },
+        "effort_result": {
+          "active": true,
+          "tfs": [
+            "H3",
+            "H2"
+          ],
+          "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
+        }
+      }
+    },
+    {
       "ticker": "PA=F",
       "price": 1368.0,
       "primary_tfs": [
@@ -11300,7 +11103,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": true
       },
-      "verdict_notes": "15m:HH/HL 15m:LiqGrab \u00b7 RSI 38.69 \u00b7 Seasonal -0.2%",
+      "verdict_notes": "15m:HH/HL 15m:LiqGrab \u00b7 RSI 38.55 \u00b7 Seasonal -0.2%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
