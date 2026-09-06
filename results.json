@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-09-06T00:44:36.223157+00:00",
+  "last_scan": "2026-09-06T00:45:05.937767+00:00",
   "setups": [
     {
       "ticker": "RB=F",
@@ -2898,12 +2898,7 @@
         "direction": "long",
         "neckline": 1403.75
       },
-      "fundamentals": {
-        "company_name": "Palladium Dec 26",
-        "w52_high": 2169.9,
-        "w52_low": 1121.5,
-        "sharpe_ratio": 0.61
-      },
+      "fundamentals": {},
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -4605,7 +4600,7 @@
         "current_ratio": 1.72,
         "price_to_sales": 2.78,
         "fcf": "$931M",
-        "dividend_yield": 1.89,
+        "dividend_yield": 1.91,
         "beta": 1.32,
         "sharpe_ratio": 0.39,
         "alpha": -7.48,
@@ -5132,45 +5127,111 @@
       "session_weight": 0.7,
       "session_label": "Closing dash",
       "pinned": true,
-      "verdict": "AVOID",
-      "verdict_score": 3,
-      "verdict_max": 8,
-      "verdict_pct": 38,
+      "verdict": "HOLD",
+      "verdict_score": 5,
+      "verdict_max": 10,
+      "verdict_pct": 50,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": false,
-        "options_bullish": false,
+        "options_bullish": true,
         "price_below_maxpain": false,
         "above_pivot": false,
         "balance_sheet_ok": true,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "analyst_buy": true,
+        "analyst_target_upside": false,
         "seasonality_positive": false
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 2,
-      "bear_score_max": 7,
-      "bear_score_pct": 29,
+      "bear_score": 3,
+      "bear_score_max": 9,
+      "bear_score_pct": 33,
       "bear_checklist": {
         "tech_setup_bear": false,
         "structure_down": false,
         "rsi_overbought": true,
         "options_bearish": false,
-        "price_above_maxpain": false,
+        "price_above_maxpain": true,
         "below_pivot": false,
-        "analyst_sell": null,
-        "analyst_target_downside": null,
+        "analyst_sell": false,
+        "analyst_target_downside": false,
         "seasonality_negative": true
       },
-      "verdict_notes": "6M:BOS 6M:Demand \u00b7 RSI 74.22 \u00b7 Seasonal -6.5%",
+      "verdict_notes": "6M:BOS 6M:Demand \u00b7 RSI 74.22 \u00b7 P/C 0.43 \u00b7 MaxPain $37.50 \u00b7 Call wall $40 (2026-09-18) \u00b7 Target $41.88 (+0%) \u00b7 Seasonal -6.5%",
       "entry_note": "",
-      "options_flow": {},
-      "best_option": {},
-      "value_option": {},
+      "options_flow": {
+        "total_call_oi": 12047,
+        "total_put_oi": 5180,
+        "pc_ratio": 0.43,
+        "max_pain": 37.5,
+        "top_call_wall": 40.0,
+        "top_call_oi": 5167,
+        "top_put_wall": 27.5,
+        "top_put_oi": 1962,
+        "expiry": "2026-09-18",
+        "call_walls_by_expiry": {
+          "2026-09-18": {
+            "strike": 40.0,
+            "oi": 5167
+          },
+          "2026-10-16": {
+            "strike": 45.0,
+            "oi": 4139
+          },
+          "2026-12-18": {
+            "strike": 42.5,
+            "oi": 2681
+          },
+          "2027-01-15": {
+            "strike": 55.0,
+            "oi": 5656
+          }
+        }
+      },
+      "best_option": {
+        "type": "call",
+        "strike": 42.5,
+        "expiry": "2026-10-16",
+        "dte": 41,
+        "ask": 1.7,
+        "bid": 1.3,
+        "cost": 170.0,
+        "open_interest": 759,
+        "volume": 30,
+        "iv": 35.5,
+        "breakeven": 44.2,
+        "delta": 0.492,
+        "gamma": 0.08,
+        "theta": -0.027,
+        "vega": 0.056
+      },
+      "value_option": {
+        "type": "call",
+        "strike": 27.5,
+        "expiry": "2028-01-21",
+        "dte": 503,
+        "ask": 18.5,
+        "bid": 13.5,
+        "cost": 1850.0,
+        "open_interest": 44,
+        "volume": 6,
+        "iv": 61.7,
+        "breakeven": 46.0,
+        "delta": 0.85,
+        "gamma": 0.0077,
+        "theta": -0.009,
+        "vega": 0.114
+      },
       "best_contract": {},
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 41.88,
+        "target_high": 51.0,
+        "target_low": 35.0,
+        "n_analysts": 17,
+        "rating_key": "buy"
+      },
       "seasonality": {
         "month": 9,
         "hist_avg_return_pct": -6.54,
@@ -5317,7 +5378,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": 3242154,
+        "net_gex_bn": 0.003,
+        "expiry": "2026-09-18",
+        "regime": "Long Gamma",
+        "call_wall": 45.0,
+        "put_wall": 37.5,
+        "zero_gamma": 36.44,
+        "zero_gamma_method": "flip"
+      },
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "D",
@@ -5464,7 +5534,7 @@
       },
       "tv_ticker": "CBOT:ZS1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:58:42.935519",
+      "timestamp": "2026-09-05T20:44:32.235251",
       "ict": {
         "by_tf": {
           "1m": {
@@ -6550,7 +6620,7 @@
       },
       "tv_ticker": "NYMEX:CL1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:58:44.657120",
+      "timestamp": "2026-09-05T20:44:32.960938",
       "ict": {
         "by_tf": {
           "1m": {
@@ -9215,7 +9285,12 @@
         "direction": "long",
         "neckline": 737.5
       },
-      "fundamentals": {},
+      "fundamentals": {
+        "company_name": "Chicago SRW Wheat Futures,Dec-2",
+        "w52_high": 775.75,
+        "w52_low": 492.25,
+        "sharpe_ratio": 1.26
+      },
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -9227,7 +9302,7 @@
       },
       "tv_ticker": "CBOT:ZW1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:58:45.267792",
+      "timestamp": "2026-09-05T20:44:33.154829",
       "ict": {
         "by_tf": {
           "1m": {
@@ -10271,7 +10346,7 @@
       },
       "tv_ticker": "HO1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:58:50.158587",
+      "timestamp": "2026-09-05T20:44:39.269476",
       "ict": {
         "by_tf": {
           "1m": {
@@ -11254,7 +11329,7 @@
       },
       "tv_ticker": "ZION",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:58:50.705930",
+      "timestamp": "2026-09-05T20:44:38.955489",
       "ict": {
         "by_tf": {
           "1m": {
@@ -11582,7 +11657,7 @@
               "high": 53.8451,
               "low": 18.8881,
               "midpoint": 36.3666,
-              "range_pts": 34.957
+              "range_pts": 34.9569
             },
             "sweep": {
               "direction": "bearish",
@@ -11634,7 +11709,7 @@
             "sweep": {
               "direction": "bearish",
               "swept_level": 60.2861,
-              "depth_pts": 4.9561,
+              "depth_pts": 4.9562,
               "timestamp": "2025-12-01T00:00:00"
             },
             "bos": null,
@@ -11898,10 +11973,10 @@
         "cost": 240.0,
         "open_interest": 521,
         "volume": 5,
-        "iv": 28.7,
+        "iv": 29.0,
         "breakeven": 72.4,
         "delta": 0.505,
-        "gamma": 0.0598,
+        "gamma": 0.0591,
         "theta": -0.037,
         "vega": 0.093
       },
@@ -12065,7 +12140,7 @@
       },
       "short_volume": {},
       "gex": {
-        "net_gex": -588304,
+        "net_gex": -567720,
         "net_gex_bn": -0.001,
         "expiry": "2026-09-18",
         "regime": "Short Gamma",
@@ -12225,7 +12300,7 @@
       },
       "tv_ticker": "ZL1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:58:51.301315",
+      "timestamp": "2026-09-05T20:44:39.265145",
       "ict": {
         "by_tf": {
           "1m": {
@@ -13092,7 +13167,7 @@
       },
       "tv_ticker": "BZ1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:58:52.340967",
+      "timestamp": "2026-09-05T20:44:39.737745",
       "ict": {
         "by_tf": {
           "1m": {
@@ -14022,7 +14097,12 @@
         "direction": "long",
         "neckline": 66.855
       },
-      "fundamentals": {},
+      "fundamentals": {
+        "company_name": "Silver Dec 26",
+        "w52_high": 121.3,
+        "w52_low": 40.878,
+        "sharpe_ratio": 1.01
+      },
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -14034,7 +14114,7 @@
       },
       "tv_ticker": "COMEX:SI1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:58:57.786691",
+      "timestamp": "2026-09-05T20:44:45.159213",
       "ict": {
         "by_tf": {
           "1m": {
@@ -14444,14 +14524,14 @@
       "session_weight": 1.0,
       "session_label": "Prime PM",
       "pinned": true,
-      "verdict": "AVOID",
-      "verdict_score": 3,
+      "verdict": "HOLD",
+      "verdict_score": 4,
       "verdict_max": 8,
-      "verdict_pct": 38,
+      "verdict_pct": 50,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
-        "rsi_ok": false,
+        "rsi_ok": true,
         "options_bullish": false,
         "price_below_maxpain": false,
         "above_pivot": false,
@@ -14475,7 +14555,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "5m:BOS 5m:Demand 3m:BOS 3m:Demand \u00b7 Seasonal +3.4%",
+      "verdict_notes": "5m:BOS 5m:Demand 3m:BOS 3m:Demand \u00b7 RSI 49.8 \u00b7 Seasonal +3.4%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -14784,7 +14864,7 @@
       },
       "tv_ticker": "COMEX:GC1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:58:57.866742",
+      "timestamp": "2026-09-05T20:44:45.547578",
       "ict": {
         "by_tf": {
           "1m": {
@@ -15750,7 +15830,7 @@
       },
       "tv_ticker": "CT1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:58:57.455323",
+      "timestamp": "2026-09-05T20:44:45.120913",
       "ict": {
         "by_tf": {
           "15m": {
@@ -16543,7 +16623,7 @@
       },
       "tv_ticker": "GF1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:58:58.327222",
+      "timestamp": "2026-09-05T20:44:45.605914",
       "ict": {
         "by_tf": {
           "1m": {
@@ -17401,7 +17481,7 @@
       },
       "tv_ticker": "CC1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:59:02.929905",
+      "timestamp": "2026-09-05T20:44:50.765598",
       "ict": {
         "by_tf": {
           "1m": {
@@ -17789,8 +17869,8 @@
       "pinned": true,
       "verdict": "AVOID",
       "verdict_score": 3,
-      "verdict_max": 7,
-      "verdict_pct": 43,
+      "verdict_max": 8,
+      "verdict_pct": 38,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
@@ -17801,12 +17881,12 @@
         "balance_sheet_ok": false,
         "analyst_buy": null,
         "analyst_target_upside": null,
-        "seasonality_positive": null
+        "seasonality_positive": false
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 1,
-      "bear_score_max": 6,
-      "bear_score_pct": 17,
+      "bear_score": 2,
+      "bear_score_max": 7,
+      "bear_score_pct": 29,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
@@ -17816,9 +17896,9 @@
         "below_pivot": false,
         "analyst_sell": null,
         "analyst_target_downside": null,
-        "seasonality_negative": null
+        "seasonality_negative": true
       },
-      "verdict_notes": "H1:HH/HL \u00b7 RSI 50.88",
+      "verdict_notes": "H1:HH/HL \u00b7 RSI 50.88 \u00b7 Seasonal -6.7%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -17826,7 +17906,11 @@
       "best_contract": {},
       "pivots": {},
       "analyst": {},
-      "seasonality": {},
+      "seasonality": {
+        "month": 9,
+        "hist_avg_return_pct": -6.72,
+        "historically_positive": false
+      },
       "signals_by_tf": {
         "FVG": [
           "Y",
@@ -18127,7 +18211,12 @@
         "direction": "short",
         "neckline": 296.6
       },
-      "fundamentals": {},
+      "fundamentals": {
+        "company_name": "Coffee Dec 26",
+        "w52_high": 437.95,
+        "w52_low": 242.7,
+        "sharpe_ratio": -0.3
+      },
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -18139,7 +18228,7 @@
       },
       "tv_ticker": "KC1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:59:03.867682",
+      "timestamp": "2026-09-05T20:44:50.810550",
       "ict": {
         "by_tf": {
           "1m": {
@@ -18919,7 +19008,7 @@
       },
       "tv_ticker": "SB1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:59:03.891625",
+      "timestamp": "2026-09-05T20:44:51.257755",
       "ict": {
         "by_tf": {
           "1m": {
@@ -19972,12 +20061,7 @@
         "direction": "short",
         "neckline": 355.2
       },
-      "fundamentals": {
-        "company_name": "Soybean Meal Futures",
-        "w52_high": 357.7,
-        "w52_low": 262.0,
-        "sharpe_ratio": 0.9
-      },
+      "fundamentals": {},
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -19989,7 +20073,7 @@
       },
       "tv_ticker": "ZM1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:59:04.678732",
+      "timestamp": "2026-09-05T20:44:51.922651",
       "ict": {
         "by_tf": {
           "1m": {
@@ -20970,7 +21054,7 @@
       },
       "tv_ticker": "LE1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:59:08.825863",
+      "timestamp": "2026-09-05T20:44:56.110459",
       "ict": {
         "by_tf": {
           "1m": {
@@ -21810,7 +21894,7 @@
       },
       "tv_ticker": "JOBY",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:59:10.893752",
+      "timestamp": "2026-09-05T20:44:57.524646",
       "ict": {
         "by_tf": {
           "1m": {
@@ -22355,10 +22439,10 @@
         "cost": 98.0,
         "open_interest": 2847,
         "volume": 306,
-        "iv": 64.1,
+        "iv": 64.5,
         "breakeven": 6.02,
         "delta": -0.479,
-        "gamma": 0.2022,
+        "gamma": 0.201,
         "theta": -0.005,
         "vega": 0.012
       },
@@ -22533,13 +22617,13 @@
       },
       "short_volume": {},
       "gex": {
-        "net_gex": 304909,
+        "net_gex": 209036,
         "net_gex_bn": 0.0,
         "expiry": "2026-09-11",
         "regime": "Long Gamma",
         "call_wall": 7.0,
         "put_wall": 6.5,
-        "zero_gamma": 2.78,
+        "zero_gamma": 2.53,
         "zero_gamma_method": "flip"
       },
       "direction": "short",
@@ -22675,7 +22759,7 @@
       },
       "tv_ticker": "NYMEX:NG1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:59:10.301010",
+      "timestamp": "2026-09-05T20:44:57.876083",
       "ict": {
         "by_tf": {
           "1m": {
@@ -23602,7 +23686,7 @@
       },
       "tv_ticker": "OJ1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:59:10.779397",
+      "timestamp": "2026-09-05T20:44:57.755588",
       "ict": {
         "by_tf": {
           "1m": {
@@ -24502,7 +24586,7 @@
       },
       "tv_ticker": "HE1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-09-05T17:59:15.476080",
+      "timestamp": "2026-09-05T20:45:01.999860",
       "ict": {
         "by_tf": {
           "1m": {
