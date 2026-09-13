@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-09-13T18:05:02.223051+00:00",
+  "last_scan": "2026-09-13T18:05:02.228684+00:00",
   "setups": [
     {
       "ticker": "ZION",
@@ -815,10 +815,6 @@
         "top_put_oi": 804,
         "expiry": "2026-09-18",
         "call_walls_by_expiry": {
-          "2026-09-18": {
-            "strike": 82.5,
-            "oi": 647
-          },
           "2026-10-16": {
             "strike": 70.0,
             "oi": 561
@@ -5457,7 +5453,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": 3620703,
+        "net_gex_bn": 0.004,
+        "expiry": "2026-09-18",
+        "regime": "Long Gamma",
+        "call_wall": 45.0,
+        "put_wall": 40.0,
+        "zero_gamma": 35.68,
+        "zero_gamma_method": "flip"
+      },
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "D",
@@ -18041,16 +18046,16 @@
       "session_weight": 0.7,
       "session_label": "Closing dash",
       "pinned": true,
-      "verdict": "HOLD",
-      "verdict_score": 5,
+      "verdict": "BUY",
+      "verdict_score": 7,
       "verdict_max": 10,
-      "verdict_pct": 50,
+      "verdict_pct": 70,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": true,
-        "options_bullish": false,
-        "price_below_maxpain": false,
+        "options_bullish": true,
+        "price_below_maxpain": true,
         "above_pivot": false,
         "balance_sheet_ok": true,
         "analyst_buy": false,
@@ -18072,9 +18077,37 @@
         "analyst_target_downside": false,
         "seasonality_negative": true
       },
-      "verdict_notes": "3M:HH/HL H1:Demand 45m:Demand 30m:Demand \u00b7 RSI 20.62 \u00b7 Target $10.68 (+67%) \u00b7 Seasonal -4.7%",
+      "verdict_notes": "3M:HH/HL H1:Demand 45m:Demand 30m:Demand \u00b7 RSI 20.62 \u00b7 P/C 0.43 \u00b7 MaxPain $8.00 \u00b7 Call wall $10 (2026-09-18) \u00b7 Target $10.68 (+67%) \u00b7 Seasonal -4.7%",
       "entry_note": "",
-      "options_flow": {},
+      "options_flow": {
+        "total_call_oi": 40209,
+        "total_put_oi": 17450,
+        "pc_ratio": 0.43,
+        "max_pain": 8.0,
+        "top_call_wall": 10.0,
+        "top_call_oi": 21058,
+        "top_put_wall": 7.0,
+        "top_put_oi": 7688,
+        "expiry": "2026-09-18",
+        "call_walls_by_expiry": {
+          "2026-09-18": {
+            "strike": 10.0,
+            "oi": 21058
+          },
+          "2026-09-25": {
+            "strike": 10.5,
+            "oi": 5070
+          },
+          "2026-10-02": {
+            "strike": 7.0,
+            "oi": 425
+          },
+          "2026-10-09": {
+            "strike": 7.0,
+            "oi": 1458
+          }
+        }
+      },
       "best_option": {
         "type": "put",
         "strike": 7.0,
