@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-10-01T20:37:59.074237+00:00",
+  "last_scan": "2026-10-01T21:53:18.007370+00:00",
   "setups": [
     {
       "ticker": "CL=F",
@@ -6004,12 +6004,12 @@
     },
     {
       "ticker": "ES=F",
-      "price": 7730.75,
+      "price": 7725.0,
       "primary_tfs": [
-        "15m"
+        "30m"
       ],
       "entry_tfs": [
-        "15m"
+        "30m"
       ],
       "mtf_score": 4.6,
       "signals": [
@@ -6018,6 +6018,7 @@
         "Bullish Engulf"
       ],
       "smc_signals": [
+        "Breaker",
         "Trendline",
         "Inv. H&S",
         "Engulfing",
@@ -6035,22 +6036,17 @@
       ],
       "tech_summary": "Y: BOS confirmed \u00b7 6M: HH/HL uptrend, BOS confirmed \u00b7 3M: HH/HL uptrend, BOS confirmed",
       "entry_levels": {
-        "entry_low": 7411.75,
-        "entry_high": 7563.5,
-        "mean_threshold": 7487.625,
-        "stop": 7335.875,
-        "t1": 8018.75,
-        "t2": 8246.375,
-        "basis": "W Order Block",
+        "entry_low": 7725.0,
+        "entry_high": 7725.25,
+        "mean_threshold": 7725.125,
+        "stop": 7705.6875,
+        "t1": 7879.75,
+        "t2": 7957.0,
+        "basis": "1m FVG",
         "direction": "long",
-        "neckline": 7737.75
+        "neckline": 7737.5
       },
-      "fundamentals": {
-        "company_name": "E-Mini S&P 500 Dec 26",
-        "w52_high": 7848.5,
-        "w52_low": 6353.25,
-        "sharpe_ratio": 0.77
-      },
+      "fundamentals": {},
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -6062,7 +6058,7 @@
       },
       "tv_ticker": "CME_MINI:ES1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-10-01T16:33:10.348074",
+      "timestamp": "2026-10-01T17:53:01.068387",
       "ict": {
         "by_tf": {
           "1m": {
@@ -6448,26 +6444,26 @@
         ],
         "ltf": [
           "45m",
-          "30m",
-          "15m",
-          "5m",
-          "3m"
+          "30m"
         ]
       },
-      "golden_reversal_short": false,
+      "golden_reversal_short": true,
       "golden_reversal_short_tfs": {
         "htf": [
           "H4",
           "H3",
           "H2"
         ],
-        "ltf": []
+        "ltf": [
+          "5m",
+          "3m"
+        ]
       },
-      "tech_conviction": 5,
+      "tech_conviction": 4,
       "tech_pillars": {
         "line_pattern": true,
         "candle": true,
-        "volume": true,
+        "volume": false,
         "correlation": true,
         "time_of_day": true
       },
@@ -6505,7 +6501,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
-      "rvol": 1.84,
+      "rvol": 0.0,
       "in_killzone": true,
       "session_weight": 1.0,
       "session_label": "Prime PM",
@@ -6541,7 +6537,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "RSI 55.98 \u00b7 Seasonal +2.7%",
+      "verdict_notes": "RSI 55.64 \u00b7 Seasonal +2.7%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -6551,7 +6547,7 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": 2.68,
+        "hist_avg_return_pct": 2.66,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -6567,7 +6563,8 @@
           "D"
         ],
         "FVG": [
-          "3M"
+          "3M",
+          "1m"
         ],
         "Breaker": [
           "W",
@@ -6610,9 +6607,7 @@
         "Demand Zone": [
           "D",
           "H2",
-          "30m",
-          "5m",
-          "3m",
+          "15m",
           "1m"
         ],
         "Wyckoff Spring": [
@@ -6621,7 +6616,7 @@
           "H2"
         ],
         "Engulfing": [
-          "15m"
+          "30m"
         ]
       },
       "bear_signals_by_tf": {
@@ -6629,7 +6624,7 @@
           "M",
           "W",
           "H1",
-          "30m"
+          "45m"
         ],
         "Bear Breaker": [
           "W",
@@ -6639,8 +6634,7 @@
           "H2",
           "H1",
           "45m",
-          "30m",
-          "15m"
+          "30m"
         ],
         "Supply Zone": [
           "W",
@@ -6648,7 +6642,9 @@
           "H3",
           "H1",
           "45m",
-          "15m"
+          "30m",
+          "5m",
+          "3m"
         ],
         "Desc. Trendline": [
           "W",
@@ -6683,9 +6679,10 @@
           "H3",
           "H2",
           "H1",
-          "45m",
+          "15m",
           "5m",
-          "3m"
+          "3m",
+          "1m"
         ]
       },
       "short_volume": {},
@@ -6705,14 +6702,13 @@
           "D",
           "H2",
           "30m",
-          "15m",
-          "5m",
-          "3m",
           "1m"
         ],
         "Distribution": [
           "H3",
-          "H1"
+          "H1",
+          "5m",
+          "3m"
         ]
       },
       "wyckoff_laws": {
@@ -6726,12 +6722,9 @@
             "W",
             "D",
             "H2",
-            "H1",
             "45m",
             "30m",
             "15m",
-            "5m",
-            "3m",
             "1m"
           ],
           "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
@@ -6761,7 +6754,7 @@
           "active": true,
           "tfs": [
             "D",
-            "15m"
+            "30m"
           ],
           "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
         }
@@ -13134,7 +13127,7 @@
     },
     {
       "ticker": "NQ=F",
-      "price": 30801.0,
+      "price": 30771.25,
       "primary_tfs": [
         "6M",
         "3M",
@@ -13166,7 +13159,6 @@
         "Breaker",
         "Inv. H&S",
         "Demand Zone",
-        "Liq. Grab",
         "Liq. Sweep (BULL)",
         "BOS \u00b7 CISD"
       ],
@@ -13177,20 +13169,22 @@
         "Supply Zone",
         "Bear Order Block",
         "H&S",
+        "Bearish Engulf",
         "LH/LL",
-        "Bearish Engulf"
+        "Evening Star",
+        "BOS \u2193"
       ],
       "tech_summary": "Y: HH/HL uptrend, BOS confirmed \u00b7 6M: HH/HL uptrend, BOS confirmed \u00b7 3M: HH/HL uptrend, BOS confirmed",
       "entry_levels": {
         "entry_low": 29764.75,
         "entry_high": 29904.0,
         "mean_threshold": 29834.375,
-        "stop": 29687.7475,
-        "t1": 30520.02,
-        "t2": 30828.03,
+        "stop": 29687.8219,
+        "t1": 30519.425,
+        "t2": 30827.1375,
         "basis": "W FVG",
         "direction": "long",
-        "neckline": 30779.125
+        "neckline": 30753.125
       },
       "fundamentals": {
         "company_name": "Nasdaq 100 Dec 26",
@@ -13209,7 +13203,7 @@
       },
       "tv_ticker": "CME_MINI:NQ1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-10-01T16:33:01.730822",
+      "timestamp": "2026-10-01T17:52:54.016638",
       "ict": {
         "by_tf": {
           "1m": {
@@ -13236,22 +13230,12 @@
               "midpoint": 30954.625,
               "range_pts": 393.75
             },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 30757.75,
-              "depth_pts": 25.0,
-              "timestamp": "2026-10-01T14:20:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 30824.5,
-              "bos_close": 30836.75,
-              "timestamp": "2026-10-01T14:30:00-04:00"
-            },
+            "sweep": null,
+            "bos": null,
             "ifvg": null,
             "retrace": null,
             "targets": [],
-            "stage": "BOS_CONFIRMED",
+            "stage": "ACCUMULATION",
             "alert": false
           },
           "5m": {
@@ -13262,22 +13246,12 @@
               "midpoint": 30954.625,
               "range_pts": 393.75
             },
-            "sweep": {
-              "direction": "bullish",
-              "swept_level": 30757.75,
-              "depth_pts": 25.0,
-              "timestamp": "2026-10-01T14:20:00-04:00"
-            },
-            "bos": {
-              "direction": "bullish",
-              "structure_level": 30824.5,
-              "bos_close": 30836.75,
-              "timestamp": "2026-10-01T14:30:00-04:00"
-            },
+            "sweep": null,
+            "bos": null,
             "ifvg": null,
             "retrace": null,
             "targets": [],
-            "stage": "BOS_CONFIRMED",
+            "stage": "ACCUMULATION",
             "alert": false
           },
           "15m": {
@@ -13541,8 +13515,6 @@
         },
         "found_on": {
           "sweep": [
-            "3m",
-            "5m",
             "15m",
             "30m",
             "45m",
@@ -13554,8 +13526,6 @@
             "1wk"
           ],
           "bos": [
-            "3m",
-            "5m",
             "4h"
           ],
           "ifvg": [],
@@ -13601,9 +13571,7 @@
         ],
         "ltf": [
           "45m",
-          "30m",
-          "5m",
-          "3m"
+          "30m"
         ]
       },
       "golden_reversal_short": true,
@@ -13693,7 +13661,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "6M:HH/HL 6M:BOS 3M:HH/HL 3M:BOS \u00b7 RSI 70.31 \u00b7 Seasonal +2.6%",
+      "verdict_notes": "6M:HH/HL 6M:BOS 3M:HH/HL 3M:BOS \u00b7 RSI 70.23 \u00b7 Seasonal +2.5%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -13703,7 +13671,7 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": 2.56,
+        "hist_avg_return_pct": 2.55,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -13714,8 +13682,7 @@
           "M",
           "W",
           "H4",
-          "H3",
-          "1m"
+          "H3"
         ],
         "BOS \u2191": [
           "Y",
@@ -13771,13 +13738,8 @@
           "H3",
           "H2",
           "H1",
-          "45m",
-          "30m",
           "5m",
           "3m"
-        ],
-        "Liq. Grab": [
-          "1m"
         ]
       },
       "bear_signals_by_tf": {
@@ -13796,10 +13758,7 @@
           "1m"
         ],
         "Supply Grab": [
-          "M",
-          "30m",
-          "5m",
-          "3m"
+          "M"
         ],
         "Bear Breaker": [
           "M",
@@ -13810,12 +13769,13 @@
           "H2",
           "H1",
           "45m",
-          "30m",
-          "15m"
+          "30m"
         ],
         "Supply Zone": [
           "W",
           "H4",
+          "45m",
+          "30m",
           "15m",
           "1m"
         ],
@@ -13833,15 +13793,21 @@
           "3m",
           "1m"
         ],
-        "LH/LL": [
-          "H2",
-          "H1",
-          "45m",
-          "5m",
-          "3m"
-        ],
         "Bearish Engulf": [
           "H1"
+        ],
+        "LH/LL": [
+          "15m",
+          "5m",
+          "3m",
+          "1m"
+        ],
+        "Evening Star": [
+          "15m"
+        ],
+        "BOS \u2193": [
+          "5m",
+          "3m"
         ]
       },
       "short_volume": {},
@@ -13862,9 +13828,13 @@
           "H4",
           "H3",
           "H2",
-          "45m",
-          "30m",
+          "H1",
+          "30m"
+        ],
+        "Distribution": [
           "15m",
+          "5m",
+          "3m",
           "1m"
         ]
       },
@@ -13882,12 +13852,9 @@
             "H3",
             "H2",
             "H1",
-            "45m",
             "30m",
-            "15m",
             "5m",
-            "3m",
-            "1m"
+            "3m"
           ],
           "note": "Demand is absorbing supply at the lows \u2014 buyers in control, price rising"
         },
@@ -13913,10 +13880,8 @@
           "note": "Accumulation cause built in the range \u2192 projecting a markup target higher"
         },
         "effort_result": {
-          "active": true,
-          "tfs": [
-            "1m"
-          ],
+          "active": false,
+          "tfs": [],
           "note": "Effort (volume) confirming the upside result \u2014 bullish displacement"
         }
       }
