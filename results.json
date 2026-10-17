@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-10-17T06:46:13.348398+00:00",
+  "last_scan": "2026-10-17T06:46:24.778022+00:00",
   "setups": [
     {
       "ticker": "XLV",
@@ -1295,12 +1295,20 @@
         "direction": "long",
         "neckline": 68.245
       },
-      "fundamentals": {},
+      "fundamentals": {
+        "company_name": "State Street Energy Select Sector SPDR ETF",
+        "w52_high": 68.29,
+        "w52_low": 43.065,
+        "pe_ratio": 19.4,
+        "price_to_book": 1.31,
+        "dividend_yield": 3.17,
+        "sharpe_ratio": 2.16
+      },
       "intrinsic_value": {},
-      "fundamental_conviction": 0.0,
-      "fundamental_grade": "F",
+      "fundamental_conviction": 7.5,
+      "fundamental_grade": "A-",
       "fundamental_sub_scores": {
-        "cheap": null,
+        "cheap": 7.5,
         "good_business": null,
         "healthy": null,
         "street": null
@@ -1905,24 +1913,68 @@
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 2,
+      "bear_score": 3,
       "bear_score_max": 7,
-      "bear_score_pct": 29,
+      "bear_score_pct": 43,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
         "rsi_overbought": true,
         "options_bearish": false,
-        "price_above_maxpain": false,
+        "price_above_maxpain": true,
         "below_pivot": false,
         "analyst_sell": null,
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "W:HH/HL D:BOS H4:HH/HL H4:BOS \u00b7 RSI 79.02 \u00b7 Seasonal +5.9%",
+      "verdict_notes": "W:HH/HL D:BOS H4:HH/HL H4:BOS \u00b7 RSI 79.02 \u00b7 P/C 0.67 \u00b7 MaxPain $67.00 \u00b7 Call wall $70 (2026-10-19) \u00b7 Seasonal +5.9%",
       "entry_note": "",
-      "options_flow": {},
-      "best_option": {},
+      "options_flow": {
+        "total_call_oi": 5919,
+        "total_put_oi": 3993,
+        "pc_ratio": 0.67,
+        "max_pain": 67.0,
+        "top_call_wall": 70.0,
+        "top_call_oi": 2511,
+        "top_put_wall": 62.0,
+        "top_put_oi": 1232,
+        "expiry": "2026-10-19",
+        "call_walls_by_expiry": {
+          "2026-10-19": {
+            "strike": 70.0,
+            "oi": 2511
+          },
+          "2026-10-21": {
+            "strike": 68.0,
+            "oi": 7211
+          },
+          "2026-10-23": {
+            "strike": 70.5,
+            "oi": 3905
+          },
+          "2026-10-26": {
+            "strike": 67.0,
+            "oi": 40
+          }
+        }
+      },
+      "best_option": {
+        "type": "call",
+        "strike": 70.0,
+        "expiry": "2027-01-15",
+        "dte": 90,
+        "ask": 3.0,
+        "bid": 2.51,
+        "cost": 300.0,
+        "open_interest": 23590,
+        "volume": 1656,
+        "iv": 27.7,
+        "breakeven": 73.0,
+        "delta": 0.489,
+        "gamma": 0.0424,
+        "theta": -0.025,
+        "vega": 0.135
+      },
       "value_option": {
         "type": "call",
         "strike": 50.0,
@@ -2069,7 +2121,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": 5635062,
+        "net_gex_bn": 0.006,
+        "expiry": "2026-10-23",
+        "regime": "Long Gamma",
+        "call_wall": 70.5,
+        "put_wall": 66.0,
+        "zero_gamma": 68.57,
+        "zero_gamma_method": "flip"
+      },
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "E",
@@ -15118,20 +15179,20 @@
       },
       "best_option": {
         "type": "call",
-        "strike": 150.0,
-        "expiry": "2027-01-15",
-        "dte": 90,
-        "ask": 12.8,
-        "bid": 12.1,
-        "cost": 1280.0,
-        "open_interest": 9983,
-        "volume": 409,
-        "iv": 55.7,
-        "breakeven": 162.8,
-        "delta": 0.494,
-        "gamma": 0.0102,
-        "theta": -0.095,
-        "vega": 0.281
+        "strike": 145.0,
+        "expiry": "2026-11-20",
+        "dte": 34,
+        "ask": 9.95,
+        "bid": 9.65,
+        "cost": 995.0,
+        "open_interest": 2475,
+        "volume": 653,
+        "iv": 63.6,
+        "breakeven": 154.95,
+        "delta": 0.505,
+        "gamma": 0.0145,
+        "theta": -0.17,
+        "vega": 0.173
       },
       "value_option": {
         "type": "call",
@@ -22725,6 +22786,10 @@
         "top_put_oi": 922,
         "expiry": "2026-11-20",
         "call_walls_by_expiry": {
+          "2026-11-20": {
+            "strike": 75.0,
+            "oi": 2418
+          },
           "2027-01-15": {
             "strike": 70.0,
             "oi": 1324
@@ -26838,6 +26903,14 @@
           "2026-10-30": {
             "strike": 1400.0,
             "oi": 668
+          },
+          "2026-11-06": {
+            "strike": 1240.0,
+            "oi": 320
+          },
+          "2026-11-13": {
+            "strike": 1560.0,
+            "oi": 145
           }
         }
       },
@@ -27037,6 +27110,33 @@
           },
           {
             "type": "call",
+            "strike": 1140.0,
+            "dte": 426,
+            "bid": 280.0,
+            "ask": 296.7,
+            "mid": 288.35,
+            "cost": 28835.0,
+            "spread_pct": 5.8,
+            "open_interest": 56,
+            "volume": 1,
+            "iv": 45.6,
+            "iv_at_target": 44.9,
+            "breakeven": 1428.35,
+            "delta": 0.713,
+            "gamma": 0.0005,
+            "theta": -0.325,
+            "vega": 4.623,
+            "value_at_target": 264.27,
+            "roi_pct": -8.4,
+            "req_vol_pct": 0.6,
+            "edge_ratio": 0.01,
+            "cheap": false,
+            "target_vs_breakeven": -13.2,
+            "theta_ratio": 2.4,
+            "expiry": "2027-12-17"
+          },
+          {
+            "type": "call",
             "strike": 1200.0,
             "dte": 461,
             "bid": 260.25,
@@ -27086,33 +27186,6 @@
             "edge_ratio": 0.01,
             "cheap": false,
             "target_vs_breakeven": -17.1,
-            "theta_ratio": 2.6,
-            "expiry": "2028-01-21"
-          },
-          {
-            "type": "call",
-            "strike": 1240.0,
-            "dte": 461,
-            "bid": 240.0,
-            "ask": 256.0,
-            "mid": 248.0,
-            "cost": 24800.0,
-            "spread_pct": 6.5,
-            "open_interest": 56,
-            "volume": 1,
-            "iv": 44.6,
-            "iv_at_target": 43.4,
-            "breakeven": 1488.0,
-            "delta": 0.657,
-            "gamma": 0.0006,
-            "theta": -0.325,
-            "vega": 5.195,
-            "value_at_target": 221.97,
-            "roi_pct": -10.5,
-            "req_vol_pct": 0.6,
-            "edge_ratio": 0.01,
-            "cheap": false,
-            "target_vs_breakeven": -18.0,
             "theta_ratio": 2.6,
             "expiry": "2028-01-21"
           }
@@ -34411,9 +34484,9 @@
         "w52_low": 46.12,
         "market_cap": "$358.2B",
         "sector": "Financial Services",
-        "pe_ratio": 12.3,
+        "pe_ratio": 12.2,
         "peg_ratio": 0.82,
-        "eps": 4.15,
+        "eps": 4.19,
         "gross_margin": 0.0,
         "operating_margin": 31.26,
         "profit_margin": 28.06,
@@ -34435,14 +34508,14 @@
         "earnings_date": "Jan 15"
       },
       "intrinsic_value": {
-        "iv": 58.28,
-        "price_to_iv": 0.879,
-        "upside_pct": 13.8,
-        "discount_pct": 13.8,
+        "iv": 58.84,
+        "price_to_iv": 0.871,
+        "upside_pct": 14.9,
+        "discount_pct": 14.9,
         "methods_used": 1,
         "low_confidence": true,
         "undervalued": false,
-        "pe_iv": 58.28
+        "pe_iv": 58.84
       },
       "fundamental_conviction": 5.9,
       "fundamental_grade": "B",
@@ -34954,26 +35027,26 @@
       "session_weight": 0.7,
       "session_label": "Closing dash",
       "pinned": false,
-      "verdict": "HOLD",
-      "verdict_score": 5,
-      "verdict_max": 8,
-      "verdict_pct": 62,
+      "verdict": "BUY",
+      "verdict_score": 9,
+      "verdict_max": 10,
+      "verdict_pct": 90,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": true,
-        "options_bullish": false,
-        "price_below_maxpain": false,
+        "options_bullish": true,
+        "price_below_maxpain": true,
         "above_pivot": false,
         "balance_sheet_ok": true,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "analyst_buy": true,
+        "analyst_target_upside": true,
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
       "bear_score": 2,
-      "bear_score_max": 7,
-      "bear_score_pct": 29,
+      "bear_score_max": 9,
+      "bear_score_pct": 22,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": true,
@@ -34981,18 +35054,308 @@
         "options_bearish": false,
         "price_above_maxpain": false,
         "below_pivot": false,
-        "analyst_sell": null,
-        "analyst_target_downside": null,
+        "analyst_sell": false,
+        "analyst_target_downside": false,
         "seasonality_negative": false
       },
-      "verdict_notes": "3M:HH/HL 3M:BOS 3M:Demand M:HH/HL \u00b7 RSI 22.47 \u00b7 Seasonal +3.7%",
+      "verdict_notes": "3M:HH/HL 3M:BOS 3M:Demand M:HH/HL \u00b7 RSI 22.47 \u00b7 P/C 0.32 \u00b7 MaxPain $52.00 \u00b7 Call wall $60 (2026-10-23) \u00b7 Target $63.45 (+24%) \u00b7 Seasonal +3.7%",
       "entry_note": "",
-      "options_flow": {},
-      "best_option": {},
-      "value_option": {},
-      "best_contract": {},
+      "options_flow": {
+        "total_call_oi": 66901,
+        "total_put_oi": 21726,
+        "pc_ratio": 0.32,
+        "max_pain": 52.0,
+        "top_call_wall": 60.0,
+        "top_call_oi": 22023,
+        "top_put_wall": 51.0,
+        "top_put_oi": 4673,
+        "expiry": "2026-10-23",
+        "call_walls_by_expiry": {
+          "2026-10-23": {
+            "strike": 60.0,
+            "oi": 22023
+          },
+          "2026-10-30": {
+            "strike": 59.0,
+            "oi": 5033
+          },
+          "2026-11-06": {
+            "strike": 51.0,
+            "oi": 2790
+          },
+          "2026-11-13": {
+            "strike": 52.0,
+            "oi": 2631
+          }
+        }
+      },
+      "best_option": {
+        "type": "put",
+        "strike": 52.5,
+        "expiry": "2027-01-15",
+        "dte": 90,
+        "ask": 3.2,
+        "bid": 2.84,
+        "cost": 320.0,
+        "open_interest": 22549,
+        "volume": 198,
+        "iv": 24.4,
+        "breakeven": 49.3,
+        "delta": -0.516,
+        "gamma": 0.0643,
+        "theta": -0.01,
+        "vega": 0.101
+      },
+      "value_option": {
+        "type": "put",
+        "strike": 62.5,
+        "expiry": "2027-07-16",
+        "dte": 272,
+        "ask": 12.05,
+        "bid": 11.15,
+        "cost": 1205.0,
+        "open_interest": 1015,
+        "volume": 17,
+        "iv": 21.7,
+        "breakeven": 50.45,
+        "delta": -0.779,
+        "gamma": 0.0309,
+        "theta": 0.002,
+        "vega": 0.131
+      },
+      "best_contract": {
+        "quick": {
+          "type": "put",
+          "strike": 55.0,
+          "dte": 243,
+          "bid": 5.75,
+          "ask": 6.35,
+          "mid": 6.05,
+          "cost": 605.0,
+          "spread_pct": 9.9,
+          "open_interest": 11633,
+          "volume": 59,
+          "iv": 24.3,
+          "iv_at_target": 22.6,
+          "breakeven": 48.95,
+          "delta": -0.536,
+          "gamma": 0.0391,
+          "theta": -0.004,
+          "vega": 0.166,
+          "value_at_target": 3.39,
+          "roi_pct": -44.0,
+          "req_vol_pct": 2.6,
+          "edge_ratio": 0.11,
+          "cheap": false,
+          "target_vs_breakeven": -2.6,
+          "theta_ratio": 1.4,
+          "expiry": "2027-06-17"
+        },
+        "value": null,
+        "edge": null,
+        "edge_note": null,
+        "spread": {
+          "type": "put_debit_spread",
+          "dte": 243,
+          "long_strike": 55.0,
+          "short_strike": 50.0,
+          "width": 5.0,
+          "net_debit": 2.65,
+          "cost": 265.0,
+          "max_profit": 2.35,
+          "max_profit_total": 235.0,
+          "max_loss": 2.65,
+          "max_loss_total": 265.0,
+          "breakeven": 52.35,
+          "value_at_target": 2.47,
+          "roi_pct": -6.9,
+          "max_roi_pct": 88.7,
+          "open_interest": 11633,
+          "spread_pct": 9.9,
+          "theta_ratio": 1.4,
+          "expiry": "2027-06-17"
+        },
+        "ranked": [
+          {
+            "type": "put",
+            "strike": 55.0,
+            "dte": 243,
+            "bid": 5.75,
+            "ask": 6.35,
+            "mid": 6.05,
+            "cost": 605.0,
+            "spread_pct": 9.9,
+            "open_interest": 11633,
+            "volume": 59,
+            "iv": 24.3,
+            "iv_at_target": 22.6,
+            "breakeven": 48.95,
+            "delta": -0.536,
+            "gamma": 0.0391,
+            "theta": -0.004,
+            "vega": 0.166,
+            "value_at_target": 3.39,
+            "roi_pct": -44.0,
+            "req_vol_pct": 2.6,
+            "edge_ratio": 0.11,
+            "cheap": false,
+            "target_vs_breakeven": -2.6,
+            "theta_ratio": 1.4,
+            "expiry": "2027-06-17"
+          },
+          {
+            "type": "put",
+            "strike": 55.0,
+            "dte": 153,
+            "bid": 4.85,
+            "ask": 5.3,
+            "mid": 5.07,
+            "cost": 507.5,
+            "spread_pct": 8.9,
+            "open_interest": 11553,
+            "volume": 19,
+            "iv": 22.2,
+            "iv_at_target": 17.3,
+            "breakeven": 49.92,
+            "delta": -0.609,
+            "gamma": 0.0521,
+            "theta": -0.004,
+            "vega": 0.127,
+            "value_at_target": 2.83,
+            "roi_pct": -44.2,
+            "req_vol_pct": 2.6,
+            "edge_ratio": 0.12,
+            "cheap": false,
+            "target_vs_breakeven": -0.7,
+            "theta_ratio": 0.8,
+            "expiry": "2027-03-19"
+          },
+          {
+            "type": "put",
+            "strike": 52.5,
+            "dte": 335,
+            "bid": 4.95,
+            "ask": 5.9,
+            "mid": 5.43,
+            "cost": 542.5,
+            "spread_pct": 17.5,
+            "open_interest": 220,
+            "volume": 110,
+            "iv": 26.5,
+            "iv_at_target": 25.2,
+            "breakeven": 47.08,
+            "delta": -0.416,
+            "gamma": 0.03,
+            "theta": -0.004,
+            "vega": 0.191,
+            "value_at_target": 3.02,
+            "roi_pct": -44.3,
+            "req_vol_pct": 2.6,
+            "edge_ratio": 0.1,
+            "cheap": false,
+            "target_vs_breakeven": -6.3,
+            "theta_ratio": 1.9,
+            "expiry": "2027-09-17"
+          },
+          {
+            "type": "put",
+            "strike": 50.0,
+            "dte": 335,
+            "bid": 3.85,
+            "ask": 4.15,
+            "mid": 4.0,
+            "cost": 400.0,
+            "spread_pct": 7.5,
+            "open_interest": 3296,
+            "volume": 84,
+            "iv": 24.5,
+            "iv_at_target": 23.6,
+            "breakeven": 46.0,
+            "delta": -0.339,
+            "gamma": 0.0304,
+            "theta": -0.004,
+            "vega": 0.18,
+            "value_at_target": 1.75,
+            "roi_pct": -56.3,
+            "req_vol_pct": 2.6,
+            "edge_ratio": 0.11,
+            "cheap": false,
+            "target_vs_breakeven": -8.4,
+            "theta_ratio": 1.9,
+            "expiry": "2027-09-17"
+          },
+          {
+            "type": "put",
+            "strike": 47.5,
+            "dte": 335,
+            "bid": 2.93,
+            "ask": 3.55,
+            "mid": 3.24,
+            "cost": 324.0,
+            "spread_pct": 19.1,
+            "open_interest": 3047,
+            "volume": 61,
+            "iv": 27.6,
+            "iv_at_target": 26.9,
+            "breakeven": 44.26,
+            "delta": -0.277,
+            "gamma": 0.0247,
+            "theta": -0.004,
+            "vega": 0.164,
+            "value_at_target": 1.33,
+            "roi_pct": -59.0,
+            "req_vol_pct": 2.6,
+            "edge_ratio": 0.09,
+            "cheap": false,
+            "target_vs_breakeven": -11.8,
+            "theta_ratio": 1.9,
+            "expiry": "2027-09-17"
+          },
+          {
+            "type": "put",
+            "strike": 52.5,
+            "dte": 243,
+            "bid": 4.5,
+            "ask": 4.75,
+            "mid": 4.62,
+            "cost": 462.5,
+            "spread_pct": 5.4,
+            "open_interest": 13670,
+            "volume": 194,
+            "iv": 24.2,
+            "iv_at_target": 21.9,
+            "breakeven": 47.88,
+            "delta": -0.443,
+            "gamma": 0.039,
+            "theta": -0.005,
+            "vega": 0.165,
+            "value_at_target": 1.83,
+            "roi_pct": -60.4,
+            "req_vol_pct": 2.6,
+            "edge_ratio": 0.11,
+            "cheap": false,
+            "target_vs_breakeven": -4.7,
+            "theta_ratio": 1.4,
+            "expiry": "2027-06-17"
+          }
+        ],
+        "inputs": {
+          "ticker": "BAC",
+          "side": "put",
+          "spot": 51.23,
+          "target": 52.17,
+          "horizon_days": 180,
+          "target_move_pct": 1.8
+        }
+      },
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 63.45,
+        "target_high": 71.0,
+        "target_low": 56.0,
+        "n_analysts": 22,
+        "rating_key": "strong_buy"
+      },
       "seasonality": {
         "month": 10,
         "hist_avg_return_pct": 3.73,
@@ -35147,7 +35510,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": 11783050,
+        "net_gex_bn": 0.012,
+        "expiry": "2026-10-23",
+        "regime": "Long Gamma",
+        "call_wall": 52.0,
+        "put_wall": 51.0,
+        "zero_gamma": 42.29,
+        "zero_gamma_method": "flip"
+      },
       "direction": "short",
       "wyckoff_cycle": "Distribution",
       "wyckoff_phase": "D",
@@ -37249,6 +37621,10 @@
             "strike": 170.0,
             "oi": 521
           },
+          "2026-10-30": {
+            "strike": 170.0,
+            "oi": 1787
+          },
           "2026-11-06": {
             "strike": 185.0,
             "oi": 1721
@@ -37277,7 +37653,103 @@
         "vega": 0.199
       },
       "value_option": {},
-      "best_contract": {},
+      "best_contract": {
+        "quick": {
+          "type": "put",
+          "strike": 152.0,
+          "dte": 153,
+          "bid": 9.9,
+          "ask": 11.6,
+          "mid": 10.75,
+          "cost": 1075.0,
+          "spread_pct": 15.8,
+          "open_interest": 30,
+          "volume": 1,
+          "iv": 41.0,
+          "iv_at_target": 30.7,
+          "breakeven": 141.25,
+          "delta": -0.314,
+          "gamma": 0.0082,
+          "theta": -0.042,
+          "vega": 0.375,
+          "value_at_target": 0.0,
+          "roi_pct": -100.0,
+          "req_vol_pct": 5.8,
+          "edge_ratio": 0.14,
+          "cheap": false,
+          "target_vs_breakeven": -9.6,
+          "theta_ratio": 0.8,
+          "expiry": "2027-03-19"
+        },
+        "value": null,
+        "edge": null,
+        "edge_note": null,
+        "spread": null,
+        "ranked": [
+          {
+            "type": "put",
+            "strike": 152.0,
+            "dte": 153,
+            "bid": 9.9,
+            "ask": 11.6,
+            "mid": 10.75,
+            "cost": 1075.0,
+            "spread_pct": 15.8,
+            "open_interest": 30,
+            "volume": 1,
+            "iv": 41.0,
+            "iv_at_target": 30.7,
+            "breakeven": 141.25,
+            "delta": -0.314,
+            "gamma": 0.0082,
+            "theta": -0.042,
+            "vega": 0.375,
+            "value_at_target": 0.0,
+            "roi_pct": -100.0,
+            "req_vol_pct": 5.8,
+            "edge_ratio": 0.14,
+            "cheap": false,
+            "target_vs_breakeven": -9.6,
+            "theta_ratio": 0.8,
+            "expiry": "2027-03-19"
+          },
+          {
+            "type": "put",
+            "strike": 155.2,
+            "dte": 153,
+            "bid": 11.2,
+            "ask": 12.6,
+            "mid": 11.9,
+            "cost": 1190.0,
+            "spread_pct": 11.8,
+            "open_interest": 61,
+            "volume": 15,
+            "iv": 39.8,
+            "iv_at_target": 28.5,
+            "breakeven": 143.3,
+            "delta": -0.341,
+            "gamma": 0.0087,
+            "theta": -0.041,
+            "vega": 0.388,
+            "value_at_target": 0.0,
+            "roi_pct": -100.0,
+            "req_vol_pct": 5.8,
+            "edge_ratio": 0.15,
+            "cheap": false,
+            "target_vs_breakeven": -8.3,
+            "theta_ratio": 0.8,
+            "expiry": "2027-03-19"
+          }
+        ],
+        "inputs": {
+          "ticker": "BKNG",
+          "side": "put",
+          "spot": 163.45,
+          "target": 156.92,
+          "horizon_days": 180,
+          "target_move_pct": -4.0
+        }
+      },
       "pivots": {},
       "analyst": {
         "target_mean": 233.83,
@@ -41596,7 +42068,7 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": 7.7,
+        "hist_avg_return_pct": 7.69,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -42580,6 +43052,10 @@
             "strike": 125.0,
             "oi": 2421
           },
+          "2026-10-30": {
+            "strike": 133.0,
+            "oi": 2146
+          },
           "2026-11-06": {
             "strike": 140.0,
             "oi": 903
@@ -42733,6 +43209,33 @@
           },
           {
             "type": "put",
+            "strike": 135.0,
+            "dte": 243,
+            "bid": 16.1,
+            "ask": 17.95,
+            "mid": 17.02,
+            "cost": 1702.5,
+            "spread_pct": 10.9,
+            "open_interest": 747,
+            "volume": 2,
+            "iv": 28.0,
+            "iv_at_target": 26.7,
+            "breakeven": 117.97,
+            "delta": -0.541,
+            "gamma": 0.014,
+            "theta": -0.012,
+            "vega": 0.402,
+            "value_at_target": 13.62,
+            "roi_pct": -20.0,
+            "req_vol_pct": 2.9,
+            "edge_ratio": 0.1,
+            "cheap": false,
+            "target_vs_breakeven": -3.1,
+            "theta_ratio": 1.4,
+            "expiry": "2027-06-17"
+          },
+          {
+            "type": "put",
             "strike": 130.0,
             "dte": 153,
             "bid": 11.25,
@@ -42787,57 +43290,30 @@
           },
           {
             "type": "put",
-            "strike": 115.0,
-            "dte": 335,
-            "bid": 8.15,
-            "ask": 9.2,
-            "mid": 8.68,
-            "cost": 867.5,
-            "spread_pct": 12.1,
-            "open_interest": 1184,
-            "volume": 6,
-            "iv": 29.2,
-            "iv_at_target": 28.2,
-            "breakeven": 106.33,
-            "delta": -0.281,
-            "gamma": 0.0097,
+            "strike": 130.0,
+            "dte": 243,
+            "bid": 13.05,
+            "ask": 14.1,
+            "mid": 13.57,
+            "cost": 1357.5,
+            "spread_pct": 7.7,
+            "open_interest": 6711,
+            "volume": 115,
+            "iv": 26.6,
+            "iv_at_target": 24.8,
+            "breakeven": 116.42,
+            "delta": -0.479,
+            "gamma": 0.0148,
             "theta": -0.012,
-            "vega": 0.401,
-            "value_at_target": 4.75,
-            "roi_pct": -45.2,
+            "vega": 0.404,
+            "value_at_target": 9.47,
+            "roi_pct": -30.2,
             "req_vol_pct": 2.9,
-            "edge_ratio": 0.1,
+            "edge_ratio": 0.11,
             "cheap": false,
-            "target_vs_breakeven": -12.4,
-            "theta_ratio": 1.9,
-            "expiry": "2027-09-17"
-          },
-          {
-            "type": "put",
-            "strike": 115.0,
-            "dte": 272,
-            "bid": 6.8,
-            "ask": 7.8,
-            "mid": 7.3,
-            "cost": 730.0,
-            "spread_pct": 13.7,
-            "open_interest": 300,
-            "volume": 34,
-            "iv": 28.8,
-            "iv_at_target": 27.3,
-            "breakeven": 107.7,
-            "delta": -0.279,
-            "gamma": 0.0109,
-            "theta": -0.014,
-            "vega": 0.361,
-            "value_at_target": 3.14,
-            "roi_pct": -57.0,
-            "req_vol_pct": 2.9,
-            "edge_ratio": 0.1,
-            "cheap": false,
-            "target_vs_breakeven": -11.3,
-            "theta_ratio": 1.5,
-            "expiry": "2027-07-16"
+            "target_vs_breakeven": -4.3,
+            "theta_ratio": 1.4,
+            "expiry": "2027-06-17"
           }
         ],
         "inputs": {
@@ -44708,26 +45184,26 @@
       "session_weight": 0.7,
       "session_label": "Closing dash",
       "pinned": true,
-      "verdict": "BUY",
-      "verdict_score": 7,
-      "verdict_max": 10,
-      "verdict_pct": 70,
+      "verdict": "HOLD",
+      "verdict_score": 4,
+      "verdict_max": 8,
+      "verdict_pct": 50,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": true,
-        "options_bullish": true,
-        "price_below_maxpain": true,
+        "options_bullish": false,
+        "price_below_maxpain": false,
         "above_pivot": false,
         "balance_sheet_ok": true,
-        "analyst_buy": false,
-        "analyst_target_upside": true,
+        "analyst_buy": null,
+        "analyst_target_upside": null,
         "seasonality_positive": false
       },
       "bear_verdict": "CLEAR",
       "bear_score": 2,
-      "bear_score_max": 9,
-      "bear_score_pct": 22,
+      "bear_score_max": 7,
+      "bear_score_pct": 29,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
@@ -44735,84 +45211,18 @@
         "options_bearish": false,
         "price_above_maxpain": false,
         "below_pivot": false,
-        "analyst_sell": false,
-        "analyst_target_downside": false,
+        "analyst_sell": null,
+        "analyst_target_downside": null,
         "seasonality_negative": true
       },
-      "verdict_notes": "5m:BOS 5m:Demand 3m:BOS 3m:Demand \u00b7 RSI 13.2 \u00b7 P/C 0.30 \u00b7 MaxPain $5.00 \u00b7 Call wall $6 (2026-10-23) \u00b7 Target $10.01 (+115%) \u00b7 Seasonal -5.4%",
+      "verdict_notes": "5m:BOS 5m:Demand 3m:BOS 3m:Demand \u00b7 RSI 13.2 \u00b7 Seasonal -5.4%",
       "entry_note": "",
-      "options_flow": {
-        "total_call_oi": 8465,
-        "total_put_oi": 2553,
-        "pc_ratio": 0.3,
-        "max_pain": 5.0,
-        "top_call_wall": 5.5,
-        "top_call_oi": 3488,
-        "top_put_wall": 4.5,
-        "top_put_oi": 701,
-        "expiry": "2026-10-23",
-        "call_walls_by_expiry": {
-          "2026-10-23": {
-            "strike": 5.5,
-            "oi": 3488
-          },
-          "2026-10-30": {
-            "strike": 4.5,
-            "oi": 1586
-          },
-          "2026-11-06": {
-            "strike": 5.0,
-            "oi": 733
-          },
-          "2026-11-13": {
-            "strike": 5.5,
-            "oi": 734
-          }
-        }
-      },
-      "best_option": {
-        "type": "put",
-        "strike": 5.0,
-        "expiry": "2027-01-15",
-        "dte": 90,
-        "ask": 0.83,
-        "bid": 0.74,
-        "cost": 83.0,
-        "open_interest": 9217,
-        "volume": 89,
-        "iv": 62.7,
-        "breakeven": 4.17,
-        "delta": -0.512,
-        "gamma": 0.2749,
-        "theta": -0.003,
-        "vega": 0.009
-      },
-      "value_option": {
-        "type": "put",
-        "strike": 15.0,
-        "expiry": "2028-01-21",
-        "dte": 461,
-        "ask": 11.0,
-        "bid": 10.15,
-        "cost": 1100.0,
-        "open_interest": 966,
-        "volume": 1,
-        "iv": 73.9,
-        "breakeven": 4.0,
-        "delta": -0.82,
-        "gamma": 0.0678,
-        "theta": 0.001,
-        "vega": 0.014
-      },
+      "options_flow": {},
+      "best_option": {},
+      "value_option": {},
       "best_contract": {},
       "pivots": {},
-      "analyst": {
-        "target_mean": 10.01,
-        "target_high": 18.0,
-        "target_low": 4.0,
-        "n_analysts": 9,
-        "rating_key": "hold"
-      },
+      "analyst": {},
       "seasonality": {
         "month": 10,
         "hist_avg_return_pct": -5.42,
@@ -44938,16 +45348,7 @@
         ]
       },
       "short_volume": {},
-      "gex": {
-        "net_gex": 567391,
-        "net_gex_bn": 0.001,
-        "expiry": "2026-10-23",
-        "regime": "Long Gamma",
-        "call_wall": 5.0,
-        "put_wall": 4.5,
-        "zero_gamma": 3.51,
-        "zero_gamma_method": "flip"
-      },
+      "gex": {},
       "direction": "short",
       "wyckoff_cycle": "Redistribution",
       "wyckoff_phase": "D",
@@ -45088,7 +45489,7 @@
       },
       "tv_ticker": "PA1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-10-17T01:27:03.019266",
+      "timestamp": "2026-10-17T02:46:09.621882",
       "ict": {
         "by_tf": {
           "1m": {
@@ -47054,12 +47455,7 @@
         "direction": "short",
         "neckline": 5692.0
       },
-      "fundamentals": {
-        "company_name": "Cocoa Dec 26",
-        "w52_high": 6675.0,
-        "w52_low": 2798.0,
-        "sharpe_ratio": 0.15
-      },
+      "fundamentals": {},
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -47071,7 +47467,7 @@
       },
       "tv_ticker": "CC1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-10-17T01:27:09.306033",
+      "timestamp": "2026-10-17T02:46:10.006064",
       "ict": {
         "by_tf": {
           "1m": {
@@ -47807,12 +48203,7 @@
         "direction": "short",
         "neckline": 66.9375
       },
-      "fundamentals": {
-        "company_name": "Lean Hog Futures,Dec-2026",
-        "w52_high": 103.35,
-        "w52_low": 65.8,
-        "sharpe_ratio": -0.77
-      },
+      "fundamentals": {},
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -47824,7 +48215,7 @@
       },
       "tv_ticker": "HE1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-10-17T01:27:09.600919",
+      "timestamp": "2026-10-17T02:46:10.377561",
       "ict": {
         "by_tf": {
           "1m": {
@@ -48757,7 +49148,7 @@
       },
       "tv_ticker": "OJ1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-10-17T01:27:09.811051",
+      "timestamp": "2026-10-17T02:46:15.511203",
       "ict": {
         "by_tf": {
           "1m": {
@@ -49566,7 +49957,7 @@
       },
       "tv_ticker": "LE1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-10-17T01:27:15.405788",
+      "timestamp": "2026-10-17T02:46:15.509480",
       "ict": {
         "by_tf": {
           "1m": {
@@ -50474,7 +50865,7 @@
       },
       "tv_ticker": "CT1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-10-17T01:27:16.504758",
+      "timestamp": "2026-10-17T02:46:15.692443",
       "ict": {
         "by_tf": {
           "15m": {
@@ -53466,7 +53857,7 @@
       },
       "tv_ticker": "COMEX:GC1!",
       "session": "AFTER HOURS",
-      "timestamp": "2026-10-17T01:27:17.124692",
+      "timestamp": "2026-10-17T02:46:16.744330",
       "ict": {
         "by_tf": {
           "1m": {
@@ -54402,7 +54793,7 @@
       },
       "tv_ticker": "ANGX",
       "session": "AFTER HOURS",
-      "timestamp": "2026-10-17T01:27:17.255602",
+      "timestamp": "2026-10-17T02:46:21.089343",
       "ict": {
         "by_tf": {
           "1m": {
