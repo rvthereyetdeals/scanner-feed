@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-10-24T20:37:01.178366+00:00",
+  "last_scan": "2026-10-24T20:40:39.602911+00:00",
   "setups": [
     {
       "ticker": "LE=F",
@@ -79,8 +79,8 @@
         "street": null
       },
       "tv_ticker": "LE1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:11:23.735311",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:02.317242",
       "ict": {
         "by_tf": {
           "1m": {
@@ -2498,6 +2498,18 @@
         "top_put_oi": 1642,
         "expiry": "2026-10-30",
         "call_walls_by_expiry": {
+          "2026-10-30": {
+            "strike": 40.0,
+            "oi": 1938
+          },
+          "2026-11-06": {
+            "strike": 35.0,
+            "oi": 3183
+          },
+          "2026-11-13": {
+            "strike": 45.0,
+            "oi": 424
+          },
           "2026-11-20": {
             "strike": 50.0,
             "oi": 9893
@@ -2521,23 +2533,7 @@
         "theta": -0.155,
         "vega": 0.056
       },
-      "value_option": {
-        "type": "call",
-        "strike": 34.0,
-        "expiry": "2028-01-21",
-        "dte": 454,
-        "ask": 34.0,
-        "bid": 29.3,
-        "cost": 3400.0,
-        "open_interest": 372,
-        "volume": 5,
-        "iv": 119.9,
-        "breakeven": 68.0,
-        "delta": 0.851,
-        "gamma": 0.0033,
-        "theta": -0.02,
-        "vega": 0.136
-      },
+      "value_option": {},
       "best_contract": {
         "quick": null,
         "value": null,
@@ -2833,7 +2829,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": 1452550,
+        "net_gex_bn": 0.001,
+        "expiry": "2026-10-30",
+        "regime": "Long Gamma",
+        "call_wall": 60.0,
+        "put_wall": 45.0,
+        "zero_gamma": 28.3,
+        "zero_gamma_method": "flip"
+      },
       "direction": "long",
       "wyckoff_cycle": "Accumulation",
       "wyckoff_phase": "D",
@@ -3019,8 +3024,8 @@
         "street": 7.6
       },
       "tv_ticker": "ABBV",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:09:53.018355",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:38:01.065014",
       "ict": {
         "by_tf": {
           "1m": {
@@ -3916,8 +3921,8 @@
         "street": null
       },
       "tv_ticker": "NYMEX:CL1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:11:36.461896",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:08.277466",
       "ict": {
         "by_tf": {
           "1m": {
@@ -5024,8 +5029,8 @@
         "street": null
       },
       "tv_ticker": "COMEX:HG1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:11:38.601531",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:11.027900",
       "ict": {
         "by_tf": {
           "1m": {
@@ -6028,8 +6033,8 @@
         "street": 8.9
       },
       "tv_ticker": "TXN",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:08:20.912266",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:36:58.810350",
       "ict": {
         "by_tf": {
           "1m": {
@@ -6442,7 +6447,7 @@
             "tf": "1wk",
             "session": {
               "high": 214.5431,
-              "low": 136.7971,
+              "low": 136.797,
               "midpoint": 175.6701,
               "range_pts": 77.7461
             },
@@ -6458,7 +6463,7 @@
             "tf": "1mo",
             "session": {
               "high": 176.6284,
-              "low": 77.7118,
+              "low": 77.7117,
               "midpoint": 127.1701,
               "range_pts": 98.9167
             },
@@ -6718,23 +6723,51 @@
         "seasonality_positive": false
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 3,
+      "bear_score": 4,
       "bear_score_max": 9,
-      "bear_score_pct": 33,
+      "bear_score_pct": 44,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": true,
         "rsi_overbought": false,
         "options_bearish": false,
-        "price_above_maxpain": false,
+        "price_above_maxpain": true,
         "below_pivot": false,
         "analyst_sell": false,
         "analyst_target_downside": false,
         "seasonality_negative": true
       },
-      "verdict_notes": "3M:HH/HL 3M:FVG M:Demand M:LiqGrab \u00b7 RSI 40.63 \u00b7 Target $336.86 (+18%) \u00b7 Seasonal -3.2%",
+      "verdict_notes": "3M:HH/HL 3M:FVG M:Demand M:LiqGrab \u00b7 RSI 40.63 \u00b7 P/C 0.74 \u00b7 MaxPain $280.00 \u00b7 Call wall $325 (2026-10-30) \u00b7 Target $336.86 (+18%) \u00b7 Seasonal -3.2%",
       "entry_note": "",
-      "options_flow": {},
+      "options_flow": {
+        "total_call_oi": 3617,
+        "total_put_oi": 2664,
+        "pc_ratio": 0.74,
+        "max_pain": 280.0,
+        "top_call_wall": 325.0,
+        "top_call_oi": 893,
+        "top_put_wall": 270.0,
+        "top_put_oi": 417,
+        "expiry": "2026-10-30",
+        "call_walls_by_expiry": {
+          "2026-10-30": {
+            "strike": 325.0,
+            "oi": 893
+          },
+          "2026-11-06": {
+            "strike": 315.0,
+            "oi": 146
+          },
+          "2026-11-13": {
+            "strike": 320.0,
+            "oi": 107
+          },
+          "2026-11-20": {
+            "strike": 310.0,
+            "oi": 1986
+          }
+        }
+      },
       "best_option": {
         "type": "call",
         "strike": 295.0,
@@ -7305,8 +7338,8 @@
         "street": null
       },
       "tv_ticker": "RB1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:11:45.225400",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:13.683140",
       "ict": {
         "by_tf": {
           "1m": {
@@ -8256,15 +8289,43 @@
       },
       "fundamentals": {
         "company_name": "Apple Inc.",
+        "ceo": "John  Ternus",
         "w52_high": 351.73,
         "w52_low": 243.42,
         "market_cap": "$5.1T",
+        "sector": "Technology",
         "pe_ratio": 39.9,
-        "peg_ratio": 2.71,
+        "peg_ratio": 2.79,
+        "eps": 8.72,
+        "gross_margin": 48.65,
+        "operating_margin": 32.62,
+        "profit_margin": 27.62,
+        "ebitda_margin": 35.98,
+        "roe": 148.75,
+        "roa": 27.08,
+        "debt_to_equity": 0.78,
+        "current_ratio": 1.0,
         "price_to_book": 47.25,
+        "price_to_sales": 10.87,
+        "fcf": "$107.7B",
         "dividend_yield": 0.31,
+        "beta": 1.07,
         "sharpe_ratio": 1.13,
+        "alpha": 17.36,
+        "earnings_yield": 3.3,
+        "roc": 27.08,
+        "magic_formula_grade": "C",
+        "owner_earnings": "$107.7B",
+        "fcf_margin": 23.08,
+        "roic": 93.01,
+        "owner_earnings_yield": 2.12,
+        "debt_to_fcf": 0.78,
         "share_count_change": 0.0,
+        "revenue_growth": 16.4,
+        "earnings_growth": 28.7,
+        "ev_to_fcf": 47.3,
+        "fcf_yield": 2.12,
+        "analyst_rating": "Buy",
         "earnings_date": "Nov 2"
       },
       "intrinsic_value": {
@@ -8279,13 +8340,13 @@
         "ev_ebitda_iv": 266.42,
         "pe_iv": 243.97
       },
-      "fundamental_conviction": 4.1,
-      "fundamental_grade": "C",
+      "fundamental_conviction": 5.8,
+      "fundamental_grade": "B",
       "fundamental_sub_scores": {
-        "cheap": 0.6,
-        "good_business": null,
-        "healthy": null,
-        "street": 7.5
+        "cheap": 0.4,
+        "good_business": 8.2,
+        "healthy": 5.8,
+        "street": 7.6
       },
       "tv_ticker": "AAPL",
       "session": "AFTER HOURS",
@@ -8741,39 +8802,67 @@
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 2,
+      "bear_score": 3,
       "bear_score_max": 9,
-      "bear_score_pct": 22,
+      "bear_score_pct": 33,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
         "rsi_overbought": true,
         "options_bearish": false,
-        "price_above_maxpain": false,
+        "price_above_maxpain": true,
         "below_pivot": false,
         "analyst_sell": false,
         "analyst_target_downside": false,
         "seasonality_negative": false
       },
-      "verdict_notes": "6M:HH/HL 6M:BOS W:HH/HL H4:HH/HL \u00b7 RSI 72.34 \u00b7 Target $328.35 (-6%) \u00b7 Seasonal +3.6%",
+      "verdict_notes": "6M:HH/HL 6M:BOS W:HH/HL H4:HH/HL \u00b7 RSI 72.34 \u00b7 P/C 1.50 \u00b7 MaxPain $345.00 \u00b7 Call wall $345 (2026-10-26) \u00b7 Target $328.35 (-6%) \u00b7 Seasonal +3.6%",
       "entry_note": "",
-      "options_flow": {},
+      "options_flow": {
+        "total_call_oi": 14688,
+        "total_put_oi": 22097,
+        "pc_ratio": 1.5,
+        "max_pain": 345.0,
+        "top_call_wall": 345.0,
+        "top_call_oi": 2256,
+        "top_put_wall": 340.0,
+        "top_put_oi": 4970,
+        "expiry": "2026-10-26",
+        "call_walls_by_expiry": {
+          "2026-10-26": {
+            "strike": 345.0,
+            "oi": 2256
+          },
+          "2026-10-28": {
+            "strike": 357.5,
+            "oi": 10495
+          },
+          "2026-10-30": {
+            "strike": 350.0,
+            "oi": 14350
+          },
+          "2026-11-06": {
+            "strike": 360.0,
+            "oi": 6696
+          }
+        }
+      },
       "best_option": {
         "type": "call",
-        "strike": 355.0,
-        "expiry": "2027-01-15",
-        "dte": 83,
-        "ask": 14.4,
-        "bid": 14.0,
-        "cost": 1440.0,
-        "open_interest": 26000,
-        "volume": 1085,
-        "iv": 26.5,
-        "breakeven": 369.4,
-        "delta": 0.496,
-        "gamma": 0.0091,
-        "theta": -0.127,
-        "vega": 0.661
+        "strike": 350.0,
+        "expiry": "2026-11-20",
+        "dte": 27,
+        "ask": 9.85,
+        "bid": 9.55,
+        "cost": 985.0,
+        "open_interest": 26256,
+        "volume": 2276,
+        "iv": 28.4,
+        "breakeven": 359.85,
+        "delta": 0.501,
+        "gamma": 0.0148,
+        "theta": -0.221,
+        "vega": 0.377
       },
       "value_option": {
         "type": "call",
@@ -8902,6 +8991,87 @@
           },
           {
             "type": "call",
+            "strike": 315.0,
+            "dte": 419,
+            "bid": 66.5,
+            "ask": 69.35,
+            "mid": 67.92,
+            "cost": 6792.5,
+            "spread_pct": 4.2,
+            "open_interest": 726,
+            "volume": 7,
+            "iv": 36.4,
+            "iv_at_target": 36.0,
+            "breakeven": 382.93,
+            "delta": 0.724,
+            "gamma": 0.0025,
+            "theta": -0.078,
+            "vega": 1.245,
+            "value_at_target": 68.05,
+            "roi_pct": 0.2,
+            "req_vol_pct": 2.8,
+            "edge_ratio": 0.08,
+            "cheap": false,
+            "target_vs_breakeven": -8.1,
+            "theta_ratio": 2.3,
+            "expiry": "2027-12-17"
+          },
+          {
+            "type": "call",
+            "strike": 320.0,
+            "dte": 419,
+            "bid": 63.25,
+            "ask": 66.2,
+            "mid": 64.72,
+            "cost": 6472.5,
+            "spread_pct": 4.6,
+            "open_interest": 4814,
+            "volume": 31,
+            "iv": 36.0,
+            "iv_at_target": 35.4,
+            "breakeven": 384.73,
+            "delta": 0.711,
+            "gamma": 0.0025,
+            "theta": -0.078,
+            "vega": 1.273,
+            "value_at_target": 64.49,
+            "roi_pct": -0.4,
+            "req_vol_pct": 2.8,
+            "edge_ratio": 0.08,
+            "cheap": false,
+            "target_vs_breakeven": -8.6,
+            "theta_ratio": 2.3,
+            "expiry": "2027-12-17"
+          },
+          {
+            "type": "call",
+            "strike": 325.0,
+            "dte": 419,
+            "bid": 60.25,
+            "ask": 63.65,
+            "mid": 61.95,
+            "cost": 6195.0,
+            "spread_pct": 5.5,
+            "open_interest": 572,
+            "volume": 21,
+            "iv": 36.0,
+            "iv_at_target": 35.3,
+            "breakeven": 386.95,
+            "delta": 0.697,
+            "gamma": 0.0026,
+            "theta": -0.079,
+            "vega": 1.3,
+            "value_at_target": 61.38,
+            "roi_pct": -0.9,
+            "req_vol_pct": 2.8,
+            "edge_ratio": 0.08,
+            "cheap": false,
+            "target_vs_breakeven": -9.3,
+            "theta_ratio": 2.3,
+            "expiry": "2027-12-17"
+          },
+          {
+            "type": "call",
             "strike": 340.0,
             "dte": 454,
             "bid": 54.65,
@@ -8924,87 +9094,6 @@
             "edge_ratio": 0.08,
             "cheap": false,
             "target_vs_breakeven": -11.7,
-            "theta_ratio": 2.5,
-            "expiry": "2028-01-21"
-          },
-          {
-            "type": "call",
-            "strike": 350.0,
-            "dte": 454,
-            "bid": 49.2,
-            "ask": 50.7,
-            "mid": 49.95,
-            "cost": 4995.0,
-            "spread_pct": 3.0,
-            "open_interest": 11212,
-            "volume": 108,
-            "iv": 33.5,
-            "iv_at_target": 32.6,
-            "breakeven": 399.95,
-            "delta": 0.632,
-            "gamma": 0.0029,
-            "theta": -0.076,
-            "vega": 1.462,
-            "value_at_target": 48.27,
-            "roi_pct": -3.4,
-            "req_vol_pct": 2.8,
-            "edge_ratio": 0.08,
-            "cheap": false,
-            "target_vs_breakeven": -13.0,
-            "theta_ratio": 2.5,
-            "expiry": "2028-01-21"
-          },
-          {
-            "type": "call",
-            "strike": 360.0,
-            "dte": 454,
-            "bid": 43.9,
-            "ask": 46.0,
-            "mid": 44.95,
-            "cost": 4495.0,
-            "spread_pct": 4.7,
-            "open_interest": 3347,
-            "volume": 2,
-            "iv": 33.1,
-            "iv_at_target": 32.2,
-            "breakeven": 404.95,
-            "delta": 0.602,
-            "gamma": 0.003,
-            "theta": -0.076,
-            "vega": 1.496,
-            "value_at_target": 43.01,
-            "roi_pct": -4.3,
-            "req_vol_pct": 2.8,
-            "edge_ratio": 0.09,
-            "cheap": false,
-            "target_vs_breakeven": -14.5,
-            "theta_ratio": 2.5,
-            "expiry": "2028-01-21"
-          },
-          {
-            "type": "call",
-            "strike": 370.0,
-            "dte": 454,
-            "bid": 39.45,
-            "ask": 40.45,
-            "mid": 39.95,
-            "cost": 3995.0,
-            "spread_pct": 2.5,
-            "open_interest": 1340,
-            "volume": 6,
-            "iv": 32.0,
-            "iv_at_target": 31.2,
-            "breakeven": 409.95,
-            "delta": 0.571,
-            "gamma": 0.0032,
-            "theta": -0.074,
-            "vega": 1.523,
-            "value_at_target": 37.4,
-            "roi_pct": -6.4,
-            "req_vol_pct": 2.8,
-            "edge_ratio": 0.09,
-            "cheap": false,
-            "target_vs_breakeven": -15.9,
             "theta_ratio": 2.5,
             "expiry": "2028-01-21"
           }
@@ -9172,7 +9261,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": 13907314,
+        "net_gex_bn": 0.014,
+        "expiry": "2026-10-30",
+        "regime": "Long Gamma",
+        "call_wall": 350.0,
+        "put_wall": 340.0,
+        "zero_gamma": 267.05,
+        "zero_gamma_method": "flip"
+      },
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "E",
@@ -9363,8 +9461,8 @@
         "street": 6.4
       },
       "tv_ticker": "MTCH",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:11:39.934808",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:17.029089",
       "ict": {
         "by_tf": {
           "1m": {
@@ -9607,10 +9705,10 @@
           "1mo": {
             "tf": "1mo",
             "session": {
-              "high": 173.8783,
+              "high": 173.8784,
               "low": 42.7435,
               "midpoint": 108.3109,
-              "range_pts": 131.1348
+              "range_pts": 131.1349
             },
             "sweep": null,
             "bos": null,
@@ -10203,8 +10301,8 @@
         "street": null
       },
       "tv_ticker": "XLP",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:11:13.325583",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:38:56.397367",
       "ict": {
         "by_tf": {
           "1m": {
@@ -10563,7 +10661,7 @@
               "high": 42.8154,
               "low": 20.3753,
               "midpoint": 31.5954,
-              "range_pts": 22.4402
+              "range_pts": 22.4401
             },
             "sweep": null,
             "bos": null,
@@ -11155,8 +11253,8 @@
         "street": null
       },
       "tv_ticker": "BZ1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:00.145841",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:20.417050",
       "ict": {
         "by_tf": {
           "1m": {
@@ -12124,8 +12222,8 @@
         "street": null
       },
       "tv_ticker": "KC1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:11:56.519954",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:24.159699",
       "ict": {
         "by_tf": {
           "1m": {
@@ -12968,8 +13066,8 @@
         "street": null
       },
       "tv_ticker": "HO1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:07.665541",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:28.391182",
       "ict": {
         "by_tf": {
           "1m": {
@@ -14237,9 +14335,9 @@
       "session_label": "Closing dash",
       "pinned": false,
       "verdict": "HOLD",
-      "verdict_score": 5,
-      "verdict_max": 8,
-      "verdict_pct": 62,
+      "verdict_score": 6,
+      "verdict_max": 10,
+      "verdict_pct": 60,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
@@ -14248,29 +14346,73 @@
         "price_below_maxpain": false,
         "above_pivot": false,
         "balance_sheet_ok": true,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "analyst_buy": true,
+        "analyst_target_upside": false,
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 2,
-      "bear_score_max": 7,
-      "bear_score_pct": 29,
+      "bear_score": 4,
+      "bear_score_max": 9,
+      "bear_score_pct": 44,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": true,
         "rsi_overbought": false,
-        "options_bearish": false,
-        "price_above_maxpain": false,
+        "options_bearish": true,
+        "price_above_maxpain": true,
         "below_pivot": false,
-        "analyst_sell": null,
-        "analyst_target_downside": null,
+        "analyst_sell": false,
+        "analyst_target_downside": false,
         "seasonality_negative": false
       },
-      "verdict_notes": "6M:Demand M:BOS M:Demand W:HH/HL \u00b7 RSI 65.98 \u00b7 Seasonal +0.6%",
+      "verdict_notes": "6M:Demand M:BOS M:Demand W:HH/HL \u00b7 RSI 65.98 \u00b7 P/C 1.59 \u00b7 MaxPain $94.00 \u00b7 Call wall $96 (2026-10-30) \u00b7 Target $104.62 (+10%) \u00b7 Seasonal +0.6%",
       "entry_note": "",
-      "options_flow": {},
-      "best_option": {},
+      "options_flow": {
+        "total_call_oi": 3450,
+        "total_put_oi": 5489,
+        "pc_ratio": 1.59,
+        "max_pain": 94.0,
+        "top_call_wall": 96.0,
+        "top_call_oi": 683,
+        "top_put_wall": 94.0,
+        "top_put_oi": 1126,
+        "expiry": "2026-10-30",
+        "call_walls_by_expiry": {
+          "2026-10-30": {
+            "strike": 96.0,
+            "oi": 683
+          },
+          "2026-11-06": {
+            "strike": 98.0,
+            "oi": 258
+          },
+          "2026-11-13": {
+            "strike": 88.0,
+            "oi": 580
+          },
+          "2026-11-20": {
+            "strike": 100.0,
+            "oi": 5188
+          }
+        }
+      },
+      "best_option": {
+        "type": "call",
+        "strike": 95.0,
+        "expiry": "2026-11-20",
+        "dte": 27,
+        "ask": 3.35,
+        "bid": 2.73,
+        "cost": 335.0,
+        "open_interest": 3693,
+        "volume": 56,
+        "iv": 29.9,
+        "breakeven": 98.35,
+        "delta": 0.555,
+        "gamma": 0.051,
+        "theta": -0.063,
+        "vega": 0.103
+      },
       "value_option": {},
       "best_contract": {
         "quick": {
@@ -14300,7 +14442,33 @@
           "theta_ratio": 1.3,
           "expiry": "2027-06-17"
         },
-        "value": null,
+        "value": {
+          "type": "call",
+          "strike": 87.5,
+          "dte": 454,
+          "bid": 15.8,
+          "ask": 17.45,
+          "mid": 16.62,
+          "cost": 1662.5,
+          "spread_pct": 9.9,
+          "open_interest": 108,
+          "volume": 6,
+          "iv": 32.4,
+          "iv_at_target": 32.2,
+          "breakeven": 104.12,
+          "delta": 0.723,
+          "gamma": 0.0097,
+          "theta": -0.019,
+          "vega": 0.356,
+          "value_at_target": 22.45,
+          "roi_pct": 35.0,
+          "req_vol_pct": 11.1,
+          "edge_ratio": 0.34,
+          "cheap": false,
+          "target_vs_breakeven": -1.0,
+          "theta_ratio": 2.5,
+          "expiry": "2028-01-21"
+        },
         "edge": null,
         "edge_note": null,
         "spread": {
@@ -14326,6 +14494,87 @@
         },
         "pick": "spread",
         "ranked": [
+          {
+            "type": "call",
+            "strike": 92.5,
+            "dte": 454,
+            "bid": 12.65,
+            "ask": 14.55,
+            "mid": 13.6,
+            "cost": 1360.0,
+            "spread_pct": 14.0,
+            "open_interest": 111,
+            "volume": 4,
+            "iv": 31.3,
+            "iv_at_target": 30.9,
+            "breakeven": 106.1,
+            "delta": 0.671,
+            "gamma": 0.0109,
+            "theta": -0.02,
+            "vega": 0.385,
+            "value_at_target": 18.77,
+            "roi_pct": 38.0,
+            "req_vol_pct": 11.1,
+            "edge_ratio": 0.36,
+            "cheap": false,
+            "target_vs_breakeven": -3.1,
+            "theta_ratio": 2.5,
+            "expiry": "2028-01-21"
+          },
+          {
+            "type": "call",
+            "strike": 87.5,
+            "dte": 454,
+            "bid": 15.8,
+            "ask": 17.45,
+            "mid": 16.62,
+            "cost": 1662.5,
+            "spread_pct": 9.9,
+            "open_interest": 108,
+            "volume": 6,
+            "iv": 32.4,
+            "iv_at_target": 32.2,
+            "breakeven": 104.12,
+            "delta": 0.723,
+            "gamma": 0.0097,
+            "theta": -0.019,
+            "vega": 0.356,
+            "value_at_target": 22.45,
+            "roi_pct": 35.0,
+            "req_vol_pct": 11.1,
+            "edge_ratio": 0.34,
+            "cheap": false,
+            "target_vs_breakeven": -1.0,
+            "theta_ratio": 2.5,
+            "expiry": "2028-01-21"
+          },
+          {
+            "type": "call",
+            "strike": 110.0,
+            "dte": 454,
+            "bid": 6.05,
+            "ask": 7.1,
+            "mid": 6.57,
+            "cost": 657.5,
+            "spread_pct": 16.0,
+            "open_interest": 533,
+            "volume": 10,
+            "iv": 28.9,
+            "iv_at_target": 28.3,
+            "breakeven": 116.58,
+            "delta": 0.465,
+            "gamma": 0.0129,
+            "theta": -0.018,
+            "vega": 0.423,
+            "value_at_target": 8.87,
+            "roi_pct": 34.9,
+            "req_vol_pct": 11.1,
+            "edge_ratio": 0.39,
+            "cheap": false,
+            "target_vs_breakeven": -14.0,
+            "theta_ratio": 2.5,
+            "expiry": "2028-01-21"
+          },
           {
             "type": "call",
             "strike": 90.0,
@@ -14383,56 +14632,29 @@
           {
             "type": "call",
             "strike": 100.0,
-            "dte": 236,
-            "bid": 5.95,
-            "ask": 7.1,
-            "mid": 6.53,
-            "cost": 652.5,
-            "spread_pct": 17.6,
-            "open_interest": 1512,
-            "volume": 4,
-            "iv": 29.4,
-            "iv_at_target": 26.8,
-            "breakeven": 106.53,
-            "delta": 0.522,
-            "gamma": 0.0177,
-            "theta": -0.025,
-            "vega": 0.306,
-            "value_at_target": 6.5,
-            "roi_pct": -0.4,
+            "dte": 328,
+            "bid": 7.8,
+            "ask": 8.9,
+            "mid": 8.35,
+            "cost": 835.0,
+            "spread_pct": 13.2,
+            "open_interest": 58,
+            "volume": 8,
+            "iv": 29.9,
+            "iv_at_target": 28.7,
+            "breakeven": 108.35,
+            "delta": 0.554,
+            "gamma": 0.0146,
+            "theta": -0.022,
+            "vega": 0.358,
+            "value_at_target": 10.2,
+            "roi_pct": 22.1,
             "req_vol_pct": 11.1,
-            "edge_ratio": 0.38,
+            "edge_ratio": 0.37,
             "cheap": false,
-            "target_vs_breakeven": -3.5,
-            "theta_ratio": 1.3,
-            "expiry": "2027-06-17"
-          },
-          {
-            "type": "call",
-            "strike": 105.0,
-            "dte": 146,
-            "bid": 2.81,
-            "ask": 3.25,
-            "mid": 3.03,
-            "cost": 303.0,
-            "spread_pct": 14.5,
-            "open_interest": 2179,
-            "volume": 14,
-            "iv": 27.8,
-            "iv_at_target": 20.2,
-            "breakeven": 108.03,
-            "delta": 0.365,
-            "gamma": 0.0224,
-            "theta": -0.026,
-            "vega": 0.227,
-            "value_at_target": 0.0,
-            "roi_pct": -100.0,
-            "req_vol_pct": 11.1,
-            "edge_ratio": 0.4,
-            "cheap": false,
-            "target_vs_breakeven": -5.1,
-            "theta_ratio": 0.8,
-            "expiry": "2027-03-19"
+            "target_vs_breakeven": -5.4,
+            "theta_ratio": 1.8,
+            "expiry": "2027-09-17"
           }
         ],
         "inputs": {
@@ -14446,7 +14668,13 @@
         "target_label": "T1"
       },
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 104.62,
+        "target_high": 121.0,
+        "target_low": 85.0,
+        "n_analysts": 26,
+        "rating_key": "buy"
+      },
       "seasonality": {
         "month": 10,
         "hist_avg_return_pct": 0.63,
@@ -14610,7 +14838,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": -687610,
+        "net_gex_bn": -0.001,
+        "expiry": "2026-10-30",
+        "regime": "Short Gamma",
+        "call_wall": 96.0,
+        "put_wall": 94.0,
+        "zero_gamma": 95.0,
+        "zero_gamma_method": "midpoint"
+      },
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "E",
@@ -14758,8 +14995,8 @@
         "street": null
       },
       "tv_ticker": "GF1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:01.920150",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:28.021965",
       "ict": {
         "by_tf": {
           "1m": {
@@ -17563,8 +17800,8 @@
         "street": 3.9
       },
       "tv_ticker": "VZ",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:10:57.719540",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:38:46.161153",
       "ict": {
         "by_tf": {
           "1m": {
@@ -19767,8 +20004,8 @@
         "street": 9.2
       },
       "tv_ticker": "SNOW",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:09:22.709027",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:37:40.152786",
       "ict": {
         "by_tf": {
           "1m": {
@@ -20162,6 +20399,14 @@
           "2026-11-06": {
             "strike": 355.0,
             "oi": 381
+          },
+          "2026-11-13": {
+            "strike": 400.0,
+            "oi": 468
+          },
+          "2026-11-20": {
+            "strike": 350.0,
+            "oi": 3365
           }
         }
       },
@@ -21330,6 +21575,10 @@
         "top_put_oi": 11284,
         "expiry": "2026-10-30",
         "call_walls_by_expiry": {
+          "2026-10-30": {
+            "strike": 265.0,
+            "oi": 2137
+          },
           "2026-11-06": {
             "strike": 275.0,
             "oi": 1341
@@ -21929,8 +22178,8 @@
         "street": 6.2
       },
       "tv_ticker": "ZION",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:13.759228",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:32.716593",
       "ict": {
         "by_tf": {
           "1m": {
@@ -22181,7 +22430,7 @@
             "session": {
               "high": 24.4854,
               "low": 10.5817,
-              "midpoint": 17.5335,
+              "midpoint": 17.5336,
               "range_pts": 13.9038
             },
             "sweep": {
@@ -23714,8 +23963,8 @@
         "street": null
       },
       "tv_ticker": "NYMEX:NG1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:22.944223",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:35.942024",
       "ict": {
         "by_tf": {
           "1m": {
@@ -25734,8 +25983,8 @@
         "street": null
       },
       "tv_ticker": "COMEX:GC1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:24.754815",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:40.149979",
       "ict": {
         "by_tf": {
           "1m": {
@@ -26613,8 +26862,8 @@
         "street": 8.2
       },
       "tv_ticker": "CSCO",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:08:25.308484",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:37:06.797278",
       "ict": {
         "by_tf": {
           "1m": {
@@ -28523,8 +28772,8 @@
         "street": null
       },
       "tv_ticker": "CBOT:ZW1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:27.054486",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:41.445542",
       "ict": {
         "by_tf": {
           "1m": {
@@ -30715,7 +30964,7 @@
         "w52_low": 57747.766,
         "market_cap": "$1.6T",
         "sharpe_ratio": -0.54,
-        "volume": "$23.1B"
+        "volume": "$23.0B"
       },
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
@@ -31353,7 +31602,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "M:BOS M:FVG 45m:FVG 5m:HH/HL \u00b7 RSI 41.01 \u00b7 Seasonal +7.5%",
+      "verdict_notes": "M:BOS M:FVG 45m:FVG 5m:HH/HL \u00b7 RSI 40.8 \u00b7 Seasonal +7.5%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -31363,7 +31612,7 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": 7.46,
+        "hist_avg_return_pct": 7.45,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -31681,8 +31930,8 @@
         "street": 6.2
       },
       "tv_ticker": "JOBY",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:32.439035",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:44.309625",
       "ict": {
         "by_tf": {
           "1m": {
@@ -33309,7 +33558,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": true
       },
-      "verdict_notes": "45m:BOS 45m:FVG 30m:BOS 30m:Demand \u00b7 RSI 33.12 \u00b7 Seasonal -5.7%",
+      "verdict_notes": "45m:BOS 45m:FVG 30m:BOS 30m:Demand \u00b7 RSI 33.03 \u00b7 Seasonal -5.7%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -33319,7 +33568,7 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": -5.67,
+        "hist_avg_return_pct": -5.68,
         "historically_positive": false
       },
       "signals_by_tf": {
@@ -33611,7 +33860,7 @@
         "w52_high": 205.02,
         "w52_low": 60.4147,
         "market_cap": "$59.8B",
-        "sharpe_ratio": -0.67,
+        "sharpe_ratio": -0.66,
         "volume": "$2.6B"
       },
       "intrinsic_value": {},
@@ -34236,7 +34485,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "W:HH/HL W:Demand 45m:BOS 15m:HH/HL \u00b7 RSI 31.02 \u00b7 Seasonal +12.8%",
+      "verdict_notes": "W:HH/HL W:Demand 45m:BOS 15m:HH/HL \u00b7 RSI 31.13 \u00b7 Seasonal +12.8%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -34246,7 +34495,7 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": 12.83,
+        "hist_avg_return_pct": 12.84,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -34527,9 +34776,9 @@
         "company_name": "Ethereum USD",
         "w52_high": 4250.67,
         "w52_low": 1506.5057,
-        "market_cap": "$286.1B",
-        "sharpe_ratio": -0.54,
-        "volume": "$9.9B"
+        "market_cap": "$286.5B",
+        "sharpe_ratio": -0.53,
+        "volume": "$9.8B"
       },
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
@@ -35213,7 +35462,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "5m:HH/HL 5m:Demand 5m:LiqGrab 3m:HH/HL \u00b7 RSI 34.54 \u00b7 Seasonal +0.8%",
+      "verdict_notes": "5m:HH/HL 5m:Demand 5m:LiqGrab 3m:HH/HL \u00b7 RSI 34.67 \u00b7 Seasonal +0.8%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -35223,7 +35472,7 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": 0.77,
+        "hist_avg_return_pct": 0.79,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -36037,6 +36286,10 @@
         "top_put_oi": 3581,
         "expiry": "2026-10-30",
         "call_walls_by_expiry": {
+          "2026-10-30": {
+            "strike": 350.0,
+            "oi": 5854
+          },
           "2026-11-06": {
             "strike": 350.0,
             "oi": 1390
@@ -36432,8 +36685,8 @@
         "street": 7.6
       },
       "tv_ticker": "BKNG",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:43.725730",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:48.516576",
       "ict": {
         "by_tf": {
           "1m": {
@@ -36719,7 +36972,7 @@
               "high": 231.0597,
               "low": 172.6628,
               "midpoint": 201.8613,
-              "range_pts": 58.3969
+              "range_pts": 58.3968
             },
             "sweep": {
               "direction": "bullish",
@@ -37368,8 +37621,8 @@
         "street": null
       },
       "tv_ticker": "PA1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:44.001664",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:54.995078",
       "ict": {
         "by_tf": {
           "1m": {
@@ -38235,8 +38488,8 @@
         "street": null
       },
       "tv_ticker": "ZM1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:45.610854",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:54.988630",
       "ict": {
         "by_tf": {
           "1m": {
@@ -39178,8 +39431,8 @@
         "street": null
       },
       "tv_ticker": "CBOT:ZS1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:12:49.842826",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:39:57.545147",
       "ict": {
         "by_tf": {
           "1m": {
@@ -40173,8 +40426,8 @@
         "street": null
       },
       "tv_ticker": "SB1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:13:01.453428",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:40:00.242833",
       "ict": {
         "by_tf": {
           "1m": {
@@ -41084,8 +41337,8 @@
         "street": null
       },
       "tv_ticker": "CC1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:13:01.449568",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:40:07.184803",
       "ict": {
         "by_tf": {
           "1m": {
@@ -41891,8 +42144,8 @@
         "street": null
       },
       "tv_ticker": "CBOT:ZC1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:13:02.838782",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:40:07.691774",
       "ict": {
         "by_tf": {
           "1m": {
@@ -42803,8 +43056,8 @@
         "street": null
       },
       "tv_ticker": "HE1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:13:05.553804",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:40:10.383847",
       "ict": {
         "by_tf": {
           "1m": {
@@ -43642,8 +43895,8 @@
         "street": null
       },
       "tv_ticker": "CT1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:13:15.692991",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:40:11.163888",
       "ict": {
         "by_tf": {
           "15m": {
@@ -44494,8 +44747,8 @@
         "street": null
       },
       "tv_ticker": "OJ1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:13:18.039933",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:40:19.368833",
       "ict": {
         "by_tf": {
           "1m": {
@@ -45411,8 +45664,8 @@
         "street": null
       },
       "tv_ticker": "ZL1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:13:23.204069",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:40:20.797138",
       "ict": {
         "by_tf": {
           "1m": {
@@ -46262,8 +46515,8 @@
         "street": 6.9
       },
       "tv_ticker": "GE",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:09:53.356380",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:38:06.571356",
       "ict": {
         "by_tf": {
           "1m": {
@@ -46484,7 +46737,7 @@
             "session": {
               "high": 142.4418,
               "low": 53.9641,
-              "midpoint": 98.2029,
+              "midpoint": 98.203,
               "range_pts": 88.4776
             },
             "sweep": {
@@ -46502,8 +46755,8 @@
             "ifvg": {
               "direction": "bullish",
               "top": 97.0702,
-              "bottom": 92.5452,
-              "midpoint": 94.8077,
+              "bottom": 92.5453,
+              "midpoint": 94.8078,
               "height": 4.525,
               "formed_at": "2024-01-01T00:00:00"
             },
@@ -46511,8 +46764,8 @@
               "status": "ABOVE_ZONE",
               "current_price": 285.64,
               "zone_top": 97.0702,
-              "zone_bottom": 92.5452,
-              "zone_mid": 94.8077,
+              "zone_bottom": 92.5453,
+              "zone_mid": 94.8078,
               "pct_from_mid": 201.283,
               "alert": false
             },
@@ -46540,7 +46793,7 @@
             "tf": "12mo",
             "session": {
               "high": 131.4943,
-              "low": 19.8667,
+              "low": 19.8668,
               "midpoint": 75.6805,
               "range_pts": 111.6276
             },
@@ -46571,7 +46824,7 @@
         "session": {
           "high": 142.4418,
           "low": 53.9641,
-          "midpoint": 98.2029,
+          "midpoint": 98.203,
           "range_pts": 88.4776
         },
         "sweep": {
@@ -46589,8 +46842,8 @@
         "ifvg": {
           "direction": "bullish",
           "top": 97.0702,
-          "bottom": 92.5452,
-          "midpoint": 94.8077,
+          "bottom": 92.5453,
+          "midpoint": 94.8078,
           "height": 4.525,
           "formed_at": "2024-01-01T00:00:00"
         },
@@ -46598,8 +46851,8 @@
           "status": "ABOVE_ZONE",
           "current_price": 285.64,
           "zone_top": 97.0702,
-          "zone_bottom": 92.5452,
-          "zone_mid": 94.8077,
+          "zone_bottom": 92.5453,
+          "zone_mid": 94.8078,
           "pct_from_mid": 201.283,
           "alert": false
         },
@@ -46737,10 +46990,6 @@
         "top_put_oi": 695,
         "expiry": "2026-10-30",
         "call_walls_by_expiry": {
-          "2026-10-30": {
-            "strike": 285.0,
-            "oi": 506
-          },
           "2026-11-06": {
             "strike": 300.0,
             "oi": 128
@@ -47128,8 +47377,8 @@
         "street": null
       },
       "tv_ticker": "PL1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:13:27.552792",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:40:26.015634",
       "ict": {
         "by_tf": {
           "1m": {
@@ -47995,8 +48244,8 @@
         "street": 4.4
       },
       "tv_ticker": "VST",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:11:18.284625",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:38:58.573239",
       "ict": {
         "by_tf": {
           "1m": {
@@ -49870,20 +50119,20 @@
       },
       "best_option": {
         "type": "put",
-        "strike": 660.0,
-        "expiry": "2027-01-15",
-        "dte": 83,
-        "ask": 93.2,
-        "bid": 88.2,
-        "cost": 9320.0,
-        "open_interest": 488,
-        "volume": 9,
-        "iv": 61.0,
-        "breakeven": 566.8,
-        "delta": -0.489,
-        "gamma": 0.0022,
-        "theta": -0.387,
-        "vega": 1.199
+        "strike": 650.0,
+        "expiry": "2026-11-20",
+        "dte": 27,
+        "ask": 60.2,
+        "bid": 58.6,
+        "cost": 6020.0,
+        "open_interest": 691,
+        "volume": 235,
+        "iv": 69.4,
+        "breakeven": 589.8,
+        "delta": -0.519,
+        "gamma": 0.0033,
+        "theta": -0.826,
+        "vega": 0.683
       },
       "value_option": {
         "type": "put",
@@ -50224,8 +50473,8 @@
         "street": null
       },
       "tv_ticker": "COMEX:SI1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:13:36.614516",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:40:25.210495",
       "ict": {
         "by_tf": {
           "1m": {
@@ -51233,8 +51482,8 @@
         "street": 5.8
       },
       "tv_ticker": "CEG",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:13:36.470339",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:40:31.219915",
       "ict": {
         "by_tf": {
           "1m": {
@@ -52883,6 +53132,14 @@
         "top_put_oi": 1273,
         "expiry": "2026-10-30",
         "call_walls_by_expiry": {
+          "2026-10-30": {
+            "strike": 440.0,
+            "oi": 2530
+          },
+          "2026-11-06": {
+            "strike": 680.0,
+            "oi": 284
+          },
           "2026-11-13": {
             "strike": 430.0,
             "oi": 146
@@ -57179,8 +57436,8 @@
         "street": 10.0
       },
       "tv_ticker": "ANGX",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-24T15:13:37.286418",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-24T16:40:32.570600",
       "ict": {
         "by_tf": {
           "1m": {
@@ -58548,6 +58805,10 @@
           "2026-11-13": {
             "strike": 900.0,
             "oi": 345
+          },
+          "2026-11-20": {
+            "strike": 1000.0,
+            "oi": 865
           }
         }
       },
@@ -58705,7 +58966,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": -2420988,
+        "net_gex_bn": -0.002,
+        "expiry": "2026-10-30",
+        "regime": "Short Gamma",
+        "call_wall": 900.0,
+        "put_wall": 800.0,
+        "zero_gamma": 850.0,
+        "zero_gamma_method": "midpoint"
+      },
       "direction": "short",
       "wyckoff_cycle": "Distribution",
       "wyckoff_phase": "D",
