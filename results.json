@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-10-25T20:14:39.896858+00:00",
+  "last_scan": "2026-10-25T20:18:29.180843+00:00",
   "setups": [
     {
       "ticker": "LE=F",
@@ -79,8 +79,8 @@
         "street": null
       },
       "tv_ticker": "LE1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:10.380406",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:16:56.809087",
       "ict": {
         "by_tf": {
           "3m": {
@@ -1396,15 +1396,15 @@
       "session_weight": 0.7,
       "session_label": "Closing dash",
       "pinned": false,
-      "verdict": "AVOID",
-      "verdict_score": 3,
+      "verdict": "HOLD",
+      "verdict_score": 4,
       "verdict_max": 8,
-      "verdict_pct": 38,
+      "verdict_pct": 50,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": false,
-        "options_bullish": false,
+        "options_bullish": true,
         "price_below_maxpain": false,
         "above_pivot": false,
         "balance_sheet_ok": false,
@@ -1413,23 +1413,51 @@
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 2,
+      "bear_score": 3,
       "bear_score_max": 7,
-      "bear_score_pct": 29,
+      "bear_score_pct": 43,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
         "rsi_overbought": true,
         "options_bearish": false,
-        "price_above_maxpain": false,
+        "price_above_maxpain": true,
         "below_pivot": false,
         "analyst_sell": null,
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "H4:Demand H3:Demand H2:Demand H1:Demand \u00b7 RSI 81.99 \u00b7 Seasonal +8.4%",
+      "verdict_notes": "H4:Demand H3:Demand H2:Demand H1:Demand \u00b7 RSI 81.99 \u00b7 P/C 0.48 \u00b7 MaxPain $38.00 \u00b7 Call wall $40 (2026-10-30) \u00b7 Seasonal +8.4%",
       "entry_note": "",
-      "options_flow": {},
+      "options_flow": {
+        "total_call_oi": 19967,
+        "total_put_oi": 9521,
+        "pc_ratio": 0.48,
+        "max_pain": 38.0,
+        "top_call_wall": 40.0,
+        "top_call_oi": 1938,
+        "top_put_wall": 45.0,
+        "top_put_oi": 1642,
+        "expiry": "2026-10-30",
+        "call_walls_by_expiry": {
+          "2026-10-30": {
+            "strike": 40.0,
+            "oi": 1938
+          },
+          "2026-11-06": {
+            "strike": 35.0,
+            "oi": 3183
+          },
+          "2026-11-13": {
+            "strike": 45.0,
+            "oi": 424
+          },
+          "2026-11-20": {
+            "strike": 50.0,
+            "oi": 9893
+          }
+        }
+      },
       "best_option": {
         "type": "call",
         "strike": 60.0,
@@ -1613,7 +1641,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": 1430171,
+        "net_gex_bn": 0.001,
+        "expiry": "2026-10-30",
+        "regime": "Long Gamma",
+        "call_wall": 60.0,
+        "put_wall": 45.0,
+        "zero_gamma": 28.39,
+        "zero_gamma_method": "flip"
+      },
       "direction": "long",
       "wyckoff_cycle": "Accumulation",
       "wyckoff_phase": "D",
@@ -1799,8 +1836,8 @@
         "street": 7.6
       },
       "tv_ticker": "ABBV",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:48:08.219919",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:15:53.914450",
       "ict": {
         "by_tf": {
           "1m": {
@@ -2116,14 +2153,14 @@
           "12mo": {
             "tf": "12mo",
             "session": {
-              "high": 68.3463,
+              "high": 68.3462,
               "low": 20.4684,
               "midpoint": 44.4073,
               "range_pts": 47.8778
             },
             "sweep": {
               "direction": "bearish",
-              "swept_level": 68.3463,
+              "swept_level": 68.3462,
               "depth_pts": 6.7403,
               "timestamp": "2020-01-01T00:00:00"
             },
@@ -2696,8 +2733,8 @@
         "street": null
       },
       "tv_ticker": "NYMEX:CL1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:11.326095",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:16:58.660341",
       "ict": {
         "by_tf": {
           "3m": {
@@ -3783,8 +3820,8 @@
         "street": null
       },
       "tv_ticker": "COMEX:HG1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:14.851309",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:00.732463",
       "ict": {
         "by_tf": {
           "3m": {
@@ -4718,68 +4755,29 @@
       },
       "fundamentals": {
         "company_name": "Texas Instruments Incorporated",
-        "ceo": "Haviv  Ilan",
         "w52_high": 334.03,
         "w52_low": 152.73,
         "market_cap": "$260.0B",
-        "sector": "Technology",
         "pe_ratio": 36.9,
-        "peg_ratio": 0.94,
-        "eps": 7.71,
-        "gross_margin": 60.24,
-        "operating_margin": 47.55,
-        "profit_margin": 34.25,
-        "ebitda_margin": 51.59,
-        "roe": 39.72,
-        "roa": 14.85,
-        "debt_to_equity": 0.71,
-        "current_ratio": 5.59,
+        "peg_ratio": 0.92,
         "price_to_book": 13.56,
-        "price_to_sales": 12.52,
-        "fcf": "$4.8B",
         "dividend_yield": 2.14,
-        "beta": 1.34,
         "sharpe_ratio": 1.41,
-        "alpha": 47.16,
-        "earnings_yield": 4.03,
-        "roc": 14.85,
-        "magic_formula_grade": "D",
-        "owner_earnings": "$4.8B",
-        "fcf_margin": 23.01,
-        "roic": 31.73,
-        "owner_earnings_yield": 1.84,
-        "debt_to_fcf": 2.84,
         "share_count_change": 0.0,
-        "revenue_growth": 27.7,
-        "earnings_growth": 77.0,
-        "ev_to_fcf": 55.6,
-        "fcf_yield": 1.84,
-        "analyst_rating": "Buy",
         "earnings_date": "Oct 21"
       },
-      "intrinsic_value": {
-        "iv": 251.9,
-        "price_to_iv": 1.13,
-        "upside_pct": -11.5,
-        "discount_pct": 0,
-        "methods_used": 3,
-        "low_confidence": false,
-        "undervalued": false,
-        "dcf_iv": 244.14,
-        "ev_ebitda_iv": 293.67,
-        "pe_iv": 217.89
-      },
-      "fundamental_conviction": 7.1,
-      "fundamental_grade": "A-",
+      "intrinsic_value": {},
+      "fundamental_conviction": 5.4,
+      "fundamental_grade": "B",
       "fundamental_sub_scores": {
-        "cheap": 2.1,
-        "good_business": 8.9,
-        "healthy": 7.5,
-        "street": 8.9
+        "cheap": 3.3,
+        "good_business": null,
+        "healthy": null,
+        "street": 7.5
       },
       "tv_ticker": "TXN",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:47:07.964210",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:14:47.901195",
       "ict": {
         "by_tf": {
           "1m": {
@@ -5192,7 +5190,7 @@
             "tf": "1wk",
             "session": {
               "high": 214.5431,
-              "low": 136.7971,
+              "low": 136.797,
               "midpoint": 175.6701,
               "range_pts": 77.7461
             },
@@ -5920,16 +5918,7 @@
         ]
       },
       "short_volume": {},
-      "gex": {
-        "net_gex": 822377,
-        "net_gex_bn": 0.001,
-        "expiry": "2026-10-30",
-        "regime": "Long Gamma",
-        "call_wall": 287.5,
-        "put_wall": 270.0,
-        "zero_gamma": 170.5,
-        "zero_gamma_method": "flip"
-      },
+      "gex": {},
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "D",
@@ -6083,8 +6072,8 @@
         "street": null
       },
       "tv_ticker": "RB1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:22.016204",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:06.490017",
       "ict": {
         "by_tf": {
           "3m": {
@@ -7013,25 +7002,64 @@
       },
       "fundamentals": {
         "company_name": "Apple Inc.",
+        "ceo": "John  Ternus",
         "w52_high": 351.73,
         "w52_low": 243.42,
         "market_cap": "$5.1T",
+        "sector": "Technology",
         "pe_ratio": 39.9,
-        "peg_ratio": 2.71,
+        "peg_ratio": 2.79,
+        "eps": 8.72,
+        "gross_margin": 48.65,
+        "operating_margin": 32.62,
+        "profit_margin": 27.62,
+        "ebitda_margin": 35.98,
+        "roe": 148.75,
+        "roa": 27.08,
+        "debt_to_equity": 0.78,
+        "current_ratio": 1.0,
         "price_to_book": 47.25,
+        "price_to_sales": 10.87,
+        "fcf": "$107.7B",
         "dividend_yield": 0.31,
+        "beta": 1.07,
         "sharpe_ratio": 1.13,
+        "alpha": 17.36,
+        "earnings_yield": 3.3,
+        "roc": 27.08,
+        "magic_formula_grade": "C",
+        "owner_earnings": "$107.7B",
+        "fcf_margin": 23.08,
+        "roic": 93.01,
+        "owner_earnings_yield": 2.12,
+        "debt_to_fcf": 0.78,
         "share_count_change": 0.0,
+        "revenue_growth": 16.4,
+        "earnings_growth": 28.7,
+        "ev_to_fcf": 47.3,
+        "fcf_yield": 2.12,
+        "analyst_rating": "Buy",
         "earnings_date": "Nov 2"
       },
-      "intrinsic_value": {},
-      "fundamental_conviction": 4.2,
-      "fundamental_grade": "C",
+      "intrinsic_value": {
+        "iv": 245.94,
+        "price_to_iv": 1.414,
+        "upside_pct": -29.3,
+        "discount_pct": 0,
+        "methods_used": 3,
+        "low_confidence": false,
+        "undervalued": false,
+        "dcf_iv": 227.44,
+        "ev_ebitda_iv": 266.42,
+        "pe_iv": 243.97
+      },
+      "fundamental_conviction": 5.8,
+      "fundamental_grade": "B",
       "fundamental_sub_scores": {
-        "cheap": 0.8,
-        "good_business": null,
-        "healthy": null,
-        "street": 7.5
+        "cheap": 0.4,
+        "good_business": 8.2,
+        "healthy": 5.8,
+        "street": 7.6
       },
       "tv_ticker": "AAPL",
       "session": "AFTER HOURS",
@@ -7552,19 +7580,19 @@
       "value_option": {
         "type": "call",
         "strike": 250.0,
-        "expiry": "2027-12-17",
-        "dte": 418,
-        "ask": 118.4,
-        "bid": 114.65,
-        "cost": 11840.0,
-        "open_interest": 3382,
-        "volume": 1,
-        "iv": 45.1,
-        "breakeven": 368.4,
-        "delta": 0.852,
-        "gamma": 0.0014,
-        "theta": -0.07,
-        "vega": 0.862
+        "expiry": "2028-01-21",
+        "dte": 453,
+        "ask": 119.9,
+        "bid": 116.95,
+        "cost": 11990.0,
+        "open_interest": 1852,
+        "volume": 8,
+        "iv": 44.8,
+        "breakeven": 369.9,
+        "delta": 0.85,
+        "gamma": 0.0013,
+        "theta": -0.067,
+        "vega": 0.905
       },
       "best_contract": {
         "quick": null,
@@ -8146,8 +8174,8 @@
         "street": 6.4
       },
       "tv_ticker": "MTCH",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:23.083051",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:08.138669",
       "ict": {
         "by_tf": {
           "1m": {
@@ -8390,10 +8418,10 @@
           "1mo": {
             "tf": "1mo",
             "session": {
-              "high": 173.8783,
+              "high": 173.8784,
               "low": 42.7435,
               "midpoint": 108.3109,
-              "range_pts": 131.1348
+              "range_pts": 131.1349
             },
             "sweep": null,
             "bos": null,
@@ -8641,7 +8669,23 @@
           }
         }
       },
-      "best_option": {},
+      "best_option": {
+        "type": "call",
+        "strike": 47.5,
+        "expiry": "2027-01-15",
+        "dte": 82,
+        "ask": 3.0,
+        "bid": 1.7,
+        "cost": 300.0,
+        "open_interest": 1922,
+        "volume": 6,
+        "iv": 43.1,
+        "breakeven": 50.5,
+        "delta": 0.489,
+        "gamma": 0.0426,
+        "theta": -0.025,
+        "vega": 0.086
+      },
       "value_option": {
         "type": "call",
         "strike": 35.0,
@@ -8814,7 +8858,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": 333565,
+        "net_gex_bn": 0.0,
+        "expiry": "2026-11-20",
+        "regime": "Long Gamma",
+        "call_wall": 45.0,
+        "put_wall": 40.0,
+        "zero_gamma": 44.48,
+        "zero_gamma_method": "flip"
+      },
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "D",
@@ -8961,8 +9014,8 @@
         "street": null
       },
       "tv_ticker": "XLP",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:02.384902",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:16:47.619552",
       "ict": {
         "by_tf": {
           "1m": {
@@ -9321,7 +9374,7 @@
               "high": 42.8154,
               "low": 20.3753,
               "midpoint": 31.5954,
-              "range_pts": 22.4402
+              "range_pts": 22.4401
             },
             "sweep": null,
             "bos": null,
@@ -9584,6 +9637,10 @@
           "2026-11-13": {
             "strike": 91.0,
             "oi": 797
+          },
+          "2026-11-20": {
+            "strike": 89.0,
+            "oi": 2949
           }
         }
       },
@@ -9909,8 +9966,8 @@
         "street": null
       },
       "tv_ticker": "BZ1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:24.197544",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:10.499879",
       "ict": {
         "by_tf": {
           "3m": {
@@ -10823,8 +10880,8 @@
         "street": null
       },
       "tv_ticker": "KC1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:27.031729",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:11.885014",
       "ict": {
         "by_tf": {
           "3m": {
@@ -11645,8 +11702,8 @@
         "street": null
       },
       "tv_ticker": "HO1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:33.509738",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:20.676198",
       "ict": {
         "by_tf": {
           "3m": {
@@ -12909,39 +12966,63 @@
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 2,
+      "bear_score": 4,
       "bear_score_max": 9,
-      "bear_score_pct": 22,
+      "bear_score_pct": 44,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": true,
         "rsi_overbought": false,
-        "options_bearish": false,
-        "price_above_maxpain": false,
+        "options_bearish": true,
+        "price_above_maxpain": true,
         "below_pivot": false,
         "analyst_sell": false,
         "analyst_target_downside": false,
         "seasonality_negative": false
       },
-      "verdict_notes": "6M:Demand M:BOS M:Demand W:HH/HL \u00b7 RSI 65.98 \u00b7 Target $104.62 (+10%) \u00b7 Seasonal +0.6%",
+      "verdict_notes": "6M:Demand M:BOS M:Demand W:HH/HL \u00b7 RSI 65.98 \u00b7 P/C 1.59 \u00b7 MaxPain $94.00 \u00b7 Call wall $96 (2026-10-30) \u00b7 Target $104.62 (+10%) \u00b7 Seasonal +0.6%",
       "entry_note": "",
-      "options_flow": {},
+      "options_flow": {
+        "total_call_oi": 3450,
+        "total_put_oi": 5490,
+        "pc_ratio": 1.59,
+        "max_pain": 94.0,
+        "top_call_wall": 96.0,
+        "top_call_oi": 683,
+        "top_put_wall": 94.0,
+        "top_put_oi": 1126,
+        "expiry": "2026-10-30",
+        "call_walls_by_expiry": {
+          "2026-10-30": {
+            "strike": 96.0,
+            "oi": 683
+          },
+          "2026-11-06": {
+            "strike": 98.0,
+            "oi": 258
+          },
+          "2026-11-20": {
+            "strike": 100.0,
+            "oi": 5188
+          }
+        }
+      },
       "best_option": {
         "type": "call",
-        "strike": 96.0,
-        "expiry": "2026-11-27",
-        "dte": 33,
-        "ask": 3.35,
-        "bid": 2.39,
-        "cost": 335.0,
-        "open_interest": 222,
-        "volume": 1,
-        "iv": 31.2,
-        "breakeven": 99.35,
-        "delta": 0.512,
-        "gamma": 0.0445,
-        "theta": -0.06,
-        "vega": 0.114
+        "strike": 92.5,
+        "expiry": "2026-11-20",
+        "dte": 26,
+        "ask": 5.4,
+        "bid": 3.75,
+        "cost": 540.0,
+        "open_interest": 2588,
+        "volume": 3,
+        "iv": 37.0,
+        "breakeven": 97.9,
+        "delta": 0.655,
+        "gamma": 0.0391,
+        "theta": -0.074,
+        "vega": 0.094
       },
       "value_option": {},
       "best_contract": {
@@ -13368,7 +13449,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": -682597,
+        "net_gex_bn": -0.001,
+        "expiry": "2026-10-30",
+        "regime": "Short Gamma",
+        "call_wall": 96.0,
+        "put_wall": 94.0,
+        "zero_gamma": 95.0,
+        "zero_gamma_method": "midpoint"
+      },
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "E",
@@ -13516,8 +13606,8 @@
         "street": null
       },
       "tv_ticker": "GF1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:34.581287",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:19.451337",
       "ict": {
         "by_tf": {
           "3m": {
@@ -14326,18 +14416,18 @@
     },
     {
       "ticker": "BNB-USD",
-      "price": 741.48,
+      "price": 741.18,
       "primary_tfs": [
         "H4",
         "H3",
         "H2",
+        "H1",
         "45m",
-        "15m",
-        "5m",
-        "3m"
+        "30m",
+        "15m"
       ],
       "entry_tfs": [],
-      "mtf_score": 6.3,
+      "mtf_score": 6.8,
       "signals": [
         "Trendline Bounce",
         "Order Block",
@@ -14351,8 +14441,7 @@
         "Order Block",
         "Inv. H&S",
         "Railway",
-        "BOS \u2191",
-        "FVG",
+        "HH/HL",
         "Liq. Sweep (BULL)",
         "BOS \u00b7 CISD",
         "IFVG"
@@ -14364,28 +14453,27 @@
         "Bear Order Block",
         "Supply Zone",
         "H&S",
-        "Supply Grab",
         "LH/LL",
-        "Bear Railway"
+        "Supply Grab"
       ],
       "tech_summary": "Y: FVG present \u00b7 3M: HH/HL uptrend, liq. swept below swing low \u00b7 M: FVG present, at demand zone",
       "entry_levels": {
-        "entry_low": 740.76,
-        "entry_high": 740.97,
-        "mean_threshold": 740.865,
-        "stop": 738.9063,
+        "entry_low": 740.95,
+        "entry_high": 741.18,
+        "mean_threshold": 741.065,
+        "stop": 739.0971,
         "t1": 868.8895,
-        "t2": 876.3043,
-        "basis": "5m FVG",
+        "t2": 876.3013,
+        "basis": "1m FVG",
         "direction": "long",
         "entry_status": "in_zone",
-        "neckline": 741.335
+        "neckline": 742.2
       },
       "fundamentals": {
         "company_name": "BNB USD",
         "w52_high": 1180.0149,
         "w52_low": 538.5992,
-        "market_cap": "$97.5B",
+        "market_cap": "$97.4B",
         "sharpe_ratio": -0.7,
         "volume": "$1.2B"
       },
@@ -14399,8 +14487,8 @@
         "street": null
       },
       "tv_ticker": "CRYPTO:BNBUSD",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:48:25.141031",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:16:16.547923",
       "ict": {
         "by_tf": {
           "1m": {
@@ -14529,17 +14617,17 @@
             },
             "retrace": {
               "status": "ABOVE_ZONE",
-              "current_price": 741.48,
+              "current_price": 741.19,
               "zone_top": 739.66,
               "zone_bottom": 739.05,
               "zone_mid": 739.355,
-              "pct_from_mid": 0.287,
+              "pct_from_mid": 0.248,
               "alert": false
             },
             "targets": [
               {
                 "label": "Equal Highs (BSL)",
-                "price": 743.0429,
+                "price": 742.9643,
                 "type": "liquidity"
               },
               {
@@ -14586,17 +14674,17 @@
             },
             "retrace": {
               "status": "ABOVE_ZONE",
-              "current_price": 741.48,
+              "current_price": 741.19,
               "zone_top": 739.66,
               "zone_bottom": 739.05,
               "zone_mid": 739.355,
-              "pct_from_mid": 0.287,
+              "pct_from_mid": 0.248,
               "alert": false
             },
             "targets": [
               {
                 "label": "Equal Highs (BSL)",
-                "price": 743.0429,
+                "price": 742.9643,
                 "type": "liquidity"
               },
               {
@@ -14643,17 +14731,17 @@
             },
             "retrace": {
               "status": "ABOVE_ZONE",
-              "current_price": 741.48,
+              "current_price": 741.19,
               "zone_top": 739.66,
               "zone_bottom": 739.05,
               "zone_mid": 739.355,
-              "pct_from_mid": 0.287,
+              "pct_from_mid": 0.248,
               "alert": false
             },
             "targets": [
               {
                 "label": "Equal Highs (BSL)",
-                "price": 743.0429,
+                "price": 742.9643,
                 "type": "liquidity"
               },
               {
@@ -14747,11 +14835,11 @@
             },
             "retrace": {
               "status": "ABOVE_ZONE",
-              "current_price": 741.48,
+              "current_price": 741.19,
               "zone_top": 681.3799,
               "zone_bottom": 619.392,
               "zone_mid": 650.386,
-              "pct_from_mid": 14.006,
+              "pct_from_mid": 13.962,
               "alert": false
             },
             "targets": [
@@ -14917,11 +15005,11 @@
         },
         "retrace": {
           "status": "ABOVE_ZONE",
-          "current_price": 741.48,
+          "current_price": 741.19,
           "zone_top": 681.3799,
           "zone_bottom": 619.392,
           "zone_mid": 650.386,
-          "pct_from_mid": 14.006,
+          "pct_from_mid": 13.962,
           "alert": false
         },
         "targets": [
@@ -14947,7 +15035,7 @@
       "golden_entry": false,
       "golden_spring": false,
       "golden_spring_tfs": [],
-      "golden_reversal": true,
+      "golden_reversal": false,
       "golden_reversal_tfs": {
         "htf": [
           "W",
@@ -14956,11 +15044,9 @@
           "H3",
           "H2"
         ],
-        "ltf": [
-          "45m"
-        ]
+        "ltf": []
       },
-      "golden_reversal_short": false,
+      "golden_reversal_short": true,
       "golden_reversal_short_tfs": {
         "htf": [
           "D",
@@ -14968,15 +15054,18 @@
           "H3",
           "H2"
         ],
-        "ltf": []
+        "ltf": [
+          "5m",
+          "3m"
+        ]
       },
-      "tech_conviction": 9,
+      "tech_conviction": 8,
       "tech_pillars": {
         "line_pattern": true,
         "candle": true,
         "volume": false,
         "correlation": true,
-        "time_of_day": true
+        "time_of_day": false
       },
       "tech_tfs": [
         "W",
@@ -15011,11 +15100,13 @@
         "H4",
         "H3",
         "H2",
-        "5m",
-        "3m"
+        "H1",
+        "30m"
       ],
       "tech_rev_stack_htf": 1,
       "tech_ltf_confirm_tfs": [
+        "H1",
+        "30m",
         "15m"
       ],
       "tech_entry_timing": "retest",
@@ -15024,9 +15115,9 @@
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
       "rvol": 0.0,
-      "in_killzone": true,
-      "session_weight": 1.0,
-      "session_label": "Prime PM",
+      "in_killzone": false,
+      "session_weight": 0.0,
+      "session_label": "",
       "pinned": false,
       "verdict": "HOLD",
       "verdict_score": 5,
@@ -15059,7 +15150,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "H4:Demand 45m:Demand 15m:Demand 5m:BOS \u00b7 RSI 44.6 \u00b7 Seasonal +5.3%",
+      "verdict_notes": "H4:Demand H1:Demand 30m:Demand 15m:HH/HL \u00b7 RSI 44.11 \u00b7 Seasonal +5.2%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -15069,20 +15160,19 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": 5.26,
+        "hist_avg_return_pct": 5.24,
         "historically_positive": true
       },
       "signals_by_tf": {
         "FVG": [
           "Y",
           "M",
-          "5m",
-          "3m"
+          "1m"
         ],
         "HH/HL": [
           "3M",
           "W",
-          "1m"
+          "15m"
         ],
         "Liq. Grab": [
           "3M",
@@ -15094,9 +15184,10 @@
           "W",
           "H4",
           "H1",
-          "45m",
+          "30m",
           "15m",
-          "1m"
+          "5m",
+          "3m"
         ],
         "Order Block": [
           "3M",
@@ -15146,10 +15237,6 @@
         ],
         "Railway": [
           "H3"
-        ],
-        "BOS \u2191": [
-          "5m",
-          "3m"
         ]
       },
       "bear_signals_by_tf": {
@@ -15189,9 +15276,8 @@
           "D",
           "H3",
           "H2",
-          "30m",
-          "5m",
-          "3m"
+          "45m",
+          "1m"
         ],
         "H&S": [
           "D",
@@ -15206,25 +15292,22 @@
           "3m",
           "1m"
         ],
-        "Supply Grab": [
-          "H1"
-        ],
         "LH/LL": [
           "45m",
           "5m",
           "3m"
         ],
-        "Bear Railway": [
-          "45m"
+        "Supply Grab": [
+          "30m"
         ]
       },
       "short_volume": {},
       "gex": {},
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
-      "wyckoff_phase": "D",
-      "wyckoff_conviction": 5,
-      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase D (trend leaving the range) \u00b7 conviction 5/10",
+      "wyckoff_phase": "C",
+      "wyckoff_conviction": 6,
+      "wyckoff_reason": "BUY \u2014 Reaccumulation \u00b7 Phase C (the test (Spring/UTAD) \u2014 highest-R entry) \u00b7 conviction 6/10",
       "wyckoff_by_tf": {
         "Reaccumulation": [
           "Y",
@@ -15237,11 +15320,8 @@
           "H3",
           "H2",
           "H1",
-          "45m",
           "30m",
           "15m",
-          "5m",
-          "3m",
           "1m"
         ]
       },
@@ -16256,8 +16336,8 @@
         "street": 3.9
       },
       "tv_ticker": "VZ",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:48:57.417107",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:16:42.379648",
       "ict": {
         "by_tf": {
           "1m": {
@@ -16573,7 +16653,7 @@
             "tf": "1wk",
             "session": {
               "high": 42.1705,
-              "low": 37.4993,
+              "low": 37.4992,
               "midpoint": 39.8349,
               "range_pts": 4.6713
             },
@@ -18073,6 +18153,18 @@
         "top_put_oi": 6085,
         "expiry": "2026-10-26",
         "call_walls_by_expiry": {
+          "2026-10-26": {
+            "strike": 71.0,
+            "oi": 5066
+          },
+          "2026-10-28": {
+            "strike": 71.0,
+            "oi": 2225
+          },
+          "2026-10-30": {
+            "strike": 67.5,
+            "oi": 10741
+          },
           "2026-11-02": {
             "strike": 67.0,
             "oi": 105
@@ -18096,7 +18188,23 @@
         "theta": -0.037,
         "vega": 0.106
       },
-      "value_option": {},
+      "value_option": {
+        "type": "call",
+        "strike": 50.0,
+        "expiry": "2028-01-21",
+        "dte": 453,
+        "ask": 24.0,
+        "bid": 19.2,
+        "cost": 2400.0,
+        "open_interest": 1339,
+        "volume": 2,
+        "iv": 45.8,
+        "breakeven": 74.0,
+        "delta": 0.846,
+        "gamma": 0.0067,
+        "theta": -0.014,
+        "vega": 0.184
+      },
       "best_contract": {},
       "pivots": {},
       "analyst": {},
@@ -18232,7 +18340,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": 5966070,
+        "net_gex_bn": 0.006,
+        "expiry": "2026-10-30",
+        "regime": "Long Gamma",
+        "call_wall": 70.0,
+        "put_wall": 66.0,
+        "zero_gamma": 50.06,
+        "zero_gamma_method": "flip"
+      },
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "E",
@@ -18423,8 +18540,8 @@
         "street": 9.2
       },
       "tv_ticker": "SNOW",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:47:46.186085",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:15:28.872787",
       "ict": {
         "by_tf": {
           "1m": {
@@ -20597,8 +20714,8 @@
         "street": 6.2
       },
       "tv_ticker": "ZION",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:46.707192",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:22.568372",
       "ict": {
         "by_tf": {
           "1m": {
@@ -22358,8 +22475,8 @@
         "street": null
       },
       "tv_ticker": "NYMEX:NG1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:38.732684",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:24.035081",
       "ict": {
         "by_tf": {
           "3m": {
@@ -23203,7 +23320,7 @@
         "w52_high": 2.6934,
         "w52_low": 0.9884,
         "market_cap": "$82.3B",
-        "sharpe_ratio": -0.7,
+        "sharpe_ratio": -0.71,
         "volume": "$1.2B"
       },
       "intrinsic_value": {},
@@ -23710,7 +23827,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": true
       },
-      "verdict_notes": "30m:Demand 15m:HH/HL 1m:HH/HL 1m:BOS \u00b7 RSI 33.05 \u00b7 Seasonal -5.5%",
+      "verdict_notes": "30m:Demand 15m:HH/HL 1m:HH/HL 1m:BOS \u00b7 RSI 32.97 \u00b7 Seasonal -5.5%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -23720,7 +23837,7 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": -5.54,
+        "hist_avg_return_pct": -5.55,
         "historically_positive": false
       },
       "signals_by_tf": {
@@ -24039,8 +24156,8 @@
         "street": null
       },
       "tv_ticker": "COMEX:GC1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:45.490926",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:31.274699",
       "ict": {
         "by_tf": {
           "3m": {
@@ -24896,8 +25013,8 @@
         "street": 8.2
       },
       "tv_ticker": "CSCO",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:47:12.601585",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:14:59.493114",
       "ict": {
         "by_tf": {
           "1m": {
@@ -25798,7 +25915,7 @@
         "w52_high": 205.02,
         "w52_low": 60.4147,
         "market_cap": "$60.0B",
-        "sharpe_ratio": -0.66,
+        "sharpe_ratio": -0.67,
         "volume": "$1.3B"
       },
       "intrinsic_value": {},
@@ -26390,7 +26507,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "W:HH/HL W:Demand 45m:HH/HL \u00b7 RSI 27.6 \u00b7 Seasonal +12.9%",
+      "verdict_notes": "W:HH/HL W:Demand 45m:HH/HL \u00b7 RSI 27.54 \u00b7 Seasonal +12.9%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -26400,7 +26517,7 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": 12.88,
+        "hist_avg_return_pct": 12.87,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -26673,7 +26790,7 @@
         "company_name": "Ethereum USD",
         "w52_high": 4250.67,
         "w52_low": 1506.5057,
-        "market_cap": "$286.9B",
+        "market_cap": "$286.6B",
         "sharpe_ratio": -0.54,
         "volume": "$5.6B"
       },
@@ -27355,7 +27472,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "15m:HH/HL \u00b7 RSI 30.83 \u00b7 Seasonal +0.8%",
+      "verdict_notes": "15m:HH/HL \u00b7 RSI 30.7 \u00b7 Seasonal +0.8%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -27365,7 +27482,7 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": 0.82,
+        "hist_avg_return_pct": 0.8,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -28642,8 +28759,8 @@
         "street": null
       },
       "tv_ticker": "CBOT:ZW1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:45.407199",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:31.993572",
       "ict": {
         "by_tf": {
           "3m": {
@@ -29549,8 +29666,8 @@
         "street": 6.2
       },
       "tv_ticker": "JOBY",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:50.690648",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:35.021906",
       "ict": {
         "by_tf": {
           "1m": {
@@ -31087,7 +31204,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "M:BOS M:FVG 45m:HH/HL \u00b7 RSI 37.32 \u00b7 Seasonal +7.5%",
+      "verdict_notes": "M:BOS M:FVG 45m:HH/HL \u00b7 RSI 37.28 \u00b7 Seasonal +7.5%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -31111,7 +31228,7 @@
       "analyst": {},
       "seasonality": {
         "month": 10,
-        "hist_avg_return_pct": 7.46,
+        "hist_avg_return_pct": 7.45,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -32321,8 +32438,8 @@
         "street": 7.6
       },
       "tv_ticker": "BKNG",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:57.651770",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:36.314892",
       "ict": {
         "by_tf": {
           "1m": {
@@ -33257,8 +33374,8 @@
         "street": null
       },
       "tv_ticker": "PA1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:57.635688",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:44.322889",
       "ict": {
         "by_tf": {
           "3m": {
@@ -34108,8 +34225,8 @@
         "street": null
       },
       "tv_ticker": "ZM1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:58.608055",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:44.394079",
       "ict": {
         "by_tf": {
           "3m": {
@@ -35035,8 +35152,8 @@
         "street": null
       },
       "tv_ticker": "CBOT:ZS1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:02.789100",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:47.492853",
       "ict": {
         "by_tf": {
           "3m": {
@@ -35986,8 +36103,8 @@
         "street": null
       },
       "tv_ticker": "SB1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:09.072409",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:48.419767",
       "ict": {
         "by_tf": {
           "3m": {
@@ -36873,8 +36990,8 @@
         "street": null
       },
       "tv_ticker": "CC1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:10.335118",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:56.486109",
       "ict": {
         "by_tf": {
           "3m": {
@@ -37593,8 +37710,8 @@
         "street": null
       },
       "tv_ticker": "CBOT:ZC1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:10.949574",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:55.941110",
       "ict": {
         "by_tf": {
           "3m": {
@@ -38489,8 +38606,8 @@
         "street": null
       },
       "tv_ticker": "HE1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:13.791085",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:17:59.407543",
       "ict": {
         "by_tf": {
           "3m": {
@@ -39312,8 +39429,8 @@
         "street": null
       },
       "tv_ticker": "CT1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:19.876889",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:18:00.147324",
       "ict": {
         "by_tf": {
           "15m": {
@@ -40161,8 +40278,8 @@
         "street": null
       },
       "tv_ticker": "OJ1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:22.289042",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:18:08.055504",
       "ict": {
         "by_tf": {
           "3m": {
@@ -41056,8 +41173,8 @@
         "street": null
       },
       "tv_ticker": "ZL1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:23.355189",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:18:08.538889",
       "ict": {
         "by_tf": {
           "3m": {
@@ -41885,8 +42002,8 @@
         "street": 6.9
       },
       "tv_ticker": "GE",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:48:12.355740",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:15:55.775473",
       "ict": {
         "by_tf": {
           "1m": {
@@ -42092,7 +42209,7 @@
               "high": 70.0125,
               "low": 26.4791,
               "midpoint": 48.2458,
-              "range_pts": 43.5334
+              "range_pts": 43.5333
             },
             "sweep": null,
             "bos": null,
@@ -42105,9 +42222,9 @@
           "3mo": {
             "tf": "3mo",
             "session": {
-              "high": 142.4418,
+              "high": 142.4417,
               "low": 53.9641,
-              "midpoint": 98.203,
+              "midpoint": 98.2029,
               "range_pts": 88.4776
             },
             "sweep": {
@@ -42125,8 +42242,8 @@
             "ifvg": {
               "direction": "bullish",
               "top": 97.0702,
-              "bottom": 92.5453,
-              "midpoint": 94.8078,
+              "bottom": 92.5452,
+              "midpoint": 94.8077,
               "height": 4.525,
               "formed_at": "2024-01-01T00:00:00"
             },
@@ -42134,8 +42251,8 @@
               "status": "ABOVE_ZONE",
               "current_price": 285.64,
               "zone_top": 97.0702,
-              "zone_bottom": 92.5453,
-              "zone_mid": 94.8078,
+              "zone_bottom": 92.5452,
+              "zone_mid": 94.8077,
               "pct_from_mid": 201.283,
               "alert": false
             },
@@ -42162,9 +42279,9 @@
           "12mo": {
             "tf": "12mo",
             "session": {
-              "high": 131.4944,
+              "high": 131.4943,
               "low": 19.8668,
-              "midpoint": 75.6806,
+              "midpoint": 75.6805,
               "range_pts": 111.6276
             },
             "sweep": null,
@@ -42192,9 +42309,9 @@
         },
         "primary_tf": "3mo",
         "session": {
-          "high": 142.4418,
+          "high": 142.4417,
           "low": 53.9641,
-          "midpoint": 98.203,
+          "midpoint": 98.2029,
           "range_pts": 88.4776
         },
         "sweep": {
@@ -42212,8 +42329,8 @@
         "ifvg": {
           "direction": "bullish",
           "top": 97.0702,
-          "bottom": 92.5453,
-          "midpoint": 94.8078,
+          "bottom": 92.5452,
+          "midpoint": 94.8077,
           "height": 4.525,
           "formed_at": "2024-01-01T00:00:00"
         },
@@ -42221,8 +42338,8 @@
           "status": "ABOVE_ZONE",
           "current_price": 285.64,
           "zone_top": 97.0702,
-          "zone_bottom": 92.5453,
-          "zone_mid": 94.8078,
+          "zone_bottom": 92.5452,
+          "zone_mid": 94.8077,
           "pct_from_mid": 201.283,
           "alert": false
         },
@@ -42749,8 +42866,8 @@
         "street": null
       },
       "tv_ticker": "PL1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:26.226924",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:18:11.883157",
       "ict": {
         "by_tf": {
           "3m": {
@@ -43551,8 +43668,8 @@
         "street": 4.4
       },
       "tv_ticker": "VST",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:49:09.629285",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:16:55.045800",
       "ict": {
         "by_tf": {
           "1m": {
@@ -45780,8 +45897,8 @@
         "street": null
       },
       "tv_ticker": "COMEX:SI1!",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:33.602768",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:18:13.552285",
       "ict": {
         "by_tf": {
           "3m": {
@@ -46761,8 +46878,8 @@
         "street": 5.8
       },
       "tv_ticker": "CEG",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:35.285185",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:18:20.528421",
       "ict": {
         "by_tf": {
           "1m": {
@@ -48629,7 +48746,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": -76234,
+        "net_gex_bn": -0.0,
+        "expiry": "2026-10-30",
+        "regime": "Short Gamma",
+        "call_wall": 392.5,
+        "put_wall": 375.0,
+        "zero_gamma": 383.75,
+        "zero_gamma_method": "midpoint"
+      },
       "direction": "short",
       "wyckoff_cycle": "Distribution",
       "wyckoff_phase": "D",
@@ -49736,8 +49862,8 @@
         "street": 10.0
       },
       "tv_ticker": "ANGX",
-      "session": "PRIME AFTERNOON",
-      "timestamp": "2026-10-25T14:50:35.782793",
+      "session": "AFTER HOURS",
+      "timestamp": "2026-10-25T16:18:20.975211",
       "ict": {
         "by_tf": {
           "1m": {
