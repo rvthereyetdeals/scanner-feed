@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-11-01T20:14:01.626551+00:00",
+  "last_scan": "2026-11-01T20:15:16.223488+00:00",
   "setups": [
     {
       "ticker": "HO=F",
@@ -74,8 +74,8 @@
         "street": null
       },
       "tv_ticker": "HO1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:36.076076",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:22.893689",
       "ict": {
         "by_tf": {
           "3m": {
@@ -752,7 +752,7 @@
       "tech_pillars": {
         "line_pattern": true,
         "candle": true,
-        "volume": false,
+        "volume": true,
         "correlation": true,
         "time_of_day": true
       },
@@ -800,7 +800,7 @@
       "ict_entry_live": true,
       "wyckoff_elite": true,
       "wyckoff_entry_live": false,
-      "rvol": 0.0,
+      "rvol": 3.39,
       "in_killzone": true,
       "session_weight": 1.0,
       "session_label": "Prime PM",
@@ -1110,6 +1110,7 @@
         "score_adj": 0,
         "clues": [
           "climax_volume_sc",
+          "gap_up_volume",
           "jac_supply_line",
           "shortening_thrust_down",
           "vp_spring_reclaim_val",
@@ -1192,8 +1193,8 @@
         "street": null
       },
       "tv_ticker": "COMEX:HG1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:36.602771",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:22.542441",
       "ict": {
         "by_tf": {
           "3m": {
@@ -2237,8 +2238,8 @@
         "street": null
       },
       "tv_ticker": "RB1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:42.432336",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:23.500820",
       "ict": {
         "by_tf": {
           "3m": {
@@ -2833,7 +2834,7 @@
       "tech_pillars": {
         "line_pattern": true,
         "candle": true,
-        "volume": false,
+        "volume": true,
         "correlation": true,
         "time_of_day": true
       },
@@ -2882,7 +2883,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": true,
       "wyckoff_entry_live": false,
-      "rvol": 0.0,
+      "rvol": 2.76,
       "in_killzone": true,
       "session_weight": 1.0,
       "session_label": "Prime PM",
@@ -3924,23 +3925,51 @@
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 2,
+      "bear_score": 3,
       "bear_score_max": 9,
-      "bear_score_pct": 22,
+      "bear_score_pct": 33,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": true,
         "rsi_overbought": false,
         "options_bearish": false,
-        "price_above_maxpain": false,
+        "price_above_maxpain": true,
         "below_pivot": false,
         "analyst_sell": false,
         "analyst_target_downside": false,
         "seasonality_negative": false
       },
-      "verdict_notes": "W:Demand D:FVG H3:HH/HL H3:Demand \u00b7 RSI 55.05 \u00b7 Target $159.87 (+7%) \u00b7 Seasonal +7.5%",
+      "verdict_notes": "W:Demand D:FVG H3:HH/HL H3:Demand \u00b7 RSI 55.05 \u00b7 P/C 0.90 \u00b7 MaxPain $147.00 \u00b7 Call wall $155 (2026-11-06) \u00b7 Target $159.87 (+7%) \u00b7 Seasonal +7.5%",
       "entry_note": "",
-      "options_flow": {},
+      "options_flow": {
+        "total_call_oi": 4187,
+        "total_put_oi": 3779,
+        "pc_ratio": 0.9,
+        "max_pain": 147.0,
+        "top_call_wall": 155.0,
+        "top_call_oi": 959,
+        "top_put_wall": 147.0,
+        "top_put_oi": 501,
+        "expiry": "2026-11-06",
+        "call_walls_by_expiry": {
+          "2026-11-06": {
+            "strike": 155.0,
+            "oi": 959
+          },
+          "2026-11-13": {
+            "strike": 167.5,
+            "oi": 427
+          },
+          "2026-11-20": {
+            "strike": 165.0,
+            "oi": 14386
+          },
+          "2026-11-27": {
+            "strike": 120.0,
+            "oi": 852
+          }
+        }
+      },
       "best_option": {
         "type": "call",
         "strike": 150.0,
@@ -3977,193 +4006,219 @@
       },
       "best_contract": {
         "quick": null,
-        "value": null,
+        "value": {
+          "type": "call",
+          "strike": 135.0,
+          "dte": 446,
+          "bid": 29.6,
+          "ask": 31.65,
+          "mid": 30.62,
+          "cost": 3062.5,
+          "spread_pct": 6.7,
+          "open_interest": 597,
+          "volume": 1,
+          "iv": 38.0,
+          "iv_at_target": 37.6,
+          "breakeven": 165.62,
+          "delta": 0.725,
+          "gamma": 0.0053,
+          "theta": -0.033,
+          "vega": 0.551,
+          "value_at_target": 31.3,
+          "roi_pct": 2.2,
+          "req_vol_pct": 2.8,
+          "edge_ratio": 0.07,
+          "cheap": false,
+          "target_vs_breakeven": -8.8,
+          "theta_ratio": 2.5,
+          "expiry": "2028-01-21"
+        },
         "edge": null,
         "edge_note": null,
         "spread": {
           "type": "call_debit_spread",
-          "dte": 166,
+          "dte": 411,
           "long_strike": 140.0,
           "short_strike": 155.0,
           "width": 15.0,
-          "net_debit": 7.77,
-          "cost": 777.5,
-          "max_profit": 7.23,
-          "max_profit_total": 722.5,
-          "max_loss": 7.77,
-          "max_loss_total": 777.5,
-          "breakeven": 147.78,
-          "value_at_target": 12.51,
-          "roi_pct": 60.9,
-          "max_roi_pct": 92.9,
-          "open_interest": 51,
-          "spread_pct": 10.0,
-          "theta_ratio": 0.9,
-          "expiry": "2027-04-16"
+          "net_debit": 6.8,
+          "cost": 680.0,
+          "max_profit": 8.2,
+          "max_profit_total": 820.0,
+          "max_loss": 6.8,
+          "max_loss_total": 680.0,
+          "breakeven": 146.8,
+          "value_at_target": 8.53,
+          "roi_pct": 25.5,
+          "max_roi_pct": 120.6,
+          "open_interest": 315,
+          "spread_pct": 7.3,
+          "theta_ratio": 2.3,
+          "expiry": "2027-12-17"
         },
         "pick": "spread",
         "ranked": [
           {
             "type": "call",
             "strike": 135.0,
-            "dte": 228,
-            "bid": 24.2,
-            "ask": 25.95,
-            "mid": 25.07,
-            "cost": 2507.5,
-            "spread_pct": 7.0,
-            "open_interest": 462,
-            "volume": 14,
-            "iv": 39.7,
-            "iv_at_target": 37.9,
-            "breakeven": 160.07,
-            "delta": 0.72,
-            "gamma": 0.0072,
-            "theta": -0.045,
-            "vega": 0.398,
-            "value_at_target": 20.24,
-            "roi_pct": -19.3,
+            "dte": 446,
+            "bid": 29.6,
+            "ask": 31.65,
+            "mid": 30.62,
+            "cost": 3062.5,
+            "spread_pct": 6.7,
+            "open_interest": 597,
+            "volume": 1,
+            "iv": 38.0,
+            "iv_at_target": 37.6,
+            "breakeven": 165.62,
+            "delta": 0.725,
+            "gamma": 0.0053,
+            "theta": -0.033,
+            "vega": 0.551,
+            "value_at_target": 31.3,
+            "roi_pct": 2.2,
             "req_vol_pct": 2.8,
             "edge_ratio": 0.07,
             "cheap": false,
-            "target_vs_breakeven": -5.1,
-            "theta_ratio": 1.3,
-            "expiry": "2027-06-17"
+            "target_vs_breakeven": -8.8,
+            "theta_ratio": 2.5,
+            "expiry": "2028-01-21"
           },
           {
             "type": "call",
             "strike": 140.0,
-            "dte": 228,
-            "bid": 21.4,
-            "ask": 22.25,
-            "mid": 21.82,
-            "cost": 2182.5,
-            "spread_pct": 3.9,
-            "open_interest": 1307,
-            "volume": 22,
+            "dte": 446,
+            "bid": 26.75,
+            "ask": 28.85,
+            "mid": 27.8,
+            "cost": 2780.0,
+            "spread_pct": 7.6,
+            "open_interest": 1432,
+            "volume": 7,
             "iv": 37.5,
-            "iv_at_target": 35.0,
-            "breakeven": 161.82,
-            "delta": 0.683,
-            "gamma": 0.008,
-            "theta": -0.045,
-            "vega": 0.421,
-            "value_at_target": 15.95,
-            "roi_pct": -26.9,
+            "iv_at_target": 36.8,
+            "breakeven": 167.8,
+            "delta": 0.696,
+            "gamma": 0.0056,
+            "theta": -0.034,
+            "vega": 0.578,
+            "value_at_target": 28.04,
+            "roi_pct": 0.9,
             "req_vol_pct": 2.8,
             "edge_ratio": 0.08,
             "cheap": false,
-            "target_vs_breakeven": -6.2,
-            "theta_ratio": 1.3,
-            "expiry": "2027-06-17"
+            "target_vs_breakeven": -10.2,
+            "theta_ratio": 2.5,
+            "expiry": "2028-01-21"
+          },
+          {
+            "type": "call",
+            "strike": 135.0,
+            "dte": 411,
+            "bid": 29.15,
+            "ask": 30.7,
+            "mid": 29.92,
+            "cost": 2992.5,
+            "spread_pct": 5.2,
+            "open_interest": 263,
+            "volume": 1,
+            "iv": 37.9,
+            "iv_at_target": 37.4,
+            "breakeven": 164.93,
+            "delta": 0.724,
+            "gamma": 0.0056,
+            "theta": -0.035,
+            "vega": 0.53,
+            "value_at_target": 29.78,
+            "roi_pct": -0.5,
+            "req_vol_pct": 2.8,
+            "edge_ratio": 0.07,
+            "cheap": false,
+            "target_vs_breakeven": -8.3,
+            "theta_ratio": 2.3,
+            "expiry": "2027-12-17"
+          },
+          {
+            "type": "call",
+            "strike": 140.0,
+            "dte": 411,
+            "bid": 25.85,
+            "ask": 27.8,
+            "mid": 26.83,
+            "cost": 2682.5,
+            "spread_pct": 7.3,
+            "open_interest": 621,
+            "volume": 1,
+            "iv": 37.3,
+            "iv_at_target": 36.5,
+            "breakeven": 166.82,
+            "delta": 0.694,
+            "gamma": 0.0059,
+            "theta": -0.035,
+            "vega": 0.557,
+            "value_at_target": 26.41,
+            "roi_pct": -1.5,
+            "req_vol_pct": 2.8,
+            "edge_ratio": 0.08,
+            "cheap": false,
+            "target_vs_breakeven": -9.6,
+            "theta_ratio": 2.3,
+            "expiry": "2027-12-17"
           },
           {
             "type": "call",
             "strike": 145.0,
-            "dte": 228,
-            "bid": 18.0,
-            "ask": 19.85,
-            "mid": 18.93,
-            "cost": 1892.5,
-            "spread_pct": 9.8,
-            "open_interest": 1686,
-            "volume": 22,
-            "iv": 37.7,
-            "iv_at_target": 34.5,
-            "breakeven": 163.93,
-            "delta": 0.639,
-            "gamma": 0.0084,
-            "theta": -0.047,
-            "vega": 0.442,
-            "value_at_target": 12.38,
-            "roi_pct": -34.6,
+            "dte": 446,
+            "bid": 24.55,
+            "ask": 26.05,
+            "mid": 25.3,
+            "cost": 2530.0,
+            "spread_pct": 5.9,
+            "open_interest": 230,
+            "volume": 1,
+            "iv": 36.7,
+            "iv_at_target": 35.9,
+            "breakeven": 170.3,
+            "delta": 0.666,
+            "gamma": 0.006,
+            "theta": -0.034,
+            "vega": 0.601,
+            "value_at_target": 24.85,
+            "roi_pct": -1.8,
             "req_vol_pct": 2.8,
-            "edge_ratio": 0.07,
+            "edge_ratio": 0.08,
             "cheap": false,
-            "target_vs_breakeven": -7.6,
-            "theta_ratio": 1.3,
-            "expiry": "2027-06-17"
-          },
-          {
-            "type": "call",
-            "strike": 140.0,
-            "dte": 166,
-            "bid": 18.4,
-            "ask": 20.1,
-            "mid": 19.25,
-            "cost": 1925.0,
-            "spread_pct": 8.8,
-            "open_interest": 62,
-            "volume": 3,
-            "iv": 38.1,
-            "iv_at_target": 31.6,
-            "breakeven": 159.25,
-            "delta": 0.682,
-            "gamma": 0.0093,
-            "theta": -0.052,
-            "vega": 0.36,
-            "value_at_target": 12.51,
-            "roi_pct": -35.0,
-            "req_vol_pct": 2.8,
-            "edge_ratio": 0.07,
-            "cheap": false,
-            "target_vs_breakeven": -4.5,
-            "theta_ratio": 0.9,
-            "expiry": "2027-04-16"
+            "target_vs_breakeven": -11.9,
+            "theta_ratio": 2.5,
+            "expiry": "2028-01-21"
           },
           {
             "type": "call",
             "strike": 150.0,
-            "dte": 228,
-            "bid": 16.15,
-            "ask": 17.5,
-            "mid": 16.82,
-            "cost": 1682.5,
-            "spread_pct": 8.0,
-            "open_interest": 1460,
-            "volume": 18,
-            "iv": 37.6,
-            "iv_at_target": 33.6,
-            "breakeven": 166.82,
-            "delta": 0.596,
-            "gamma": 0.0087,
-            "theta": -0.047,
-            "vega": 0.458,
-            "value_at_target": 9.21,
-            "roi_pct": -45.3,
-            "req_vol_pct": 2.8,
-            "edge_ratio": 0.07,
-            "cheap": false,
-            "target_vs_breakeven": -9.6,
-            "theta_ratio": 1.3,
-            "expiry": "2027-06-17"
-          },
-          {
-            "type": "call",
-            "strike": 145.0,
-            "dte": 166,
-            "bid": 15.9,
-            "ask": 17.05,
-            "mid": 16.48,
-            "cost": 1647.5,
-            "spread_pct": 7.0,
-            "open_interest": 864,
-            "volume": 8,
-            "iv": 37.0,
-            "iv_at_target": 28.7,
-            "breakeven": 161.47,
-            "delta": 0.633,
-            "gamma": 0.0101,
-            "theta": -0.053,
-            "vega": 0.38,
-            "value_at_target": 7.51,
-            "roi_pct": -54.4,
+            "dte": 446,
+            "bid": 22.5,
+            "ask": 23.5,
+            "mid": 23.0,
+            "cost": 2300.0,
+            "spread_pct": 4.3,
+            "open_interest": 1357,
+            "volume": 2,
+            "iv": 36.1,
+            "iv_at_target": 35.1,
+            "breakeven": 173.0,
+            "delta": 0.635,
+            "gamma": 0.0063,
+            "theta": -0.034,
+            "vega": 0.621,
+            "value_at_target": 21.92,
+            "roi_pct": -4.7,
             "req_vol_pct": 2.8,
             "edge_ratio": 0.08,
             "cheap": false,
-            "target_vs_breakeven": -6.0,
-            "theta_ratio": 0.9,
-            "expiry": "2027-04-16"
+            "target_vs_breakeven": -13.7,
+            "theta_ratio": 2.5,
+            "expiry": "2028-01-21"
           }
         ],
         "inputs": {
@@ -4329,7 +4384,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": 450052,
+        "net_gex_bn": 0.0,
+        "expiry": "2026-11-06",
+        "regime": "Long Gamma",
+        "call_wall": 155.0,
+        "put_wall": 147.0,
+        "zero_gamma": 153.87,
+        "zero_gamma_method": "flip"
+      },
       "direction": "long",
       "wyckoff_cycle": "Reaccumulation",
       "wyckoff_phase": "E",
@@ -4531,8 +4595,8 @@
         "street": 6.4
       },
       "tv_ticker": "MTCH",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:42.328758",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:23.203381",
       "ict": {
         "by_tf": {
           "1m": {
@@ -4860,7 +4924,7 @@
           "1mo": {
             "tf": "1mo",
             "session": {
-              "high": 173.8784,
+              "high": 173.8783,
               "low": 42.7435,
               "midpoint": 108.3109,
               "range_pts": 131.1348
@@ -5155,7 +5219,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": true,
       "wyckoff_entry_live": false,
-      "rvol": 100.96,
+      "rvol": 14.9,
       "in_killzone": true,
       "session_weight": 1.0,
       "session_label": "Prime PM",
@@ -5458,6 +5522,7 @@
         "clues": [
           "climax_volume_sc",
           "effort_no_result_down",
+          "gap_up_volume",
           "jac_supply_line",
           "shortening_thrust_down",
           "vp_spring_reclaim_val",
@@ -5540,8 +5605,8 @@
         "street": null
       },
       "tv_ticker": "NYMEX:CL1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:43.360206",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:31.477241",
       "ict": {
         "by_tf": {
           "3m": {
@@ -6282,7 +6347,7 @@
       "tech_pillars": {
         "line_pattern": true,
         "candle": true,
-        "volume": false,
+        "volume": true,
         "correlation": true,
         "time_of_day": true
       },
@@ -6333,7 +6398,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": true,
       "wyckoff_entry_live": false,
-      "rvol": 0.0,
+      "rvol": 3.18,
       "in_killzone": true,
       "session_weight": 1.0,
       "session_label": "Prime PM",
@@ -6733,8 +6798,8 @@
         "street": null
       },
       "tv_ticker": "XLP",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:19.932152",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:13:57.912477",
       "ict": {
         "by_tf": {
           "1m": {
@@ -7056,10 +7121,10 @@
           "3mo": {
             "tf": "3mo",
             "session": {
-              "high": 42.8155,
+              "high": 42.8154,
               "low": 20.3753,
               "midpoint": 31.5954,
-              "range_pts": 22.4402
+              "range_pts": 22.4401
             },
             "sweep": null,
             "bos": null,
@@ -10096,8 +10161,8 @@
         "street": null
       },
       "tv_ticker": "BZ1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:44.072711",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:32.510704",
       "ict": {
         "by_tf": {
           "3m": {
@@ -10863,7 +10928,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
-      "rvol": 1.72,
+      "rvol": 4.34,
       "in_killzone": true,
       "session_weight": 1.0,
       "session_label": "Prime PM",
@@ -12047,9 +12112,9 @@
       "session_label": "Prime PM",
       "pinned": false,
       "verdict": "BUY",
-      "verdict_score": 6,
-      "verdict_max": 8,
-      "verdict_pct": 75,
+      "verdict_score": 8,
+      "verdict_max": 10,
+      "verdict_pct": 80,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
@@ -12058,14 +12123,14 @@
         "price_below_maxpain": true,
         "above_pivot": false,
         "balance_sheet_ok": true,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "analyst_buy": true,
+        "analyst_target_upside": true,
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
       "bear_score": 1,
-      "bear_score_max": 7,
-      "bear_score_pct": 14,
+      "bear_score_max": 9,
+      "bear_score_pct": 11,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
@@ -12073,11 +12138,11 @@
         "options_bearish": false,
         "price_above_maxpain": false,
         "below_pivot": false,
-        "analyst_sell": null,
-        "analyst_target_downside": null,
+        "analyst_sell": false,
+        "analyst_target_downside": false,
         "seasonality_negative": false
       },
-      "verdict_notes": "M:HH/HL M:LiqGrab 15m:BOS \u00b7 RSI 54.34 \u00b7 P/C 0.52 \u00b7 MaxPain $422.50 \u00b7 Call wall $442 (2026-11-06) \u00b7 Seasonal +12.0%",
+      "verdict_notes": "M:HH/HL M:LiqGrab 15m:BOS \u00b7 RSI 54.34 \u00b7 P/C 0.52 \u00b7 MaxPain $422.50 \u00b7 Call wall $442 (2026-11-06) \u00b7 Target $472.44 (+13%) \u00b7 Seasonal +12.0%",
       "entry_note": "",
       "options_flow": {
         "total_call_oi": 3606,
@@ -12328,7 +12393,13 @@
         "target_label": "T1"
       },
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 472.44,
+        "target_high": 675.0,
+        "target_low": 365.0,
+        "n_analysts": 32,
+        "rating_key": "strong_buy"
+      },
       "seasonality": {
         "month": 11,
         "hist_avg_return_pct": 12.04,
@@ -13650,8 +13721,8 @@
         "street": 6.2
       },
       "tv_ticker": "ZION",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:49.273530",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:32.365234",
       "ict": {
         "by_tf": {
           "1m": {
@@ -14043,7 +14114,7 @@
             "session": {
               "high": 24.4854,
               "low": 10.5817,
-              "midpoint": 17.5336,
+              "midpoint": 17.5335,
               "range_pts": 13.9038
             },
             "sweep": {
@@ -14319,7 +14390,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": false,
       "wyckoff_entry_live": false,
-      "rvol": 3.05,
+      "rvol": 18.19,
       "in_killzone": true,
       "session_weight": 1.0,
       "session_label": "Prime PM",
@@ -14741,8 +14812,8 @@
         "street": null
       },
       "tv_ticker": "ZM1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:50.178408",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:32.522144",
       "ict": {
         "by_tf": {
           "3m": {
@@ -15818,9 +15889,9 @@
         "company_name": "XRP USD",
         "w52_high": 2.5772,
         "w52_low": 0.9884,
-        "market_cap": "$79.3B",
+        "market_cap": "$78.9B",
         "sharpe_ratio": -0.71,
-        "volume": "$801M"
+        "volume": "$800M"
       },
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
@@ -16499,7 +16570,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "3M:HH/HL 3M:Demand 3M:LiqGrab \u00b7 RSI 39.98 \u00b7 Seasonal +51.2%",
+      "verdict_notes": "3M:HH/HL 3M:Demand 3M:LiqGrab \u00b7 RSI 39.9 \u00b7 Seasonal +51.2%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -16523,7 +16594,7 @@
       "analyst": {},
       "seasonality": {
         "month": 11,
-        "hist_avg_return_pct": 51.25,
+        "hist_avg_return_pct": 51.24,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -20250,6 +20321,33 @@
           },
           {
             "type": "put",
+            "strike": 305.0,
+            "dte": 228,
+            "bid": 40.15,
+            "ask": 42.85,
+            "mid": 41.5,
+            "cost": 4150.0,
+            "spread_pct": 6.5,
+            "open_interest": 966,
+            "volume": 12,
+            "iv": 29.8,
+            "iv_at_target": 28.4,
+            "breakeven": 263.5,
+            "delta": -0.555,
+            "gamma": 0.006,
+            "theta": -0.031,
+            "vega": 0.869,
+            "value_at_target": 32.95,
+            "roi_pct": -20.6,
+            "req_vol_pct": 3.0,
+            "edge_ratio": 0.1,
+            "cheap": false,
+            "target_vs_breakeven": -3.2,
+            "theta_ratio": 1.3,
+            "expiry": "2027-06-17"
+          },
+          {
+            "type": "put",
             "strike": 300.0,
             "dte": 411,
             "bid": 44.0,
@@ -20274,33 +20372,6 @@
             "target_vs_breakeven": -6.7,
             "theta_ratio": 2.3,
             "expiry": "2027-12-17"
-          },
-          {
-            "type": "put",
-            "strike": 300.0,
-            "dte": 446,
-            "bid": 45.0,
-            "ask": 49.55,
-            "mid": 47.27,
-            "cost": 4727.5,
-            "spread_pct": 9.6,
-            "open_interest": 2379,
-            "volume": 730,
-            "iv": 29.7,
-            "iv_at_target": 29.2,
-            "breakeven": 252.72,
-            "delta": -0.452,
-            "gamma": 0.0043,
-            "theta": -0.018,
-            "vega": 1.218,
-            "value_at_target": 37.13,
-            "roi_pct": -21.5,
-            "req_vol_pct": 3.0,
-            "edge_ratio": 0.1,
-            "cheap": false,
-            "target_vs_breakeven": -7.1,
-            "theta_ratio": 2.5,
-            "expiry": "2028-01-21"
           }
         ],
         "inputs": {
@@ -21484,6 +21555,33 @@
           },
           {
             "type": "put",
+            "strike": 305.0,
+            "dte": 411,
+            "bid": 46.5,
+            "ask": 49.75,
+            "mid": 48.12,
+            "cost": 4812.5,
+            "spread_pct": 6.8,
+            "open_interest": 727,
+            "volume": 55,
+            "iv": 29.0,
+            "iv_at_target": 28.5,
+            "breakeven": 256.88,
+            "delta": -0.477,
+            "gamma": 0.0046,
+            "theta": -0.018,
+            "vega": 1.183,
+            "value_at_target": 37.75,
+            "roi_pct": -21.6,
+            "req_vol_pct": 2.9,
+            "edge_ratio": 0.1,
+            "cheap": false,
+            "target_vs_breakeven": -6.2,
+            "theta_ratio": 2.3,
+            "expiry": "2027-12-17"
+          },
+          {
+            "type": "put",
             "strike": 300.0,
             "dte": 166,
             "bid": 31.95,
@@ -21539,56 +21637,29 @@
           {
             "type": "put",
             "strike": 300.0,
-            "dte": 446,
-            "bid": 45.75,
-            "ask": 49.0,
-            "mid": 47.38,
-            "cost": 4737.5,
-            "spread_pct": 6.9,
-            "open_interest": 6501,
-            "volume": 379,
-            "iv": 29.9,
-            "iv_at_target": 29.4,
-            "breakeven": 252.62,
-            "delta": -0.444,
-            "gamma": 0.0043,
+            "dte": 411,
+            "bid": 43.5,
+            "ask": 46.5,
+            "mid": 45.0,
+            "cost": 4500.0,
+            "spread_pct": 6.7,
+            "open_interest": 3079,
+            "volume": 105,
+            "iv": 29.0,
+            "iv_at_target": 28.5,
+            "breakeven": 255.0,
+            "delta": -0.456,
+            "gamma": 0.0046,
             "theta": -0.019,
-            "vega": 1.222,
-            "value_at_target": 36.29,
-            "roi_pct": -23.4,
-            "req_vol_pct": 2.9,
-            "edge_ratio": 0.1,
-            "cheap": false,
-            "target_vs_breakeven": -7.7,
-            "theta_ratio": 2.5,
-            "expiry": "2028-01-21"
-          },
-          {
-            "type": "put",
-            "strike": 305.0,
-            "dte": 446,
-            "bid": 49.3,
-            "ask": 50.65,
-            "mid": 49.97,
-            "cost": 4997.5,
-            "spread_pct": 2.7,
-            "open_interest": 699,
-            "volume": 90,
-            "iv": 28.6,
-            "iv_at_target": 28.2,
-            "breakeven": 255.03,
-            "delta": -0.469,
-            "gamma": 0.0045,
-            "theta": -0.016,
-            "vega": 1.23,
-            "value_at_target": 38.26,
-            "roi_pct": -23.4,
+            "vega": 1.177,
+            "value_at_target": 34.52,
+            "roi_pct": -23.3,
             "req_vol_pct": 2.9,
             "edge_ratio": 0.1,
             "cheap": false,
             "target_vs_breakeven": -6.9,
-            "theta_ratio": 2.5,
-            "expiry": "2028-01-21"
+            "theta_ratio": 2.3,
+            "expiry": "2027-12-17"
           }
         ],
         "inputs": {
@@ -23697,6 +23768,10 @@
           "2026-11-06": {
             "strike": 94.0,
             "oi": 4471
+          },
+          "2026-11-09": {
+            "strike": 71.0,
+            "oi": 364
           }
         }
       },
@@ -25078,7 +25153,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": -3854282,
+        "net_gex_bn": -0.004,
+        "expiry": "2026-11-06",
+        "regime": "Short Gamma",
+        "call_wall": 70.0,
+        "put_wall": 65.0,
+        "zero_gamma": 36.64,
+        "zero_gamma_method": "flip"
+      },
       "direction": "short",
       "wyckoff_cycle": "Distribution",
       "wyckoff_phase": "D",
@@ -26060,7 +26144,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": -709484,
+        "net_gex_bn": -0.001,
+        "expiry": "2026-11-06",
+        "regime": "Short Gamma",
+        "call_wall": 420.0,
+        "put_wall": 395.0,
+        "zero_gamma": 407.5,
+        "zero_gamma_method": "midpoint"
+      },
       "direction": "short",
       "wyckoff_cycle": "Distribution",
       "wyckoff_phase": "D",
@@ -28500,8 +28593,8 @@
         "street": null
       },
       "tv_ticker": "KC1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:50.406868",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:39.440198",
       "ict": {
         "by_tf": {
           "3m": {
@@ -28995,7 +29088,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": true,
       "wyckoff_entry_live": false,
-      "rvol": 159.93,
+      "rvol": 3.4,
       "in_killzone": false,
       "session_weight": 0.0,
       "session_label": "",
@@ -29031,7 +29124,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "3M:HH/HL 3M:Demand H1:HH/HL \u00b7 RSI 47.68 \u00b7 Seasonal +16.0%",
+      "verdict_notes": "3M:HH/HL 3M:Demand H1:HH/HL \u00b7 RSI 47.65 \u00b7 Seasonal +16.0%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -29298,8 +29391,7 @@
             "30m",
             "15m",
             "5m",
-            "3m",
-            "1m"
+            "3m"
           ],
           "note": "Effort (volume) confirming the downside result \u2014 bearish displacement"
         }
@@ -29372,8 +29464,8 @@
         "street": null
       },
       "tv_ticker": "CBOT:ZC1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:51.866844",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:40.394521",
       "ict": {
         "by_tf": {
           "3m": {
@@ -30375,8 +30467,8 @@
         "street": null
       },
       "tv_ticker": "CBOT:ZW1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:57.337190",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:40.408808",
       "ict": {
         "by_tf": {
           "3m": {
@@ -31482,8 +31574,8 @@
         "street": null
       },
       "tv_ticker": "LE1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:57.458282",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:40.250383",
       "ict": {
         "by_tf": {
           "3m": {
@@ -31770,7 +31862,7 @@
             "targets": [
               {
                 "label": "Equal Lows (SSL)",
-                "price": 220.425,
+                "price": 220.4125,
                 "type": "liquidity"
               },
               {
@@ -32439,8 +32531,8 @@
         "street": null
       },
       "tv_ticker": "SB1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:57.571331",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:46.926134",
       "ict": {
         "by_tf": {
           "3m": {
@@ -33573,8 +33665,8 @@
         "street": null
       },
       "tv_ticker": "CBOT:ZS1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:59.020632",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:48.433667",
       "ict": {
         "by_tf": {
           "3m": {
@@ -34697,8 +34789,8 @@
         "street": null
       },
       "tv_ticker": "NYMEX:NG1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:05.169949",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:49.072184",
       "ict": {
         "by_tf": {
           "3m": {
@@ -35325,7 +35417,7 @@
       "tech_pillars": {
         "line_pattern": true,
         "candle": true,
-        "volume": false,
+        "volume": true,
         "correlation": true,
         "time_of_day": true
       },
@@ -35376,7 +35468,7 @@
       "ict_entry_live": false,
       "wyckoff_elite": true,
       "wyckoff_entry_live": false,
-      "rvol": 0.0,
+      "rvol": 3.36,
       "in_killzone": true,
       "session_weight": 1.0,
       "session_label": "Prime PM",
@@ -35774,8 +35866,8 @@
         "street": 4.5
       },
       "tv_ticker": "T",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:20:28.117094",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:06.157413",
       "ict": {
         "by_tf": {
           "1m": {
@@ -36523,8 +36615,8 @@
       "verdict_notes": "3M:HH/HL 3M:LiqGrab H1:Demand 45m:HH/HL \u00b7 RSI 42.06 \u00b7 P/C 0.41 \u00b7 MaxPain $21.00 \u00b7 Call wall $22 (2026-11-06) \u00b7 Target $27.72 (+29%) \u00b7 Seasonal +5.3%",
       "entry_note": "",
       "options_flow": {
-        "total_call_oi": 23084,
-        "total_put_oi": 9449,
+        "total_call_oi": 23392,
+        "total_put_oi": 9490,
         "pc_ratio": 0.41,
         "max_pain": 21.0,
         "top_call_wall": 22.0,
@@ -36553,20 +36645,20 @@
       },
       "best_option": {
         "type": "put",
-        "strike": 21.5,
-        "expiry": "2026-11-27",
-        "dte": 26,
-        "ask": 0.72,
-        "bid": 0.62,
-        "cost": 72.0,
-        "open_interest": 2502,
-        "volume": 101,
-        "iv": 29.0,
-        "breakeven": 20.78,
-        "delta": -0.488,
-        "gamma": 0.2406,
-        "theta": -0.011,
-        "vega": 0.023
+        "strike": 22.0,
+        "expiry": "2026-12-18",
+        "dte": 47,
+        "ask": 1.15,
+        "bid": 1.1,
+        "cost": 115.0,
+        "open_interest": 8532,
+        "volume": 117,
+        "iv": 26.2,
+        "breakeven": 20.85,
+        "delta": -0.569,
+        "gamma": 0.1954,
+        "theta": -0.007,
+        "vega": 0.03
       },
       "value_option": {
         "type": "put",
@@ -36732,7 +36824,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": 4848728,
+        "net_gex_bn": 0.005,
+        "expiry": "2026-11-06",
+        "regime": "Long Gamma",
+        "call_wall": 22.0,
+        "put_wall": 20.5,
+        "zero_gamma": 11.44,
+        "zero_gamma_method": "flip"
+      },
       "direction": "short",
       "wyckoff_cycle": "Distribution",
       "wyckoff_phase": "D",
@@ -36946,8 +37047,8 @@
         "street": 10.0
       },
       "tv_ticker": "ANGX",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:04.543890",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:48.746903",
       "ict": {
         "by_tf": {
           "1m": {
@@ -37876,8 +37977,8 @@
         "street": null
       },
       "tv_ticker": "OJ1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:04.558575",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:54.719078",
       "ict": {
         "by_tf": {
           "3m": {
@@ -38779,8 +38880,8 @@
         "w52_high": 111167.31,
         "w52_low": 57747.766,
         "market_cap": "$1.6T",
-        "sharpe_ratio": -0.58,
-        "volume": "$12.5B"
+        "sharpe_ratio": -0.59,
+        "volume": "$11.8B"
       },
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
@@ -39448,7 +39549,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "H4:HH/HL \u00b7 RSI 31.8 \u00b7 Seasonal +2.5%",
+      "verdict_notes": "H4:HH/HL \u00b7 RSI 31.67 \u00b7 Seasonal +2.5%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -40572,23 +40673,7 @@
           }
         }
       },
-      "best_option": {
-        "type": "put",
-        "strike": 630.0,
-        "expiry": "2027-01-15",
-        "dte": 75,
-        "ask": 49.15,
-        "bid": 47.6,
-        "cost": 4915.0,
-        "open_interest": 4742,
-        "volume": 189,
-        "iv": 36.4,
-        "breakeven": 580.85,
-        "delta": -0.501,
-        "gamma": 0.0039,
-        "theta": -0.222,
-        "vega": 1.112
-      },
+      "best_option": {},
       "value_option": {
         "type": "put",
         "strike": 1020.0,
@@ -40614,20 +40699,20 @@
         "spread": {
           "type": "put_debit_spread",
           "dte": 166,
-          "long_strike": 660.0,
+          "long_strike": 670.0,
           "short_strike": 590.0,
-          "width": 70.0,
-          "net_debit": 37.35,
-          "cost": 3735.0,
-          "max_profit": 32.65,
-          "max_profit_total": 3265.0,
-          "max_loss": 37.35,
-          "max_loss_total": 3735.0,
-          "breakeven": 622.65,
-          "value_at_target": 69.4,
-          "roi_pct": 85.8,
-          "max_roi_pct": 87.4,
-          "open_interest": 44,
+          "width": 80.0,
+          "net_debit": 43.92,
+          "cost": 4392.5,
+          "max_profit": 36.08,
+          "max_profit_total": 3607.5,
+          "max_loss": 43.92,
+          "max_loss_total": 4392.5,
+          "breakeven": 626.08,
+          "value_at_target": 79.4,
+          "roi_pct": 80.8,
+          "max_roi_pct": 82.1,
+          "open_interest": 63,
           "spread_pct": 11.5,
           "theta_ratio": 0.9,
           "expiry": "2027-04-16"
@@ -40691,6 +40776,33 @@
           {
             "type": "put",
             "strike": 670.0,
+            "dte": 411,
+            "bid": 123.8,
+            "ask": 125.85,
+            "mid": 124.82,
+            "cost": 12482.5,
+            "spread_pct": 1.6,
+            "open_interest": 528,
+            "volume": 7,
+            "iv": 35.4,
+            "iv_at_target": 35.0,
+            "breakeven": 545.17,
+            "delta": -0.456,
+            "gamma": 0.0017,
+            "theta": -0.059,
+            "vega": 2.588,
+            "value_at_target": 101.77,
+            "roi_pct": -18.5,
+            "req_vol_pct": 5.8,
+            "edge_ratio": 0.16,
+            "cheap": false,
+            "target_vs_breakeven": -7.4,
+            "theta_ratio": 2.3,
+            "expiry": "2027-12-17"
+          },
+          {
+            "type": "put",
+            "strike": 670.0,
             "dte": 446,
             "bid": 126.45,
             "ask": 128.6,
@@ -40718,6 +40830,33 @@
           {
             "type": "put",
             "strike": 660.0,
+            "dte": 411,
+            "bid": 117.95,
+            "ask": 119.95,
+            "mid": 118.95,
+            "cost": 11895.0,
+            "spread_pct": 1.7,
+            "open_interest": 280,
+            "volume": 6,
+            "iv": 35.7,
+            "iv_at_target": 35.1,
+            "breakeven": 541.05,
+            "delta": -0.44,
+            "gamma": 0.0017,
+            "theta": -0.061,
+            "vega": 2.574,
+            "value_at_target": 95.51,
+            "roi_pct": -19.7,
+            "req_vol_pct": 5.8,
+            "edge_ratio": 0.16,
+            "cheap": false,
+            "target_vs_breakeven": -8.1,
+            "theta_ratio": 2.3,
+            "expiry": "2027-12-17"
+          },
+          {
+            "type": "put",
+            "strike": 660.0,
             "dte": 446,
             "bid": 120.5,
             "ask": 122.65,
@@ -40741,60 +40880,6 @@
             "target_vs_breakeven": -8.5,
             "theta_ratio": 2.5,
             "expiry": "2028-01-21"
-          },
-          {
-            "type": "put",
-            "strike": 660.0,
-            "dte": 166,
-            "bid": 83.95,
-            "ask": 89.85,
-            "mid": 86.9,
-            "cost": 8690.0,
-            "spread_pct": 6.8,
-            "open_interest": 44,
-            "volume": 61,
-            "iv": 37.8,
-            "iv_at_target": 32.8,
-            "breakeven": 573.1,
-            "delta": -0.524,
-            "gamma": 0.0025,
-            "theta": -0.133,
-            "vega": 1.652,
-            "value_at_target": 69.4,
-            "roi_pct": -20.1,
-            "req_vol_pct": 5.8,
-            "edge_ratio": 0.15,
-            "cheap": false,
-            "target_vs_breakeven": -2.8,
-            "theta_ratio": 0.9,
-            "expiry": "2027-04-16"
-          },
-          {
-            "type": "put",
-            "strike": 660.0,
-            "dte": 320,
-            "bid": 108.15,
-            "ask": 110.15,
-            "mid": 109.15,
-            "cost": 10915.0,
-            "spread_pct": 1.8,
-            "open_interest": 165,
-            "volume": 1,
-            "iv": 36.2,
-            "iv_at_target": 35.3,
-            "breakeven": 550.85,
-            "delta": -0.464,
-            "gamma": 0.0019,
-            "theta": -0.078,
-            "vega": 2.288,
-            "value_at_target": 87.01,
-            "roi_pct": -20.3,
-            "req_vol_pct": 5.8,
-            "edge_ratio": 0.16,
-            "cheap": false,
-            "target_vs_breakeven": -6.5,
-            "theta_ratio": 1.8,
-            "expiry": "2027-09-17"
           }
         ],
         "inputs": {
@@ -41847,6 +41932,10 @@
           "2026-11-04": {
             "strike": 247.5,
             "oi": 2706
+          },
+          "2026-11-06": {
+            "strike": 270.0,
+            "oi": 11847
           },
           "2026-11-09": {
             "strike": 300.0,
@@ -43281,8 +43370,8 @@
         "street": 7.5
       },
       "tv_ticker": "JOBY",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:07.474408",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:56.686820",
       "ict": {
         "by_tf": {
           "1m": {
@@ -44258,8 +44347,8 @@
         "street": 7.6
       },
       "tv_ticker": "BKNG",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:11.663545",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:57.629459",
       "ict": {
         "by_tf": {
           "1m": {
@@ -44600,7 +44689,7 @@
             "session": {
               "high": 231.0597,
               "low": 172.6628,
-              "midpoint": 201.8612,
+              "midpoint": 201.8613,
               "range_pts": 58.3969
             },
             "sweep": {
@@ -44922,9 +45011,9 @@
       "session_label": "Closing dash",
       "pinned": false,
       "verdict": "BUY",
-      "verdict_score": 6,
-      "verdict_max": 8,
-      "verdict_pct": 75,
+      "verdict_score": 8,
+      "verdict_max": 10,
+      "verdict_pct": 80,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": false,
@@ -44933,14 +45022,14 @@
         "price_below_maxpain": true,
         "above_pivot": false,
         "balance_sheet_ok": true,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "analyst_buy": true,
+        "analyst_target_upside": true,
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
       "bear_score": 1,
-      "bear_score_max": 7,
-      "bear_score_pct": 14,
+      "bear_score_max": 9,
+      "bear_score_pct": 11,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
@@ -44948,11 +45037,11 @@
         "options_bearish": false,
         "price_above_maxpain": false,
         "below_pivot": false,
-        "analyst_sell": null,
-        "analyst_target_downside": null,
+        "analyst_sell": false,
+        "analyst_target_downside": false,
         "seasonality_negative": false
       },
-      "verdict_notes": "15m:FVG 1m:FVG \u00b7 RSI 37.11 \u00b7 P/C 0.30 \u00b7 MaxPain $160.00 \u00b7 Call wall $170 (2026-11-06) \u00b7 Seasonal +7.8%",
+      "verdict_notes": "15m:FVG 1m:FVG \u00b7 RSI 37.11 \u00b7 P/C 0.30 \u00b7 MaxPain $160.00 \u00b7 Call wall $170 (2026-11-06) \u00b7 Target $232.71 (+57%) \u00b7 Seasonal +7.8%",
       "entry_note": "",
       "options_flow": {
         "total_call_oi": 9216,
@@ -45017,7 +45106,13 @@
         "target_label": "T1"
       },
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 232.71,
+        "target_high": 301.0,
+        "target_low": 170.0,
+        "n_analysts": 35,
+        "rating_key": "buy"
+      },
       "seasonality": {
         "month": 11,
         "hist_avg_return_pct": 7.83,
@@ -46483,8 +46578,8 @@
         "street": null
       },
       "tv_ticker": "PA1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:11.056616",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:14:57.814531",
       "ict": {
         "by_tf": {
           "3m": {
@@ -47430,7 +47525,12 @@
         "entry_status": "in_zone",
         "neckline": 66.04
       },
-      "fundamentals": {},
+      "fundamentals": {
+        "company_name": "Soybean Oil Futures,Dec-2026",
+        "w52_high": 79.69,
+        "w52_low": 47.51,
+        "sharpe_ratio": 1.11
+      },
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -47441,8 +47541,8 @@
         "street": null
       },
       "tv_ticker": "ZL1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:12.550414",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:15:03.499646",
       "ict": {
         "by_tf": {
           "3m": {
@@ -48502,8 +48602,8 @@
         "street": null
       },
       "tv_ticker": "HE1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:13.592857",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:15:04.646363",
       "ict": {
         "by_tf": {
           "3m": {
@@ -49388,8 +49488,8 @@
         "street": null
       },
       "tv_ticker": "CC1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:17.751339",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:15:05.158992",
       "ict": {
         "by_tf": {
           "3m": {
@@ -50392,8 +50492,8 @@
         "street": null
       },
       "tv_ticker": "CT1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:17.967615",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:15:04.871822",
       "ict": {
         "by_tf": {
           "15m": {
@@ -51287,8 +51387,8 @@
         "street": null
       },
       "tv_ticker": "GF1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:18.834604",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:15:09.775247",
       "ict": {
         "by_tf": {
           "3m": {
@@ -53204,12 +53304,19 @@
         "entry_status": "wait_for_retest",
         "neckline": 60.775
       },
-      "fundamentals": {},
+      "fundamentals": {
+        "company_name": "iShares MSCI Emerging Markets ETF",
+        "w52_high": 71.57,
+        "w52_low": 52.38,
+        "pe_ratio": 13.1,
+        "dividend_yield": 1.67,
+        "sharpe_ratio": 0.43
+      },
       "intrinsic_value": {},
-      "fundamental_conviction": 0.0,
-      "fundamental_grade": "F",
+      "fundamental_conviction": 7.5,
+      "fundamental_grade": "A-",
       "fundamental_sub_scores": {
-        "cheap": null,
+        "cheap": 7.5,
         "good_business": null,
         "healthy": null,
         "street": null
@@ -53971,15 +54078,15 @@
       "session_label": "Closing dash",
       "pinned": false,
       "verdict": "HOLD",
-      "verdict_score": 4,
+      "verdict_score": 5,
       "verdict_max": 8,
-      "verdict_pct": 50,
+      "verdict_pct": 62,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
         "rsi_ok": true,
         "options_bullish": false,
-        "price_below_maxpain": false,
+        "price_below_maxpain": true,
         "above_pivot": false,
         "balance_sheet_ok": false,
         "analyst_buy": null,
@@ -53987,24 +54094,68 @@
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
-      "bear_score": 1,
+      "bear_score": 2,
       "bear_score_max": 7,
-      "bear_score_pct": 14,
+      "bear_score_pct": 29,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
         "rsi_overbought": false,
-        "options_bearish": false,
+        "options_bearish": true,
         "price_above_maxpain": false,
         "below_pivot": false,
         "analyst_sell": null,
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "6M:BOS 6M:FVG 30m:Demand 1m:FVG \u00b7 RSI 25.74 \u00b7 Seasonal +4.7%",
+      "verdict_notes": "6M:BOS 6M:FVG 30m:Demand 1m:FVG \u00b7 RSI 25.74 \u00b7 P/C 2.49 \u00b7 MaxPain $63.00 \u00b7 Call wall $63 (2026-11-06) \u00b7 Seasonal +4.7%",
       "entry_note": "",
-      "options_flow": {},
-      "best_option": {},
+      "options_flow": {
+        "total_call_oi": 6634,
+        "total_put_oi": 16497,
+        "pc_ratio": 2.49,
+        "max_pain": 63.0,
+        "top_call_wall": 63.0,
+        "top_call_oi": 1515,
+        "top_put_wall": 59.0,
+        "top_put_oi": 10681,
+        "expiry": "2026-11-06",
+        "call_walls_by_expiry": {
+          "2026-11-06": {
+            "strike": 63.0,
+            "oi": 1515
+          },
+          "2026-11-13": {
+            "strike": 68.0,
+            "oi": 2159
+          },
+          "2026-11-20": {
+            "strike": 66.0,
+            "oi": 26905
+          },
+          "2026-11-27": {
+            "strike": 67.0,
+            "oi": 359
+          }
+        }
+      },
+      "best_option": {
+        "type": "put",
+        "strike": 62.0,
+        "expiry": "2026-12-18",
+        "dte": 47,
+        "ask": 5.0,
+        "bid": 2.45,
+        "cost": 500.0,
+        "open_interest": 36457,
+        "volume": 11,
+        "iv": 50.7,
+        "breakeven": 57.0,
+        "delta": -0.484,
+        "gamma": 0.0359,
+        "theta": -0.042,
+        "vega": 0.087
+      },
       "value_option": {},
       "best_contract": {
         "no_play": {
@@ -54168,7 +54319,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": -6163688,
+        "net_gex_bn": -0.006,
+        "expiry": "2026-11-06",
+        "regime": "Short Gamma",
+        "call_wall": 63.0,
+        "put_wall": 59.0,
+        "zero_gamma": 61.0,
+        "zero_gamma_method": "midpoint"
+      },
       "direction": "short",
       "wyckoff_cycle": "Distribution",
       "wyckoff_phase": "D",
@@ -54338,8 +54498,8 @@
         "street": null
       },
       "tv_ticker": "COMEX:GC1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:20.344039",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:15:11.865567",
       "ict": {
         "by_tf": {
           "3m": {
@@ -55194,8 +55354,8 @@
         "street": null
       },
       "tv_ticker": "COMEX:SI1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:24.135847",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:15:11.959814",
       "ict": {
         "by_tf": {
           "3m": {
@@ -56099,8 +56259,8 @@
         "street": null
       },
       "tv_ticker": "PL1!",
-      "session": "MIDDAY",
-      "timestamp": "2026-11-01T13:21:24.595321",
+      "session": "PRIME AFTERNOON",
+      "timestamp": "2026-11-01T15:15:12.155770",
       "ict": {
         "by_tf": {
           "3m": {
@@ -56902,8 +57062,7 @@
             "6M",
             "M",
             "D",
-            "15m",
-            "1m"
+            "15m"
           ],
           "note": "Effort (volume) confirming the downside result \u2014 bearish displacement"
         }
