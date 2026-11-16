@@ -1,0 +1,152 @@
+{
+ "updated_at": "2026-11-15T19:30-05:00",
+ "quotes": "Delayed quotes (15 min or the last close). Check the live price at your broker before anything else.",
+ "scanned": 91,
+ "names": 144,
+ "edges": [
+  {
+   "ticker": "CRM",
+   "spot": 217.84,
+   "expiry": "2026-11-20",
+   "dte": 5,
+   "strike": 217.5,
+   "iv_pct": 48.1,
+   "rv20_pct": 31.5,
+   "rv60_pct": 35.3,
+   "ratio": 1.52,
+   "priced_move_pct": 4.5,
+   "usual_move_pct": 2.9,
+   "earnings": null,
+   "kind": "rich",
+   "play": {
+    "type": "condor",
+    "name": "Iron condor: sell $207.5 put / $230 call, buy $205 put / $232.5 call",
+    "legs": [
+     {
+      "act": "sell",
+      "side": "put",
+      "strike": 207.5
+     },
+     {
+      "act": "buy",
+      "side": "put",
+      "strike": 205.0
+     },
+     {
+      "act": "sell",
+      "side": "call",
+      "strike": 230.0
+     },
+     {
+      "act": "buy",
+      "side": "call",
+      "strike": 232.5
+     }
+    ],
+    "risk": 195,
+    "max_gain": 55,
+    "credit": 0.55,
+    "breakeven_pct": 5.0,
+    "low": 206.95,
+    "high": 230.55,
+    "ev": 10,
+    "model_odds_pct": 81,
+    "wins_if": "stays"
+   }
+  },
+  {
+   "ticker": "GOOG",
+   "spot": 292.52,
+   "expiry": "2026-11-20",
+   "dte": 5,
+   "strike": 292.5,
+   "iv_pct": 40.3,
+   "rv20_pct": 29.1,
+   "rv60_pct": 24.4,
+   "ratio": 1.38,
+   "priced_move_pct": 3.8,
+   "usual_move_pct": 2.7,
+   "earnings": null,
+   "kind": "rich",
+   "play": {
+    "type": "condor",
+    "name": "Iron condor: sell $277.5 put / $305 call, buy $275 put / $307.5 call",
+    "legs": [
+     {
+      "act": "sell",
+      "side": "put",
+      "strike": 277.5
+     },
+     {
+      "act": "buy",
+      "side": "put",
+      "strike": 275.0
+     },
+     {
+      "act": "sell",
+      "side": "call",
+      "strike": 305.0
+     },
+     {
+      "act": "buy",
+      "side": "call",
+      "strike": 307.5
+     }
+    ],
+    "risk": 197,
+    "max_gain": 53,
+    "credit": 0.53,
+    "breakeven_pct": 4.4,
+    "low": 276.97,
+    "high": 305.53,
+    "ev": 17,
+    "model_odds_pct": 85,
+    "wins_if": "stays"
+   }
+  }
+ ],
+ "locks": {
+  "structures_checked": 12019,
+  "found": [
+   {
+    "kind": "put butterfly",
+    "strikes": [
+     702.5,
+     705.0,
+     707.5
+    ],
+    "lock_per_contract": 7.4,
+    "how": "paid to own a butterfly",
+    "ticker": "MU",
+    "expiry": "2026-11-20"
+   }
+  ]
+ },
+ "scorecard": {
+  "cheap": {
+   "n": 0,
+   "wins": 0,
+   "total_pnl": null,
+   "worst": null
+  },
+  "rich": {
+   "n": 0,
+   "wins": 0,
+   "total_pnl": null,
+   "worst": null
+  },
+  "unflagged": {
+   "n": 0,
+   "moved_more": 0
+  },
+  "pending": 91,
+  "recent": []
+ },
+ "rules": {
+  "cheap_ratio": 0.85,
+  "rich_ratio": 1.3,
+  "min_dte": 5,
+  "max_dte": 21
+ },
+ "disclaimer": "Educational research, not advice. An edge is a tilt in the odds under a stated assumption, never a locked-in profit. Options can lose their entire value."
+}
