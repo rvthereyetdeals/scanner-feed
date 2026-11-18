@@ -1,263 +1,83 @@
 {
- "updated_at": "2026-11-18T10:00-05:00",
+ "updated_at": "2026-11-18T15:00-05:00",
  "quotes": "Delayed quotes (15 min or the last close). Check the live price at your broker before anything else.",
- "scanned": 58,
+ "scanned": 116,
  "names": 144,
- "edges": [],
+ "edges": [
+  {
+   "ticker": "CRWD",
+   "spot": 225.86,
+   "expiry": "2026-11-27",
+   "dte": 9,
+   "strike": 225.0,
+   "iv_pct": 89.3,
+   "rv20_pct": 51.0,
+   "rv60_pct": 58.4,
+   "ratio": 1.75,
+   "priced_move_pct": 11.2,
+   "usual_move_pct": 6.4,
+   "earnings": null,
+   "kind": "rich",
+   "play": {
+    "type": "condor",
+    "name": "Iron condor: sell $200 put / $252.5 call, buy $197.5 put / $255 call",
+    "legs": [
+     {
+      "act": "sell",
+      "side": "put",
+      "strike": 200.0
+     },
+     {
+      "act": "buy",
+      "side": "put",
+      "strike": 197.5
+     },
+     {
+      "act": "sell",
+      "side": "call",
+      "strike": 252.5
+     },
+     {
+      "act": "buy",
+      "side": "call",
+      "strike": 255.0
+     }
+    ],
+    "risk": 189,
+    "max_gain": 61,
+    "credit": 0.61,
+    "breakeven_pct": 11.7,
+    "low": 199.39,
+    "high": 253.11,
+    "ev": 13,
+    "model_odds_pct": 81,
+    "wins_if": "stays"
+   }
+  }
+ ],
  "locks": {
-  "structures_checked": 3976,
+  "structures_checked": 8093,
   "found": [
    {
     "kind": "put butterfly",
     "strikes": [
-     152.5,
-     155.0,
-     157.5
-    ],
-    "lock_per_contract": 52.4,
-    "how": "paid to own a butterfly",
-    "ticker": "NVDA",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     160.0,
-     162.5,
-     165.0
+     325.0,
+     330.0,
+     335.0
     ],
     "lock_per_contract": 72.4,
     "how": "paid to own a butterfly",
-    "ticker": "NVDA",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     145.0,
-     150.0
-    ],
-    "lock_per_contract": 4.06,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "NVDA",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     155.0,
-     157.5
-    ],
-    "lock_per_contract": 32.23,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "NVDA",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     162.5,
-     165.0
-    ],
-    "lock_per_contract": 45.23,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "NVDA",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     165.0,
-     167.5
-    ],
-    "lock_per_contract": 4.23,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "NVDA",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     740.0,
-     745.0
-    ],
-    "lock_per_contract": 127.06,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "MU",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     465.0,
-     470.0,
-     475.0
-    ],
-    "lock_per_contract": 17.4,
-    "how": "paid to own a butterfly",
-    "ticker": "AMD",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     475.0,
-     480.0,
-     485.0
-    ],
-    "lock_per_contract": 312.4,
-    "how": "paid to own a butterfly",
-    "ticker": "AMD",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     515.0,
-     517.5,
-     520.0
-    ],
-    "lock_per_contract": 87.4,
-    "how": "paid to own a butterfly",
-    "ticker": "AMD",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     465.0,
-     470.0
-    ],
-    "lock_per_contract": 17.06,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "AMD",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     475.0,
-     480.0
-    ],
-    "lock_per_contract": 127.06,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "AMD",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     525.0,
-     530.0
-    ],
-    "lock_per_contract": 137.06,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "AMD",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     400.0,
-     402.5,
-     405.0
-    ],
-    "lock_per_contract": 9.4,
-    "how": "paid to own a butterfly",
-    "ticker": "TSLA",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     332.5,
-     335.0,
-     337.5
-    ],
-    "lock_per_contract": 62.4,
-    "how": "paid to own a butterfly",
-    "ticker": "AVGO",
-    "expiry": "2026-11-23"
+    "ticker": "UNH",
+    "expiry": "2026-11-27"
    },
    {
     "kind": "put butterfly",
     "strikes": [
-     307.5,
-     310.0,
-     312.5
-    ],
-    "lock_per_contract": 5.4,
-    "how": "paid to own a butterfly",
-    "ticker": "AVGO",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     332.5,
-     335.0
-    ],
-    "lock_per_contract": 22.23,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "AVGO",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     738.0,
-     739.0,
-     740.0
-    ],
-    "lock_per_contract": 5.4,
-    "how": "paid to own a butterfly",
-    "ticker": "SPY",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     747.0,
-     748.0,
-     749.0
-    ],
-    "lock_per_contract": 6.4,
-    "how": "paid to own a butterfly",
-    "ticker": "SPY",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     708.0,
-     709.0,
-     710.0
-    ],
-    "lock_per_contract": 4.4,
-    "how": "paid to own a butterfly",
-    "ticker": "SPY",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     714.0,
-     715.0,
-     716.0
-    ],
-    "lock_per_contract": 7.4,
-    "how": "paid to own a butterfly",
-    "ticker": "SPY",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
+     717.0,
      718.0,
-     719.0,
-     720.0
+     719.0
     ],
-    "lock_per_contract": 26.4,
+    "lock_per_contract": 2.4,
     "how": "paid to own a butterfly",
     "ticker": "SPY",
     "expiry": "2026-11-23"
@@ -265,57 +85,9 @@
    {
     "kind": "put butterfly",
     "strikes": [
-     720.0,
-     721.0,
-     722.0
-    ],
-    "lock_per_contract": 33.4,
-    "how": "paid to own a butterfly",
-    "ticker": "SPY",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     732.0,
-     733.0,
-     734.0
-    ],
-    "lock_per_contract": 9.4,
-    "how": "paid to own a butterfly",
-    "ticker": "SPY",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     734.0,
-     735.0,
-     736.0
-    ],
-    "lock_per_contract": 22.4,
-    "how": "paid to own a butterfly",
-    "ticker": "SPY",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     736.0,
-     737.0,
-     738.0
-    ],
-    "lock_per_contract": 5.4,
-    "how": "paid to own a butterfly",
-    "ticker": "SPY",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     744.0,
-     745.0,
-     746.0
+     726.0,
+     727.0,
+     728.0
     ],
     "lock_per_contract": 3.4,
     "how": "paid to own a butterfly",
@@ -323,118 +95,11 @@
     "expiry": "2026-11-23"
    },
    {
-    "kind": "box",
-    "strikes": [
-     735.0,
-     736.0
-    ],
-    "lock_per_contract": 8.33,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "SPY",
-    "expiry": "2026-11-23"
-   },
-   {
     "kind": "call butterfly",
     "strikes": [
-     655.0,
-     656.0,
-     657.0
-    ],
-    "lock_per_contract": 37.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     657.0,
-     658.0,
-     659.0
-    ],
-    "lock_per_contract": 57.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     662.0,
-     663.0,
-     664.0
-    ],
-    "lock_per_contract": 59.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     664.0,
-     665.0,
-     666.0
-    ],
-    "lock_per_contract": 64.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     666.0,
-     667.0,
-     668.0
-    ],
-    "lock_per_contract": 19.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     670.0,
-     671.0,
-     672.0
-    ],
-    "lock_per_contract": 26.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     677.0,
-     678.0,
-     679.0
-    ],
-    "lock_per_contract": 16.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     680.0,
-     681.0,
-     682.0
-    ],
-    "lock_per_contract": 9.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "call butterfly",
-    "strikes": [
-     693.0,
-     694.0,
-     695.0
+     672.0,
+     673.0,
+     674.0
     ],
     "lock_per_contract": 4.4,
     "how": "paid to own a butterfly",
@@ -442,91 +107,13 @@
     "expiry": "2026-11-23"
    },
    {
-    "kind": "put vertical",
-    "strikes": [
-     632.0,
-     633.0
-    ],
-    "lock_per_contract": 2.7,
-    "how": "paid to own a spread whose payoff is never negative",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put vertical",
-    "strikes": [
-     636.0,
-     637.0
-    ],
-    "lock_per_contract": 3.7,
-    "how": "paid to own a spread whose payoff is never negative",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put vertical",
-    "strikes": [
-     656.0,
-     657.0
-    ],
-    "lock_per_contract": 19.7,
-    "how": "paid to own a spread whose payoff is never negative",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put vertical",
-    "strikes": [
-     661.0,
-     662.0
-    ],
-    "lock_per_contract": 31.7,
-    "how": "credit larger than the spread's width",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put vertical",
-    "strikes": [
-     663.0,
-     664.0
-    ],
-    "lock_per_contract": 8.7,
-    "how": "paid to own a spread whose payoff is never negative",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put vertical",
-    "strikes": [
-     664.0,
-     665.0
-    ],
-    "lock_per_contract": 23.7,
-    "how": "credit larger than the spread's width",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
     "kind": "put butterfly",
     "strikes": [
-     631.0,
-     632.0,
-     633.0
+     633.0,
+     634.0,
+     635.0
     ],
-    "lock_per_contract": 36.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     635.0,
-     636.0,
-     637.0
-    ],
-    "lock_per_contract": 41.4,
+    "lock_per_contract": 11.4,
     "how": "paid to own a butterfly",
     "ticker": "QQQ",
     "expiry": "2026-11-23"
@@ -538,7 +125,7 @@
      638.0,
      639.0
     ],
-    "lock_per_contract": 19.4,
+    "lock_per_contract": 10.4,
     "how": "paid to own a butterfly",
     "ticker": "QQQ",
     "expiry": "2026-11-23"
@@ -546,11 +133,11 @@
    {
     "kind": "put butterfly",
     "strikes": [
-     640.0,
-     641.0,
-     642.0
+     644.0,
+     645.0,
+     646.0
     ],
-    "lock_per_contract": 16.4,
+    "lock_per_contract": 13.4,
     "how": "paid to own a butterfly",
     "ticker": "QQQ",
     "expiry": "2026-11-23"
@@ -558,59 +145,11 @@
    {
     "kind": "put butterfly",
     "strikes": [
-     642.0,
-     643.0,
-     644.0
-    ],
-    "lock_per_contract": 34.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     646.0,
-     647.0,
-     648.0
-    ],
-    "lock_per_contract": 42.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     648.0,
-     649.0,
-     650.0
-    ],
-    "lock_per_contract": 70.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     650.0,
-     651.0,
-     652.0
-    ],
-    "lock_per_contract": 14.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
+     652.0,
      653.0,
-     654.0,
-     655.0
+     654.0
     ],
-    "lock_per_contract": 55.4,
+    "lock_per_contract": 27.4,
     "how": "paid to own a butterfly",
     "ticker": "QQQ",
     "expiry": "2026-11-23"
@@ -618,11 +157,11 @@
    {
     "kind": "put butterfly",
     "strikes": [
+     654.0,
      655.0,
-     656.0,
-     657.0
+     656.0
     ],
-    "lock_per_contract": 81.4,
+    "lock_per_contract": 18.4,
     "how": "paid to own a butterfly",
     "ticker": "QQQ",
     "expiry": "2026-11-23"
@@ -642,155 +181,20 @@
    {
     "kind": "put butterfly",
     "strikes": [
-     658.0,
-     659.0,
-     660.0
-    ],
-    "lock_per_contract": 35.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     661.0,
-     662.0,
-     663.0
-    ],
-    "lock_per_contract": 57.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     662.0,
-     663.0,
-     664.0
-    ],
-    "lock_per_contract": 53.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     664.0,
-     665.0,
-     666.0
-    ],
-    "lock_per_contract": 44.4,
-    "how": "paid to own a butterfly",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     650.0,
-     651.0
-    ],
-    "lock_per_contract": 22.33,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     656.0,
-     657.0
-    ],
-    "lock_per_contract": 38.33,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     659.0,
-     660.0
-    ],
-    "lock_per_contract": 11.33,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     660.0,
-     661.0
-    ],
-    "lock_per_contract": 6.33,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     662.0,
-     663.0
-    ],
-    "lock_per_contract": 4.33,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     663.0,
-     664.0
-    ],
-    "lock_per_contract": 8.33,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
      666.0,
-     667.0
+     667.0,
+     668.0
     ],
-    "lock_per_contract": 122.33,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
+    "lock_per_contract": 30.4,
+    "how": "paid to own a butterfly",
     "ticker": "QQQ",
     "expiry": "2026-11-23"
    },
    {
     "kind": "box",
     "strikes": [
-     668.0,
-     669.0
-    ],
-    "lock_per_contract": 63.33,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     670.0,
-     671.0
-    ],
-    "lock_per_contract": 52.33,
-    "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "QQQ",
-    "expiry": "2026-11-23"
-   },
-   {
-    "kind": "box",
-    "strikes": [
-     683.0,
-     684.0
+     655.0,
+     656.0
     ],
     "lock_per_contract": 16.33,
     "how": "box costs less than its fixed payout (early-assignment risk remains)",
@@ -800,10 +204,10 @@
    {
     "kind": "box",
     "strikes": [
-     685.0,
-     686.0
+     658.0,
+     659.0
     ],
-    "lock_per_contract": 6.33,
+    "lock_per_contract": 10.33,
     "how": "box costs less than its fixed payout (early-assignment risk remains)",
     "ticker": "QQQ",
     "expiry": "2026-11-23"
@@ -811,10 +215,10 @@
    {
     "kind": "box",
     "strikes": [
-     691.0,
-     692.0
+     692.0,
+     693.0
     ],
-    "lock_per_contract": 10.33,
+    "lock_per_contract": 19.33,
     "how": "box costs less than its fixed payout (early-assignment risk remains)",
     "ticker": "QQQ",
     "expiry": "2026-11-23"
@@ -838,7 +242,7 @@
    "n": 0,
    "moved_more": 0
   },
-  "pending": 214,
+  "pending": 221,
   "recent": []
  },
  "rules": {
