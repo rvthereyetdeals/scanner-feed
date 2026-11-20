@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19T20:30:00+00:00",
+ "updated_at": "2026-11-20T15:30:00+00:00",
  "rules_hash": "39e2b76b800933dd",
  "record_start": "2027-01-01",
  "rules": [
@@ -48,85 +48,110 @@
   "wind": "headwind",
   "score": -4,
   "reasons": [
-   "10-yr 5.05%",
-   "VIX 28.1",
-   "S&P -1.8% today",
-   "Fear & Greed 19"
+   "10-yr 4.97%",
+   "VIX 27.8",
+   "S&P -0.9% today",
+   "Fear & Greed 17"
   ]
  },
- "scanned": 40,
- "open": [],
- "closed": [],
- "watch": [
+ "scanned": 46,
+ "open": [
   {
+   "call_id": "AP-ZL=F-20261120T1530Z",
    "ticker": "ZL=F",
    "side": "short",
    "company": "Soybean Oil Futures,Dec-2026",
-   "price": 60.32,
-   "agree": 6,
-   "missing": [
+   "plan": {
+    "entry": 60.11,
+    "zone": [
+     60.11,
+     62.5144
+    ],
+    "stop": 63.7166,
+    "t1": 52.8968,
+    "t2": 49.2902,
+    "r1": 2.0,
+    "basis": "Y Bear Order Block"
+   },
+   "pattern_tf": "M",
+   "time_limit_days": 270,
+   "trigger_tfs": [
+    "1m"
+   ],
+   "checks": [
     {
-     "k": "confirm",
-     "note": "Wyckoff Distribution Phase D; no live ICT entry."
-    }
-   ]
-  },
-  {
-   "ticker": "GF=F",
-   "side": "long",
-   "company": null,
-   "price": 335.85,
-   "agree": 5,
-   "missing": [
+     "k": "business",
+     "ok": null,
+     "note": "Not a company, so there is no business to read."
+    },
     {
      "k": "market",
-     "note": "Headwind (10-yr 5.05%, VIX 28.1, S&P -1.8% today, Fear & Greed 19). It works against this side."
+     "ok": true,
+     "note": "Headwind (10-yr 4.97%, VIX 27.8, S&P -0.9% today, Fear & Greed 17)."
+    },
+    {
+     "k": "pattern",
+     "ok": true,
+     "note": "Top on the line chart (M, H4) with a matching engulfing (1m)."
     },
     {
      "k": "confirm",
-     "note": "Wyckoff Reaccumulation Phase D; no live ICT entry."
-    }
-   ]
-  },
-  {
-   "ticker": "LE=F",
-   "side": "long",
-   "company": null,
-   "price": 227.325,
-   "agree": 5,
-   "missing": [
-    {
-     "k": "market",
-     "note": "Headwind (10-yr 5.05%, VIX 28.1, S&P -1.8% today, Fear & Greed 19). It works against this side."
+     "ok": true,
+     "note": "Wyckoff Phase C on the right side."
     },
-    {
-     "k": "confirm",
-     "note": "Wyckoff Reaccumulation Phase D; no live ICT entry."
-    }
-   ]
-  },
-  {
-   "ticker": "NG=F",
-   "side": "short",
-   "company": null,
-   "price": 3.262,
-   "agree": 5,
-   "missing": [
     {
      "k": "entry",
-     "note": "Not back in the entry zone. We don't chase."
+     "ok": true,
+     "note": "In the zone and the trigger has fired."
     },
     {
      "k": "payoff",
-     "note": "Target 1 pays 1.6\u00d7 the risk from here."
+     "ok": true,
+     "note": "Target 1 pays 2.0\u00d7 the risk from here."
+    },
+    {
+     "k": "money",
+     "ok": null,
+     "note": "No earnings or insiders to read."
+    }
+   ],
+   "timestamp_utc": "2026-11-20T15:30:00+00:00",
+   "now": null
+  }
+ ],
+ "closed": [],
+ "watch": [
+  {
+   "ticker": "NG=F",
+   "side": "short",
+   "company": "Natural Gas Dec 26",
+   "price": 3.634,
+   "agree": 6,
+   "missing": [
+    {
+     "k": "payoff",
+     "note": "Target 1 pays 2.0\u00d7 the risk from here."
     }
    ]
   },
   {
-   "ticker": "XBI",
+   "ticker": "JOBY",
    "side": "short",
-   "company": "State Street SPDR S&P Biotech ETF",
-   "price": 144.33,
+   "company": "Joby Aviation, Inc.",
+   "price": 3.954,
+   "agree": 6,
+   "missing": [
+    {
+     "k": "payoff",
+     "note": "No clean levels from the chart."
+    }
+   ]
+  },
+  {
+   "ticker": "RB=F",
+   "side": "short",
+   "company": "RBOB Gasoline Jan 27",
+   "price": 2.462,
    "agree": 5,
    "missing": [
     {
@@ -140,27 +165,44 @@
    ]
   },
   {
-   "ticker": "KC=F",
+   "ticker": "ZM=F",
    "side": "short",
-   "company": "Coffee Dec 26",
-   "price": 275.5,
+   "company": "Soybean Meal Futures",
+   "price": 339.1,
    "agree": 5,
    "missing": [
     {
-     "k": "entry",
-     "note": "In the zone, but no trigger yet."
+     "k": "pattern",
+     "note": "No line-chart reversal + engulfing right now."
     },
     {
-     "k": "payoff",
-     "note": "Target 1 pays 1.6\u00d7 the risk from here."
+     "k": "entry",
+     "note": "In the zone, but no trigger yet."
     }
    ]
   },
   {
-   "ticker": "CC=F",
+   "ticker": "ZW=F",
    "side": "short",
-   "company": "Cocoa Dec 26",
-   "price": 5169.0,
+   "company": "Chicago SRW Wheat Futures,Dec-2",
+   "price": 592.0,
+   "agree": 5,
+   "missing": [
+    {
+     "k": "confirm",
+     "note": "Wyckoff Distribution Phase D; no live ICT entry."
+    },
+    {
+     "k": "entry",
+     "note": "In the zone, but no trigger yet."
+    }
+   ]
+  },
+  {
+   "ticker": "PANW",
+   "side": "short",
+   "company": "Palo Alto Networks, Inc.",
+   "price": 358.55,
    "agree": 5,
    "missing": [
     {
@@ -182,12 +224,12 @@
   "avg_r": null
  },
  "scanner_record": {
-  "graded": 18,
-  "wins": 4,
-  "losses": 14
+  "graded": 21,
+  "wins": 5,
+  "losses": 16
  },
  "chain": {
-  "records": 1,
+  "records": 2,
   "ok": true
  }
 }
