@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T15:30:00+00:00",
+ "updated_at": "2026-11-20T20:30:02+00:00",
  "rules_hash": "39e2b76b800933dd",
  "record_start": "2027-01-01",
  "rules": [
@@ -48,13 +48,13 @@
   "wind": "headwind",
   "score": -4,
   "reasons": [
-   "10-yr 4.97%",
-   "VIX 27.8",
-   "S&P -0.9% today",
-   "Fear & Greed 17"
+   "10-yr 4.94%",
+   "VIX 32.2",
+   "S&P -2.0% today",
+   "Fear & Greed 11"
   ]
  },
- "scanned": 46,
+ "scanned": 45,
  "open": [
   {
    "call_id": "AP-ZL=F-20261120T1530Z",
@@ -62,16 +62,16 @@
    "side": "short",
    "company": "Soybean Oil Futures,Dec-2026",
    "plan": {
+    "basis": "Y Bear Order Block",
     "entry": 60.11,
-    "zone": [
-     60.11,
-     62.5144
-    ],
+    "r1": 2.0,
     "stop": 63.7166,
     "t1": 52.8968,
     "t2": 49.2902,
-    "r1": 2.0,
-    "basis": "Y Bear Order Block"
+    "zone": [
+     60.11,
+     62.5144
+    ]
    },
    "pattern_tf": "M",
    "time_limit_days": 270,
@@ -81,77 +81,165 @@
    "checks": [
     {
      "k": "business",
-     "ok": null,
-     "note": "Not a company, so there is no business to read."
+     "note": "Not a company, so there is no business to read.",
+     "ok": null
     },
     {
      "k": "market",
-     "ok": true,
-     "note": "Headwind (10-yr 4.97%, VIX 27.8, S&P -0.9% today, Fear & Greed 17)."
+     "note": "Headwind (10-yr 4.97%, VIX 27.8, S&P -0.9% today, Fear & Greed 17).",
+     "ok": true
     },
     {
      "k": "pattern",
-     "ok": true,
-     "note": "Top on the line chart (M, H4) with a matching engulfing (1m)."
+     "note": "Top on the line chart (M, H4) with a matching engulfing (1m).",
+     "ok": true
     },
     {
      "k": "confirm",
-     "ok": true,
-     "note": "Wyckoff Phase C on the right side."
+     "note": "Wyckoff Phase C on the right side.",
+     "ok": true
     },
     {
      "k": "entry",
-     "ok": true,
-     "note": "In the zone and the trigger has fired."
+     "note": "In the zone and the trigger has fired.",
+     "ok": true
     },
     {
      "k": "payoff",
-     "ok": true,
-     "note": "Target 1 pays 2.0\u00d7 the risk from here."
+     "note": "Target 1 pays 2.0\u00d7 the risk from here.",
+     "ok": true
     },
     {
      "k": "money",
-     "ok": null,
-     "note": "No earnings or insiders to read."
+     "note": "No earnings or insiders to read.",
+     "ok": null
     }
    ],
    "timestamp_utc": "2026-11-20T15:30:00+00:00",
+   "now": null
+  },
+  {
+   "call_id": "AP-ZM=F-20261120T1730Z",
+   "ticker": "ZM=F",
+   "side": "short",
+   "company": null,
+   "plan": {
+    "basis": "3M Bear Order Block",
+    "entry": 339.8,
+    "r1": 2.0,
+    "stop": 360.188,
+    "t1": 299.024,
+    "t2": 278.636,
+    "zone": [
+     339.8,
+     353.392
+    ]
+   },
+   "pattern_tf": "W",
+   "time_limit_days": 90,
+   "trigger_tfs": [
+    "5m"
+   ],
+   "checks": [
+    {
+     "k": "business",
+     "note": "Not a company, so there is no business to read.",
+     "ok": null
+    },
+    {
+     "k": "market",
+     "note": "Headwind (10-yr 4.95%, VIX 31.6, S&P -1.9% today, Fear & Greed 12).",
+     "ok": true
+    },
+    {
+     "k": "pattern",
+     "note": "Top on the line chart (W, D, H4) with a matching engulfing (5m).",
+     "ok": true
+    },
+    {
+     "k": "confirm",
+     "note": "Wyckoff Phase C on the right side.",
+     "ok": true
+    },
+    {
+     "k": "entry",
+     "note": "In the zone and the trigger has fired.",
+     "ok": true
+    },
+    {
+     "k": "payoff",
+     "note": "Target 1 pays 2.0\u00d7 the risk from here.",
+     "ok": true
+    },
+    {
+     "k": "money",
+     "note": "No earnings or insiders to read.",
+     "ok": null
+    }
+   ],
+   "timestamp_utc": "2026-11-20T17:30:02+00:00",
    "now": null
   }
  ],
  "closed": [],
  "watch": [
   {
+   "ticker": "MSFT",
+   "side": "short",
+   "company": "Microsoft Corporation",
+   "price": 486.105,
+   "agree": 6,
+   "missing": [
+    {
+     "k": "business",
+     "note": "Business grade A-. A strong, cheap business is a poor short."
+    }
+   ]
+  },
+  {
    "ticker": "NG=F",
    "side": "short",
-   "company": "Natural Gas Dec 26",
-   "price": 3.634,
+   "company": null,
+   "price": 3.737,
    "agree": 6,
    "missing": [
     {
-     "k": "payoff",
-     "note": "Target 1 pays 2.0\u00d7 the risk from here."
+     "k": "pattern",
+     "note": "No line-chart reversal + engulfing right now."
     }
    ]
   },
   {
-   "ticker": "JOBY",
+   "ticker": "HO=F",
    "side": "short",
-   "company": "Joby Aviation, Inc.",
-   "price": 3.954,
+   "company": "Heating Oil Dec 26",
+   "price": 3.8449,
    "agree": 6,
    "missing": [
     {
      "k": "payoff",
-     "note": "No clean levels from the chart."
+     "note": "Target 1 pays 1.6\u00d7 the risk from here."
     }
    ]
   },
   {
-   "ticker": "RB=F",
+   "ticker": "ZW=F",
    "side": "short",
-   "company": "RBOB Gasoline Jan 27",
-   "price": 2.462,
+   "company": null,
+   "price": 593.0,
+   "agree": 6,
+   "missing": [
+    {
+     "k": "entry",
+     "note": "In the zone, but no trigger yet."
+    }
+   ]
+  },
+  {
+   "ticker": "ZS=F",
+   "side": "short",
+   "company": "Soybean Futures,Jan-2027",
+   "price": 1220.5,
    "agree": 5,
    "missing": [
     {
@@ -160,32 +248,32 @@
     },
     {
      "k": "payoff",
-     "note": "No clean levels from the chart."
+     "note": "Target 1 pays 1.0\u00d7 the risk from here."
     }
    ]
   },
   {
-   "ticker": "ZM=F",
+   "ticker": "AMZN",
    "side": "short",
-   "company": "Soybean Meal Futures",
-   "price": 339.1,
+   "company": "Amazon.com, Inc.",
+   "price": 247.87,
    "agree": 5,
    "missing": [
     {
-     "k": "pattern",
-     "note": "No line-chart reversal + engulfing right now."
+     "k": "confirm",
+     "note": "Wyckoff Distribution Phase D; no live ICT entry."
     },
     {
-     "k": "entry",
-     "note": "In the zone, but no trigger yet."
+     "k": "payoff",
+     "note": "Target 1 pays 1.4\u00d7 the risk from here."
     }
    ]
   },
   {
-   "ticker": "ZW=F",
+   "ticker": "RB=F",
    "side": "short",
-   "company": "Chicago SRW Wheat Futures,Dec-2",
-   "price": 592.0,
+   "company": null,
+   "price": 2.469,
    "agree": 5,
    "missing": [
     {
@@ -199,10 +287,10 @@
    ]
   },
   {
-   "ticker": "PANW",
+   "ticker": "NET",
    "side": "short",
-   "company": "Palo Alto Networks, Inc.",
-   "price": 358.55,
+   "company": "Cloudflare, Inc.",
+   "price": 277.055,
    "agree": 5,
    "missing": [
     {
@@ -224,12 +312,12 @@
   "avg_r": null
  },
  "scanner_record": {
-  "graded": 21,
-  "wins": 5,
-  "losses": 16
+  "graded": 28,
+  "wins": 6,
+  "losses": 22
  },
  "chain": {
-  "records": 2,
+  "records": 3,
   "ok": true
  }
 }
