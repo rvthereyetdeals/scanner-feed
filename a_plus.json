@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T20:30:02+00:00",
+ "updated_at": "2026-11-23T18:25:07+00:00",
  "rules_hash": "39e2b76b800933dd",
  "record_start": "2027-01-01",
  "rules": [
@@ -46,15 +46,15 @@
  },
  "wind": {
   "wind": "headwind",
-  "score": -4,
+  "score": -2,
   "reasons": [
-   "10-yr 4.94%",
-   "VIX 32.2",
-   "S&P -2.0% today",
-   "Fear & Greed 11"
+   "10-yr 4.95%",
+   "VIX 27.2",
+   "S&P +4.6% today",
+   "Fear & Greed 17"
   ]
  },
- "scanned": 45,
+ "scanned": 43,
  "open": [
   {
    "call_id": "AP-ZL=F-20261120T1530Z",
@@ -116,7 +116,12 @@
     }
    ],
    "timestamp_utc": "2026-11-20T15:30:00+00:00",
-   "now": null
+   "now": {
+    "open": true,
+    "last": 59.099998474121094,
+    "took_t1": false,
+    "r_now": 0.28
+   }
   },
   {
    "call_id": "AP-ZM=F-20261120T1730Z",
@@ -178,31 +183,40 @@
     }
    ],
    "timestamp_utc": "2026-11-20T17:30:02+00:00",
-   "now": null
+   "now": {
+    "open": true,
+    "last": 342.70001220703125,
+    "took_t1": false,
+    "r_now": -0.14
+   }
   }
  ],
  "closed": [],
  "watch": [
   {
-   "ticker": "MSFT",
+   "ticker": "MRK",
    "side": "short",
-   "company": "Microsoft Corporation",
-   "price": 486.105,
+   "company": "Merck & Co., Inc.",
+   "price": 135.3,
    "agree": 6,
    "missing": [
     {
-     "k": "business",
-     "note": "Business grade A-. A strong, cheap business is a poor short."
+     "k": "confirm",
+     "note": "Wyckoff Distribution Phase D; no live ICT entry."
     }
    ]
   },
   {
-   "ticker": "NG=F",
-   "side": "short",
+   "ticker": "CL=F",
+   "side": "long",
    "company": null,
-   "price": 3.737,
-   "agree": 6,
+   "price": 82.01,
+   "agree": 5,
    "missing": [
+    {
+     "k": "market",
+     "note": "Headwind (10-yr 4.95%, VIX 27.2, S&P +4.6% today, Fear & Greed 17). It works against this side."
+    },
     {
      "k": "pattern",
      "note": "No line-chart reversal + engulfing right now."
@@ -210,12 +224,16 @@
    ]
   },
   {
-   "ticker": "HO=F",
+   "ticker": "ZION",
    "side": "short",
-   "company": "Heating Oil Dec 26",
-   "price": 3.8449,
-   "agree": 6,
+   "company": "Zions Bancorporation, National Association",
+   "price": 61.78,
+   "agree": 5,
    "missing": [
+    {
+     "k": "pattern",
+     "note": "No line-chart reversal + engulfing right now."
+    },
     {
      "k": "payoff",
      "note": "Target 1 pays 1.6\u00d7 the risk from here."
@@ -223,32 +241,19 @@
    ]
   },
   {
-   "ticker": "ZW=F",
+   "ticker": "MSFT",
    "side": "short",
-   "company": null,
-   "price": 593.0,
-   "agree": 6,
-   "missing": [
-    {
-     "k": "entry",
-     "note": "In the zone, but no trigger yet."
-    }
-   ]
-  },
-  {
-   "ticker": "ZS=F",
-   "side": "short",
-   "company": "Soybean Futures,Jan-2027",
-   "price": 1220.5,
+   "company": "Microsoft Corporation",
+   "price": 489.4871,
    "agree": 5,
    "missing": [
     {
-     "k": "entry",
-     "note": "Not back in the entry zone. We don't chase."
+     "k": "pattern",
+     "note": "No line-chart reversal + engulfing right now."
     },
     {
-     "k": "payoff",
-     "note": "Target 1 pays 1.0\u00d7 the risk from here."
+     "k": "confirm",
+     "note": "Wyckoff Distribution Phase D; no live ICT entry."
     }
    ]
   },
@@ -256,16 +261,16 @@
    "ticker": "AMZN",
    "side": "short",
    "company": "Amazon.com, Inc.",
-   "price": 247.87,
+   "price": 254.6592,
    "agree": 5,
    "missing": [
     {
-     "k": "confirm",
-     "note": "Wyckoff Distribution Phase D; no live ICT entry."
+     "k": "entry",
+     "note": "In the zone, but no trigger yet."
     },
     {
      "k": "payoff",
-     "note": "Target 1 pays 1.4\u00d7 the risk from here."
+     "note": "Target 1 pays 1.6\u00d7 the risk from here."
     }
    ]
   },
@@ -273,7 +278,7 @@
    "ticker": "RB=F",
    "side": "short",
    "company": null,
-   "price": 2.469,
+   "price": 2.4429,
    "agree": 5,
    "missing": [
     {
@@ -287,10 +292,27 @@
    ]
   },
   {
-   "ticker": "NET",
+   "ticker": "ZW=F",
    "side": "short",
-   "company": "Cloudflare, Inc.",
-   "price": 277.055,
+   "company": null,
+   "price": 594.25,
+   "agree": 5,
+   "missing": [
+    {
+     "k": "confirm",
+     "note": "Wyckoff Distribution Phase D; no live ICT entry."
+    },
+    {
+     "k": "entry",
+     "note": "In the zone, but no trigger yet."
+    }
+   ]
+  },
+  {
+   "ticker": "ADI",
+   "side": "short",
+   "company": "Analog Devices, Inc.",
+   "price": 375.46,
    "agree": 5,
    "missing": [
     {
@@ -312,9 +334,9 @@
   "avg_r": null
  },
  "scanner_record": {
-  "graded": 28,
+  "graded": 35,
   "wins": 6,
-  "losses": 22
+  "losses": 29
  },
  "chain": {
   "records": 3,
