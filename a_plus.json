@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T16:23:15+00:00",
+ "updated_at": "2026-11-25T17:30:02+00:00",
  "rules_hash": "39e2b76b800933dd",
  "record_start": "2027-01-01",
  "rules": [
@@ -48,13 +48,13 @@
   "wind": "headwind",
   "score": -4,
   "reasons": [
-   "10-yr 4.81%",
-   "VIX 33.4",
-   "S&P -2.9% today",
+   "10-yr 4.84%",
+   "VIX 30.8",
+   "S&P -1.6% today",
    "Fear & Greed 9"
   ]
  },
- "scanned": 37,
+ "scanned": 38,
  "open": [
   {
    "call_id": "AP-ZL=F-20261120T1530Z",
@@ -118,9 +118,9 @@
    "timestamp_utc": "2026-11-20T15:30:00+00:00",
    "now": {
     "open": true,
-    "last": 57.91999816894531,
+    "last": 58.52000045776367,
     "took_t1": false,
-    "r_now": 0.61
+    "r_now": 0.44
    }
   },
   {
@@ -185,9 +185,9 @@
    "timestamp_utc": "2026-11-20T17:30:02+00:00",
    "now": {
     "open": true,
-    "last": 353.8999938964844,
+    "last": 357.1000061035156,
     "took_t1": false,
-    "r_now": -0.69
+    "r_now": -0.85
    }
   },
   {
@@ -196,16 +196,16 @@
    "side": "short",
    "company": null,
    "plan": {
+    "basis": "Y Bear Order Block",
     "entry": 3.684,
-    "zone": [
-     3.684,
-     3.8314
-    ],
+    "r1": 2.0,
     "stop": 3.905,
     "t1": 3.2419,
     "t2": 3.0209,
-    "r1": 2.0,
-    "basis": "Y Bear Order Block"
+    "zone": [
+     3.684,
+     3.8314
+    ]
    },
    "pattern_tf": "M",
    "time_limit_days": 270,
@@ -216,38 +216,38 @@
    "checks": [
     {
      "k": "business",
-     "ok": null,
-     "note": "Not a company, so there is no business to read."
+     "note": "Not a company, so there is no business to read.",
+     "ok": null
     },
     {
      "k": "market",
-     "ok": true,
-     "note": "Headwind (10-yr 4.81%, VIX 33.4, S&P -2.9% today, Fear & Greed 9)."
+     "note": "Headwind (10-yr 4.81%, VIX 33.4, S&P -2.9% today, Fear & Greed 9).",
+     "ok": true
     },
     {
      "k": "pattern",
-     "ok": true,
-     "note": "Top on the line chart (M, W) with a matching engulfing (H2, 3m)."
+     "note": "Top on the line chart (M, W) with a matching engulfing (H2, 3m).",
+     "ok": true
     },
     {
      "k": "confirm",
-     "ok": true,
-     "note": "Wyckoff Phase C on the right side."
+     "note": "Wyckoff Phase C on the right side.",
+     "ok": true
     },
     {
      "k": "entry",
-     "ok": true,
-     "note": "In the zone and the trigger has fired."
+     "note": "In the zone and the trigger has fired.",
+     "ok": true
     },
     {
      "k": "payoff",
-     "ok": true,
-     "note": "Target 1 pays 2.0\u00d7 the risk from here."
+     "note": "Target 1 pays 2.0\u00d7 the risk from here.",
+     "ok": true
     },
     {
      "k": "money",
-     "ok": null,
-     "note": "No earnings or insiders to read."
+     "note": "No earnings or insiders to read.",
+     "ok": null
     }
    ],
    "timestamp_utc": "2026-11-25T16:23:15+00:00",
@@ -257,15 +257,15 @@
  "closed": [],
  "watch": [
   {
-   "ticker": "LE=F",
-   "side": "long",
-   "company": null,
-   "price": 229.925,
+   "ticker": "ZION",
+   "side": "short",
+   "company": "Zions Bancorporation, National Association",
+   "price": 62.11,
    "agree": 6,
    "missing": [
     {
-     "k": "market",
-     "note": "Headwind (10-yr 4.81%, VIX 33.4, S&P -2.9% today, Fear & Greed 9). It works against this side."
+     "k": "payoff",
+     "note": "Target 1 pays 1.7\u00d7 the risk from here."
     }
    ]
   },
@@ -287,104 +287,36 @@
    ]
   },
   {
-   "ticker": "GF=F",
+   "ticker": "MTCH",
    "side": "short",
-   "company": "Feeder Cattle",
-   "price": 332.95,
+   "company": "Match Group, Inc.",
+   "price": 40.79,
    "agree": 5,
    "missing": [
     {
-     "k": "entry",
-     "note": "Not back in the entry zone. We don't chase."
+     "k": "business",
+     "note": "Business grade B+, and it trades below our value estimate. A strong, cheap business is a poor short."
     },
     {
      "k": "payoff",
-     "note": "Target 1 pays 1.1\u00d7 the risk from here."
+     "note": "No clean levels from the chart."
     }
    ]
   },
   {
-   "ticker": "ZW=F",
+   "ticker": "HE=F",
    "side": "short",
-   "company": "Chicago SRW Wheat Futures,Mar-2",
-   "price": 588.75,
+   "company": "Lean Hog Futures,Dec-2026",
+   "price": 55.875,
    "agree": 5,
    "missing": [
     {
      "k": "confirm",
-     "note": "Wyckoff Distribution Phase D; no live ICT entry."
+     "note": "Wyckoff Redistribution Phase D; no live ICT entry."
     },
     {
      "k": "entry",
      "note": "In the zone, but no trigger yet."
-    }
-   ]
-  },
-  {
-   "ticker": "NET",
-   "side": "short",
-   "company": "Cloudflare, Inc.",
-   "price": 288.39,
-   "agree": 5,
-   "missing": [
-    {
-     "k": "entry",
-     "note": "In the zone, but no trigger yet."
-    },
-    {
-     "k": "payoff",
-     "note": "Target 1 pays 1.8\u00d7 the risk from here."
-    }
-   ]
-  },
-  {
-   "ticker": "OJ=F",
-   "side": "short",
-   "company": null,
-   "price": 131.2,
-   "agree": 5,
-   "missing": [
-    {
-     "k": "confirm",
-     "note": "Wyckoff Distribution Phase D; no live ICT entry."
-    },
-    {
-     "k": "entry",
-     "note": "In the zone, but no trigger yet."
-    }
-   ]
-  },
-  {
-   "ticker": "HG=F",
-   "side": "short",
-   "company": "Copper Mar 27",
-   "price": 5.4825,
-   "agree": 5,
-   "missing": [
-    {
-     "k": "confirm",
-     "note": "Wyckoff Distribution Phase D; no live ICT entry."
-    },
-    {
-     "k": "entry",
-     "note": "In the zone, but no trigger yet."
-    }
-   ]
-  },
-  {
-   "ticker": "ZION",
-   "side": "short",
-   "company": "Zions Bancorporation, National Association",
-   "price": 62.59,
-   "agree": 5,
-   "missing": [
-    {
-     "k": "entry",
-     "note": "Not back in the entry zone. We don't chase."
-    },
-    {
-     "k": "payoff",
-     "note": "Target 1 pays 0.9\u00d7 the risk from here."
     }
    ]
   }
