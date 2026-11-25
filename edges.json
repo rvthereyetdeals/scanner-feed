@@ -1,31 +1,117 @@
 {
- "updated_at": "2026-11-25T11:19-05:00",
+ "updated_at": "2026-11-25T15:00-05:00",
  "quotes": "Delayed quotes (15 min or the last close). Check the live price at your broker before anything else.",
- "scanned": 47,
+ "scanned": 109,
  "names": 144,
- "edges": [],
+ "edges": [
+  {
+   "ticker": "NFLX",
+   "spot": 57.2,
+   "expiry": "2026-12-04",
+   "dte": 9,
+   "strike": 57.0,
+   "iv_pct": 47.7,
+   "rv20_pct": 33.7,
+   "rv60_pct": 35.9,
+   "ratio": 1.41,
+   "priced_move_pct": 6.0,
+   "usual_move_pct": 4.2,
+   "earnings": null,
+   "kind": "rich",
+   "play": {
+    "type": "condor",
+    "name": "Iron condor: sell $53 put / $61 call, buy $52 put / $62 call",
+    "legs": [
+     {
+      "act": "sell",
+      "side": "put",
+      "strike": 53.0
+     },
+     {
+      "act": "buy",
+      "side": "put",
+      "strike": 52.0
+     },
+     {
+      "act": "sell",
+      "side": "call",
+      "strike": 61.0
+     },
+     {
+      "act": "buy",
+      "side": "call",
+      "strike": 62.0
+     }
+    ],
+    "risk": 75,
+    "max_gain": 25,
+    "credit": 0.25,
+    "breakeven_pct": 7.1,
+    "low": 52.75,
+    "high": 61.25,
+    "ev": 6,
+    "model_odds_pct": 81,
+    "wins_if": "stays"
+   }
+  }
+ ],
  "locks": {
-  "structures_checked": 3830,
+  "structures_checked": 8935,
   "found": [
+   {
+    "kind": "put butterfly",
+    "strikes": [
+     715.0,
+     716.0,
+     717.0
+    ],
+    "lock_per_contract": 27.4,
+    "how": "paid to own a butterfly",
+    "ticker": "SPY",
+    "expiry": "2026-11-30"
+   },
    {
     "kind": "box",
     "strikes": [
-     130.0,
-     131.0
+     713.0,
+     714.0
     ],
-    "lock_per_contract": 7.33,
+    "lock_per_contract": 2.33,
     "how": "box costs less than its fixed payout (early-assignment risk remains)",
-    "ticker": "NVDA",
+    "ticker": "SPY",
     "expiry": "2026-11-30"
    },
    {
-    "kind": "put butterfly",
+    "kind": "box",
     "strikes": [
-     500.0,
-     502.5,
-     505.0
+     716.0,
+     717.0
     ],
-    "lock_per_contract": 7.4,
+    "lock_per_contract": 8.33,
+    "how": "box costs less than its fixed payout (early-assignment risk remains)",
+    "ticker": "SPY",
+    "expiry": "2026-11-30"
+   },
+   {
+    "kind": "call butterfly",
+    "strikes": [
+     635.0,
+     636.0,
+     637.0
+    ],
+    "lock_per_contract": 5.4,
+    "how": "paid to own a butterfly",
+    "ticker": "QQQ",
+    "expiry": "2026-11-30"
+   },
+   {
+    "kind": "call butterfly",
+    "strikes": [
+     597.5,
+     600.0,
+     602.5
+    ],
+    "lock_per_contract": 12.4,
     "how": "paid to own a butterfly",
     "ticker": "MU",
     "expiry": "2026-11-30"
@@ -33,61 +119,13 @@
    {
     "kind": "put butterfly",
     "strikes": [
-     555.0,
-     557.5,
-     560.0
+     570.0,
+     572.5,
+     575.0
     ],
-    "lock_per_contract": 57.4,
+    "lock_per_contract": 32.4,
     "how": "paid to own a butterfly",
     "ticker": "MU",
-    "expiry": "2026-11-30"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     560.0,
-     562.5,
-     565.0
-    ],
-    "lock_per_contract": 102.4,
-    "how": "paid to own a butterfly",
-    "ticker": "MU",
-    "expiry": "2026-11-30"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     582.5,
-     585.0,
-     587.5
-    ],
-    "lock_per_contract": 2.4,
-    "how": "paid to own a butterfly",
-    "ticker": "MU",
-    "expiry": "2026-11-30"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     587.5,
-     590.0,
-     592.5
-    ],
-    "lock_per_contract": 47.4,
-    "how": "paid to own a butterfly",
-    "ticker": "MU",
-    "expiry": "2026-11-30"
-   },
-   {
-    "kind": "put butterfly",
-    "strikes": [
-     230.0,
-     232.5,
-     235.0
-    ],
-    "lock_per_contract": 7.4,
-    "how": "paid to own a butterfly",
-    "ticker": "AMZN",
     "expiry": "2026-11-30"
    }
   ]
@@ -109,7 +147,7 @@
    "n": 113,
    "moved_more": 87
   },
-  "pending": 256,
+  "pending": 259,
   "recent": [
    {
     "ticker": "GOOG",
