@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24T20:30:02+00:00",
+ "updated_at": "2026-11-25T16:23:15+00:00",
  "rules_hash": "39e2b76b800933dd",
  "record_start": "2027-01-01",
  "rules": [
@@ -48,10 +48,10 @@
   "wind": "headwind",
   "score": -4,
   "reasons": [
-   "10-yr 4.90%",
-   "VIX 27.2",
-   "S&P -0.9% today",
-   "Fear & Greed 16"
+   "10-yr 4.81%",
+   "VIX 33.4",
+   "S&P -2.9% today",
+   "Fear & Greed 9"
   ]
  },
  "scanned": 37,
@@ -118,9 +118,9 @@
    "timestamp_utc": "2026-11-20T15:30:00+00:00",
    "now": {
     "open": true,
-    "last": 58.11000061035156,
+    "last": 57.91999816894531,
     "took_t1": false,
-    "r_now": 0.55
+    "r_now": 0.61
    }
   },
   {
@@ -185,10 +185,73 @@
    "timestamp_utc": "2026-11-20T17:30:02+00:00",
    "now": {
     "open": true,
-    "last": 350.6000061035156,
+    "last": 353.8999938964844,
     "took_t1": false,
-    "r_now": -0.53
+    "r_now": -0.69
    }
+  },
+  {
+   "call_id": "AP-NG=F-20261125T1623Z",
+   "ticker": "NG=F",
+   "side": "short",
+   "company": null,
+   "plan": {
+    "entry": 3.684,
+    "zone": [
+     3.684,
+     3.8314
+    ],
+    "stop": 3.905,
+    "t1": 3.2419,
+    "t2": 3.0209,
+    "r1": 2.0,
+    "basis": "Y Bear Order Block"
+   },
+   "pattern_tf": "M",
+   "time_limit_days": 270,
+   "trigger_tfs": [
+    "H2",
+    "3m"
+   ],
+   "checks": [
+    {
+     "k": "business",
+     "ok": null,
+     "note": "Not a company, so there is no business to read."
+    },
+    {
+     "k": "market",
+     "ok": true,
+     "note": "Headwind (10-yr 4.81%, VIX 33.4, S&P -2.9% today, Fear & Greed 9)."
+    },
+    {
+     "k": "pattern",
+     "ok": true,
+     "note": "Top on the line chart (M, W) with a matching engulfing (H2, 3m)."
+    },
+    {
+     "k": "confirm",
+     "ok": true,
+     "note": "Wyckoff Phase C on the right side."
+    },
+    {
+     "k": "entry",
+     "ok": true,
+     "note": "In the zone and the trigger has fired."
+    },
+    {
+     "k": "payoff",
+     "ok": true,
+     "note": "Target 1 pays 2.0\u00d7 the risk from here."
+    },
+    {
+     "k": "money",
+     "ok": null,
+     "note": "No earnings or insiders to read."
+    }
+   ],
+   "timestamp_utc": "2026-11-25T16:23:15+00:00",
+   "now": null
   }
  ],
  "closed": [],
@@ -202,15 +265,15 @@
    "missing": [
     {
      "k": "market",
-     "note": "Headwind (10-yr 4.90%, VIX 27.2, S&P -0.9% today, Fear & Greed 16). It works against this side."
+     "note": "Headwind (10-yr 4.81%, VIX 33.4, S&P -2.9% today, Fear & Greed 9). It works against this side."
     }
    ]
   },
   {
-   "ticker": "ANGX",
+   "ticker": "AMZN",
    "side": "short",
-   "company": "Angel Studios, Inc.",
-   "price": 3.945,
+   "company": "Amazon.com, Inc.",
+   "price": 252.2,
    "agree": 5,
    "missing": [
     {
@@ -219,7 +282,7 @@
     },
     {
      "k": "payoff",
-     "note": "Target 1 pays 1.2\u00d7 the risk from here."
+     "note": "No clean levels from the chart."
     }
    ]
   },
@@ -258,26 +321,26 @@
    ]
   },
   {
-   "ticker": "RB=F",
+   "ticker": "NET",
    "side": "short",
-   "company": "RBOB Gasoline Jan 27",
-   "price": 2.4341,
+   "company": "Cloudflare, Inc.",
+   "price": 288.39,
    "agree": 5,
    "missing": [
     {
-     "k": "confirm",
-     "note": "Wyckoff Distribution Phase D; no live ICT entry."
-    },
-    {
      "k": "entry",
      "note": "In the zone, but no trigger yet."
+    },
+    {
+     "k": "payoff",
+     "note": "Target 1 pays 1.8\u00d7 the risk from here."
     }
    ]
   },
   {
    "ticker": "OJ=F",
    "side": "short",
-   "company": "Orange Juice Jan 27",
+   "company": null,
    "price": 131.2,
    "agree": 5,
    "missing": [
@@ -292,10 +355,10 @@
    ]
   },
   {
-   "ticker": "NG=F",
+   "ticker": "HG=F",
    "side": "short",
-   "company": null,
-   "price": 3.676,
+   "company": "Copper Mar 27",
+   "price": 5.4825,
    "agree": 5,
    "missing": [
     {
@@ -309,19 +372,19 @@
    ]
   },
   {
-   "ticker": "HO=F",
+   "ticker": "ZION",
    "side": "short",
-   "company": "Heating Oil Jan 27",
-   "price": 3.6607,
+   "company": "Zions Bancorporation, National Association",
+   "price": 62.59,
    "agree": 5,
    "missing": [
     {
-     "k": "confirm",
-     "note": "Wyckoff Distribution Phase D; no live ICT entry."
+     "k": "entry",
+     "note": "Not back in the entry zone. We don't chase."
     },
     {
-     "k": "entry",
-     "note": "In the zone, but no trigger yet."
+     "k": "payoff",
+     "note": "Target 1 pays 0.9\u00d7 the risk from here."
     }
    ]
   }
@@ -334,12 +397,12 @@
   "avg_r": null
  },
  "scanner_record": {
-  "graded": 36,
+  "graded": 38,
   "wins": 6,
-  "losses": 30
+  "losses": 32
  },
  "chain": {
-  "records": 3,
+  "records": 4,
   "ok": true
  }
 }
