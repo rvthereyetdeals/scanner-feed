@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-11-26T15:19:12.024076+00:00",
+  "last_scan": "2026-11-26T15:22:06.646004+00:00",
   "setups": [
     {
       "ticker": "ANGX",
@@ -10193,9 +10193,9 @@
       "session_label": "Closing dash",
       "pinned": false,
       "verdict": "BUY",
-      "verdict_score": 7,
-      "verdict_max": 8,
-      "verdict_pct": 88,
+      "verdict_score": 9,
+      "verdict_max": 10,
+      "verdict_pct": 90,
       "verdict_checklist": {
         "tech_setup": true,
         "market_structure": true,
@@ -10204,14 +10204,14 @@
         "price_below_maxpain": true,
         "above_pivot": false,
         "balance_sheet_ok": true,
-        "analyst_buy": null,
-        "analyst_target_upside": null,
+        "analyst_buy": true,
+        "analyst_target_upside": true,
         "seasonality_positive": true
       },
       "bear_verdict": "CLEAR",
       "bear_score": 1,
-      "bear_score_max": 7,
-      "bear_score_pct": 14,
+      "bear_score_max": 9,
+      "bear_score_pct": 11,
       "bear_checklist": {
         "tech_setup_bear": true,
         "structure_down": false,
@@ -10219,11 +10219,11 @@
         "options_bearish": false,
         "price_above_maxpain": false,
         "below_pivot": false,
-        "analyst_sell": null,
-        "analyst_target_downside": null,
+        "analyst_sell": false,
+        "analyst_target_downside": false,
         "seasonality_negative": false
       },
-      "verdict_notes": "H1:HH/HL 30m:HH/HL 30m:BOS 30m:Demand \u00b7 RSI 39.96 \u00b7 P/C 0.48 \u00b7 MaxPain $250.00 \u00b7 Call wall $270 (2026-11-27) \u00b7 Seasonal +2.5%",
+      "verdict_notes": "H1:HH/HL 30m:HH/HL 30m:BOS 30m:Demand \u00b7 RSI 39.96 \u00b7 P/C 0.48 \u00b7 MaxPain $250.00 \u00b7 Call wall $270 (2026-11-27) \u00b7 Target $326.34 (+32%) \u00b7 Seasonal +2.5%",
       "entry_note": "",
       "options_flow": {
         "total_call_oi": 118442,
@@ -10236,6 +10236,14 @@
         "top_put_oi": 4968,
         "expiry": "2026-11-27",
         "call_walls_by_expiry": {
+          "2026-11-27": {
+            "strike": 270.0,
+            "oi": 10863
+          },
+          "2026-11-30": {
+            "strike": 265.0,
+            "oi": 2548
+          },
           "2026-12-02": {
             "strike": 270.0,
             "oi": 1884
@@ -10249,40 +10257,46 @@
       "best_option": {
         "type": "put",
         "strike": 250.0,
-        "expiry": "2027-01-15",
-        "dte": 50,
-        "ask": 16.7,
-        "bid": 16.2,
-        "cost": 1670.0,
-        "open_interest": 17280,
-        "volume": 1040,
-        "iv": 37.3,
-        "breakeven": 233.3,
-        "delta": -0.49,
-        "gamma": 0.0117,
-        "theta": -0.117,
-        "vega": 0.364
+        "expiry": "2027-02-19",
+        "dte": 85,
+        "ask": 21.85,
+        "bid": 20.9,
+        "cost": 2185.0,
+        "open_interest": 3956,
+        "volume": 81,
+        "iv": 39.6,
+        "breakeven": 228.15,
+        "delta": -0.485,
+        "gamma": 0.0085,
+        "theta": -0.091,
+        "vega": 0.47
       },
       "value_option": {
         "type": "put",
-        "strike": 410.0,
-        "expiry": "2028-12-15",
-        "dte": 750,
-        "ask": 168.0,
-        "bid": 164.0,
-        "cost": 16800.0,
-        "open_interest": 578,
-        "volume": 2,
-        "iv": 22.8,
-        "breakeven": 242.0,
-        "delta": -0.858,
-        "gamma": 0.0028,
-        "theta": 0.035,
-        "vega": 0.793
+        "strike": 350.0,
+        "expiry": "2028-01-21",
+        "dte": 421,
+        "ask": 109.35,
+        "bid": 106.25,
+        "cost": 10935.0,
+        "open_interest": 1834,
+        "volume": 3,
+        "iv": 26.0,
+        "breakeven": 240.65,
+        "delta": -0.826,
+        "gamma": 0.0038,
+        "theta": 0.019,
+        "vega": 0.673
       },
       "best_contract": {},
       "pivots": {},
-      "analyst": {},
+      "analyst": {
+        "target_mean": 326.34,
+        "target_high": 405.0,
+        "target_low": 230.0,
+        "n_analysts": 60,
+        "rating_key": "strong_buy"
+      },
       "seasonality": {
         "month": 11,
         "hist_avg_return_pct": 2.55,
@@ -10450,7 +10464,16 @@
         ]
       },
       "short_volume": {},
-      "gex": {},
+      "gex": {
+        "net_gex": -814688,
+        "net_gex_bn": -0.001,
+        "expiry": "2026-12-02",
+        "regime": "Short Gamma",
+        "call_wall": 250.0,
+        "put_wall": 245.0,
+        "zero_gamma": 247.5,
+        "zero_gamma_method": "midpoint"
+      },
       "direction": "short",
       "wyckoff_cycle": "Distribution",
       "wyckoff_phase": "C",
@@ -16134,6 +16157,7 @@
       "bear_signals": [
         "Supply Grab",
         "Desc. Trendline",
+        "M / Double Top",
         "BOS \u2193",
         "Bear Breaker",
         "UTAD + trigger",
@@ -16225,7 +16249,7 @@
       },
       "tv_ticker": "TXN",
       "session": "PRIME OPEN",
-      "timestamp": "2026-11-26T09:52:39.106847",
+      "timestamp": "2026-11-26T10:20:18.542982",
       "ict": {
         "by_tf": {
           "1m": {
@@ -16656,7 +16680,7 @@
           "1wk": {
             "tf": "1wk",
             "session": {
-              "high": 213.501,
+              "high": 213.5011,
               "low": 167.3319,
               "midpoint": 190.4165,
               "range_pts": 46.1692
@@ -16677,13 +16701,41 @@
               "in_discount"
             ]
           },
+          "1mo": {
+            "tf": "1mo",
+            "session": {
+              "high": 175.7705,
+              "low": 79.8099,
+              "midpoint": 127.7902,
+              "range_pts": 95.9605
+            },
+            "sweep": {
+              "direction": "bearish",
+              "swept_level": 175.7705,
+              "depth_pts": 5.0505,
+              "wick": 180.821,
+              "timestamp": "2025-12-01T00:00:00"
+            },
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "SWEPT",
+            "alert": false,
+            "verdict": "WAIT",
+            "status_line": "SWEEP (1mo) \u2014 waiting for BOS",
+            "book_clues": [
+              "smash_reversal_short",
+              "in_premium"
+            ]
+          },
           "3mo": {
             "tf": "3mo",
             "session": {
               "high": 54.9559,
               "low": 17.7153,
               "midpoint": 36.3356,
-              "range_pts": 37.2405
+              "range_pts": 37.2406
             },
             "sweep": null,
             "bos": null,
@@ -16694,6 +16746,27 @@
             "alert": false,
             "verdict": "SCANNING",
             "status_line": "NO SWEEP (3mo) \u2014 range building",
+            "book_clues": [
+              "in_premium"
+            ]
+          },
+          "6mo": {
+            "tf": "6mo",
+            "session": {
+              "high": 24.481,
+              "low": 8.4908,
+              "midpoint": 16.4859,
+              "range_pts": 15.9903
+            },
+            "sweep": null,
+            "bos": null,
+            "ifvg": null,
+            "retrace": null,
+            "targets": [],
+            "stage": "ACCUMULATION",
+            "alert": false,
+            "verdict": "SCANNING",
+            "status_line": "NO SWEEP (6mo) \u2014 range building",
             "book_clues": [
               "in_premium"
             ]
@@ -16727,7 +16800,8 @@
             "1h",
             "2h",
             "3h",
-            "1d"
+            "1d",
+            "1mo"
           ],
           "bos": [
             "30m",
@@ -16759,7 +16833,9 @@
             "15m",
             "30m",
             "45m",
+            "1mo",
             "3mo",
+            "6mo",
             "12mo"
           ],
           "smash_reversal_long": [
@@ -16804,6 +16880,9 @@
           ],
           "dalton_failed_auction_high": [
             "1wk"
+          ],
+          "smash_reversal_short": [
+            "1mo"
           ]
         },
         "primary_tf": "45m",
@@ -16902,6 +16981,7 @@
       "golden_reversal_short": false,
       "golden_reversal_short_tfs": {
         "htf": [
+          "M",
           "W",
           "D",
           "H4"
@@ -16917,6 +16997,7 @@
         "time_of_day": true
       },
       "tech_tfs": [
+        "M",
         "W",
         "D",
         "H4",
@@ -17114,6 +17195,13 @@
           "H3",
           "30m"
         ],
+        "Demand Zone": [
+          "M",
+          "W",
+          "H3",
+          "30m",
+          "5m"
+        ],
         "Breaker": [
           "W",
           "D",
@@ -17127,12 +17215,6 @@
           "5m",
           "3m",
           "1m"
-        ],
-        "Demand Zone": [
-          "W",
-          "H3",
-          "30m",
-          "5m"
         ],
         "Inv. H&S": [
           "H3",
@@ -17174,6 +17256,9 @@
           "5m",
           "3m",
           "1m"
+        ],
+        "M / Double Top": [
+          "M"
         ],
         "BOS \u2193": [
           "W",
@@ -17248,6 +17333,7 @@
           "Y",
           "6M",
           "3M",
+          "M",
           "H4",
           "H3",
           "H1",
@@ -17303,6 +17389,7 @@
             "Y",
             "6M",
             "3M",
+            "M",
             "W",
             "H3",
             "H1",
@@ -18404,13 +18491,7 @@
         "entry_status": "wait_for_retest",
         "neckline": 7247.5
       },
-      "fundamentals": {
-        "company_name": "E-Mini S&P 500 Dec 26",
-        "w52_high": 7897.5,
-        "w52_low": 6353.25,
-        "sharpe_ratio": 0.19,
-        "health_kind": "company"
-      },
+      "fundamentals": {},
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -19387,7 +19468,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "H4:BOS H4:Demand H3:BOS H3:FVG \u00b7 RSI 44.55 \u00b7 Seasonal +2.3%",
+      "verdict_notes": "H4:BOS H4:Demand H3:BOS H3:FVG \u00b7 RSI 44.75 \u00b7 Seasonal +2.3%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -19397,7 +19478,7 @@
       "analyst": {},
       "seasonality": {
         "month": 11,
-        "hist_avg_return_pct": 2.26,
+        "hist_avg_return_pct": 2.28,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -19689,7 +19770,13 @@
         "entry_status": "wait_for_retest",
         "neckline": 26380.5
       },
-      "fundamentals": {},
+      "fundamentals": {
+        "company_name": "Nasdaq 100 Dec 26",
+        "w52_high": 31616.5,
+        "w52_low": 22961.5,
+        "sharpe_ratio": 0.09,
+        "health_kind": "company"
+      },
       "intrinsic_value": {},
       "fundamental_conviction": 0.0,
       "fundamental_grade": "F",
@@ -20685,7 +20772,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "3M:HH/HL 3M:BOS 3M:FVG 30m:HH/HL \u00b7 RSI 44.89 \u00b7 Seasonal +1.5%",
+      "verdict_notes": "3M:HH/HL 3M:BOS 3M:FVG 30m:HH/HL \u00b7 RSI 44.92 \u00b7 Seasonal +1.5%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -20709,7 +20796,7 @@
       "analyst": {},
       "seasonality": {
         "month": 11,
-        "hist_avg_return_pct": 1.53,
+        "hist_avg_return_pct": 1.54,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -35695,7 +35782,7 @@
         "company_name": "Mini Dow Jones Indus.-$5 Dec 26",
         "w52_high": 54884.0,
         "w52_low": 45052.0,
-        "sharpe_ratio": 0.2,
+        "sharpe_ratio": 0.21,
         "health_kind": "company"
       },
       "intrinsic_value": {},
@@ -35709,7 +35796,7 @@
       },
       "tv_ticker": "CBOT_MINI:YM1!",
       "session": "PRIME OPEN",
-      "timestamp": "2026-11-26T09:51:54.123213",
+      "timestamp": "2026-11-26T10:19:26.795668",
       "ict": {
         "by_tf": {
           "1m": {
@@ -36681,7 +36768,7 @@
         "analyst_target_downside": null,
         "seasonality_negative": false
       },
-      "verdict_notes": "H2:Demand 45m:HH/HL 45m:Demand 15m:Demand \u00b7 RSI 44.5 \u00b7 Seasonal +3.4%",
+      "verdict_notes": "H2:Demand 45m:HH/HL 45m:Demand 15m:Demand \u00b7 RSI 44.76 \u00b7 Seasonal +3.4%",
       "entry_note": "",
       "options_flow": {},
       "best_option": {},
@@ -36691,7 +36778,7 @@
       "analyst": {},
       "seasonality": {
         "month": 11,
-        "hist_avg_return_pct": 3.4,
+        "hist_avg_return_pct": 3.42,
         "historically_positive": true
       },
       "signals_by_tf": {
@@ -38304,16 +38391,6 @@
       "spec_change": -9395,
       "open_interest": 478892,
       "bias": "Strongly Bullish"
-    },
-    "BTC": {
-      "name": "Bitcoin",
-      "report_date": "2026-11-17",
-      "commercial_net": -1434,
-      "commercial_change": 731,
-      "spec_net": 1547,
-      "spec_change": -818,
-      "open_interest": 19710,
-      "bias": "Bearish"
     },
     "ZC": {
       "name": "Corn",
