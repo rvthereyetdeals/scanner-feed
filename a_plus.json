@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T20:30:01+00:00",
+ "updated_at": "2026-11-26T15:30:02+00:00",
  "rules_hash": "39e2b76b800933dd",
  "record_start": "2027-01-01",
  "rules": [
@@ -45,16 +45,11 @@
   "min_r": 2.0
  },
  "wind": {
-  "wind": "headwind",
-  "score": -3,
-  "reasons": [
-   "10-yr 4.85%",
-   "VIX 27.9",
-   "S&P -0.4% today",
-   "Fear & Greed 16"
-  ]
+  "wind": null,
+  "score": 0,
+  "reasons": []
  },
- "scanned": 39,
+ "scanned": 34,
  "open": [
   {
    "call_id": "AP-ZL=F-20261120T1530Z",
@@ -118,76 +113,9 @@
    "timestamp_utc": "2026-11-20T15:30:00+00:00",
    "now": {
     "open": true,
-    "last": 58.2599983215332,
+    "last": 58.08000183105469,
     "took_t1": false,
-    "r_now": 0.51
-   }
-  },
-  {
-   "call_id": "AP-ZM=F-20261120T1730Z",
-   "ticker": "ZM=F",
-   "side": "short",
-   "company": null,
-   "plan": {
-    "basis": "3M Bear Order Block",
-    "entry": 339.8,
-    "r1": 2.0,
-    "stop": 360.188,
-    "t1": 299.024,
-    "t2": 278.636,
-    "zone": [
-     339.8,
-     353.392
-    ]
-   },
-   "pattern_tf": "W",
-   "time_limit_days": 90,
-   "trigger_tfs": [
-    "5m"
-   ],
-   "checks": [
-    {
-     "k": "business",
-     "note": "Not a company, so there is no business to read.",
-     "ok": null
-    },
-    {
-     "k": "market",
-     "note": "Headwind (10-yr 4.95%, VIX 31.6, S&P -1.9% today, Fear & Greed 12).",
-     "ok": true
-    },
-    {
-     "k": "pattern",
-     "note": "Top on the line chart (W, D, H4) with a matching engulfing (5m).",
-     "ok": true
-    },
-    {
-     "k": "confirm",
-     "note": "Wyckoff Phase C on the right side.",
-     "ok": true
-    },
-    {
-     "k": "entry",
-     "note": "In the zone and the trigger has fired.",
-     "ok": true
-    },
-    {
-     "k": "payoff",
-     "note": "Target 1 pays 2.0\u00d7 the risk from here.",
-     "ok": true
-    },
-    {
-     "k": "money",
-     "note": "No earnings or insiders to read.",
-     "ok": null
-    }
-   ],
-   "timestamp_utc": "2026-11-20T17:30:02+00:00",
-   "now": {
-    "open": true,
-    "last": 358.1000061035156,
-    "took_t1": false,
-    "r_now": -0.9
+    "r_now": 0.56
    }
   },
   {
@@ -251,16 +179,77 @@
     }
    ],
    "timestamp_utc": "2026-11-25T16:23:15+00:00",
-   "now": null
+   "now": {
+    "open": true,
+    "last": 3.621999979019165,
+    "took_t1": false,
+    "r_now": 0.28
+   }
   }
  ],
- "closed": [],
+ "closed": [
+  {
+   "type": "result",
+   "call_id": "AP-ZM=F-20261120T1730Z",
+   "ticker": "ZM=F",
+   "side": "short",
+   "result": "LOSS",
+   "exit": "stop",
+   "r": -1.0,
+   "days": 3,
+   "exit_price": 360.188,
+   "date": "2026-11-25",
+   "plan": {
+    "basis": "3M Bear Order Block",
+    "entry": 339.8,
+    "r1": 2.0,
+    "stop": 360.188,
+    "t1": 299.024,
+    "t2": 278.636,
+    "zone": [
+     339.8,
+     353.392
+    ]
+   },
+   "called": "2026-11-20T17:30:02+00:00"
+  }
+ ],
  "watch": [
   {
-   "ticker": "MRK",
+   "ticker": "ANGX",
+   "side": "long",
+   "company": "Angel Studios, Inc.",
+   "price": 4.05,
+   "agree": 6,
+   "missing": [
+    {
+     "k": "business",
+     "note": "Business grade F. The numbers argue against owning it."
+    }
+   ]
+  },
+  {
+   "ticker": "ZS=F",
+   "side": "long",
+   "company": null,
+   "price": 1243.25,
+   "agree": 5,
+   "missing": [
+    {
+     "k": "pattern",
+     "note": "The pattern is only on H4: below the daily chart."
+    },
+    {
+     "k": "confirm",
+     "note": "Wyckoff Reaccumulation Phase E; no live ICT entry."
+    }
+   ]
+  },
+  {
+   "ticker": "AMZN",
    "side": "short",
-   "company": "Merck & Co., Inc.",
-   "price": 140.4,
+   "company": "Amazon.com, Inc.",
+   "price": 246.7652,
    "agree": 5,
    "missing": [
     {
@@ -274,19 +263,19 @@
    ]
   },
   {
-   "ticker": "MSFT",
+   "ticker": "BZ=F",
    "side": "short",
-   "company": "Microsoft Corporation",
-   "price": 486.23,
+   "company": "Brent Crude Oil Last Day Financial Futures",
+   "price": 91.17,
    "agree": 5,
    "missing": [
     {
-     "k": "pattern",
-     "note": "No line-chart reversal + engulfing right now."
+     "k": "entry",
+     "note": "Not back in the entry zone. We don't chase."
     },
     {
-     "k": "confirm",
-     "note": "Wyckoff Distribution Phase D; no live ICT entry."
+     "k": "payoff",
+     "note": "Target 1 pays 1.0\u00d7 the risk from here."
     }
    ]
   },
@@ -308,10 +297,10 @@
    ]
   },
   {
-   "ticker": "ZION",
+   "ticker": "ZM=F",
    "side": "short",
-   "company": "Zions Bancorporation, National Association",
-   "price": 62.63,
+   "company": null,
+   "price": 361.7,
    "agree": 5,
    "missing": [
     {
@@ -325,15 +314,15 @@
    ]
   },
   {
-   "ticker": "HE=F",
+   "ticker": "ZION",
    "side": "short",
-   "company": "Lean Hog Futures,Dec-2026",
-   "price": 55.5,
+   "company": "Zions Bancorporation, National Association",
+   "price": 62.62,
    "agree": 5,
    "missing": [
     {
      "k": "confirm",
-     "note": "Wyckoff Redistribution Phase D; no live ICT entry."
+     "note": "Wyckoff Distribution Phase D; no live ICT entry."
     },
     {
      "k": "entry",
@@ -343,11 +332,11 @@
   }
  ],
  "record": {
-  "graded": 0,
+  "graded": 1,
   "wins": 0,
-  "losses": 0,
+  "losses": 1,
   "timed_out": 0,
-  "avg_r": null
+  "avg_r": -1.0
  },
  "scanner_record": {
   "graded": 38,
@@ -355,7 +344,7 @@
   "losses": 32
  },
  "chain": {
-  "records": 4,
+  "records": 5,
   "ok": true
  }
 }
